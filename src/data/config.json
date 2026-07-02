@@ -1,0 +1,55 @@
+{
+  "address": "望京 SOHO",
+  "categories": [
+    {"id": "food", "icon": "🍜", "name": "美食"},
+    {"id": "drinks", "icon": "🧋", "name": "甜点饮品"},
+    {"id": "market", "icon": "🛒", "name": "超市便利"},
+    {"id": "fruits", "icon": "🍎", "name": "蔬菜水果"},
+    {"id": "medicine", "icon": "💊", "name": "看病买药"},
+    {"id": "tea", "icon": "☕", "name": "下午茶"},
+    {"id": "group", "icon": "🤝", "name": "拼好饭"},
+    {"id": "errand", "icon": "🏃", "name": "跑腿"},
+    {"id": "subsidy", "icon": "💴", "name": "天天津贴"},
+    {"id": "new", "icon": "🎁", "name": "新店特惠"}
+  ],
+  "promoCards": [
+    {
+      "id": "promo1",
+      "title": "拼手气精选",
+      "subtitle": "0元起送",
+      "badge": "免配送费",
+      "color": "#FFF9E6",
+      "items": [
+        {"name": "辣子鸡研究所", "desc": "香辣系列套餐任选", "price": 18.9},
+        {"name": "老北京炸酱面", "desc": "炸酱面自选套餐", "price": 15.0}
+      ]
+    },
+    {
+      "id": "promo2",
+      "title": "今日必抢",
+      "subtitle": "秒杀即将结束",
+      "badge": "爆品",
+      "color": "#FFF0F0",
+      "items": [
+        {"name": "深夜食堂", "desc": "日式套餐精选", "price": 26.5},
+        {"name": "茉莉东南亚", "desc": "爆品5选2", "price": 19.9}
+      ]
+    }
+  ],
+  "coupons": [
+    {"id": "c1", "amount": 6, "desc": "无门槛直减，不用凑单，不用算术"},
+    {"id": "c2", "amount": 8, "desc": "专为今晚准备，有效期：永远"}
+  ],
+  "riderNames": ["李想象", "陈快乐", "王今晚", "徐好吃", "张随缘", "刘开心"],
+  "deliveryStatusTexts": [
+    "商家正在精心准备（想象中的）您的餐食",
+    "骑手小哥正在与红绿灯谈判",
+    "已翻越一座立交桥，距您更近了",
+    "楼道口，敲门三声"
+  ],
+  "completionTexts": [
+    "今晚，你假装吃了一顿好的。",
+    "快乐是真实的，账单是不存在的。",
+    "明天见，我在这里。"
+  ]
+}

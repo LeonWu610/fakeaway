@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "r1",
+    "name": "辣子鸡研究所",
+    "image": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80",
+    "rating": 4.8,
+    "monthlySales": "3000+",
+    "distance": "1.2km",
+    "deliveryTime": 28,
+    "deliveryFee": 3,
+    "minPrice": 20,
+    "avgPrice": 35,
+    "categories": ["川菜", "麻辣"],
+    "isNew": false,
+    "couponAmount": 8,
+    "tags": ["大众点评高分", "月售过万"],
+    "menus": [
+      {
+        "categoryId": "c1",
+        "categoryName": "猜你喜欢",
+        "items": [
+          {
+            "id": "item_r1_001",
+            "name": "秘制辣子鸡套餐",
+            "description": "精选嫩鸡腿肉，秘制干辣椒爆炒，麻辣鲜香",
+            "price": 38,
+            "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300&q=80",
+            "monthlySales": "月售800+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 98
+          },
+          {
+            "id": "item_r1_002",
+            "name": "麻婆豆腐盖饭",
+            "description": "嫩滑豆腐配麻辣肉末，花椒香气扑鼻",
+            "price": 26,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售600+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 96
+          },
+          {
+            "id": "item_r1_003",
+            "name": "水煮牛肉套餐",
+            "description": "精选牛里脊，花椒红油浇汁，鲜嫩入味",
+            "price": 42,
+            "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300&q=80",
+            "monthlySales": "月售500+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 97
+          },
+          {
+            "id": "item_r1_004",
+            "name": "夫妻肺片拌饭",
+            "description": "牛肉牛杂精心卤制，红油拌匀香辣可口",
+            "price": 32,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售450+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 95
+          }
+        ]
+      },
+      {
+        "categoryId": "c2",
+        "categoryName": "热销榜",
+        "items": [
+          {
+            "id": "item_r1_005",
+            "name": "口水鸡套餐",
+            "description": "白切鸡浇红油麻辣酱汁，鲜嫩多汁",
+            "price": 36,
+            "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300&q=80",
+            "monthlySales": "月售700+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 97
+          },
+          {
+            "id": "item_r1_006",
+            "name": "干锅花菜套餐",
+            "description": "花菜配腊肉干锅爆炒，焦香酥脆",
+            "price": 28,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售550+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 94
+          },
+          {
+            "id": "item_r1_007",
+            "name": "红油抄手",
+            "description": "手工薄皮抄手，红油花椒香气浓郁",
+            "price": 22,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售900+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 98
+          },
+          {
+            "id": "item_r1_008",
+            "name": "回锅肉盖饭",
+            "description": "五花肉与青椒豆豉爆炒，咸鲜微辣",
+            "price": 30,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售620+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          }
+        ]
+      },
+      {
+        "categoryId": "c3",
+        "categoryName": "小吃",
+        "items": [
+          {
+            "id": "item_r1_009",
+            "name": "钵钵鸡（半份）",
+            "description": "串串签签冷锅红油，麻辣鲜香随意选",
+            "price": 18,
+            "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300&q=80",
+            "monthlySales": "月售400+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 93
+          },
+          {
+            "id": "item_r1_010",
+            "name": "凉拌黄瓜",
+            "description": "新鲜黄瓜拍碎，蒜泥红油拌匀清爽解腻",
+            "price": 10,
+            "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&q=80",
+            "monthlySales": "月售300+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 91
+          },
+          {
+            "id": "item_r1_011",
+            "name": "冰粉（红糖）",
+            "description": "手工冰粉加红糖水，清凉消暑甜蜜蜜",
+            "price": 12,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售350+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r1_012",
+            "name": "酸辣粉",
+            "description": "红薯粉丝配酸辣汤底，花生碎香菜点缀",
+            "price": 16,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售480+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r2",
+    "name": "深夜食堂·日式小馆",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80",
+    "rating": 4.9,
+    "monthlySales": "1500+",
+    "distance": "0.8km",
+    "deliveryTime": 32,
+    "deliveryFee": 0,
+    "minPrice": 25,
+    "avgPrice": 48,
+    "categories": ["日料", "定食"],
+    "isNew": false,
+    "couponAmount": 10,
+    "tags": ["人气爆款", "深夜必备"],
+    "menus": [
+      {
+        "categoryId": "c1",
+        "categoryName": "猜你喜欢",
+        "items": [
+          {
+            "id": "item_r2_001",
+            "name": "三文鱼亲子丼",
+            "description": "新鲜三文鱼刺身配溏心蛋，日式酱汁点睛",
+            "price": 58,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=300&q=80",
+            "monthlySales": "月售400+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 99
+          },
+          {
+            "id": "item_r2_002",
+            "name": "猪排定食套餐",
+            "description": "厚切猪排裹面包糠炸至金黄，配味噌汤",
+            "price": 45,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=300&q=80",
+            "monthlySales": "月售350+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 97
+          },
+          {
+            "id": "item_r2_003",
+            "name": "牛肉寿喜锅饭",
+            "description": "和牛薄片配甜咸寿喜汁，溏心蛋蘸食",
+            "price": 68,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=300&q=80",
+            "monthlySales": "月售280+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 98
+          },
+          {
+            "id": "item_r2_004",
+            "name": "味噌拉面",
+            "description": "浓郁味噌汤底，叉烧溏心蛋笋干一应俱全",
+            "price": 42,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售500+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 97
+          }
+        ]
+      },
+      {
+        "categoryId": "c2",
+        "categoryName": "热销榜",
+        "items": [
+          {
+            "id": "item_r2_005",
+            "name": "照烧鸡腿饭",
+            "description": "嫩鸡腿刷照烧酱烤制，甜咸适口配白饭",
+            "price": 38,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=300&q=80",
+            "monthlySales": "月售600+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          },
+          {
+            "id": "item_r2_006",
+            "name": "海鲜茶碗蒸",
+            "description": "鲜虾蛤蜊蟹棒入蛋液，蒸至细嫩如豆腐",
+            "price": 28,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=300&q=80",
+            "monthlySales": "月售320+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r2_007",
+            "name": "唐扬炸鸡块",
+            "description": "日式酱油腌制鸡块，裹薄粉炸至酥脆",
+            "price": 32,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=300&q=80",
+            "monthlySales": "月售450+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 97
+          },
+          {
+            "id": "item_r2_008",
+            "name": "玉子烧定食",
+            "description": "厚切日式玉子烧，甜咸蛋香配味噌汤小菜",
+            "price": 36,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=300&q=80",
+            "monthlySales": "月售380+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 94
+          }
+        ]
+      },
+      {
+        "categoryId": "c3",
+        "categoryName": "饮品",
+        "items": [
+          {
+            "id": "item_r2_009",
+            "name": "抹茶拿铁",
+            "description": "宇治抹茶粉配鲜奶，苦甜平衡清新",
+            "price": 22,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售250+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r2_010",
+            "name": "日式柚子气泡水",
+            "description": "新鲜柚子汁加气泡水，清爽酸甜解腻",
+            "price": 18,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售200+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 93
+          },
+          {
+            "id": "item_r2_011",
+            "name": "热煎茶",
+            "description": "精选日本煎茶，茶香清雅暖胃",
+            "price": 15,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售180+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 92
+          },
+          {
+            "id": "item_r2_012",
+            "name": "甘酒（米麹）",
+            "description": "传统米麹发酵甘酒，微甜无酒精养胃",
+            "price": 20,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售150+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 91
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r3",
+    "name": "老北京炸酱面馆",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80",
+    "rating": 4.7,
+    "monthlySales": "5000+",
+    "distance": "2.1km",
+    "deliveryTime": 35,
+    "deliveryFee": 2,
+    "minPrice": 15,
+    "avgPrice": 28,
+    "categories": ["面食", "北京菜"],
+    "isNew": false,
+    "couponAmount": 6,
+    "tags": ["老字号", "口碑之选"],
+    "menus": [
+      {
+        "categoryId": "c1",
+        "categoryName": "猜你喜欢",
+        "items": [
+          {
+            "id": "item_r3_001",
+            "name": "招牌炸酱面",
+            "description": "手擀面配猪肉黄豆炸酱，菜码丰盛地道京味",
+            "price": 22,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售1500+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 98
+          },
+          {
+            "id": "item_r3_002",
+            "name": "卤煮火烧套餐",
+            "description": "猪肠猪肺猪肺豆腐火烧同煮，老汤浓郁",
+            "price": 28,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售800+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 96
+          },
+          {
+            "id": "item_r3_003",
+            "name": "芝麻酱凉面",
+            "description": "手擀面配浓香芝麻酱，黄瓜丝豆芽清爽拌匀",
+            "price": 20,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售600+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 95
+          },
+          {
+            "id": "item_r3_004",
+            "name": "番茄鸡蛋打卤面",
+            "description": "新鲜番茄鸡蛋炒制浓稠卤汁，酸甜开胃",
+            "price": 18,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售700+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 94
+          }
+        ]
+      },
+      {
+        "categoryId": "c2",
+        "categoryName": "热销榜",
+        "items": [
+          {
+            "id": "item_r3_005",
+            "name": "葱爆羊肉面",
+            "description": "嫩羊肉大葱爆炒，鲜香浓郁配手擀面",
+            "price": 32,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售500+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 97
+          },
+          {
+            "id": "item_r3_006",
+            "name": "老北京豆汁儿套餐",
+            "description": "传统豆汁配焦圈咸菜，地道老北京早点",
+            "price": 16,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售300+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 90
+          },
+          {
+            "id": "item_r3_007",
+            "name": "肉丁卤面",
+            "description": "猪肉丁配香菇木耳卤汁，鲜咸入味",
+            "price": 24,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售450+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r3_008",
+            "name": "麻酱拌面加蛋",
+            "description": "浓香芝麻酱拌面加溏心蛋，营养满足",
+            "price": 22,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售550+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          }
+        ]
+      },
+      {
+        "categoryId": "c3",
+        "categoryName": "小吃",
+        "items": [
+          {
+            "id": "item_r3_009",
+            "name": "炸灌肠",
+            "description": "猪肠灌淀粉炸至金黄，蘸蒜汁吃香脆",
+            "price": 14,
+            "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300&q=80",
+            "monthlySales": "月售400+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 93
+          },
+          {
+            "id": "item_r3_010",
+            "name": "驴打滚",
+            "description": "糯米卷裹黄豆粉红豆沙，软糯香甜",
+            "price": 12,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售350+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 94
+          },
+          {
+            "id": "item_r3_011",
+            "name": "老北京酸梅汤",
+            "description": "乌梅山楂桂花熬制，酸甜解腻消暑",
+            "price": 10,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售500+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 97
+          },
+          {
+            "id": "item_r3_012",
+            "name": "麻团",
+            "description": "糯米团裹芝麻油炸，外酥内软豆沙馅",
+            "price": 8,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售280+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 92
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r4",
+    "name": "小满烤肉·韩式料理",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80",
+    "rating": 4.8,
+    "monthlySales": "2000+",
+    "distance": "1.8km",
+    "deliveryTime": 40,
+    "deliveryFee": 5,
+    "minPrice": 30,
+    "avgPrice": 55,
+    "categories": ["韩料", "烤肉"],
+    "isNew": false,
+    "couponAmount": 12,
+    "tags": ["正宗韩味", "人气爆款"],
+    "menus": [
+      {
+        "categoryId": "c1",
+        "categoryName": "猜你喜欢",
+        "items": [
+          {
+            "id": "item_r4_001",
+            "name": "五花肉烤肉套餐",
+            "description": "新鲜猪五花切片，配生菜蒜片包饭食用",
+            "price": 58,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售600+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 98
+          },
+          {
+            "id": "item_r4_002",
+            "name": "石锅拌饭",
+            "description": "热石锅配各色蔬菜牛肉丝，拌入辣椒酱",
+            "price": 38,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售500+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 97
+          },
+          {
+            "id": "item_r4_003",
+            "name": "部队锅套餐（双人）",
+            "description": "午餐肉香肠豆腐泡菜同煮，鲜辣浓郁",
+            "price": 88,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售300+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 96
+          },
+          {
+            "id": "item_r4_004",
+            "name": "辣炒年糕",
+            "description": "软糯年糕配鱼饼蔬菜，甜辣酱汁裹满",
+            "price": 28,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售700+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 97
+          }
+        ]
+      },
+      {
+        "categoryId": "c2",
+        "categoryName": "热销榜",
+        "items": [
+          {
+            "id": "item_r4_005",
+            "name": "泡菜豆腐汤套餐",
+            "description": "老泡菜配嫩豆腐猪肉，酸辣暖胃下饭",
+            "price": 32,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售450+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r4_006",
+            "name": "韩式炸鸡（半只）",
+            "description": "酥脆炸鸡裹甜辣酱，配啤酒绝配",
+            "price": 48,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售550+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 98
+          },
+          {
+            "id": "item_r4_007",
+            "name": "牛肉大酱汤",
+            "description": "韩式大酱配牛肉蔬菜炖煮，醇厚鲜美",
+            "price": 36,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售380+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 94
+          },
+          {
+            "id": "item_r4_008",
+            "name": "冷面套餐",
+            "description": "荞麦冷面配牛肉片黄瓜丝，酸辣爽口",
+            "price": 34,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售420+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          }
+        ]
+      },
+      {
+        "categoryId": "c3",
+        "categoryName": "套餐",
+        "items": [
+          {
+            "id": "item_r4_009",
+            "name": "韩式双人套餐A",
+            "description": "五花肉+石锅拌饭+泡菜汤，双人共享",
+            "price": 118,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售200+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 97
+          },
+          {
+            "id": "item_r4_010",
+            "name": "单人烤肉饭套餐",
+            "description": "烤五花肉配白饭泡菜小菜，一人份满足",
+            "price": 52,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售350+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          },
+          {
+            "id": "item_r4_011",
+            "name": "炸鸡+冷面套餐",
+            "description": "半只炸鸡配荞麦冷面，酥脆爽口双享受",
+            "price": 72,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售280+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r4_012",
+            "name": "年糕+豆腐汤套餐",
+            "description": "辣炒年糕配泡菜豆腐汤，暖身又暖心",
+            "price": 48,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=300&q=80",
+            "monthlySales": "月售320+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 94
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r5",
+    "name": "茉莉·东南亚风味",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&q=80",
+    "rating": 4.6,
+    "monthlySales": "1200+",
+    "distance": "3.0km",
+    "deliveryTime": 45,
+    "deliveryFee": 4,
+    "minPrice": 25,
+    "avgPrice": 42,
+    "categories": ["东南亚", "泰国菜"],
+    "isNew": true,
+    "couponAmount": 9,
+    "tags": ["新店特惠", "异域风情"],
+    "menus": [
+      {
+        "categoryId": "c1",
+        "categoryName": "猜你喜欢",
+        "items": [
+          {
+            "id": "item_r5_001",
+            "name": "泰式绿咖喱鸡饭",
+            "description": "椰浆绿咖喱配鸡腿肉茄子，香浓微辣",
+            "price": 38,
+            "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=300&q=80",
+            "monthlySales": "月售400+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 97
+          },
+          {
+            "id": "item_r5_002",
+            "name": "冬阴功汤面",
+            "description": "酸辣柠檬草香茅汤底配鲜虾，开胃暖身",
+            "price": 42,
+            "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=300&q=80",
+            "monthlySales": "月售350+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 96
+          },
+          {
+            "id": "item_r5_003",
+            "name": "越南牛肉河粉",
+            "description": "清甜骨汤配新鲜河粉牛肉片，薄荷九层塔提香",
+            "price": 36,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售300+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 95
+          },
+          {
+            "id": "item_r5_004",
+            "name": "泰式炒河粉",
+            "description": "宽河粉配虾仁豆芽鸡蛋，鱼露椰糖炒香",
+            "price": 34,
+            "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=300&q=80",
+            "monthlySales": "月售450+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 97
+          }
+        ]
+      },
+      {
+        "categoryId": "c2",
+        "categoryName": "热销榜",
+        "items": [
+          {
+            "id": "item_r5_005",
+            "name": "椰汁芒果糯米饭",
+            "description": "泰国香糯米配新鲜芒果淋椰汁，甜蜜清香",
+            "price": 28,
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&q=80",
+            "monthlySales": "月售500+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 98
+          },
+          {
+            "id": "item_r5_006",
+            "name": "星洲炒米粉",
+            "description": "细米粉配虾仁叉烧蔬菜，咖喱粉炒香金黄",
+            "price": 32,
+            "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=300&q=80",
+            "monthlySales": "月售380+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 94
+          },
+          {
+            "id": "item_r5_007",
+            "name": "沙嗲牛肉串套餐",
+            "description": "牛肉串裹花生沙嗲酱烤制，配黄瓜洋葱",
+            "price": 44,
+            "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=300&q=80",
+            "monthlySales": "月售280+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r5_008",
+            "name": "叻沙面",
+            "description": "新加坡叻沙椰浆汤底配鲜虾豆腐，浓郁鲜香",
+            "price": 40,
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&q=80",
+            "monthlySales": "月售320+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          }
+        ]
+      },
+      {
+        "categoryId": "c3",
+        "categoryName": "饮品",
+        "items": [
+          {
+            "id": "item_r5_009",
+            "name": "泰式奶茶",
+            "description": "锡兰红茶配炼乳椰奶，橙红浓香甜蜜",
+            "price": 18,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售600+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 98
+          },
+          {
+            "id": "item_r5_010",
+            "name": "青柠椰水",
+            "description": "新鲜椰水配青柠汁，清爽解渴热带风情",
+            "price": 16,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售350+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r5_011",
+            "name": "芒果冰沙",
+            "description": "新鲜芒果打成冰沙，浓郁果香清凉消暑",
+            "price": 22,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售400+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 97
+          },
+          {
+            "id": "item_r5_012",
+            "name": "班兰叶椰奶冻",
+            "description": "班兰叶汁制成椰奶冻，清香软嫩东南亚甜品",
+            "price": 20,
+            "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&q=80",
+            "monthlySales": "月售220+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 93
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r6",
+    "name": "今日炸鸡&汉堡工坊",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80",
+    "rating": 4.5,
+    "monthlySales": "9999+",
+    "distance": "0.5km",
+    "deliveryTime": 20,
+    "deliveryFee": 0,
+    "minPrice": 15,
+    "avgPrice": 32,
+    "categories": ["炸鸡", "汉堡"],
+    "isNew": false,
+    "couponAmount": 5,
+    "tags": ["配送超快", "月售过万"],
+    "menus": [
+      {
+        "categoryId": "c1",
+        "categoryName": "猜你喜欢",
+        "items": [
+          {
+            "id": "item_r6_001",
+            "name": "双层芝士牛肉堡",
+            "description": "两片手打牛肉饼配双层芝士生菜番茄",
+            "price": 36,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售2000+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 97
+          },
+          {
+            "id": "item_r6_002",
+            "name": "脆皮炸鸡腿堡",
+            "description": "整块鸡腿裹面包糠炸酥，配蜂蜜芥末酱",
+            "price": 28,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售1800+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 96
+          },
+          {
+            "id": "item_r6_003",
+            "name": "香辣鸡排套餐",
+            "description": "大块鸡胸肉裹香辣粉炸制，配薯条可乐",
+            "price": 32,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售1500+",
+            "isHot": true,
+            "isRecommended": true,
+            "rating": 95
+          },
+          {
+            "id": "item_r6_004",
+            "name": "BBQ烟熏猪肉堡",
+            "description": "慢烤猪肉配BBQ酱洋葱圈，烟熏香气浓郁",
+            "price": 34,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售900+",
+            "isHot": false,
+            "isRecommended": true,
+            "rating": 96
+          }
+        ]
+      },
+      {
+        "categoryId": "c2",
+        "categoryName": "热销榜",
+        "items": [
+          {
+            "id": "item_r6_005",
+            "name": "桶装炸鸡（8块）",
+            "description": "8块香酥炸鸡混合部位，外脆里嫩聚餐首选",
+            "price": 68,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售800+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 97
+          },
+          {
+            "id": "item_r6_006",
+            "name": "薯条（大）",
+            "description": "金黄酥脆薯条，撒海盐现炸现配",
+            "price": 12,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售3000+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r6_007",
+            "name": "鸡米花（大份）",
+            "description": "小块嫩鸡肉裹薄粉炸至金黄，配番茄酱",
+            "price": 18,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售2500+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          },
+          {
+            "id": "item_r6_008",
+            "name": "墨西哥鸡肉卷",
+            "description": "烤鸡肉配生菜番茄芝士卷入墨西哥饼",
+            "price": 24,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售700+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 94
+          }
+        ]
+      },
+      {
+        "categoryId": "c3",
+        "categoryName": "套餐",
+        "items": [
+          {
+            "id": "item_r6_009",
+            "name": "超值单人套餐",
+            "description": "汉堡+薯条+可乐，一人份最划算",
+            "price": 38,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售1200+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 96
+          },
+          {
+            "id": "item_r6_010",
+            "name": "双人欢乐桶套餐",
+            "description": "4块炸鸡+2个汉堡+2份薯条，双人欢乐享",
+            "price": 88,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售500+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 95
+          },
+          {
+            "id": "item_r6_011",
+            "name": "儿童快乐餐",
+            "description": "小汉堡+小薯条+玩具，孩子最爱的组合",
+            "price": 28,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售600+",
+            "isHot": false,
+            "isRecommended": false,
+            "rating": 93
+          },
+          {
+            "id": "item_r6_012",
+            "name": "炸鸡腿+饮料套餐",
+            "description": "2块炸鸡腿配大杯可乐，简单满足",
+            "price": 32,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "monthlySales": "月售900+",
+            "isHot": true,
+            "isRecommended": false,
+            "rating": 95
+          }
+        ]
+      }
+    ]
+  }
+]
