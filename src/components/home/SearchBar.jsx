@@ -1,51 +1,12 @@
-import React from 'react';
-
-const MEITUAN_YELLOW = '#F5A623';
-
-export default function SearchBar() {
+export default function SearchBar({ value = '', onChange, onSubmit, onClear, inputRef }) {
   return (
-    <div
-      style={{
-        backgroundColor: '#ffffff',
-        padding: '8px 16px',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-      }}
-    >
-      <div
-        style={{
-          flex: 1,
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px',
-          border: '1px solid #e0e0e0',
-          borderRadius: '20px',
-          padding: '6px 12px',
-          backgroundColor: '#f7f7f7',
-        }}
-      >
-        <span style={{ fontSize: '16px', color: '#999999' }}>🔍</span>
-        <span style={{ fontSize: '14px', color: '#aaaaaa', userSelect: 'none' }}>
-          搜索餐厅或菜品
-        </span>
+    <form onSubmit={(event) => { event.preventDefault(); onSubmit?.() }} className="sticky top-[47px] z-40 bg-[var(--brand-yellow)] px-3 pb-2">
+      <div className="flex h-9 w-full items-center rounded-full bg-white pl-3 pr-1 shadow-sm focus-within:ring-1 focus-within:ring-black/10">
+        <svg viewBox="0 0 24 24" className="h-4 w-4 flex-none text-gray-700" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input ref={inputRef} value={value} onChange={(event) => onChange?.(event.target.value)} className="ml-2 min-w-0 flex-1 bg-transparent text-[13px] text-[#222] outline-none placeholder:text-gray-400" placeholder="搜索商家或商品" aria-label="搜索商家或商品" />
+        {value && <button type="button" onClick={onClear} className="mr-1 grid h-6 w-6 place-items-center rounded-full bg-gray-100 text-[13px] text-gray-400" aria-label="清空搜索">×</button>}
+        <button type="submit" className="rounded-full bg-[var(--brand-yellow)] px-4 py-1.5 text-xs font-bold text-[#2b2500]">搜索</button>
       </div>
-      <button
-        style={{
-          backgroundColor: MEITUAN_YELLOW,
-          color: '#ffffff',
-          border: 'none',
-          borderRadius: '20px',
-          padding: '7px 16px',
-          fontSize: '14px',
-          fontWeight: '500',
-          cursor: 'pointer',
-          whiteSpace: 'nowrap',
-          flexShrink: 0,
-        }}
-      >
-        搜索
-      </button>
-    </div>
-  );
+    </form>
+  )
 }

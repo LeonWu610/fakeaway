@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "purpose": "模拟外卖内容的生成、改写、图片生产和上线审核规则",
+  "requiredDisclosures": [
+    "模拟体验，不涉及真实交易、餐食或配送",
+    "商家、销量、评价与配送事件均为虚构内容"
+  ],
+  "merchantArchetypes": [
+    {
+      "id": "chain-campaign",
+      "name": "品牌活动型",
+      "modules": ["campaignHero", "couponPack", "bestsellerRanking", "comboMenu"],
+      "menuTraits": ["套餐优先", "活动节奏强", "视觉统一"],
+      "waitingTone": "热闹、迅速、有小惊喜"
+    },
+    {
+      "id": "neighborhood-kitchen",
+      "name": "街坊小店型",
+      "modules": ["ownerNote", "todaySpecial", "regularMemory", "simpleDiscount"],
+      "menuTraits": ["家常分类", "今日供应", "店主推荐"],
+      "waitingTone": "亲切、温暖、像熟人招呼"
+    },
+    {
+      "id": "specialty-menu",
+      "name": "垂直品类型",
+      "modules": ["ingredientStory", "flavorGuide", "customization", "pairingGuide"],
+      "menuTraits": ["规格丰富", "口味筛选", "原料信息完整"],
+      "waitingTone": "专业、克制、强调制作过程"
+    },
+    {
+      "id": "late-night-story",
+      "name": "深夜剧情型",
+      "modules": ["nightHero", "moodRecommendation", "microStory", "characterMessage"],
+      "menuTraits": ["情绪场景分类", "夜间限定", "少量高辨识单品"],
+      "waitingTone": "安静、陪伴、不催促"
+    },
+    {
+      "id": "instant-retail",
+      "name": "即时零售型",
+      "modules": ["quickCategories", "stockStatus", "bundleDeal", "deliveryPromise"],
+      "menuTraits": ["高密度类目", "库存状态", "多件优惠"],
+      "waitingTone": "清晰、高效、状态明确"
+    }
+  ],
+  "merchantRequiredFields": [
+    "id", "name", "archetype", "slogan", "description", "rating", "popularityLabel",
+    "distance", "deliveryTime", "deliveryFee", "minPrice", "avgPrice", "categories",
+    "businessHours", "status", "tags", "promotions", "menus", "visualProfile",
+    "waitingProfile", "relationshipProfile", "contentRevision"
+  ],
+  "productRequiredFields": [
+    "id", "name", "description", "price", "unit", "popularityLabel", "tags",
+    "ingredients", "allergens", "specGroups", "addons", "packingFee",
+    "estimatedPrepMinutes", "availabilitySchedule", "stockStatus", "imagePrompt"
+  ],
+  "imagePromptSchema": {
+    "required": ["purpose", "prompt", "negativePrompt", "stylePreset", "aspectRatio", "reviewStatus", "rightsNotes"],
+    "purposes": ["merchant-cover", "merchant-logo", "product-main", "ranking-cover", "story-illustration", "character-avatar", "waiting-bg"],
+    "reviewStatuses": ["draft", "pending", "approved", "flagged", "rejected"],
+    "promptTemplate": "原创虚构{entityType}，{subject}，{composition}，{lighting}，{palette}，真实餐饮摄影质感但不包含任何文字、商标、真实人物或可识别门店，{aspectRatio}",
+    "negativePrompt": "logo, trademark, watermark, readable text, real person, recognizable storefront, copyrighted character, platform UI, distorted food, extra utensils",
+    "rightsNotes": "仅使用原创虚构名称与场景；生成后须人工检查商标、文字、人物和食物畸变"
+  },
+  "generationPolicy": {
+    "batchCadenceDays": 14,
+    "batchComposition": {
+      "newMerchants": 2,
+      "returningMerchantUpdates": 3,
+      "seasonalProducts": 6,
+      "hiddenProducts": 2,
+      "waitingEvents": 8
+    },
+    "uniquenessRules": [
+      "同批商家的主品类、价格带、视觉主色和叙事语气不得全部相同",
+      "新商品名称与现有名称不得仅通过数字、大小份或同义词区分",
+      "每个商家至少有一个独有模块和两条独有等待事件",
+      "活动商品占菜单不超过百分之三十，避免全站长期促销",
+      "新内容必须保留上一版本可回滚记录"
+    ],
+    "rewriteRules": [
+      "稳定保留商家核心品类、人格和三成招牌商品",
+      "每次仅替换菜单的百分之十五至三十，避免用户失去熟悉感",
+      "新品必须说明出现原因：季节、时段、店主实验或街区事件",
+      "下架商品优先进入往期菜单，不永久删除用户已收藏记忆",
+      "销量改用人气标签或区间表达，禁止伪装成真实平台经营数据"
+    ],
+    "qualityGate": [
+      "名称、描述和图片 prompt 不含真实品牌、注册商品名或平台专有营销词",
+      "价格与优惠数学一致，规格加价和包装费可解释",
+      "过敏原与配料字段完整，剧情不得覆盖基础订单状态",
+      "不生成食品安全事故、严重配送事故、羞辱或焦虑惩罚",
+      "移动端卡片长度、菜单分类数量和图片比例通过人工预览"
+    ]
+  },
+  "retentionCadence": {
+    "session": ["浏览发现", "选择下单", "等待事件", "情绪结算"],
+    "daily": ["时间段推荐变化", "天气文案", "今日供应", "一条街区事件"],
+    "weekly": ["新品菜单", "新商家试营业", "熟客留言", "收藏回顾"],
+    "seasonal": ["主题街区", "限定故事", "商家视觉换季", "关系章节"]
+  },
+  "commercializationGuardrails": {
+    "allowed": ["原创主题包", "等待剧情季", "商家装扮", "收藏册扩展", "无广告会员", "创作者原创商家包"],
+    "deferUntilRetentionValidated": ["订阅会员", "付费季票", "品牌合作"],
+    "forbidden": ["虚构食品真实支付", "伪装真实优惠", "付费缩短焦虑式等待", "赌博抽卡", "出售用户情绪或健康敏感数据"],
+    "principle": "付费购买原创内容、表达和便利，不购买虚构食物，也不通过制造焦虑迫使付费"
+  }
+}

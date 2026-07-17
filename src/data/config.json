@@ -15,24 +15,24 @@
   "promoCards": [
     {
       "id": "promo1",
-      "title": "拼手气精选",
-      "subtitle": "0元起送",
-      "badge": "免配送费",
+      "title": "拼好饭精选",
+      "subtitle": "吃得好还划算",
+      "badge": "爆品",
       "color": "#FFF9E6",
       "items": [
-        {"name": "辣子鸡研究所", "desc": "香辣系列套餐任选", "price": 18.9},
-        {"name": "老北京炸酱面", "desc": "炸酱面自选套餐", "price": 15.0}
+        {"rank": 1, "name": "耐火的茶", "desc": "霸气草莓奶盖限时29元", "price": 29, "restaurantId": "r1"},
+        {"rank": 2, "name": "倒霉咖啡", "desc": "大杯生椰拿铁今日特惠", "price": 19, "restaurantId": "r5"}
       ]
     },
     {
       "id": "promo2",
-      "title": "今日必抢",
-      "subtitle": "秒杀即将结束",
-      "badge": "爆品",
-      "color": "#FFF0F0",
+      "title": "神抢手",
+      "subtitle": "多人都在抢",
+      "badge": "深夜",
+      "color": "#F0F4FF",
       "items": [
-        {"name": "深夜食堂", "desc": "日式套餐精选", "price": 26.5},
-        {"name": "茉莉东南亚", "desc": "爆品5选2", "price": 19.9}
+        {"rank": 1, "name": "买当捞", "desc": "宵夜特供双人套32元起", "price": 32, "restaurantId": "r3"},
+        {"rank": 2, "name": "啃得机", "desc": "疯狂星期四每天都有", "price": 29, "restaurantId": "r4"}
       ]
     }
   ],

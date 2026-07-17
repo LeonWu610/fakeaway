@@ -1,84 +1,57 @@
-import React from 'react';
+const identityStyles = {
+  '原创连锁': 'bg-[#eff8e9] text-[#4b9636]',
+  '原叶茶饮': 'bg-[#edf7f3] text-[#28735b]',
+  '极速餐厅': 'bg-[#fff5d9] text-[#956500]',
+  '街坊老店': 'bg-[#fff0e7] text-[#b85d28]',
+  '深夜限定': 'bg-[#f1ecf7] text-[#6e4d91]',
+  '夜宵热店': 'bg-[#f8e9eb] text-[#923b47]',
+}
 
 export default function RestaurantCard({ restaurant, onClick }) {
   const {
-    name,
-    image,
-    tags = [],
-    rating,
-    monthlySales,
-    distance,
-    deliveryTime,
-    couponAmount,
-    minOrder,
-    deliveryFee,
-  } = restaurant;
+    name, image, rating, monthlySales, distance, deliveryTime, couponAmount,
+    minOrder, deliveryFee, promotionText, listProfile = {}, isNew,
+  } = restaurant
+  const serviceTags = listProfile.serviceTags || []
 
   return (
-    <div
-      className="flex items-start bg-white px-4 py-3 border-b border-gray-100 active:bg-gray-50 cursor-pointer"
-      onClick={onClick}
-    >
-      {/* Left: restaurant image with badge */}
-      <div className="relative flex-shrink-0 mr-3">
-        <img
-          src={image}
-          alt={name}
-          className="w-20 h-20 rounded-lg object-cover"
-        />
-        <span className="absolute top-1 left-1 bg-orange-500 text-white text-xs font-medium px-1 py-0.5 rounded leading-none">
-          进店有券
+    <article onClick={onClick} className="flex cursor-pointer gap-2 border-b border-gray-100 bg-white px-2 py-2 active:bg-gray-50">
+      <div className="relative h-[116px] w-[116px] flex-none overflow-hidden rounded-md bg-gray-100">
+        <img src={image} alt={name} className="h-full w-full object-cover" />
+        <span className={`absolute left-0 top-0 max-w-[108px] truncate rounded-br px-1.5 py-0.5 text-[9px] font-bold text-white ${isNew ? 'bg-[#ff4d32]' : listProfile.identity === '深夜限定' ? 'bg-[#5f416f]' : listProfile.identity === '极速餐厅' ? 'bg-[#e7a600]' : 'bg-black/65'}`}>
+          {isNew ? '今日新店' : listProfile.imageBadge || '品质商家'}
         </span>
       </div>
 
-      {/* Right: content */}
-      <div className="flex-1 min-w-0 flex flex-col gap-1">
-        {/* Restaurant name */}
-        <p className="text-gray-900 font-bold text-sm leading-tight truncate">
-          {name}
-        </p>
-
-        {/* Tags */}
-        {tags.length > 0 && (
-          <div className="flex flex-wrap gap-1">
-            {tags.map((tag, index) => (
-              <span
-                key={index}
-                className="text-gray-400 text-xs bg-gray-100 rounded px-1.5 py-0.5 leading-none"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-
-        {/* Rating row */}
-        <div className="flex items-center gap-1.5">
-          <span className="text-orange-500 text-xs font-medium">★ {rating}分</span>
-          <span className="text-gray-400 text-xs">月售{monthlySales}+</span>
+      <div className="min-w-0 flex-1">
+        <div className="flex min-w-0 items-center gap-1">
+          {listProfile.identity && <span className={`flex-none rounded-sm px-1 py-0.5 text-[9px] font-semibold ${identityStyles[listProfile.identity] || 'bg-gray-100 text-gray-600'}`}>{listProfile.identity}</span>}
+          <h3 className="min-w-0 flex-1 truncate text-[16px] font-extrabold leading-[21px] text-[#222]">{name}</h3>
+          <span className="flex-none text-xs text-gray-300">⋮</span>
         </div>
 
-        {/* Distance / time row */}
-        <div className="flex items-center gap-1.5">
-          <span className="text-gray-400 text-xs">{distance}</span>
-          <span className="text-gray-300 text-xs">·</span>
-          <span className="text-gray-400 text-xs">约{deliveryTime}分钟</span>
+        <div className="mt-0.5 flex min-w-0 items-center gap-2 text-[10px] leading-[17px] text-gray-500">
+          <span>月售{monthlySales}</span>
+          <span>{serviceTags[0] || '商家配送'} · {serviceTags[1] || '支持自取'}</span>
         </div>
 
-        {/* Savings / delivery info row */}
-        <div className="flex items-center justify-between">
-          {couponAmount > 0 ? (
-            <span className="text-green-500 text-xs font-medium">
-              已帮你省¥{couponAmount}
-            </span>
-          ) : (
-            <span />
-          )}
-          <span className="text-gray-400 text-xs">
-            起送¥{minOrder} 配送¥{deliveryFee}
-          </span>
+        <div className="flex items-center text-[10px] leading-[17px] text-gray-500">
+          <span>起送¥{minOrder}</span><span className="ml-2">配送¥{deliveryFee}</span>
+          <span className="ml-auto">{distance} · {deliveryTime}分钟</span>
+        </div>
+
+        <div className="mt-0.5 flex min-w-0 items-center gap-1 text-[10px] leading-[18px]">
+          <strong className="flex-none text-[14px] text-[#ff5a1f]">{rating}分</strong>
+          {listProfile.scoreBadge && <span className="min-w-0 truncate rounded-sm bg-[#fff1e5] px-1 py-0.5 font-medium text-[#df6a20]">{listProfile.scoreBadge}</span>}
+          <span className="flex-none rounded-sm bg-[#fff8ee] px-1 py-0.5 text-[#db7629]">近期口碑好</span>
+        </div>
+
+        <div className="mt-0.5 flex min-w-0 items-center gap-1 overflow-hidden text-[10px] leading-[18px]">
+          <span className="flex-none rounded-sm bg-[#fff0ed] px-1 font-semibold text-[#f0442f]">{listProfile.benefitLabel || '店铺券'}</span>
+          <span className="flex-none text-[#f0442f]">{promotionText}</span>
+          <span className="min-w-0 truncate rounded-sm bg-[#fff5f3] px-1 text-[#e36a55]">收藏领{Math.min(couponAmount, 3)}元券</span>
         </div>
       </div>
-    </div>
-  );
+    </article>
+  )
 }

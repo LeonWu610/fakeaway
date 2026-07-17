@@ -1,66 +1,28 @@
-import React from 'react';
+import { useNavigate } from 'react-router-dom'
 
 const tabs = [
-  { key: 'home', label: '首页', emoji: '🏠' },
-  { key: 'coupon', label: '神券', emoji: '🎫' },
-  { key: 'order', label: '订单', emoji: '📋' },
-  { key: 'profile', label: '我的', emoji: '👤' },
-];
-
-const MEITUAN_YELLOW = '#F5A623';
-const GRAY = '#999999';
+  { key: 'home', label: '首页', path: '/', icon: <><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10M9 20v-6h6v6"/></> },
+  { key: 'discover', label: '发现', path: '/discover', icon: <><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></> },
+  { key: 'order', label: '订单', path: '/orders', icon: <><path d="M7 3h10l2 3v15H5V6z"/><path d="M5 7h14M9 11h6M9 15h6"/></> },
+  { key: 'profile', label: '我的', path: '/profile', icon: <><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></> },
+]
 
 export default function BottomNav({ activeTab = 'home' }) {
-  const handleTabClick = (tab) => {
-    if (tab.key !== 'home') {
-      alert('该功能暂未开放');
-    }
-  };
+  const navigate = useNavigate()
 
   return (
-    <nav
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        height: '56px',
-        backgroundColor: '#ffffff',
-        borderTop: '1px solid #e5e5e5',
-        display: 'flex',
-        alignItems: 'stretch',
-        zIndex: 1000,
-      }}
-    >
+    <nav className="fixed bottom-0 left-1/2 z-50 flex h-[58px] w-full max-w-[480px] -translate-x-1/2 items-stretch border-t border-gray-200 bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
       {tabs.map((tab) => {
-        const isActive = tab.key === activeTab;
-        const color = isActive ? MEITUAN_YELLOW : GRAY;
-
+        const active = tab.key === activeTab
         return (
-          <button
-            key={tab.key}
-            onClick={() => handleTabClick(tab)}
-            style={{
-              flex: 1,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '2px',
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: '4px 0',
-              color: color,
-            }}
-          >
-            <span style={{ fontSize: '22px', lineHeight: 1 }}>{tab.emoji}</span>
-            <span style={{ fontSize: '11px', fontWeight: isActive ? '600' : '400' }}>
-              {tab.label}
+          <button key={tab.key} onClick={() => navigate(tab.path)} className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-[10px] ${active ? 'font-bold text-[#111]' : 'text-gray-500'}`}>
+            <span className={`relative grid h-7 w-8 place-items-center rounded-full ${active ? 'bg-[var(--brand-yellow)]' : ''}`}>
+              <svg viewBox="0 0 24 24" className="h-[19px] w-[19px]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">{tab.icon}</svg>
             </span>
+            {tab.label}
           </button>
-        );
+        )
       })}
     </nav>
-  );
+  )
 }
