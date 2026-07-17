@@ -15,9 +15,9 @@
     "waitingProfile": {"tone": "excited", "stages": ["订单已接！正在挑选最新鲜的水果", "奶盖正在被打发到刚刚好的厚度", "想象骑手已经拿稳杯子出发了", "马上到啦，今天的快乐没有洒"]},
     "imagePrompt": {"purpose": "merchant-cover", "prompt": "原创现代果茶品牌活动海报，鲜切草莓与透明果茶杯，明亮商业摄影，红粉渐变背景，无文字无商标，9:16", "negativePrompt": "logo, trademark, readable text, real person", "reviewStatus": "draft"},
     "slogan": "烧不死的茶，喝不完的快乐",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "image": "/images/merchants/r1-fruit-tea.png",
     "coverImages": [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "/images/merchants/r1-fruit-tea.png",
       "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80",
       "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&q=80"
     ],
@@ -208,9 +208,9 @@
     "waitingProfile": {"tone": "professional", "stages": ["茶单已确认，正在称取今日茶叶", "茶汤现萃中，香气正在慢慢展开", "封杯完成，冷热分装都已确认", "即将送达，第一口建议先尝茶汤"]},
     "imagePrompt": {"purpose": "merchant-cover", "prompt": "原创东方现代茶饮空间，玻璃茶杯与原叶茶盘，米白和墨绿色，克制高级商业摄影，无文字无商标，9:16", "negativePrompt": "logo, trademark, readable text, real person", "reviewStatus": "draft"},
     "slogan": "喝一口，排队三小时，值吗？值。",
-    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80",
+    "image": "/images/merchants/r2-leaf-tea.png",
     "coverImages": [
-      "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80",
+      "/images/merchants/r2-leaf-tea.png",
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
       "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80"
     ],
@@ -241,7 +241,7 @@
 {"id": "temperature", "name": "冰度", "required": true, "options": [{"id": "normal", "name": "正常冰", "priceDelta": 0, "default": true}, {"id": "less", "name": "少冰", "priceDelta": 0}, {"id": "none", "name": "去冰", "priceDelta": 1}]},
 {"id": "topping", "name": "加料", "multiple": true, "max": 2, "options": [{"id": "cheese", "name": "芝士加厚", "priceDelta": 3}, {"id": "fruit", "name": "双倍果肉", "priceDelta": 5}]}
 ],
-            "image": "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=300&q=80",
+            "image": "/images/products/r2-item1-strawberry-tea.png",
             "monthlySales": "月售1800+",
             "isHot": true,
             "isRecommended": true,
@@ -400,9 +400,9 @@
     "waitingProfile": {"tone": "efficient", "stages": ["订单确认，已进入快速制作队列", "厨房正在同步准备主食与小食", "取餐完成，配送进度持续更新", "即将送达，请继续安心坐着"]},
     "imagePrompt": {"purpose": "merchant-cover", "prompt": "原创快餐品牌汉堡薯条套餐，黄色与深红商业背景，高对比食物摄影，无文字无商标，9:16", "negativePrompt": "logo, trademark, readable text, real person", "reviewStatus": "draft"},
     "slogan": "买了你就输了，但好好吃啊",
-    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80",
+    "image": "/images/merchants/r3-burger.png",
     "coverImages": [
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80",
+      "/images/merchants/r3-burger.png",
       "https://images.unsplash.com/photo-1561758033-48d52648ae8b?w=600&q=80",
       "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80"
     ],
@@ -433,7 +433,7 @@
 {"id": "combo", "name": "套餐", "required": true, "options": [{"id": "single", "name": "单堡", "priceDelta": 0, "default": true}, {"id": "fries", "name": "配海盐脆薯条", "priceDelta": 7}, {"id": "full", "name": "海盐脆薯条+冰柠气泡可乐", "priceDelta": 11}]},
 {"id": "extra", "name": "加料", "multiple": true, "max": 2, "options": [{"id": "cheese", "name": "芝士片", "priceDelta": 2}, {"id": "patty", "name": "牛肉饼", "priceDelta": 6}]}
 ],
-            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80",
+            "image": "/images/products/r3-item1-double-beef-burger.png",
             "monthlySales": "月售3000+",
             "isHot": true,
             "isRecommended": true,
@@ -444,7 +444,7 @@
             "name": "麦辣鸡腿堡",
             "description": "辣得你后悔，好吃得你原谅",
             "price": 20,
-            "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=300&q=80",
+            "image": "/images/products/r3-item2-spicy-chicken-burger.png",
             "monthlySales": "月售2500+",
             "isHot": true,
             "isRecommended": true,
@@ -592,9 +592,9 @@
     "waitingProfile": {"tone": "warm", "stages": ["王老板收到啦，马上给你做新鲜的", "油温刚好，后厨正在滋滋作响", "骑手拿稳了，老板还多放了两张纸巾", "到楼下啦，趁热的时候最好吃"]},
     "imagePrompt": {"purpose": "merchant-cover", "prompt": "原创街坊炸鸡小店，暖黄色灯光，刚出炉炸鸡与纸袋，亲切生活化摄影，无文字无商标无人物，9:16", "negativePrompt": "logo, trademark, readable text, real person", "reviewStatus": "draft"},
     "slogan": "啃鸡啃鸡，啃到天亮没关系",
-    "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&q=80",
+    "image": "/images/merchants/r4-fried-chicken.png",
     "coverImages": [
-      "https://images.unsplash.com/photo-1562967914-608f82629710?w=600&q=80",
+      "/images/merchants/r4-fried-chicken.png",
       "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80",
       "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&q=80"
     ],
@@ -625,7 +625,7 @@
 {"id": "flavor", "name": "口味", "required": true, "options": [{"id": "original", "name": "经典原味", "priceDelta": 0, "default": true}, {"id": "spicy", "name": "香辣撒粉", "priceDelta": 1}]},
 {"id": "sauce", "name": "酱料", "multiple": true, "max": 2, "options": [{"id": "sweet", "name": "甜辣酱", "priceDelta": 1}, {"id": "garlic", "name": "蒜香酱", "priceDelta": 1}]}
 ],
-            "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=300&q=80",
+            "image": "/images/products/r4-item1-fried-chicken.png",
             "monthlySales": "月售2000+",
             "isHot": true,
             "isRecommended": true,
@@ -784,9 +784,9 @@
     "waitingProfile": {"tone": "quiet", "stages": ["收到了。今晚也不容易吧", "咖啡正在萃取，希望这一杯刚刚好", "骑手带走了咖啡，夜里风有一点轻", "快到了，不管今天怎样，先歇一会儿"]},
     "imagePrompt": {"purpose": "merchant-cover", "prompt": "原创深夜咖啡店氛围，紫蓝霓虹窗边与一杯拿铁，电影感低照度摄影，无文字无商标无人物，9:16", "negativePrompt": "logo, trademark, readable text, real person", "reviewStatus": "draft"},
     "slogan": "今天也不顺，喝杯咖啡再说",
-    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80",
+    "image": "/images/merchants/r5-coffee.png",
     "coverImages": [
-      "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80",
+      "/images/merchants/r5-coffee.png",
       "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&q=80",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
     ],
@@ -817,7 +817,7 @@
 {"id": "coffee", "name": "咖啡浓度", "required": true, "options": [{"id": "normal", "name": "标准", "priceDelta": 0, "default": true}, {"id": "extra", "name": "加浓", "priceDelta": 3}]},
 {"id": "topping", "name": "加料", "multiple": true, "max": 2, "options": [{"id": "shot", "name": "浓缩咖啡液", "priceDelta": 3}, {"id": "coconut", "name": "椰乳加量", "priceDelta": 2}]}
 ],
-            "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&q=80",
+            "image": "/images/products/r5-item1-coconut-latte.png",
             "monthlySales": "月售3000+",
             "isHot": true,
             "isRecommended": true,
@@ -976,9 +976,9 @@
     "waitingProfile": {"tone": "quiet", "stages": ["锅底已确认，今晚给你多留一点热气", "配菜正在分装，每一格都慢慢放好", "骑手带着热汤出发，袋口已经封紧", "快到了，今晚不用一个人硬撑"]},
     "imagePrompt": {"purpose": "merchant-cover", "prompt": "原创深夜单人火锅，暗红色暖光，热汤蒸汽与整齐小份配菜，电影感食物摄影，无文字无商标无人物，9:16", "negativePrompt": "logo, trademark, readable text, real person", "reviewStatus": "draft"},
     "slogan": "捞的不是虾，是打工人的眼泪",
-    "image": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80",
+    "image": "/images/merchants/r6-hotpot.png",
     "coverImages": [
-      "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80",
+      "/images/merchants/r6-hotpot.png",
       "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80",
       "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80"
     ],
@@ -1009,7 +1009,7 @@
 {"id": "spicy", "name": "辣度", "required": true, "options": [{"id": "mild", "name": "微辣", "priceDelta": 0, "default": true}, {"id": "medium", "name": "中辣", "priceDelta": 0}, {"id": "hot", "name": "重辣", "priceDelta": 0}]},
 {"id": "extra", "name": "加菜", "multiple": true, "max": 3, "options": [{"id": "beef", "name": "肥牛卷", "priceDelta": 12}, {"id": "tofu", "name": "冻豆腐", "priceDelta": 4}, {"id": "noodle", "name": "宽粉", "priceDelta": 4}]}
 ],
-            "image": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=300&q=80",
+            "image": "/images/products/r6-item1-hotpot-platter.png",
             "monthlySales": "月售500+",
             "isHot": true,
             "isRecommended": true,

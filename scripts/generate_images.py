@@ -14,6 +14,17 @@ from openai import OpenAI
 
 BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
 DEFAULT_MODEL = "doubao-seedream-5-0-lite-260128"
+IMAGE_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp")
+
+
+def existing_output(output: Path) -> Path | None:
+    if output.exists():
+        return output
+    for suffix in IMAGE_SUFFIXES:
+        candidate = output.with_suffix(suffix)
+        if candidate.exists():
+            return candidate
+    return None
 
 
 def parse_args() -> argparse.Namespace:
@@ -48,8 +59,9 @@ def download(url: str, output: Path) -> Path:
 
 
 def generate(client: OpenAI, model: str, prompt: str, output: Path, size: str, overwrite: bool) -> bool:
-    if output.exists() and not overwrite:
-        print(f"skip existing: {output}")
+    existing = existing_output(output)
+    if existing and not overwrite:
+        print(f"skip existing: {existing}")
         return False
 
     response = client.images.generate(
@@ -94,7 +106,7 @@ def main() -> int:
     for job in jobs:
         if not job.get("prompt") or not job.get("output"):
             raise ValueError("Every job requires prompt and output")
-        if args.overwrite or not Path(job["output"]).exists():
+        if args.overwrite or not existing_output(Path(job["output"])):
             pending += 1
     if pending > args.max_images:
         print(
