@@ -13,6 +13,12 @@ dist
 dist-ssr
 *.local
 
+# Generated image binaries live in object storage; keep text manifests in Git.
+public/images/merchants/*
+public/images/products/*
+!public/images/merchants/.gitkeep
+!public/images/products/.gitkeep
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

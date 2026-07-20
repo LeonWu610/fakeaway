@@ -9,11 +9,12 @@ import os
 import sys
 import urllib.request
 from pathlib import Path
-
-from openai import OpenAI
+from typing import Any
 
 BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
 DEFAULT_MODEL = "doubao-seedream-5-0-lite-260128"
+BULK_MODEL = "doubao-seedream-4-5-251128"
+MODEL_ENV_BY_TIER = {"bulk": "ARK_BULK_IMAGE_MODEL", "premium": "ARK_PREMIUM_IMAGE_MODEL"}
 IMAGE_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp")
 
 
@@ -34,7 +35,10 @@ def parse_args() -> argparse.Namespace:
     source.add_argument("--manifest", type=Path, help="JSON array containing prompt/output entries")
     parser.add_argument("--output", type=Path, help="Output path when using --prompt")
     parser.add_argument("--size", default="2K")
+    parser.add_argument("--model", help="Override the model for every selected job")
+    parser.add_argument("--tier", choices=("bulk", "premium"), help="Only run jobs in this quality tier")
     parser.add_argument("--max-images", type=int, default=1, help="Cost guard for manifest mode")
+    parser.add_argument("--dry-run", action="store_true", help="Print the generation plan without calling the API")
     parser.add_argument("--overwrite", action="store_true")
     return parser.parse_args()
 
@@ -58,7 +62,19 @@ def download(url: str, output: Path) -> Path:
         temporary.unlink(missing_ok=True)
 
 
-def generate(client: OpenAI, model: str, prompt: str, output: Path, size: str, overwrite: bool) -> bool:
+def model_for(job: dict[str, str], args: argparse.Namespace) -> str:
+    if args.model:
+        return args.model
+    if job.get("model"):
+        return job["model"]
+    tier = job.get("tier")
+    if tier in MODEL_ENV_BY_TIER:
+        fallback = BULK_MODEL if tier == "bulk" else DEFAULT_MODEL
+        return os.environ.get(MODEL_ENV_BY_TIER[tier], fallback)
+    return os.environ.get("ARK_IMAGE_MODEL", DEFAULT_MODEL)
+
+
+def generate(client: Any, model: str, prompt: str, output: Path, size: str, overwrite: bool) -> bool:
     existing = existing_output(output)
     if existing and not overwrite:
         print(f"skip existing: {existing}")
@@ -82,7 +98,7 @@ def load_jobs(args: argparse.Namespace) -> list[dict[str, str]]:
     if args.prompt:
         if not args.output:
             raise ValueError("--output is required with --prompt")
-        return [{"prompt": args.prompt, "output": str(args.output)}]
+        return [{"prompt": args.prompt, "output": str(args.output), "tier": args.tier or "premium"}]
 
     jobs = json.loads(args.manifest.read_text(encoding="utf-8"))
     if not isinstance(jobs, list) or any(not isinstance(job, dict) for job in jobs):
@@ -93,8 +109,7 @@ def load_jobs(args: argparse.Namespace) -> list[dict[str, str]]:
 def main() -> int:
     args = parse_args()
     api_key = os.environ.get("ARK_API_KEY")
-    model = os.environ.get("ARK_IMAGE_MODEL", DEFAULT_MODEL)
-    if not api_key:
+    if not api_key and not args.dry_run:
         print("ARK_API_KEY is not set", file=sys.stderr)
         return 2
     if args.max_images < 1:
@@ -102,12 +117,17 @@ def main() -> int:
         return 2
 
     jobs = load_jobs(args)
-    pending = 0
+    if args.tier:
+        jobs = [job for job in jobs if job.get("tier", "premium") == args.tier]
+    pending_jobs = []
     for job in jobs:
         if not job.get("prompt") or not job.get("output"):
             raise ValueError("Every job requires prompt and output")
+        if job.get("tier", "premium") not in MODEL_ENV_BY_TIER:
+            raise ValueError("Job tier must be either bulk or premium")
         if args.overwrite or not existing_output(Path(job["output"])):
-            pending += 1
+            pending_jobs.append(job)
+    pending = len(pending_jobs)
     if pending > args.max_images:
         print(
             f"Refusing to generate {pending} images: cost guard is {args.max_images}. "
@@ -116,9 +136,19 @@ def main() -> int:
         )
         return 2
 
+    tier_counts = {tier: sum(job.get("tier", "premium") == tier for job in pending_jobs) for tier in MODEL_ENV_BY_TIER}
+    print(f"plan: {pending} pending ({tier_counts['bulk']} bulk, {tier_counts['premium']} premium)")
+    for job in pending_jobs:
+        remote_key = job.get("remoteKey", "not-set")
+        print(f"  {job.get('tier', 'premium')}: {model_for(job, args)} -> {job['output']} [{remote_key}]")
+    if args.dry_run:
+        return 0
+
+    from openai import OpenAI
+
     client = OpenAI(base_url=BASE_URL, api_key=api_key)
     for job in jobs:
-        generate(client, model, job["prompt"], Path(job["output"]), args.size, args.overwrite)
+        generate(client, model_for(job, args), job["prompt"], Path(job["output"]), args.size, args.overwrite)
     return 0
 
 

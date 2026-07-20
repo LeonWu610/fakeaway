@@ -24,6 +24,15 @@ const hotpotSpicy = { id: 'spicy', name: '辣度', required: true, options: [{ i
 const ricePortion = { id: 'portion', name: '饭量', required: true, options: [{ id: 'regular', name: '标准饭量', priceDelta: 0, default: true }, { id: 'less', name: '少饭', priceDelta: 0 }, { id: 'extra', name: '加饭', priceDelta: 2 }] }
 const noodleStyle = { id: 'noodle-style', name: '面条口感', required: true, options: [{ id: 'firm', name: '偏硬筋道', priceDelta: 0 }, { id: 'regular', name: '标准口感', priceDelta: 0, default: true }, { id: 'soft', name: '偏软', priceDelta: 0 }] }
 const bbqSeasoning = { id: 'seasoning', name: '烧烤口味', required: true, options: [{ id: 'classic', name: '孜然香辣', priceDelta: 0, default: true }, { id: 'mild', name: '少辣少孜然', priceDelta: 0 }, { id: 'dry', name: '干香重孜然', priceDelta: 0 }] }
+const japaneseCondiments = { id: 'condiments', name: '佐料', required: true, options: [{ id: 'standard', name: '芥末酱油', priceDelta: 0, default: true }, { id: 'soy-only', name: '仅酱油', priceDelta: 0 }, { id: 'none', name: '不需要佐料', priceDelta: 0 }] }
+const lightMealStaple = { id: 'staple', name: '主食', required: true, options: [{ id: 'mixed-grain', name: '杂粮饭', priceDelta: 0, default: true }, { id: 'quinoa', name: '藜麦加量', priceDelta: 3 }, { id: 'no-staple', name: '不要主食', priceDelta: 0 }] }
+const lightMealSauce = { id: 'sauce', name: '酱汁', required: true, options: [{ id: 'vinaigrette', name: '油醋汁', priceDelta: 0, default: true }, { id: 'sesame', name: '焙煎芝麻汁', priceDelta: 1 }, { id: 'none', name: '不要酱汁', priceDelta: 0 }] }
+const breakfastPortion = { id: 'portion', name: '份量', required: true, options: [{ id: 'regular', name: '标准份', priceDelta: 0, default: true }, { id: 'large', name: '加量大碗', priceDelta: 3 }] }
+const dumplingMethod = { id: 'method', name: '做法', required: true, options: [{ id: 'boiled', name: '水煮', priceDelta: 0, default: true }, { id: 'pan-fried', name: '香煎', priceDelta: 2 }, { id: 'sour-soup', name: '酸汤', priceDelta: 3 }] }
+const dumplingCondiments = { id: 'condiments', name: '蘸料', required: true, options: [{ id: 'vinegar', name: '蒜醋汁', priceDelta: 0, default: true }, { id: 'chili', name: '红油蘸料', priceDelta: 0 }, { id: 'none', name: '不需要蘸料', priceDelta: 0 }] }
+const stirFryStaple = { id: 'staple', name: '主食', required: true, options: [{ id: 'none', name: '单点菜品', priceDelta: 0, default: true }, { id: 'rice', name: '配一份米饭', priceDelta: 3 }, { id: 'double-rice', name: '配两份米饭', priceDelta: 6 }] }
+const bakeryHeating = { id: 'heating', name: '食用方式', required: true, options: [{ id: 'room', name: '常温', priceDelta: 0, default: true }, { id: 'warm', name: '加热', priceDelta: 0 }] }
+const bakeryPackaging = { id: 'packaging', name: '包装', required: true, options: [{ id: 'standard', name: '独立纸袋', priceDelta: 0, default: true }, { id: 'gift', name: '分享礼盒', priceDelta: 5 }] }
 const errandDistance = { id: 'distance', name: '服务范围', required: true, options: [{ id: 'nearby', name: '2公里内', priceDelta: 0, default: true }, { id: 'medium', name: '2-5公里', priceDelta: 6 }, { id: 'far', name: '5-8公里', priceDelta: 12 }] }
 const errandSize = { id: 'item-size', name: '物品大小', required: true, options: [{ id: 'small', name: '随身小件', priceDelta: 0, default: true }, { id: 'medium', name: '手提袋大小', priceDelta: 3 }, { id: 'large', name: '较大件', priceDelta: 8 }] }
 const errandHandling = { id: 'handling', name: '服务要求', multiple: true, max: 2, options: [{ id: 'call', name: '取到后联系', priceDelta: 0 }, { id: 'photo', name: '模拟拍照确认', priceDelta: 0 }, { id: 'careful', name: '轻拿轻放', priceDelta: 2 }] }
@@ -89,6 +98,42 @@ function profileFor(type, restaurant) {
     return {
       unit: '份', ingredients: ['新鲜肉类或蔬菜', '孜然', '烧烤调味料'], allergens: ['芝麻'], specGroups: [bbqSeasoning], estimatedPrepMinutes: 18,
       availabilitySchedule: { label: '晚市供应', start: restaurant.businessHours?.open || '17:00', end: restaurant.businessHours?.close || '02:00' }, imageSubject: '一份炭火焦香、油脂光泽真实的原创烧烤或烤串',
+    }
+  }
+  if (type === 'japanese') {
+    return {
+      unit: '份', ingredients: ['寿司米或米饭', '现制鱼料或肉类', '海苔与配菜'], allergens: ['鱼类', '甲壳类', '大豆'], specGroups: [japaneseCondiments], estimatedPrepMinutes: 15,
+      availabilitySchedule: { label: '现点现做', start: restaurant.businessHours?.open || '10:30', end: restaurant.businessHours?.close || '22:30' }, imageSubject: '一份鱼料纹理自然、醋饭颗粒清晰的原创日料或寿司',
+    }
+  }
+  if (type === 'lightMeal') {
+    return {
+      unit: '份', ingredients: ['现烤蛋白', '新鲜蔬菜', '谷物主食'], allergens: ['蛋类', '大豆', '芝麻'], specGroups: [lightMealStaple, lightMealSauce], estimatedPrepMinutes: 12,
+      availabilitySchedule: { label: '全天轻食', start: restaurant.businessHours?.open || '08:30', end: restaurant.businessHours?.close || '21:00' }, imageSubject: '一碗蛋白、谷物和蔬菜搭配清晰的原创轻食能量碗',
+    }
+  }
+  if (type === 'breakfast') {
+    return {
+      unit: '份', ingredients: ['现熬米粥或现蒸面点', '鸡蛋或肉类', '清爽配菜'], allergens: ['麸质谷物', '蛋类', '大豆'], specGroups: [breakfastPortion], estimatedPrepMinutes: 8,
+      availabilitySchedule: { label: '早餐午市供应', start: restaurant.businessHours?.open || '06:30', end: restaurant.businessHours?.close || '14:30' }, imageSubject: '一份热气自然、米粥绵密或面点松软的原创中式早餐',
+    }
+  }
+  if (type === 'dumplings') {
+    return {
+      unit: '份', ingredients: ['手工面皮', '现拌肉类或蔬菜馅', '自制蘸料'], allergens: ['麸质谷物', '大豆', '蛋类'], specGroups: [dumplingMethod, dumplingCondiments], estimatedPrepMinutes: 13,
+      availabilitySchedule: { label: '现包现煮', start: restaurant.businessHours?.open || '09:30', end: restaurant.businessHours?.close || '22:00' }, imageSubject: '一份面皮薄润、馅料自然的原创手工水饺或锅贴',
+    }
+  }
+  if (type === 'stirFry') {
+    return {
+      unit: '份', ingredients: ['新鲜肉类或蔬菜', '家常调味料', '现炒酱汁'], allergens: ['大豆', '花生'], specGroups: [hotpotSpicy, stirFryStaple], estimatedPrepMinutes: 14,
+      availabilitySchedule: { label: '午晚餐现炒', start: restaurant.businessHours?.open || '10:30', end: restaurant.businessHours?.close || '21:30' }, imageSubject: '一份锅气自然、食材熟度清晰的原创中式家常小炒',
+    }
+  }
+  if (type === 'bakery') {
+    return {
+      unit: '个', ingredients: ['小麦粉', '黄油或植物油', '鸡蛋与风味馅料'], allergens: ['麸质谷物', '蛋类', '乳及乳制品'], specGroups: [bakeryHeating, bakeryPackaging], estimatedPrepMinutes: 5,
+      availabilitySchedule: { label: '当日现烤', start: restaurant.businessHours?.open || '07:30', end: restaurant.businessHours?.close || '21:30' }, imageSubject: '一份表面金黄、层次自然的原创面包或烘焙甜点',
     }
   }
   if (type === 'fast-food') {

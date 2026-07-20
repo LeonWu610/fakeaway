@@ -24,6 +24,10 @@ const categoryOptions = [
   ['fast', '汉堡炸鸡'],
   ['night', '夜宵火锅'],
   ['rice', '米饭面食'],
+  ['fresh', '日料轻食'],
+  ['breakfast', '粥品早餐'],
+  ['home', '饺子小炒'],
+  ['bakery', '烘焙甜点'],
   ['retail', '超市零售'],
   ['errand', '跑腿服务'],
 ]
@@ -45,10 +49,15 @@ function restaurantText(restaurant) {
 
 function inCategory(restaurant, category) {
   if (category === 'all') return true
+  if (category === 'food') return Boolean(restaurant.foodCategory) || !restaurant.retailCategory
   const text = restaurantText(restaurant)
   if (category === 'drink') return /茶|咖啡|拿铁|果汁|奶盖|饮品/.test(text)
   if (category === 'fast') return /汉堡|鸡|薯|炸|牛堡/.test(text)
   if (category === 'rice') return ['rice', 'noodles', 'malatang'].includes(restaurant.foodCategory)
+  if (category === 'fresh') return ['japanese', 'lightMeal'].includes(restaurant.foodCategory)
+  if (category === 'breakfast') return restaurant.foodCategory === 'breakfast'
+  if (category === 'home') return ['dumplings', 'stirFry'].includes(restaurant.foodCategory)
+  if (category === 'bakery') return restaurant.foodCategory === 'bakery'
   if (category === 'retail') return ['market', 'fruits', 'medicine'].includes(restaurant.retailCategory)
   if (category === 'errand') return restaurant.retailCategory === 'errand'
   return /夜宵|火锅|拼盘|肥牛|锅/.test(text)
@@ -95,7 +104,7 @@ export default function HomePage() {
 
   function handleCategoryClick(category) {
     const categoryActions = {
-      food: { category: 'rice', query: '' },
+      food: { category: 'food', query: '' },
       drinks: { category: 'drink', query: '' },
       market: { category: 'retail', query: '超市便利' },
       fruits: { category: 'retail', query: '蔬菜水果' },

@@ -1,0 +1,302 @@
+[
+  {
+    "key": "images/merchants/r1-fruit-tea.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r1-fruit-tea.png",
+    "size": 3545708,
+    "sha256": "12a90fced45cdeffab7b5964c47a75c6672793ea72d5ca08fd1195e398fa5881"
+  },
+  {
+    "key": "images/merchants/r11-claypot-rice.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r11-claypot-rice.png",
+    "size": 5504627,
+    "sha256": "ef3a17babac2b378964010dd70366714ca2fcff9445631f422a8d7e09665bb30"
+  },
+  {
+    "key": "images/merchants/r12-malatang.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r12-malatang.png",
+    "size": 4671907,
+    "sha256": "325fd4591ad703bbb22afdb2c433a285373a16b92a5e96e29c6a8c97d2b4fc24"
+  },
+  {
+    "key": "images/merchants/r13-noodles.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r13-noodles.png",
+    "size": 4587681,
+    "sha256": "4fc22dad89a82151632fc82f8424860798eda98a911478461a6d35b61b6014e7"
+  },
+  {
+    "key": "images/merchants/r14-bbq.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r14-bbq.png",
+    "size": 5122565,
+    "sha256": "693c86415a3def1ab1da3bda37bfe7c983216e975042ba0e3a3abcf60a4c59b0"
+  },
+  {
+    "key": "images/merchants/r15-japanese.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r15-japanese.png",
+    "size": 5411117,
+    "sha256": "a382a923ace68d3fdb4791ed9954b4f6b305e7d253e0eca2d09c79f7b39fb9da"
+  },
+  {
+    "key": "images/merchants/r16-light-meal.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r16-light-meal.png",
+    "size": 5292339,
+    "sha256": "e1cb6612cf50f62b815e3ff71e781f1b5b75388d21cbdcbb8ec117e512a35f45"
+  },
+  {
+    "key": "images/merchants/r17-breakfast.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r17-breakfast.png",
+    "size": 4382085,
+    "sha256": "30b854cb4ffe3c4bc8c07caa7876febffbcb1dd00ca6348ca719dc70695bd749"
+  },
+  {
+    "key": "images/merchants/r2-leaf-tea.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r2-leaf-tea.png",
+    "size": 3671022,
+    "sha256": "3feaca1848d68632fdcd1cd5a87f5c9c2dda59fdb7d3f8a281b7822459bd7616"
+  },
+  {
+    "key": "images/merchants/r3-burger.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r3-burger.png",
+    "size": 4287595,
+    "sha256": "fdb66b5f824166a8c6ffb1334dc20655d184cece07dca81d26071a6bc993a3c4"
+  },
+  {
+    "key": "images/merchants/r4-fried-chicken.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r4-fried-chicken.png",
+    "size": 5152201,
+    "sha256": "f79c5148d988d40b6fbd60a46c4cf2707ca19ea88e7cb18f04480c266ba9a0ee"
+  },
+  {
+    "key": "images/merchants/r5-coffee.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r5-coffee.png",
+    "size": 4285986,
+    "sha256": "f83f222d0ce352e417180f4ed322c980f47982ac1800f29543faa70cb6cfcabf"
+  },
+  {
+    "key": "images/merchants/r6-hotpot.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r6-hotpot.png",
+    "size": 4323269,
+    "sha256": "99a3680abeef707eb9638653ff06bb8dcebe8eb6add0d042cdc6d405282e684a"
+  },
+  {
+    "key": "images/products/r1-item1-strawberry-cheese-tea.jpg",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r1-item1-strawberry-cheese-tea.jpg",
+    "size": 341083,
+    "sha256": "4dcc5a94e25e355418f1c199e197392ebfbeee56a970d87ca4a70e2697120d96"
+  },
+  {
+    "key": "images/products/r11-item1-claypot-rice.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r11-item1-claypot-rice.png",
+    "size": 5215637,
+    "sha256": "fec01ae458dc5741fede093c155337c778e9ef0204c7599ee3549648431367a9"
+  },
+  {
+    "key": "images/products/r11-item2-black-bean-ribs.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r11-item2-black-bean-ribs.png",
+    "size": 6781510,
+    "sha256": "6d5d3a8af820631ed75b822b4a8cc7a405f534f39f8f9697c1e19935246b779d"
+  },
+  {
+    "key": "images/products/r11-item3-beef-egg-rice.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r11-item3-beef-egg-rice.png",
+    "size": 4902037,
+    "sha256": "2ec1335b308409f39556d0afe1147ae9075a5813e4a80aa92f185915e1e8a340"
+  },
+  {
+    "key": "images/products/r11-item4-mushroom-chicken-rice.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r11-item4-mushroom-chicken-rice.png",
+    "size": 4676385,
+    "sha256": "aefa62df1934bc1e78d1bf66dd317e61f82f515deaed936ae35efbcc69df2017"
+  },
+  {
+    "key": "images/products/r12-item1-malatang.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r12-item1-malatang.png",
+    "size": 6382956,
+    "sha256": "93cdb8540fe26d50e29097d001966a9f212521aee3c573d4dc23cc41bdca4d2a"
+  },
+  {
+    "key": "images/products/r12-item2-sour-beef-malatang.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r12-item2-sour-beef-malatang.png",
+    "size": 5672475,
+    "sha256": "45ee9116e9a80d63900a9049242a778fe97d0ab0396628522fb857154639be5f"
+  },
+  {
+    "key": "images/products/r12-item3-tomato-soup-bowl.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r12-item3-tomato-soup-bowl.png",
+    "size": 4938222,
+    "sha256": "5c29faf1839b80cfd4a101a42113ddbed8c70f262a3f0ebc0fa10d05ef4c685b"
+  },
+  {
+    "key": "images/products/r12-item4-mushroom-tofu-bowl.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r12-item4-mushroom-tofu-bowl.png",
+    "size": 4578942,
+    "sha256": "f8c2d0f1a8ecd9efd8ef216f99264d5dcee95f2fa172b58c4bc7331de31a90d1"
+  },
+  {
+    "key": "images/products/r13-item1-noodles.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r13-item1-noodles.png",
+    "size": 4979535,
+    "sha256": "d40ed8cb6c979bbc3fb012ac9735af6aab0e4b6ae7048e883167a5cc8d4dc8ae"
+  },
+  {
+    "key": "images/products/r13-item2-pea-noodles.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r13-item2-pea-noodles.png",
+    "size": 4715264,
+    "sha256": "efd573b2ded809fe3d24fc6b26d6f559e1d01397264820731c9141ccf849e652"
+  },
+  {
+    "key": "images/products/r13-item3-tonkotsu-ramen.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r13-item3-tonkotsu-ramen.png",
+    "size": 5511670,
+    "sha256": "2703e01a74d8db0108c8a6e5641366878d5b735b8bd5371f54cb13a7e157d6d7"
+  },
+  {
+    "key": "images/products/r13-item4-sour-beef-rice-noodles.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r13-item4-sour-beef-rice-noodles.png",
+    "size": 5046226,
+    "sha256": "fa7c0a32dd4236635ab604d570d550784eafd6d1e3001504f4c15c279d7e107d"
+  },
+  {
+    "key": "images/products/r14-item1-bbq.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r14-item1-bbq.png",
+    "size": 5601502,
+    "sha256": "1299124304d832d9254069756c3e2b1c4ea37ea8adc4f1d14a753f254bd0f8dd"
+  },
+  {
+    "key": "images/products/r14-item2-beef-skewers.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r14-item2-beef-skewers.png",
+    "size": 4941762,
+    "sha256": "ed623bbcd1ae4384799de1ad75276fb4a6a8e95d25abc51346e8d1823924d268"
+  },
+  {
+    "key": "images/products/r14-item3-honey-chicken-wings.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r14-item3-honey-chicken-wings.png",
+    "size": 5235908,
+    "sha256": "6ab8db10d7eccb209ca89a1277e572f1c68173e28581eadb74e524dbef9402e3"
+  },
+  {
+    "key": "images/products/r14-item4-chicken-cartilage-skewers.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r14-item4-chicken-cartilage-skewers.png",
+    "size": 4837891,
+    "sha256": "e6982650477570c0fe5df1c5032b8915e9ce109bb3a3bf3c2948b6be4dd51649"
+  },
+  {
+    "key": "images/products/r14-item5-garlic-eggplant.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r14-item5-garlic-eggplant.png",
+    "size": 4807239,
+    "sha256": "54e098c153e02a9658aeaf78709d259737cd2434c73743211f9139aadc50a1c3"
+  },
+  {
+    "key": "images/products/r15-item1-seared-salmon-sushi.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r15-item1-seared-salmon-sushi.png",
+    "size": 4755759,
+    "sha256": "9309dd31dbb4a6195cf17399676a98825ca8dd53c7d523358149824cd33c9d1d"
+  },
+  {
+    "key": "images/products/r15-item2-sashimi-chirashi.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r15-item2-sashimi-chirashi.png",
+    "size": 5443106,
+    "sha256": "ec5ea3e84fd84dca60472e109d12264f899d7e66b44fde28349a6b4678666e3e"
+  },
+  {
+    "key": "images/products/r15-item3-eel-tamago-rice.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r15-item3-eel-tamago-rice.png",
+    "size": 6096990,
+    "sha256": "73fe27c3908fc272295e7eed1f04fac0c8dcb05ff789e3790b4e378a28ce72f8"
+  },
+  {
+    "key": "images/products/r15-item4-teriyaki-chicken-rice.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r15-item4-teriyaki-chicken-rice.png",
+    "size": 5420132,
+    "sha256": "b98e5bdc576e8791cf37b1ccd556287ad639508a828398a0373c13aed85addf0"
+  },
+  {
+    "key": "images/products/r16-item1-chicken-grain-bowl.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r16-item1-chicken-grain-bowl.png",
+    "size": 5458286,
+    "sha256": "c9600fbfde30bd93716fdc96508fd6b0f2951fddadd187b8e6bced56cfaeac18"
+  },
+  {
+    "key": "images/products/r16-item2-beef-energy-bowl.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r16-item2-beef-energy-bowl.png",
+    "size": 5359454,
+    "sha256": "9ab05d40db8e8ce9d98f9345db654080aff83549412c4699db6651c436811b17"
+  },
+  {
+    "key": "images/products/r16-item3-avocado-shrimp-salad.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r16-item3-avocado-shrimp-salad.png",
+    "size": 4880126,
+    "sha256": "91f1a92f4ef0933ea5b1275f01ea8ce78a57034ef6efb3fa24dbc0532cfebe89"
+  },
+  {
+    "key": "images/products/r16-item4-teriyaki-tofu-bowl.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r16-item4-teriyaki-tofu-bowl.png",
+    "size": 5401680,
+    "sha256": "ab764983b9979a247eea84241421ab6fa89148ca5b511ac45b1838d105180057"
+  },
+  {
+    "key": "images/products/r17-item1-century-egg-congee.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r17-item1-century-egg-congee.png",
+    "size": 4374457,
+    "sha256": "6801fc8a461eb6185d3abd2ab3d1c4472ff8aa18f0981cd2e5d124fb43d9530d"
+  },
+  {
+    "key": "images/products/r17-item2-shrimp-scallop-congee.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r17-item2-shrimp-scallop-congee.png",
+    "size": 4456146,
+    "sha256": "7a710332a3715354a1b477ba1d7c489f99fc6336f31e1cc8147646dac5920811"
+  },
+  {
+    "key": "images/products/r17-item3-pumpkin-millet-congee.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r17-item3-pumpkin-millet-congee.png",
+    "size": 4550341,
+    "sha256": "671f2e22a1ecfd2d3c8851ee51652991b6b1edee99604fa5938b9db42069c703"
+  },
+  {
+    "key": "images/products/r17-item4-mushroom-chicken-congee.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r17-item4-mushroom-chicken-congee.png",
+    "size": 4328464,
+    "sha256": "80607f0d586942c8f5aee32e348d48bbaefba8599877643fc361316287aaab04"
+  },
+  {
+    "key": "images/products/r17-item5-pork-xiaolongbao.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r17-item5-pork-xiaolongbao.png",
+    "size": 4217558,
+    "sha256": "c8a685bf376eeb41bc1eab51ecf2a7012aae79011fc93734e4c7d519a7ecfe38"
+  },
+  {
+    "key": "images/products/r2-item1-strawberry-tea.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r2-item1-strawberry-tea.png",
+    "size": 3335217,
+    "sha256": "cb4e8250c5d0bb18c45828d1c18f33531984181fe08318d1791175d9b290d79b"
+  },
+  {
+    "key": "images/products/r3-item1-double-beef-burger.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r3-item1-double-beef-burger.png",
+    "size": 5327070,
+    "sha256": "b6c0fbbeeca34a4d0e5b528ceb7199d69074f3318d24f653bfb41ac1868e2883"
+  },
+  {
+    "key": "images/products/r3-item2-spicy-chicken-burger.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r3-item2-spicy-chicken-burger.png",
+    "size": 4928360,
+    "sha256": "d4339c8d21d1f01be031a9214bc859fdc869a754a5d526de519a0ea0a8468909"
+  },
+  {
+    "key": "images/products/r4-item1-fried-chicken.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r4-item1-fried-chicken.png",
+    "size": 5115779,
+    "sha256": "3cb35765288d76b1b16b2973291ebe93cb5af78690406aed10842059319d8fee"
+  },
+  {
+    "key": "images/products/r5-item1-coconut-latte.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r5-item1-coconut-latte.png",
+    "size": 4078701,
+    "sha256": "f73456724fa56ffbeafce1f8a7f81d491c6e9ca21dd1722e339fd5b6ae86b32c"
+  },
+  {
+    "key": "images/products/r6-item1-hotpot-platter.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r6-item1-hotpot-platter.png",
+    "size": 6413333,
+    "sha256": "f98755d9cdfd5a65e79f12f19e85e6e88e357106b10daf66df52dd21b5d923d2"
+  }
+]

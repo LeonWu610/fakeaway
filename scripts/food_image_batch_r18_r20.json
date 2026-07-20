@@ -1,0 +1,164 @@
+[
+  {
+    "tier": "bulk",
+    "output": "public/images/merchants/r18-dumplings.png",
+    "remoteKey": "images/merchants/r18-dumplings.png",
+    "prompt": "原创手工饺子外卖商家封面，一只白色陶盘中自然摆放十二只元宝形猪肉白菜水饺，面皮薄润、褶皱自然，旁边搭配小醋碟与少量凉拌小菜，暖木桌和柔和家常窗光，真实中式商业美食摄影，正方形构图；不要文字、商标、水印、人物、手、筷子、数量错误、饺子粘连、破皮、生肉、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item1-pork-cabbage-dumplings.png",
+    "remoteKey": "images/products/r18-item1-pork-cabbage-dumplings.png",
+    "prompt": "原创外卖商品猪肉白菜水饺十二只，白色圆陶盘内清楚可数的十二只水煮元宝形饺子，面皮薄润完整、褶皱自然，其中一只切开展示熟透猪肉白菜馅，搭配一小碟蒜醋汁，45度近景，暖米白背景，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、数量错误、重复畸形饺子、破皮、生肉血色、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item2-shrimp-chive-dumplings.png",
+    "remoteKey": "images/products/r18-item2-shrimp-chive-dumplings.png",
+    "prompt": "原创外卖商品韭菜鲜虾水饺十二只，浅青色陶盘内清楚可数的十二只水煮饺子，面皮完整微透，其中一只切开露出熟虾仁、韭菜和鸡蛋组成的清鲜馅料，旁边少量醋汁，45度近景，柔和自然光，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、数量错误、虾畸形、生肉、破皮、荧光绿色、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item3-corn-pork-potstickers.png",
+    "remoteKey": "images/products/r18-item3-corn-pork-potstickers.png",
+    "prompt": "原创外卖商品玉米猪肉煎饺十只，黑色长陶盘上清楚可数的十只月牙形煎饺整齐但自然排开，底部煎至均匀金黄酥脆，侧面面皮柔软，一只切开展示熟猪肉和甜玉米粒，45度近景，暖灰背景，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、数量错误、焦黑、饺子畸形、生肉、过度油腻"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item4-sour-beef-dumplings.png",
+    "remoteKey": "images/products/r18-item4-sour-beef-dumplings.png",
+    "prompt": "原创外卖商品酸汤牛肉水饺十二只，深口白陶碗中清楚呈现十二只完整水饺，浸在清亮橙红酸辣汤里，汤面点缀少量香菜、葱花和红椒圈，其中一只可见熟透牛肉大葱馅，热气自然，45度近景，真实中式美食摄影，正方形；不要文字、商标、水印、人物、手、数量错误、饺子畸形、生肉血色、过度红油、漂浮重复配料"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item5-three-fresh-potstickers.png",
+    "remoteKey": "images/products/r18-item5-three-fresh-potstickers.png",
+    "prompt": "原创外卖商品三鲜锅贴十只，白色长盘内清楚可数的十只长条锅贴，开口造型自然，底部形成薄而金黄的脆底，熟猪肉、虾仁和韭菜三鲜馅隐约可见，45度近景，暖木桌柔和侧光，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、数量错误、锅贴粘成一团、虾畸形、生肉、焦黑、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item6-kelp-salad.png",
+    "remoteKey": "images/products/r18-item6-kelp-salad.png",
+    "prompt": "原创外卖商品凉拌海带丝，浅色小陶盘中盛放深绿色海带丝，切丝均匀、光泽自然，拌入蒜末、少量红椒丝、白芝麻与香醋，清爽不油腻，45度近景，浅木色背景，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、黑色糊状、海带畸形、过度油亮、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item7-single-dumpling-combo.png",
+    "remoteKey": "images/products/r18-item7-single-dumpling-combo.png",
+    "prompt": "原创外卖商品一人饺子满足餐，一只白盘中十二只猪肉白菜水饺，旁边分别放一小碟凉拌海带丝、一碗清澈紫菜蛋花汤和蒜醋蘸料，份量适合一人，餐具不入镜，俯视偏45度，暖米色桌面，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、数量明显错误、食物混在一起、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r18-item8-double-dumpling-feast.png",
+    "remoteKey": "images/products/r18-item8-double-dumpling-feast.png",
+    "prompt": "原创外卖商品双人手工饺子宴，两只陶盘分别盛放水煮饺子与金黄煎饺，搭配两份小菜、两碗清汤和两杯深红酸梅汤，双人份丰盛但摆放清楚，俯视偏45度，暖木桌与柔和家常光，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、饺子畸形、餐具重复、食物混乱、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/merchants/r19-stir-fry.png",
+    "remoteKey": "images/merchants/r19-stir-fry.png",
+    "prompt": "原创中式家常小炒外卖商家封面，一盘青椒小炒肉、一盘金黄番茄炒蛋和一碗白米饭组成家常餐桌，肉片与青椒熟度自然，鸡蛋蓬松，锅气热腾，暖灰桌面和餐馆柔光，真实中式商业美食摄影，正方形构图；不要文字、商标、水印、人物、手、食材畸形、生肉、过度油腻、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item1-green-pepper-pork.png",
+    "remoteKey": "images/products/r19-item1-green-pepper-pork.png",
+    "prompt": "原创外卖商品青椒小炒肉，白色圆盘中五花肉薄片煸至边缘微焦，与青绿色螺丝椒大火快炒，酱汁薄薄包裹且锅气自然，食材比例真实，45度近景，暖灰背景，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、生肉血色、肉片畸形、青椒荧光、过度油腻、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item2-tomato-eggs.png",
+    "remoteKey": "images/products/r19-item2-tomato-eggs.png",
+    "prompt": "原创外卖商品番茄炒蛋，浅色陶盘中自然红熟番茄块与蓬松金黄炒蛋相互交织，汤汁适量、酸甜家常，点缀少量葱花，45度近景，明亮柔和窗光，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、鸡蛋畸形、番茄生硬、荧光颜色、过多汤水、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item3-fish-fragrant-pork.png",
+    "remoteKey": "images/products/r19-item3-fish-fragrant-pork.png",
+    "prompt": "原创外卖商品鱼香肉丝，白色椭圆盘中熟透猪里脊丝、木耳丝、笋丝、胡萝卜丝与青椒丝大火炒匀，酸甜微辣酱汁红亮但不过油，食材丝条清晰，45度近景，真实川味商业美食摄影，正方形；不要鱼、文字、商标、水印、人物、手、生肉、肉丝畸形、过度红油、糊状食材、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item4-kung-pao-chicken.png",
+    "remoteKey": "images/products/r19-item4-kung-pao-chicken.png",
+    "prompt": "原创外卖商品宫保鸡丁，深色陶盘中熟透嫩鸡丁、酥香花生、干红辣椒段和葱段清楚可见，荔枝口味酱汁薄亮，鸡丁大小自然，45度近景，暖色餐厅光，真实川味商业美食摄影，正方形；不要文字、商标、水印、人物、手、生鸡肉血色、鸡丁畸形、花生重复纹理、过度油腻、焦黑"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item5-mapo-tofu.png",
+    "remoteKey": "images/products/r19-item5-mapo-tofu.png",
+    "prompt": "原创外卖商品麻婆豆腐，白色深盘中大小自然的嫩豆腐方块裹着肉末豆瓣酱汁，点缀青蒜与少量花椒粉，红油适量、豆腐结构完整，热气自然，45度近景，真实川味商业美食摄影，正方形；不要文字、商标、水印、人物、手、豆腐畸形、豆腐碎成糊、生肉、荧光红、过度油腻"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item6-garlic-greens.png",
+    "remoteKey": "images/products/r19-item6-garlic-greens.png",
+    "prompt": "原创外卖商品蒜蓉时蔬，浅色陶盘中一份大火快炒的翠绿菜心，菜梗与叶片完整自然，散布金黄蒜末，汁水清亮且不油腻，45度近景，明亮自然光，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、蔬菜畸形、叶片发黑、荧光绿色、过度油亮、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item7-worker-combo.png",
+    "remoteKey": "images/products/r19-item7-worker-combo.png",
+    "prompt": "原创外卖商品打工人两菜一饭套餐，分区餐盘中放一份青椒小炒肉、一份蒜蓉绿色时蔬和一碗米粒分明的白米饭，旁边一小碗清淡例汤，单人份量合理，俯视偏45度，浅灰桌面，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、菜品混合、餐格畸形、生肉、过度油腻"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r19-item8-double-home-meal.png",
+    "remoteKey": "images/products/r19-item8-double-home-meal.png",
+    "prompt": "原创外卖商品灶边双人家常餐，桌面上三道清晰独立的小炒：青椒小炒肉、番茄炒蛋、麻婆豆腐，搭配两碗白米饭和一碗双人例汤，丰盛但不杂乱，俯视偏45度，暖灰家常餐桌，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、重复餐具、菜品混合、食材畸形、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/merchants/r20-bakery.png",
+    "remoteKey": "images/merchants/r20-bakery.png",
+    "prompt": "原创现代烘焙外卖商家封面，浅木托盘上摆放两只海盐黄油卷、一只层次分明的原味可颂、切片吐司和一小块焦香巴斯克蛋糕，烘焙表面金黄、质感自然，米白暖光背景，真实高级商业烘焙摄影，正方形构图；不要文字、商标、水印、人物、手、包装品牌、面包畸形、焦黑、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item1-sea-salt-roll.png",
+    "remoteKey": "images/products/r20-item1-sea-salt-roll.png",
+    "prompt": "原创外卖商品海盐黄油卷，一只金黄卷形面包放在米白陶盘上，表皮微脆有自然烘烤纹理，底部黄油焦香，切面展示柔软细密组织，点缀极少海盐晶体，45度近景，柔和暖光，真实商业烘焙摄影，正方形；不要文字、商标、水印、人物、手、面包畸形、夹馅、焦黑、油腻反光、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item2-classic-croissant.png",
+    "remoteKey": "images/products/r20-item2-classic-croissant.png",
+    "prompt": "原创外卖商品经典原味可颂，一只完整弯月形牛角包放在浅木板上，金黄酥皮层层清晰、碎屑自然，切开一端展示蜂窝状内部组织，45度近景，米白背景柔和侧光，真实高级商业烘焙摄影，正方形；不要文字、商标、水印、人物、手、可颂畸形、层次重复、焦黑、过度油亮、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item3-ham-cheese-ciabatta.png",
+    "remoteKey": "images/products/r20-item3-ham-cheese-ciabatta.png",
+    "prompt": "原创外卖商品火腿芝士恰巴塔，一只横切恰巴塔三明治，外壳自然焦脆、内部气孔清晰，夹入熟火腿片、融化芝士、生菜和番茄，层次真实不过量，侧面45度近景，浅暖灰背景，真实商业烘焙摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、生肉、三明治畸形、食材漂浮、过度芝士"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item4-cinnamon-apple-bagel.png",
+    "remoteKey": "images/products/r20-item4-cinnamon-apple-bagel.png",
+    "prompt": "原创外卖商品肉桂苹果贝果，一只完整圆环贝果与半只切开的贝果放在浅色陶盘上，表皮烤至棕金、有嚼劲质感，内部夹入柔软肉桂苹果小丁，撒极少肉桂粉，45度近景，暖米白背景，真实商业烘焙摄影，正方形；不要文字、商标、水印、人物、手、贝果畸形、苹果生硬、过多糖霜、焦黑、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item5-basque-cheesecake.png",
+    "remoteKey": "images/products/r20-item5-basque-cheesecake.png",
+    "prompt": "原创外卖商品焦香巴斯克蛋糕，一块厚实三角形巴斯克芝士蛋糕置于哑光陶盘，表面深棕焦香但不焦黑，切面奶黄色细腻柔润、中心微流心，45度近景，暖灰背景柔和侧光，真实高级甜点商业摄影，正方形；不要文字、商标、水印、人物、手、蛋糕畸形、过度流淌、焦黑、塑料质感、复杂装饰"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item6-chocolate-cookie.png",
+    "remoteKey": "images/products/r20-item6-chocolate-cookie.png",
+    "prompt": "原创外卖商品巧克力熔岩软曲奇，两块厚实深棕软曲奇放在浅色陶盘，一块掰开露出柔软中心和自然融化的黑巧克力，巧克力豆分布不规则，45度近景，米白暖光背景，真实商业甜点摄影，正方形；不要文字、商标、水印、人物、手、曲奇畸形、巧克力过度流淌、烧焦、重复纹理、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item7-breakfast-bread-bag.png",
+    "remoteKey": "images/products/r20-item7-breakfast-bread-bag.png",
+    "prompt": "原创外卖商品元气早餐面包袋，浅木托盘中放一只火腿芝士恰巴塔、一只海盐黄油卷、一杯无品牌原味酸奶和一小份草莓蓝莓时令水果，单人早餐搭配清晰，俯视偏45度，明亮晨光与米白背景，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、品牌杯、食物畸形、过度摆盘、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r20-item8-double-afternoon-tea.png",
+    "remoteKey": "images/products/r20-item8-double-afternoon-tea.png",
+    "prompt": "原创外卖商品麦香双人下午茶，浅木桌上分区摆放两只可颂、一块巴斯克蛋糕、两块巧克力软曲奇和两杯无品牌浅色饮品，双人份咸甜搭配，构图清楚温暖，俯视偏45度，米白柔光背景，真实高级商业烘焙摄影，正方形；不要文字、商标、水印、人物、手、品牌杯、重复畸形甜点、食物混乱、塑料质感"
+  }
+]
