@@ -1,0 +1,158 @@
+[
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r11-item5-shrimp-scrambled-egg-rice.png",
+    "remoteKey": "images/products/r11-item5-shrimp-scrambled-egg-rice.png",
+    "prompt": "原创外卖商品滑蛋虾仁饭，一只浅色陶碗中盛米粒分明的白米饭，整碗被厚实柔嫩的金黄滑蛋覆盖，八至十颗熟透弹嫩虾仁清晰分布，滑蛋湿润但不流汤，45度近景，暖色自然光，真实港式商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、虾仁畸形或重复、生虾、鸡蛋糊状、数量失真、过度油亮、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r11-item6-char-siu-double-egg-rice.png",
+    "remoteKey": "images/products/r11-item6-char-siu-double-egg-rice.png",
+    "prompt": "原创外卖商品叉烧双蛋饭，一只深口陶碗中盛白米饭，铺放厚切蜜汁叉烧和清楚可数的两颗完整煎蛋，叉烧熟透且边缘微焦、酱色红亮自然，蛋黄保持柔润，搭配少量焯青菜，45度近景，暖色港式餐厅光，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、鸡蛋数量错误、叉烧畸形、生肉血色、荧光红、过度油腻、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r11-item7-worker-carb-combo.png",
+    "remoteKey": "images/products/r11-item7-worker-carb-combo.png",
+    "prompt": "原创外卖商品打工人碳水套餐，一份招牌广式腊味煲仔饭置于小砂锅内，米饭上铺腊肠、腊肉与润肠，锅边可见焦香锅巴，旁边独立摆放一碗清淡例汤和一小碟凉拌蔬菜，完整单人套餐，俯视偏45度，暖木桌，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、套餐缺项、食物混在一起、肉类畸形、生肉、焦黑锅巴、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r11-item8-uncle-double-claypot-feast.png",
+    "remoteKey": "images/products/r11-item8-uncle-double-claypot-feast.png",
+    "prompt": "原创外卖商品叔仔双人饱饱餐，桌面上清晰摆放两份独立广式煲仔饭，一锅腊味三拼煲、一锅香菇滑鸡煲，搭配一大碗双人例汤和一盘清炒时蔬，双人份组成完整、砂锅数量准确，俯视偏45度，暖木桌与柔和餐馆光，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、砂锅数量错误、套餐缺项、菜品混乱、生肉、食材畸形、焦黑、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r12-item5-hand-mixed-fresh-beef.png",
+    "remoteKey": "images/products/r12-item5-hand-mixed-fresh-beef.png",
+    "prompt": "原创外卖加菜商品手打鲜牛肉，一只浅色小陶盘中自然铺放每日现拌的滑嫩生牛肉薄片，肉片大小真实、纹理清晰，表面带少量透明腌料并点缀葱末，作为麻辣烫下锅前食材展示，45度近景，干净暖灰背景，真实商业食材摄影，正方形；不要文字、商标、水印、人物、手、筷子、熟牛肉、肉片畸形或粘连、血水、荧光色、过度油亮、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r12-item6-tripe-luncheon-meat-duo.png",
+    "remoteKey": "images/products/r12-item6-tripe-luncheon-meat-duo.png",
+    "prompt": "原创外卖加菜商品毛肚午餐肉双拼，一只分区陶盘左右各放半份食材，一侧为纹理自然的脆毛肚片，另一侧为厚切长方形午餐肉片，两种食材份量均衡、边界清楚，适合麻辣烫下锅，45度近景，浅暖灰背景，真实商业食材摄影，正方形；不要文字、商标、水印、人物、手、筷子、双拼缺项、毛肚畸形、午餐肉罐头或包装、血水、食材混成一团、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r12-item7-absorbing-tofu-skin-rolls.png",
+    "remoteKey": "images/products/r12-item7-absorbing-tofu-skin-rolls.png",
+    "prompt": "原创外卖加菜商品响铃卷吸汁王，一只浅陶碗中放六只金黄酥脆的炸腐皮响铃卷，其中两只轻浸在红亮麻辣汤汁边缘，展示卷层吸满汤汁但仍保留结构，45度近景，暖色柔光，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、响铃卷畸形或重复、豆皮糊烂、焦黑、过量红油、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r12-item8-wide-noodle-potato-duo.png",
+    "remoteKey": "images/products/r12-item8-wide-noodle-potato-duo.png",
+    "prompt": "原创外卖加菜商品宽粉土豆片双拼，一只分区浅盘中一侧放半份半透明弹滑宽粉，另一侧放半份厚薄均匀的淡黄色土豆片，两种食材清楚分开、份量均衡，少量清水保持新鲜，45度近景，明亮干净背景，真实商业食材摄影，正方形；不要文字、商标、水印、人物、手、筷子、双拼缺项、宽粉畸形粘连、土豆发黑或发芽、食材混乱、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r13-item5-yibin-burning-noodles.png",
+    "remoteKey": "images/products/r13-item5-yibin-burning-noodles.png",
+    "prompt": "原创外卖商品宜宾燃面，一只白色深碗中盛干香筋道的细面，面条均匀拌上红油但碗底无汤，顶部清楚铺放碎米芽菜、烤花生碎、葱花和少量辣椒面，食材层次自然，45度近景，暖灰背景，真实川味商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、汤面、面条畸形或粘成团、花生重复纹理、过量红油、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r13-item6-spicy-red-oil-wontons.png",
+    "remoteKey": "images/products/r13-item6-spicy-red-oil-wontons.png",
+    "prompt": "原创外卖商品老麻红油抄手，一只白陶碗中清楚可数的十只鲜肉抄手浸在香辣红油汁里，薄面皮褶皱自然、熟透肉馅隐约可见，点缀少量葱花、芝麻与花椒粉，45度近景，真实川味商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、数量错误、抄手畸形或破皮、生肉血色、过度红油、漂浮重复配料、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r13-item7-beef-pea-noodle-duo-bowl.png",
+    "remoteKey": "images/products/r13-item7-beef-pea-noodle-duo-bowl.png",
+    "prompt": "原创外卖商品面面俱到双拼碗，一只宽口陶碗左右清晰分区，一半为红烧牛肉面，含厚切熟牛腱、青菜和清亮红汤；另一半为重庆豌杂面，含软糯豌豆、肉臊和麻辣拌面，两种各半份且互不混浊，俯视偏45度，真实中式商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、双拼缺项、分区畸形、生肉、面条粘连、过量红油、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r13-item8-midnight-healing-large-bowl.png",
+    "remoteKey": "images/products/r13-item8-midnight-healing-large-bowl.png",
+    "prompt": "原创外卖商品深夜治愈大碗，一只明显加大的深陶碗中盛加量筋道面条和浓郁红烧牛肉汤，顶部铺足量厚切熟牛腱肉，并放一颗切成两半的溏心蛋，搭配少量青菜，份量饱满，45度近景，暖色夜宵氛围，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、鸡蛋数量错误、牛肉畸形、生肉血色、面条粘连、碗体变形、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r14-item6-foil-clam-vermicelli.png",
+    "remoteKey": "images/products/r14-item6-foil-clam-vermicelli.png",
+    "prompt": "原创外卖商品锡纸花甲粉丝，展开的银色锡纸碗中盛一份蒜香汤汁粉丝，十余只开口熟花甲自然分布，铺满金黄蒜蓉并点缀葱花和红椒圈，粉丝吸汁透亮、热气自然，45度近景，暗色夜宵桌面，真实中式烧烤商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、贝壳畸形或重复、未开口死贝、沙粒、生海鲜、锡纸变形、过量汤汁"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r14-item7-twenty-skewer-double-feast.png",
+    "remoteKey": "images/products/r14-item7-twenty-skewer-double-feast.png",
+    "prompt": "原创外卖商品二人微醺烤串局，一只长陶盘上清楚呈现共二十串荤素炭火烤串，包括羊肉串、牛肉粒串、鸡软骨串与青椒菌菇蔬菜串，荤素比例自然，旁边独立摆放两份小菜，双人份丰盛夜宵，俯视偏45度，暖红炭火氛围，真实商业美食摄影，正方形；不要酒、不要文字、商标、水印、人物、手、数量明显错误、竹签畸形或穿插、食材重复融合、生肉、焦黑、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r14-item8-solo-bbq-freedom-combo.png",
+    "remoteKey": "images/products/r14-item8-solo-bbq-freedom-combo.png",
+    "prompt": "原创外卖商品一个人的烧烤自由，一只长盘中清楚摆放十串招牌肉串，以羊肉串和牛肉串为主，另配一只切成两半的金黄烤馒头，旁边放一杯无品牌清爽饮品，完整单人套餐，俯视偏45度，暗木桌与暖色夜宵光，真实商业美食摄影，正方形；不要文字、商标、水印、人物、手、数量错误、竹签畸形、套餐缺项、生肉、焦黑、品牌杯、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r15-item5-sweet-shrimp-avocado-hand-roll.png",
+    "remoteKey": "images/products/r15-item5-sweet-shrimp-avocado-hand-roll.png",
+    "prompt": "原创外卖商品甜虾牛油果手卷，一只完整日式锥形海苔手卷斜放在深色陶盘，顶端清楚露出两只熟甜虾、柔润牛油果片和少量醋饭，海苔干爽有自然纹理，现卷结构紧实，45度近景，克制深蓝灰背景，真实高级日料商业摄影，正方形；不要文字、商标、水印、人物、手、筷子、虾畸形或多肢、生虾血色、手卷散架、海苔塑料感、食材漂浮"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r15-item6-karaage-fried-chicken.png",
+    "remoteKey": "images/products/r15-item6-karaage-fried-chicken.png",
+    "prompt": "原创外卖商品唐扬炸鸡块，一只深色日式陶盘中自然摆放七块酱油腌制的唐扬鸡块，外壳金黄酥脆且颗粒纹理自然，切开一块展示熟透多汁的鸡腿肉，搭配一角柠檬和少量卷心菜丝，45度近景，柔和暖光，真实日料商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、鸡块畸形或重复、生鸡肉血色、焦黑、厚重面衣、过度油腻、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r15-item7-selected-solo-sushi-set.png",
+    "remoteKey": "images/products/r15-item7-selected-solo-sushi-set.png",
+    "prompt": "原创外卖商品一尾精选单人餐，一只长形寿司盘中清楚摆放六贯握寿司，包括三文鱼、炙烤鳗鱼与甜虾各两贯，旁边独立放一小盘唐扬炸鸡块和一碗味噌汤，完整单人套餐、冷热食分区清晰，俯视偏45度，深蓝灰背景，真实高级日料商业摄影，正方形；不要文字、商标、水印、人物、手、筷子、寿司数量错误、套餐缺项、鱼料畸形、生肉异常色、餐具重复、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r15-item8-double-sushi-share-box.png",
+    "remoteKey": "images/products/r15-item8-double-sushi-share-box.png",
+    "prompt": "原创外卖商品双人寿司分享盒，一只无品牌分格木质食盒中清楚可数地摆放十二贯握寿司，三文鱼、炙烤鳗鱼、甜虾和玉子各三贯，旁边另放两份小食：唐扬炸鸡与海藻沙拉，双人分享份量、排列精致自然，俯视偏45度，深灰背景，真实高级日料商业摄影，正方形；不要文字、商标、水印、人物、手、筷子、寿司数量错误、鱼虾畸形、食盒变形、重复纹理、套餐缺项、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r16-item5-soft-boiled-egg-caesar-salad.png",
+    "remoteKey": "images/products/r16-item5-soft-boiled-egg-caesar-salad.png",
+    "prompt": "原创外卖商品溏心蛋凯撒沙拉，一只浅色宽口碗中盛新鲜罗马生菜、金黄脆面包丁和少量帕玛森碎，顶部放一颗切成两半的溏心蛋，蛋黄柔润自然，凯撒酱轻薄均匀，45度近景，明亮浅绿色背景，真实健康轻食商业摄影，正方形；不要文字、商标、水印、人物、手、叉子、鸡蛋数量错误、蔬菜畸形或发黑、酱汁过量、荧光绿色、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r16-item6-pumpkin-chickpea-soup.png",
+    "remoteKey": "images/products/r16-item6-pumpkin-chickpea-soup.png",
+    "prompt": "原创外卖商品南瓜鹰嘴豆浓汤，一只哑光浅陶碗中盛绵密暖橙色浓汤，表面自然旋入少量淡色豆乳，中央点缀数颗熟鹰嘴豆、南瓜籽和极少香草，质地浓稠顺滑但真实，45度近景，暖米白桌面，真实轻食商业美食摄影，正方形；不要文字、商标、水印、人物、手、勺子、畸形豆粒、荧光橙、汤面图案过度规则、溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r16-item7-high-protein-training-combo.png",
+    "remoteKey": "images/products/r16-item7-high-protein-training-combo.png",
+    "prompt": "原创外卖商品高蛋白训练套餐，一只分区轻食碗中明确放双份香草烤鸡胸，约两块切片完整鸡胸，搭配藜麦糙米谷物、南瓜、西兰花与小番茄，旁边一杯无品牌透明杯无糖饮品，完整单人训练餐，俯视偏45度，明亮自然光，真实健康轻食商业摄影，正方形；不要文字、商标、水印、人物、手、餐具、鸡胸份量不足或畸形、生肉血色、品牌杯、蔬菜荧光、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r16-item8-double-balanced-meal.png",
+    "remoteKey": "images/products/r16-item8-double-balanced-meal.png",
+    "prompt": "原创外卖商品草木双人均衡餐，桌面清楚摆放两份独立能量碗，一碗香草鸡胸谷物碗、一碗黑椒牛肉糙米碗，另配一份溏心蛋凯撒沙拉和一碗南瓜鹰嘴豆暖汤，双人套餐四部分完整分开，俯视偏45度，浅木桌与明亮自然光，真实健康轻食商业摄影，正方形；不要文字、商标、水印、人物、手、餐具、套餐缺项、碗数量错误、生肉、食材畸形或混乱、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r17-item6-dried-shrimp-egg-rice-roll.png",
+    "remoteKey": "images/products/r17-item6-dried-shrimp-egg-rice-roll.png",
+    "prompt": "原创外卖商品虾皮鸡蛋肠粉，一只白色长陶盘中摆放三段柔软半透明的广式肠粉，米皮内清楚包裹嫩鸡蛋与细小熟虾皮，表面撒少量葱花，旁边独立放一小碟浅棕酱汁，45度近景，柔和晨光，真实中式早餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、整只大虾、肠粉畸形或破碎、虾皮异常放大、酱汁浇满、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r17-item7-vitality-workday-breakfast.png",
+    "remoteKey": "images/products/r17-item7-vitality-workday-breakfast.png",
+    "prompt": "原创外卖商品元气上班早餐，一碗招牌皮蛋瘦肉粥，搭配一笼清楚可数的六只鲜肉小笼包、一颗完整水煮鸡蛋和一杯无品牌豆浆，四部分单人早餐组成完整、分装清晰，俯视偏45度，暖米色桌面与柔和晨光，真实中式早餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、小笼包数量错误、套餐缺项、重复鸡蛋、品牌杯、食物畸形、生肉、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r17-item8-slow-double-breakfast.png",
+    "remoteKey": "images/products/r17-item8-slow-double-breakfast.png",
+    "prompt": "原创外卖商品慢慢吃双人早餐，桌面清楚摆放两碗不同热粥，一碗皮蛋瘦肉粥和一碗南瓜小米粥，搭配两笼点心，一笼六只鲜肉小笼包和一笼蒸烧卖，以及两杯无品牌豆浆，双人份数量和组成完整，俯视偏45度，暖木桌与清晨柔光，真实中式早餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、筷子、粥碗或蒸笼数量错误、套餐缺项、点心畸形、品牌杯、食物混乱、塑料质感"
+  }
+]

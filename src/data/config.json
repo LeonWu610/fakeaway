@@ -1,24 +1,24 @@
 {
   "address": "望京 SOHO",
   "categories": [
-    {"id": "food", "icon": "🍜", "name": "美食"},
-    {"id": "drinks", "icon": "🧋", "name": "甜点饮品"},
-    {"id": "market", "icon": "🛒", "name": "超市便利"},
-    {"id": "fruits", "icon": "🍎", "name": "蔬菜水果"},
-    {"id": "medicine", "icon": "💊", "name": "看病买药"},
-    {"id": "tea", "icon": "☕", "name": "下午茶"},
-    {"id": "group", "icon": "🤝", "name": "拼好饭"},
-    {"id": "errand", "icon": "🏃", "name": "跑腿"},
-    {"id": "subsidy", "icon": "💴", "name": "天天津贴"},
-    {"id": "new", "icon": "🎁", "name": "新店特惠"}
+    {"id": "food", "name": "美食"},
+    {"id": "drinks", "name": "甜点饮品"},
+    {"id": "market", "name": "超市便利"},
+    {"id": "fruits", "name": "蔬菜水果"},
+    {"id": "medicine", "name": "看病买药"},
+    {"id": "tea", "name": "下午茶"},
+    {"id": "group", "name": "今晚搭子"},
+    {"id": "night", "name": "深夜食堂"},
+    {"id": "subsidy", "name": "今晚好券"},
+    {"id": "new", "name": "新店尝鲜"}
   ],
   "promoCards": [
     {
       "id": "promo1",
-      "title": "拼好饭精选",
-      "subtitle": "吃得好还划算",
-      "badge": "爆品",
-      "color": "#FFF9E6",
+      "title": "今晚搭子",
+      "subtitle": "两个人的暖胃清单",
+      "badge": "正暖",
+      "color": "#F4EFFF",
       "items": [
         {"rank": 1, "name": "耐火的茶", "desc": "霸气草莓奶盖限时29元", "price": 29, "restaurantId": "r1"},
         {"rank": 2, "name": "倒霉咖啡", "desc": "大杯生椰拿铁今日特惠", "price": 19, "restaurantId": "r5"}
@@ -26,10 +26,10 @@
     },
     {
       "id": "promo2",
-      "title": "神抢手",
-      "subtitle": "多人都在抢",
-      "badge": "深夜",
-      "color": "#F0F4FF",
+      "title": "夜猫私藏",
+      "subtitle": "越晚越懂你的这一口",
+      "badge": "夜选",
+      "color": "#F1EFF8",
       "items": [
         {"rank": 1, "name": "买当捞", "desc": "宵夜特供双人套32元起", "price": 32, "restaurantId": "r3"},
         {"rank": 2, "name": "啃得机", "desc": "疯狂星期四每天都有", "price": 29, "restaurantId": "r4"}

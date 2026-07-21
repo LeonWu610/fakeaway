@@ -1,0 +1,194 @@
+[
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item2-grape-fruit-tea.png",
+    "remoteKey": "images/products/r1-item2-grape-fruit-tea.png",
+    "prompt": "原创外卖商品多肉葡萄，一杯大容量透明杯紫绿色葡萄果茶，杯中铺满大量去皮鲜葡萄果肉与晶莹葡萄冻，清亮茶汤和碎冰层次分明，顶部点缀完整青提与紫葡萄，45度近景，明亮浅紫背景，真实高级商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、葡萄畸形或重复、果肉数量不足、液体溢出、荧光色、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item3-cheese-strawberry-tea.png",
+    "remoteKey": "images/products/r1-item3-cheese-strawberry-tea.png",
+    "prompt": "原创外卖商品芝士草莓，一杯透明杯草莓果茶，底部与茶汤中可见新鲜草莓果肉，顶部覆盖明显厚于果肉层的绵密白色芝士奶盖，奶盖与粉红果茶分层清楚，45度近景，柔和粉白背景，真实高级商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、草莓畸形、奶盖消失或过度溢出、液体分层错误、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item4-matcha-latte.png",
+    "remoteKey": "images/products/r1-item4-matcha-latte.png",
+    "prompt": "原创外卖商品抹茶拿铁，一杯透明杯冰抹茶拿铁，下层乳白鲜奶、中层自然渐变、上层浓郁墨绿色现调抹茶，细腻无结块，杯壁有少量冷凝水，45度近景，米白与浅绿色背景，真实高级商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、荧光绿色、分层畸形、粉末结块、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item5-red-grapefruit-tea.png",
+    "remoteKey": "images/products/r1-item5-red-grapefruit-tea.png",
+    "prompt": "原创外卖商品满杯红柚，一杯大容量透明杯红柚果茶，杯内从底到顶充满大片新鲜红心西柚果肉与薄片，橙红清亮茶汤和碎冰清楚可见，果肉饱满但不溢杯，45度近景，明亮珊瑚橙背景，真实商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、西柚畸形或重复、果肉稀少、苦白瓤过多、液体溢出、荧光色、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item6-mango-cheese-tea.png",
+    "remoteKey": "images/products/r1-item6-mango-cheese-tea.png",
+    "prompt": "原创外卖商品霸气芝士芒芒，一杯透明杯金黄芒果冰沙果茶，杯中含大量熟芒果果肉丁，顶部覆盖厚实绵密白色芝士奶盖，芒果层与芝士层边界清楚，旁边点缀少量鲜芒果块，45度近景，暖黄背景，真实高级商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、芒果畸形、芝士层缺失、液体溢出、荧光黄、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item7-strawberry-cheesecake-cup.png",
+    "remoteKey": "images/products/r1-item7-strawberry-cheesecake-cup.png",
+    "prompt": "原创外卖商品草莓芝士蛋糕杯，一只透明甜品杯中清楚展示多层结构：底层酥脆饼干碎、中层细腻芝士蛋糕与奶油、夹层新鲜草莓果肉，顶部放半颗草莓和少量蛋糕碎，质地介于可喝奶昔与可舀甜品之间，45度近景，粉白柔光背景，真实商业甜品摄影，正方形；不要文字、商标、水印、人物、手、勺子、品牌杯、草莓畸形、层次混成糊、奶油溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item8-oat-latte.png",
+    "remoteKey": "images/products/r1-item8-oat-latte.png",
+    "prompt": "原创外卖商品燕麦拿铁，一杯透明杯冰燕麦拿铁，浅米色燕麦奶与深棕浓缩咖啡形成自然云雾渐层，顶部薄层细腻咖啡泡沫，杯壁少量冷凝水，旁边仅点缀几粒原味燕麦，45度近景，暖米色背景，真实高级商业咖啡摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、咖啡分层畸形、燕麦漂浮过多、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item9-signature-special-tea.png",
+    "remoteKey": "images/products/r1-item9-signature-special-tea.png",
+    "prompt": "原创外卖商品耐火特调，一杯原创琥珀红渐变果茶特调，透明杯中清亮乌龙茶、红色莓果汁与金黄柑橘汁形成自然三层渐变，含少量莓果、柑橘果肉和晶莹茶冻，顶部轻盈泡沫，神秘精致但食材真实，45度近景，暗红暖金背景，真实高级商业饮品摄影，正方形；不要火焰、烟雾、文字、商标、水印、人物、手、吸管、品牌杯、诡异未知物、分层畸形、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item10-warm-smoky-tea.png",
+    "remoteKey": "images/products/r1-item10-warm-smoky-tea.png",
+    "prompt": "原创外卖商品烟火气满杯，一杯耐热透明杯暖热橙红果香茶，茶汤内有新鲜橙片、苹果丁与少量桂花，杯口升起自然细微热气，琥珀色茶汤温暖通透，置于深色隔热杯垫，45度近景，暖橙夜灯背景，真实商业饮品摄影，正方形；不要真实火焰、燃烧杯子、浓烟、文字、商标、水印、人物、手、吸管、品牌杯、水果畸形、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item11-winter-warm-fruit-tea.png",
+    "remoteKey": "images/products/r1-item11-winter-warm-fruit-tea.png",
+    "prompt": "原创外卖商品冬日限定暖饮，一杯耐热透明杯热苹果橙子肉桂果茶，琥珀茶汤中清楚可见苹果块、橙片、红枣片与一小段肉桂，表面升起柔和热气，杯旁少量冬季果实点缀，45度近景，暖棕米白背景，真实高级商业饮品摄影，正方形；不要圣诞文字、商标、水印、人物、手、吸管、品牌杯、水果畸形、香料过量、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r1-item12-fresh-milk.png",
+    "remoteKey": "images/products/r1-item12-fresh-milk.png",
+    "prompt": "原创外卖商品每日鲜奶特供，一杯大容量透明玻璃杯装纯白新鲜牛奶，质地顺滑自然、表面有薄薄奶沫，旁边放一只无品牌透明小奶瓶和少量燕麦穗作为新鲜原料暗示，明亮晨光，45度近景，干净米白背景，真实商业饮品摄影，正方形；不要奶牛、文字、商标、水印、人物、手、吸管、品牌包装、杯体畸形、牛奶变色或溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item2-green-grape-fruit-tea.png",
+    "remoteKey": "images/products/r2-item2-green-grape-fruit-tea.png",
+    "prompt": "原创外卖商品多肉青提，一杯大容量透明杯浅绿色青提果茶，杯中从底部到茶汤铺满大量去皮青提果肉与晶莹果冻，清亮茶汤、碎冰和鲜果层次分明，顶部点缀数颗完整青提，45度近景，清新浅绿背景，真实高级商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、青提畸形或重复、果肉稀少、荧光绿色、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item3-full-cup-fruit-tea.png",
+    "remoteKey": "images/products/r2-item3-full-cup-fruit-tea.png",
+    "prompt": "原创外卖商品满杯那个啥，一杯大容量透明杯综合鲜果茶，杯内装满橙子、青提、草莓与百香果果肉，清亮金红茶汤和碎冰层次清楚，表现神秘但真实的满杯鲜果特调，不突出任何单一品牌元素，45度近景，明亮暖白背景，真实商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、未知畸形物、果肉稀少、水果融合重复、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item4-pure-leaf-tea.png",
+    "remoteKey": "images/products/r2-item4-pure-leaf-tea.png",
+    "prompt": "原创外卖商品纯茶系列，一杯透明玻璃杯现萃单丛纯茶，清澈明亮的金琥珀色茶汤无奶无水果无糖浆，表面轻微茶香热气，旁边小陶碟放少量舒展原叶茶叶，45度近景，米白与墨绿色克制背景，真实东方高级商业茶饮摄影，正方形；不要奶、果肉、珍珠、文字、商标、水印、人物、手、吸管、品牌杯、杯体畸形、浑浊茶汤、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item5-peach-cheese-tea.png",
+    "remoteKey": "images/products/r2-item5-peach-cheese-tea.png",
+    "prompt": "原创外卖商品芝芝桃桃，一杯透明杯粉橙色白桃果茶，杯中有新鲜白桃果肉丁，顶部覆盖明显厚于桃肉层的绵密白色芝士奶盖，茶汤、果肉与芝士三层清楚，45度近景，柔和蜜桃粉背景，真实高级商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、桃子畸形、芝士层不足、果肉融合、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item6-signature-layered-tea.png",
+    "remoteKey": "images/products/r2-item6-signature-layered-tea.png",
+    "prompt": "原创外卖商品稀茶特调，一杯限量感东方茶饮特调，透明杯内由深琥珀单丛茶、浅乳白轻乳层与淡金桂花冻形成克制清晰的三层结构，顶部薄薄细腻奶沫与少量桂花点缀，茶感突出，45度近景，墨绿与米白背景，真实高级商业饮品摄影，正方形；不要文字、商标、水印、人物、手、吸管、品牌杯、复杂装饰、分层畸形、桂花过量、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item7-emblic-fruit-tea.png",
+    "remoteKey": "images/products/r2-item7-emblic-fruit-tea.png",
+    "prompt": "原创外卖商品玉油柑，一杯透明杯新鲜油柑果茶，浅黄绿色茶汤清澈自然，杯底有适量压碎油柑果肉与晶莹碎冰，旁边点缀数颗完整淡绿色油柑果实和切面，呈现清爽微涩回甘，45度近景，浅绿米白背景，真实商业饮品摄影，正方形；不要葡萄、文字、商标、水印、人物、手、吸管、品牌杯、油柑畸形或重复、荧光绿色、浑浊液体、溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item8-light-milk-tea.png",
+    "remoteKey": "images/products/r2-item8-light-milk-tea.png",
+    "prompt": "原创外卖商品轻乳茶，一杯透明杯原叶轻乳茶，浅暖褐色茶汤与柔和乳白形成均匀轻盈质感，顶部仅有薄层细腻奶沫，杯壁可见自然茶色渐变，旁边少量原叶茶点缀，45度近景，米白墨绿背景，真实高级商业茶饮摄影，正方形；不要珍珠、厚奶油、果肉、文字、商标、水印、人物、手、吸管、品牌杯、分层畸形、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item9-daily-surprise-tea.png",
+    "remoteKey": "images/products/r2-item9-daily-surprise-tea.png",
+    "prompt": "原创外卖商品今日份惊喜，一杯精致随机风味茶饮，以紫色莓果茶、淡金柑橘茶和透明茶冻形成梦幻但自然的渐变层次，顶部点缀一颗莓果与一片柑橘，杯身无任何提示文字，保留开杯才揭晓的惊喜感，45度近景，柔和暖灰背景，真实高级商业饮品摄影，正方形；不要礼盒、文字、商标、水印、人物、手、吸管、品牌杯、水果畸形、荧光色、分层混乱、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item10-collaboration-special-tea.png",
+    "remoteKey": "images/products/r2-item10-collaboration-special-tea.png",
+    "prompt": "原创外卖商品联名款特调，一杯无任何品牌元素的高级限定茶饮，透明杯内为深紫莓果乌龙、乳白轻乳和淡粉泡沫的三层结构，配一枚纯色无字几何杯饰，整体具有联名限定感但完全原创，45度近景，紫灰米白背景，真实商业饮品摄影，正方形；不要角色形象、IP元素、文字、商标、水印、人物、手、吸管、品牌杯、分层畸形、杯饰变形、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item11-rare-recipe-tea.png",
+    "remoteKey": "images/products/r2-item11-rare-recipe-tea.png",
+    "prompt": "原创外卖商品稀有配方茶，一杯东方草本原叶配方茶，透明杯中深金色茶汤清澈通透，加入少量桂花、陈皮细丝和晶莹茶冻，顶部有薄薄茶香泡沫，旁边陶碟展示少量原叶与陈皮，稀少克制不堆料，45度近景，墨绿暖金背景，真实高级商业茶饮摄影，正方形；不要药品、文字、商标、水印、人物、手、吸管、品牌杯、杯体畸形、诡异草根、漂浮配料过多、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r2-item12-dreamy-gradient-tea.png",
+    "remoteKey": "images/products/r2-item12-dreamy-gradient-tea.png",
+    "prompt": "原创外卖商品梦幻系列，一杯透明杯梦幻渐变茶饮，下层天然蝶豆花蓝紫茶汤、中层淡粉莓果茶、上层乳白轻盈泡沫，三层柔和过渡且保持可饮用真实质感，点缀少量蓝莓与可食花瓣，45度近景，淡紫雾面背景，真实高级商业饮品摄影，正方形；不要荧光色、烟雾、文字、商标、水印、人物、手、吸管、品牌杯、花朵过量、分层畸形、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item3-large-fries.png",
+    "remoteKey": "images/products/r3-item3-large-fries.png",
+    "prompt": "原创外卖商品大薯条，一只明显大份的纯色无品牌纸盒装满细长金黄脆薯条，薯条根根分明、边缘微焦且数量充足，旁边一小碟番茄酱，45度近景，暖黄与深红商业背景，真实快餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、薯条畸形或粘连、数量稀少、焦黑、过度油腻、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item4-apple-pie.png",
+    "remoteKey": "images/products/r3-item4-apple-pie.png",
+    "prompt": "原创外卖商品苹果派，两只长方形酥皮苹果派放在浅色陶盘，一只完整、一只切开展示熟软苹果丁与肉桂馅，外皮炸烤至均匀金黄、层次酥脆，45度近景，暖黄色背景，真实快餐甜点商业摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、苹果派畸形、馅料喷溅、苹果生硬、焦黑、过度油腻、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item5-classic-burger-combo-a.png",
+    "remoteKey": "images/products/r3-item5-classic-burger-combo-a.png",
+    "prompt": "原创外卖商品经典汉堡套餐A，一只单层牛肉芝士汉堡，含烤面包胚、熟透牛肉饼、芝士、生菜与酸黄瓜，搭配一份中薯条和一杯无品牌冰可乐，三部分套餐组成完整、摆放清楚，俯视偏45度，黄色深红背景，真实快餐商业美食摄影，正方形；不要任何连锁品牌特征、文字、商标、水印、人物、手、品牌包装、套餐缺项、汉堡或薯条畸形、生肉、液体溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item6-golden-hash-brown.png",
+    "remoteKey": "images/products/r3-item6-golden-hash-brown.png",
+    "prompt": "原创外卖商品黄金薯饼，白色陶盘中清楚摆放两块椭圆形土豆薯饼，外壳均匀金黄酥脆、颗粒纹理自然，一块掰开展示松软熟透的土豆丝内里，45度近景，明亮暖黄背景，真实快餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、薯饼畸形或重复、内馅空洞、焦黑、过度油腻、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item7-vanilla-soft-serve-cone.png",
+    "remoteKey": "images/products/r3-item7-vanilla-soft-serve-cone.png",
+    "prompt": "原创外卖商品冰淇淋甜筒，一只完整脆皮华夫甜筒装饱满纯白香草软冰淇淋，螺旋纹路自然、顶部尖角完整，立在无品牌简洁甜筒架上，45度近景，明亮奶油黄背景，真实商业甜品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、甜筒畸形、冰淇淋融化滴落、螺旋重复错误、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item8-cookie-soft-serve-cup.png",
+    "remoteKey": "images/products/r3-item8-cookie-soft-serve-cup.png",
+    "prompt": "原创外卖商品麦旋风风格曲奇冰淇淋，一只无品牌纯色纸杯中盛纯白香草软冰淇淋，均匀拌入深色可可夹心曲奇碎，顶部有自然旋涡和少量曲奇块，浓稠冰凉但不过度融化，45度近景，暖灰黄色背景，真实快餐甜品商业摄影，正方形；不要任何饼干或连锁品牌特征、文字、商标、水印、人物、手、勺子、品牌杯、杯体畸形、冰淇淋溢出、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item9-double-burger-combo.png",
+    "remoteKey": "images/products/r3-item9-double-burger-combo.png",
+    "prompt": "原创外卖商品买当捞双人套餐，桌面清楚摆放两只独立汉堡，一只牛肉芝士堡和一只香辣鸡腿堡，搭配两份中薯条、两杯无品牌冰可乐以及一份六块鸡块，双人套餐组成和数量完整，俯视偏45度，黄色深红背景，真实快餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、套餐缺项、汉堡薯条鸡块畸形、饮品数量错误、生肉、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item10-breakfast-combo.png",
+    "remoteKey": "images/products/r3-item10-breakfast-combo.png",
+    "prompt": "原创外卖商品早餐套餐，一只英式松饼早餐堡，夹一颗圆形煎蛋、熟猪肉饼与芝士，搭配一块金黄薯饼和一杯无品牌热豆浆，单人早餐三部分组成完整，俯视偏45度，柔和晨光与暖黄色背景，真实快餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、套餐缺项、鸡蛋或肉饼畸形、生肉、杯体变形、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item11-kids-burger-combo.png",
+    "remoteKey": "images/products/r3-item11-kids-burger-combo.png",
+    "prompt": "原创外卖商品儿童套餐，一只小份牛肉芝士汉堡、一份小薯条、一杯无品牌橙汁和一个纯色无字积木小玩具，四部分套餐组成完整、份量适合儿童但成年人可食，明快整洁摆放，俯视偏45度，暖黄浅红背景，真实快餐商业美食摄影，正方形；不要任何角色IP、文字、商标、水印、人物、儿童、手、品牌包装、套餐缺项、玩具畸形或危险小零件、食物畸形、生肉、塑料食物质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r3-item12-late-night-combo.png",
+    "remoteKey": "images/products/r3-item12-late-night-combo.png",
+    "prompt": "原创外卖商品宵夜特供，一只香辣鸡腿汉堡搭配一份大薯条、四只金黄鸡翅和一杯无品牌冰可乐，单人加量宵夜套餐四部分完整分开，食物热气与冷饮杯壁水珠自然，俯视偏45度，深红暖黄夜间背景，真实快餐商业美食摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、套餐缺项、鸡翅数量错误或畸形、生肉、焦黑、液体溢出、塑料质感"
+  }
+]

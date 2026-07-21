@@ -11,12 +11,12 @@ export default function BottomNav({ activeTab = 'home' }) {
   const navigate = useNavigate()
 
   return (
-    <nav className="fixed bottom-0 left-1/2 z-50 flex h-[58px] w-full max-w-[480px] -translate-x-1/2 items-stretch border-t border-gray-200 bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
+    <nav className="fixed bottom-0 left-1/2 z-50 flex h-[58px] w-full max-w-[480px] -translate-x-1/2 items-stretch border-t border-[var(--border-soft)] bg-[color:var(--surface)]/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_24px_rgba(45,36,75,.07)] backdrop-blur">
       {tabs.map((tab) => {
         const active = tab.key === activeTab
         return (
-          <button key={tab.key} onClick={() => navigate(tab.path)} className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-[10px] ${active ? 'font-bold text-[#111]' : 'text-gray-500'}`}>
-            <span className={`relative grid h-7 w-8 place-items-center rounded-full ${active ? 'bg-[var(--brand-yellow)]' : ''}`}>
+          <button key={tab.key} onClick={() => navigate(tab.path)} className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-[10px] ${active ? 'font-bold text-[var(--brand-primary)]' : 'text-[var(--text-muted)]'}`}>
+            <span className={`relative grid h-7 w-8 place-items-center rounded-full ${active ? 'bg-[var(--brand-primary-soft)] ring-1 ring-[#DED5FF]' : ''}`}>
               <svg viewBox="0 0 24 24" className="h-[19px] w-[19px]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">{tab.icon}</svg>
             </span>
             {tab.label}

@@ -1,7 +1,7 @@
 export default function CategorySidebar({ categories, activeCategory, onSelectCategory }) {
   return (
     <div
-      className="sticky top-[88px] h-[calc(100vh-148px)] w-[78px] flex-shrink-0 overflow-y-auto bg-[#f5f5f5]"
+      className="sticky top-[88px] h-[calc(100vh-148px)] w-[78px] flex-shrink-0 overflow-y-auto bg-[var(--surface-muted)]"
     >
       {categories.map((cat) => {
         const isActive = activeCategory === cat.categoryId;

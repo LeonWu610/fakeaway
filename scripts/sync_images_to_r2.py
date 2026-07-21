@@ -9,11 +9,27 @@ import json
 import mimetypes
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import quote
 
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp", ".avif"}
 DEFAULT_ROOT = Path("public/images")
+DEFAULT_WORKERS = 12
+MIN_WORKERS = 1
+MAX_WORKERS = 32
+
+
+def worker_count(value: str) -> int:
+    try:
+        workers = int(value)
+    except ValueError as error:
+        raise argparse.ArgumentTypeError("--workers must be an integer") from error
+    if not MIN_WORKERS <= workers <= MAX_WORKERS:
+        raise argparse.ArgumentTypeError(
+            f"--workers must be between {MIN_WORKERS} and {MAX_WORKERS}"
+        )
+    return workers
 
 
 def parse_args() -> argparse.Namespace:
@@ -22,6 +38,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--prefix", default="images", help="Remote object key prefix")
     parser.add_argument("--manifest", type=Path, default=Path("scripts/r2_image_manifest.json"))
     parser.add_argument("--max-files", type=int, default=1, help="Upload cost/safety guard")
+    parser.add_argument(
+        "--workers",
+        type=worker_count,
+        default=DEFAULT_WORKERS,
+        help=f"Concurrent remote operations (default: {DEFAULT_WORKERS}, range: {MIN_WORKERS}-{MAX_WORKERS})",
+    )
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     return parser.parse_args()
@@ -57,6 +79,29 @@ def public_url(base_url: str, key: str) -> str:
     return f"{base_url}/{quote(key, safe='/')}"
 
 
+def needs_upload(s3, bucket: str, job: dict[str, object], client_error: type[Exception]) -> bool:
+    try:
+        remote = s3.head_object(Bucket=bucket, Key=job["key"])
+        return remote.get("ContentLength") != job["size"]
+    except client_error as error:
+        status = error.response.get("ResponseMetadata", {}).get("HTTPStatusCode")
+        code = error.response.get("Error", {}).get("Code")
+        if status == 404 or code in {"404", "NoSuchKey", "NotFound"}:
+            return True
+        raise
+
+
+def upload(s3, bucket: str, job: dict[str, object]) -> str:
+    content_type = mimetypes.guess_type(str(job["path"]))[0] or "application/octet-stream"
+    s3.upload_file(
+        str(job["path"]),
+        bucket,
+        job["key"],
+        ExtraArgs={"ContentType": content_type, "CacheControl": "public, max-age=31536000, immutable"},
+    )
+    return str(job["key"])
+
+
 def main() -> int:
     args = parse_args()
     if args.max_files < 1:
@@ -79,27 +124,24 @@ def main() -> int:
         aws_access_key_id=access_key,
         aws_secret_access_key=secret_key,
         region_name="auto",
-        config=Config(signature_version="s3v4", retries={"max_attempts": 4, "mode": "standard"}),
+        config=Config(
+            signature_version="s3v4",
+            retries={"max_attempts": 4, "mode": "standard"},
+            max_pool_connections=args.workers,
+        ),
     )
     s3.head_bucket(Bucket=bucket)
 
-    jobs = discover(args.root, args.prefix)
-    pending = []
-    for job in jobs:
-        if args.overwrite:
-            pending.append(job)
-            continue
-        try:
-            remote = s3.head_object(Bucket=bucket, Key=job["key"])
-            if remote.get("ContentLength") != job["size"]:
-                pending.append(job)
-        except ClientError as error:
-            status = error.response.get("ResponseMetadata", {}).get("HTTPStatusCode")
-            code = error.response.get("Error", {}).get("Code")
-            if status == 404 or code in {"404", "NoSuchKey", "NotFound"}:
-                pending.append(job)
-            else:
-                raise
+    jobs = sorted(discover(args.root, args.prefix), key=lambda job: str(job["key"]))
+    if args.overwrite:
+        pending = jobs.copy()
+    else:
+        with ThreadPoolExecutor(max_workers=args.workers) as executor:
+            decisions = executor.map(
+                lambda job: needs_upload(s3, bucket, job, ClientError),
+                jobs,
+            )
+            pending = [job for job, should_upload in zip(jobs, decisions) if should_upload]
 
     if len(pending) > args.max_files:
         print(f"Refusing to upload {len(pending)} files: safety guard is {args.max_files}.", file=sys.stderr)
@@ -111,15 +153,10 @@ def main() -> int:
     if args.dry_run:
         return 0
 
-    for job in pending:
-        content_type = mimetypes.guess_type(str(job["path"]))[0] or "application/octet-stream"
-        s3.upload_file(
-            str(job["path"]),
-            bucket,
-            job["key"],
-            ExtraArgs={"ContentType": content_type, "CacheControl": "public, max-age=31536000, immutable"},
-        )
-        print(f"uploaded: {job['key']}")
+    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+        uploaded_keys = list(executor.map(lambda job: upload(s3, bucket, job), pending))
+    for key in sorted(uploaded_keys):
+        print(f"uploaded: {key}")
 
     records = [
         {

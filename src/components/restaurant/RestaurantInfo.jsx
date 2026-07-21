@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AppImage from '../common/AppImage'
 
 export default function RestaurantInfo({ restaurant }) {
   const [toastVisible, setToastVisible] = useState(false)
@@ -18,12 +19,12 @@ export default function RestaurantInfo({ restaurant }) {
   }
 
   return (
-    <section className="bg-[#f5f5f5] pb-1">
+    <section className="bg-[var(--background)] pb-1">
       {toastVisible && <div className="fixed left-1/2 top-16 z-[70] -translate-x-1/2 whitespace-nowrap rounded-full bg-black/80 px-4 py-2 text-xs text-white">已领取，结算时自动抵扣</div>}
 
       <div className="bg-white px-3 pb-2 pt-2">
         <div className="flex items-center gap-2">
-          <img src={image} alt={name} className="h-14 w-14 flex-none rounded-lg border border-gray-100 object-cover" />
+          <AppImage src={image} alt={name} className="h-14 w-14 flex-none rounded-lg border border-gray-100 object-cover" sizes="56px" width={56} height={56} />
           <div className="min-w-0 flex-1">
             <div className="flex min-w-0 items-center gap-1.5">
               <span className="flex-none rounded-sm bg-[#eff8e9] px-1.5 py-0.5 text-[10px] font-semibold text-[#4c9a36]">{listProfile.identity || '原创商家'}</span>
@@ -42,9 +43,9 @@ export default function RestaurantInfo({ restaurant }) {
       </div>
 
       <div className="mt-1 bg-white px-2 pb-1.5 pt-1.5">
-        <div className="flex h-9 overflow-hidden rounded-full border border-[#f3cf37] bg-[#fffdf1] p-[2px]">
-          <button onClick={() => setFulfillment('delivery')} className={`relative flex-1 rounded-full text-[13px] ${fulfillment === 'delivery' ? 'bg-[var(--brand-yellow)] font-bold text-[#222]' : 'text-gray-700'}`}>外送 <span className="text-[9px] font-normal">约{deliveryTime}分钟</span></button>
-          <button onClick={() => setFulfillment('pickup')} className={`relative flex-1 rounded-full text-[13px] ${fulfillment === 'pickup' ? 'bg-[var(--brand-yellow)] font-bold text-[#222]' : 'text-gray-700'}`}>自取 <span className="text-[9px] font-normal">约18分钟可取</span></button>
+        <div className="flex h-9 overflow-hidden rounded-full border border-[var(--brand-primary)]/30 bg-[var(--brand-primary-soft)] p-[2px]">
+          <button onClick={() => setFulfillment('delivery')} className={`relative flex-1 rounded-full text-[13px] ${fulfillment === 'delivery' ? 'bg-[var(--brand-primary)] font-bold text-white' : 'text-gray-700'}`}>外送 <span className="text-[9px] font-normal">约{deliveryTime}分钟</span></button>
+          <button onClick={() => setFulfillment('pickup')} className={`relative flex-1 rounded-full text-[13px] ${fulfillment === 'pickup' ? 'bg-[var(--brand-primary)] font-bold text-white' : 'text-gray-700'}`}>自取 <span className="text-[9px] font-normal">约18分钟可取</span></button>
         </div>
 
         {promotionRules.length > 0 && (
@@ -66,10 +67,10 @@ export default function RestaurantInfo({ restaurant }) {
         </div>
 
         {operationCard && (
-          <div className="mt-1.5 flex h-10 items-center gap-2 rounded-md bg-[#fff9e9] px-2">
-            <span className="flex-none rounded-sm bg-[#ffe2a5] px-1.5 py-0.5 text-[9px] font-semibold text-[#966014]">{operationCard.eyebrow}</span>
+          <div className="mt-1.5 flex h-10 items-center gap-2 rounded-md bg-[var(--brand-primary-soft)] px-2">
+            <span className="flex-none rounded-sm bg-white/70 px-1.5 py-0.5 text-[9px] font-semibold text-[var(--brand-primary-deep)]">{operationCard.eyebrow}</span>
             <div className="min-w-0 flex-1"><p className="truncate text-[11px] font-bold text-[#333]">{operationCard.title}</p><p className="truncate text-[8px] text-gray-400">{operationCard.description}</p></div>
-            <span className="flex-none text-[10px] font-semibold text-[#a76a16]">{operationCard.action} ›</span>
+            <span className="flex-none text-[10px] font-semibold text-[var(--brand-primary-deep)]">{operationCard.action} ›</span>
           </div>
         )}
       </div>

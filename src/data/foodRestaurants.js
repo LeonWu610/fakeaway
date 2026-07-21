@@ -15,16 +15,16 @@ const fallbackImages = {
 }
 
 const productImages = {
-  r11: ['/images/products/r11-item1-claypot-rice.png', '/images/products/r11-item2-black-bean-ribs.png', '/images/products/r11-item3-beef-egg-rice.png', '/images/products/r11-item4-mushroom-chicken-rice.png'],
-  r12: ['/images/products/r12-item1-malatang.png', '/images/products/r12-item2-sour-beef-malatang.png', '/images/products/r12-item3-tomato-soup-bowl.png', '/images/products/r12-item4-mushroom-tofu-bowl.png'],
-  r13: ['/images/products/r13-item1-noodles.png', '/images/products/r13-item2-pea-noodles.png', '/images/products/r13-item3-tonkotsu-ramen.png', '/images/products/r13-item4-sour-beef-rice-noodles.png'],
-  r14: ['/images/products/r14-item1-bbq.png', '/images/products/r14-item2-beef-skewers.png', '/images/products/r14-item3-honey-chicken-wings.png', '/images/products/r14-item4-chicken-cartilage-skewers.png', '/images/products/r14-item5-garlic-eggplant.png'],
-  r15: ['/images/products/r15-item1-seared-salmon-sushi.png', '/images/products/r15-item2-sashimi-chirashi.png', '/images/products/r15-item3-eel-tamago-rice.png', '/images/products/r15-item4-teriyaki-chicken-rice.png'],
-  r16: ['/images/products/r16-item1-chicken-grain-bowl.png', '/images/products/r16-item2-beef-energy-bowl.png', '/images/products/r16-item3-avocado-shrimp-salad.png', '/images/products/r16-item4-teriyaki-tofu-bowl.png'],
-  r17: ['/images/products/r17-item1-century-egg-congee.png', '/images/products/r17-item2-shrimp-scallop-congee.png', '/images/products/r17-item3-pumpkin-millet-congee.png', '/images/products/r17-item4-mushroom-chicken-congee.png', '/images/products/r17-item5-pork-xiaolongbao.png'],
-  r18: ['/images/products/r18-item1-pork-cabbage-dumplings.png', '/images/products/r18-item2-shrimp-chive-dumplings.png', '/images/products/r18-item3-corn-pork-potstickers.png', '/images/products/r18-item4-sour-beef-dumplings.png', '/images/products/r18-item5-three-fresh-potstickers.png', '/images/products/r18-item6-kelp-salad.png', '/images/products/r18-item7-single-dumpling-combo.png', '/images/products/r18-item8-double-dumpling-feast.png'],
-  r19: ['/images/products/r19-item1-green-pepper-pork.png', '/images/products/r19-item2-tomato-eggs.png', '/images/products/r19-item3-fish-fragrant-pork.png', '/images/products/r19-item4-kung-pao-chicken.png', '/images/products/r19-item5-mapo-tofu.png', '/images/products/r19-item6-garlic-greens.png', '/images/products/r19-item7-worker-combo.png', '/images/products/r19-item8-double-home-meal.png'],
-  r20: ['/images/products/r20-item1-sea-salt-roll.png', '/images/products/r20-item2-classic-croissant.png', '/images/products/r20-item3-ham-cheese-ciabatta.png', '/images/products/r20-item4-cinnamon-apple-bagel.png', '/images/products/r20-item5-basque-cheesecake.png', '/images/products/r20-item6-chocolate-cookie.png', '/images/products/r20-item7-breakfast-bread-bag.png', '/images/products/r20-item8-double-afternoon-tea.png'],
+  r11: ['/images/products/r11-item1-claypot-rice.png', '/images/products/r11-item2-black-bean-ribs.png', '/images/products/r11-item3-beef-egg-rice.png', '/images/products/r11-item4-mushroom-chicken-rice.png', '/images/products/r11-item5-shrimp-scrambled-egg-rice.jpg', '/images/products/r11-item6-char-siu-double-egg-rice.jpg', '/images/products/r11-item7-worker-carb-combo.jpg', '/images/products/r11-item8-uncle-double-claypot-feast.jpg'],
+  r12: ['/images/products/r12-item1-malatang.png', '/images/products/r12-item2-sour-beef-malatang.png', '/images/products/r12-item3-tomato-soup-bowl.png', '/images/products/r12-item4-mushroom-tofu-bowl.png', '/images/products/r12-item5-hand-mixed-fresh-beef.jpg', '/images/products/r12-item6-tripe-luncheon-meat-duo.jpg', '/images/products/r12-item7-absorbing-tofu-skin-rolls.jpg', '/images/products/r12-item8-wide-noodle-potato-duo.jpg'],
+  r13: ['/images/products/r13-item1-noodles.png', '/images/products/r13-item2-pea-noodles.png', '/images/products/r13-item3-tonkotsu-ramen.png', '/images/products/r13-item4-sour-beef-rice-noodles.png', '/images/products/r13-item5-yibin-burning-noodles.jpg', '/images/products/r13-item6-spicy-red-oil-wontons.jpg', '/images/products/r13-item7-beef-pea-noodle-duo-bowl.jpg', '/images/products/r13-item8-midnight-healing-large-bowl.jpg'],
+  r14: ['/images/products/r14-item1-bbq.png', '/images/products/r14-item2-beef-skewers.png', '/images/products/r14-item3-honey-chicken-wings.png', '/images/products/r14-item4-chicken-cartilage-skewers.png', '/images/products/r14-item5-garlic-eggplant.png', '/images/products/r14-item6-foil-clam-vermicelli.jpg', '/images/products/r14-item7-twenty-skewer-double-feast.jpg', '/images/products/r14-item8-solo-bbq-freedom-combo.jpg'],
+  r15: ['/images/products/r15-item1-seared-salmon-sushi.png', '/images/products/r15-item2-sashimi-chirashi.png', '/images/products/r15-item3-eel-tamago-rice.png', '/images/products/r15-item4-teriyaki-chicken-rice.png', '/images/products/r15-item5-sweet-shrimp-avocado-hand-roll.jpg', '/images/products/r15-item6-karaage-fried-chicken.jpg', '/images/products/r15-item7-selected-solo-sushi-set.jpg', '/images/products/r15-item8-double-sushi-share-box.jpg'],
+  r16: ['/images/products/r16-item1-chicken-grain-bowl.png', '/images/products/r16-item2-beef-energy-bowl.png', '/images/products/r16-item3-avocado-shrimp-salad.png', '/images/products/r16-item4-teriyaki-tofu-bowl.png', '/images/products/r16-item5-soft-boiled-egg-caesar-salad.jpg', '/images/products/r16-item6-pumpkin-chickpea-soup.jpg', '/images/products/r16-item7-high-protein-training-combo.jpg', '/images/products/r16-item8-double-balanced-meal.jpg'],
+  r17: ['/images/products/r17-item1-century-egg-congee.png', '/images/products/r17-item2-shrimp-scallop-congee.png', '/images/products/r17-item3-pumpkin-millet-congee.png', '/images/products/r17-item4-mushroom-chicken-congee.png', '/images/products/r17-item5-pork-xiaolongbao.png', '/images/products/r17-item6-dried-shrimp-egg-rice-roll.jpg', '/images/products/r17-item7-vitality-workday-breakfast.jpg', '/images/products/r17-item8-slow-double-breakfast.jpg'],
+  r18: ['/images/products/r18-item1-pork-cabbage-dumplings.jpg', '/images/products/r18-item2-shrimp-chive-dumplings.jpg', '/images/products/r18-item3-corn-pork-potstickers.jpg', '/images/products/r18-item4-sour-beef-dumplings.jpg', '/images/products/r18-item5-three-fresh-potstickers.jpg', '/images/products/r18-item6-kelp-salad.jpg', '/images/products/r18-item7-single-dumpling-combo.jpg', '/images/products/r18-item8-double-dumpling-feast.jpg'],
+  r19: ['/images/products/r19-item1-green-pepper-pork.jpg', '/images/products/r19-item2-tomato-eggs.jpg', '/images/products/r19-item3-fish-fragrant-pork.jpg', '/images/products/r19-item4-kung-pao-chicken.jpg', '/images/products/r19-item5-mapo-tofu.jpg', '/images/products/r19-item6-garlic-greens.jpg', '/images/products/r19-item7-worker-combo.jpg', '/images/products/r19-item8-double-home-meal.jpg'],
+  r20: ['/images/products/r20-item1-sea-salt-roll.jpg', '/images/products/r20-item2-classic-croissant.jpg', '/images/products/r20-item3-ham-cheese-ciabatta.jpg', '/images/products/r20-item4-cinnamon-apple-bagel.jpg', '/images/products/r20-item5-basque-cheesecake.jpg', '/images/products/r20-item6-chocolate-cookie.jpg', '/images/products/r20-item7-breakfast-bread-bag.jpg', '/images/products/r20-item8-double-afternoon-tea.jpg'],
 }
 
 function makeItems(restaurantId, type, names) {
@@ -144,7 +144,7 @@ export default [
   {
     ...common, id: 'r18', name: '一口到家饺子馆', foodCategory: 'dumplings', archetype: 'neighborhood-kitchen',
     description: '现包现煮的街坊饺子馆，水饺、煎饺和家常小菜都按份认真做。', slogan: '一口一个，今天也算回家吃饭。',
-    image: '/images/merchants/r18-dumplings.png', coverImages: ['/images/merchants/r18-dumplings.png'], rating: 4.9, monthlySales: '6900+', distance: '0.8km', deliveryTime: 24, avgPrice: 27,
+    image: '/images/merchants/r18-dumplings.jpg', coverImages: ['/images/merchants/r18-dumplings.jpg'], rating: 4.9, monthlySales: '6900+', distance: '0.8km', deliveryTime: 24, avgPrice: 27,
     categories: ['饺子', '锅贴'], tags: ['现包现煮', '蘸料分装'], businessHours: { open: '09:30', close: '22:00' }, promotionText: '满30减6', promotionRules: ['满30减6', '满50减11'],
     listProfile: { identity: '手工饺子馆', imageBadge: '现包现煮', scoreBadge: '皮薄馅足', serviceTags: ['蘸料另装', '支持自取'], benefitLabel: '加饺券' },
     operationCard: { eyebrow: '今日现包', title: '四种招牌馅刚刚拌好', description: '水煮、煎制和酸汤三种吃法都能选', action: '来一盘饺子' },
@@ -158,7 +158,7 @@ export default [
   {
     ...common, id: 'r19', name: '灶边小炒', foodCategory: 'stirFry', archetype: 'neighborhood-kitchen',
     description: '一人也能点的小份现炒家常菜，锅气、米饭和热汤一起送到。', slogan: '锅气上桌，今天好好吃饭。',
-    image: '/images/merchants/r19-stir-fry.png', coverImages: ['/images/merchants/r19-stir-fry.png'], rating: 4.8, monthlySales: '6300+', distance: '1.1km', deliveryTime: 30, avgPrice: 38,
+    image: '/images/merchants/r19-stir-fry.jpg', coverImages: ['/images/merchants/r19-stir-fry.jpg'], rating: 4.8, monthlySales: '6300+', distance: '1.1km', deliveryTime: 30, avgPrice: 38,
     categories: ['家常菜', '小炒'], tags: ['现点现炒', '小份友好'], businessHours: { open: '10:30', close: '21:30' }, promotionText: '满40减8', promotionRules: ['满40减8', '满68减15'],
     listProfile: { identity: '现炒家常菜', imageBadge: '大火快炒', scoreBadge: '锅气很足', serviceTags: ['米饭可选', '小份友好'], benefitLabel: '下饭券' },
     operationCard: { eyebrow: '灶边热卖', title: '一个人也能点两道菜', description: '荤素小份搭配，不必为了凑单吃三顿', action: '选两道小炒' },
@@ -172,7 +172,7 @@ export default [
   {
     ...common, id: 'r20', name: '麦香慢慢', foodCategory: 'bakery', archetype: 'chain-campaign',
     description: '每日现烤面包、咸点与小蛋糕，适合早餐、下午茶和突然想吃甜的时刻。', slogan: '让面包慢慢发酵，让今天慢一点。',
-    image: '/images/merchants/r20-bakery.png', coverImages: ['/images/merchants/r20-bakery.png'], rating: 4.9, monthlySales: '5400+', distance: '1.0km', deliveryTime: 23, avgPrice: 29,
+    image: '/images/merchants/r20-bakery.jpg', coverImages: ['/images/merchants/r20-bakery.jpg'], rating: 4.9, monthlySales: '5400+', distance: '1.0km', deliveryTime: 23, avgPrice: 29,
     categories: ['烘焙', '甜点'], tags: ['每日现烤', '独立包装'], businessHours: { open: '07:30', close: '21:30' }, promotionText: '满35减7', promotionRules: ['满35减7', '满58减12'],
     listProfile: { identity: '原创烘焙坊', imageBadge: '今日现烤', scoreBadge: '麦香浓郁', serviceTags: ['独立包装', '支持预约'], benefitLabel: '面包券' },
     operationCard: { eyebrow: '今日出炉', title: '咸甜面包刚刚排上架', description: '早餐选咸口，下午茶留给奶油和巧克力', action: '挑一袋面包' },

@@ -36,7 +36,7 @@ export default function CartBar({ totalCount, totalPrice, couponAmount, onToggle
             flexShrink: 0,
           }}
         >
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 9V6a3 3 0 016 0v3"/></svg>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 9V6a3 3 0 016 0v3"/></svg>
           {hasItems && (
             <div
               style={{

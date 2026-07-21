@@ -14,13 +14,13 @@ export default [
     operationCard: { eyebrow: '深夜补给', title: '今晚缺的都在这里', description: '饮料、零食和日用品已经分类摆好', action: '去挑选' },
     menus: [
       { categoryId: 'snack', categoryName: '零食饮料', items: [
-        { id: 'r7_item1', name: '海盐脆薯片', description: '咔嚓一声，今天就先到这里', price: 8, image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=300&q=80', monthlySales: '月售1200+', isHot: true, rating: 98 },
-        { id: 'r7_item2', name: '冰柠气泡水', description: '清爽柠檬味，不必真的打开', price: 6, image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&q=80', monthlySales: '月售900+', isRecommended: true, rating: 97 },
-        { id: 'r7_item3', name: '深夜巧克力曲奇', description: '留给还不想睡的你', price: 12, image: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&q=80', monthlySales: '月售600+', rating: 96 },
+        { id: 'r7_item1', name: '海盐脆薯片', description: '咔嚓一声，今天就先到这里', price: 8, image: '/images/products/r7-item1-sea-salt-potato-chips.jpg', monthlySales: '月售1200+', isHot: true, rating: 98 },
+        { id: 'r7_item2', name: '冰柠气泡水', description: '清爽柠檬味，不必真的打开', price: 6, image: '/images/products/r7-item2-iced-lemon-sparkling-water.jpg', monthlySales: '月售900+', isRecommended: true, rating: 97 },
+        { id: 'r7_item3', name: '深夜巧克力曲奇', description: '留给还不想睡的你', price: 12, image: '/images/products/r7-item3-midnight-chocolate-cookies.jpg', monthlySales: '月售600+', rating: 96 },
       ]},
       { categoryId: 'daily', categoryName: '日常补给', items: [
-        { id: 'r7_item4', name: '柔软抽纸三包装', description: '普通但让人安心的生活用品', price: 15, image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=300&q=80', monthlySales: '月售500+', rating: 97 },
-        { id: 'r7_item5', name: '旅行洗漱补给包', description: '牙刷、湿巾与小毛巾组合', price: 19, image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=300&q=80', monthlySales: '月售300+', rating: 96 },
+        { id: 'r7_item4', name: '柔软抽纸三包装', description: '普通但让人安心的生活用品', price: 15, image: '/images/products/r7-item4-soft-facial-tissues-three-pack.jpg', monthlySales: '月售500+', rating: 97 },
+        { id: 'r7_item5', name: '旅行洗漱补给包', description: '牙刷、湿巾与小毛巾组合', price: 19, image: '/images/products/r7-item5-travel-toiletry-kit.jpg', monthlySales: '月售300+', rating: 96 },
       ]},
     ],
   },
@@ -31,13 +31,13 @@ export default [
     operationCard: { eyebrow: '今日果篮', title: '刚刚好的成熟度', description: '每一份都按软硬和甜度认真挑选', action: '看果篮' },
     menus: [
       { categoryId: 'fruit', categoryName: '今日鲜果', items: [
-        { id: 'r8_item1', name: '晴甜草莓盒', description: '红得认真，甜得不过分', price: 29, image: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=300&q=80', monthlySales: '月售1000+', isHot: true, rating: 98 },
-        { id: 'r8_item2', name: '青提小果篮', description: '清甜脆口的一小篮绿色心情', price: 35, image: 'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=300&q=80', monthlySales: '月售800+', isRecommended: true, rating: 98 },
-        { id: 'r8_item3', name: '橙意满满四枚装', description: '适合慢慢剥开的明亮橙子', price: 22, image: 'https://images.unsplash.com/photo-1547514701-42782101795e?w=300&q=80', monthlySales: '月售600+', rating: 97 },
+        { id: 'r8_item1', name: '晴甜草莓盒', description: '红得认真，甜得不过分', price: 29, image: '/images/products/r8-item1-sweet-strawberry-box.jpg', monthlySales: '月售1000+', isHot: true, rating: 98 },
+        { id: 'r8_item2', name: '青提小果篮', description: '清甜脆口的一小篮绿色心情', price: 35, image: '/images/products/r8-item2-green-grape-basket.jpg', monthlySales: '月售800+', isRecommended: true, rating: 98 },
+        { id: 'r8_item3', name: '橙意满满四枚装', description: '适合慢慢剥开的明亮橙子', price: 22, image: '/images/products/r8-item3-four-fresh-oranges.jpg', monthlySales: '月售600+', rating: 97 },
       ]},
       { categoryId: 'cut', categoryName: '现切果盒', items: [
-        { id: 'r8_item4', name: '七彩鲜果杯', description: '七种水果分格装好，不串味', price: 26, image: 'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=300&q=80', monthlySales: '月售700+', isHot: true, rating: 97 },
-        { id: 'r8_item5', name: '清爽西瓜方盒', description: '去籽切方，夏夜限定想象', price: 18, image: 'https://images.unsplash.com/photo-1563114773-84221bd62daa?w=300&q=80', monthlySales: '月售500+', rating: 96 },
+        { id: 'r8_item4', name: '七彩鲜果杯', description: '七种水果分格装好，不串味', price: 26, image: '/images/products/r8-item4-seven-fruit-cup.jpg', monthlySales: '月售700+', isHot: true, rating: 97 },
+        { id: 'r8_item5', name: '清爽西瓜方盒', description: '去籽切方，夏夜限定想象', price: 18, image: '/images/products/r8-item5-seedless-watermelon-cubes.jpg', monthlySales: '月售500+', rating: 96 },
       ]},
     ],
   },
@@ -48,13 +48,13 @@ export default [
     operationCard: { eyebrow: '温和提醒', title: '不舒服时先照顾好自己', description: '严重或持续不适请及时线下就医', action: '看常备品' },
     menus: [
       { categoryId: 'care', categoryName: '日常护理', items: [
-        { id: 'r9_item1', name: '蒸汽热敷眼罩', description: '给盯屏幕太久的眼睛一会儿休息', price: 16, image: 'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=300&q=80', monthlySales: '月售800+', isHot: true, rating: 98 },
-        { id: 'r9_item2', name: '柔软医用口罩十片', description: '独立包装，日常出门备用', price: 12, image: 'https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=300&q=80', monthlySales: '月售600+', rating: 97 },
-        { id: 'r9_item3', name: '创口护理组合', description: '创可贴与清洁棉片的日常组合', price: 18, image: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=300&q=80', monthlySales: '月售400+', isRecommended: true, rating: 98 },
+        { id: 'r9_item1', name: '蒸汽热敷眼罩', description: '给盯屏幕太久的眼睛一会儿休息', price: 16, image: '/images/products/r9-item1-steam-warming-eye-mask.jpg', monthlySales: '月售800+', isHot: true, rating: 98 },
+        { id: 'r9_item2', name: '柔软医用口罩十片', description: '独立包装，日常出门备用', price: 12, image: '/images/products/r9-item2-medical-masks-ten-pack.jpg', monthlySales: '月售600+', rating: 97 },
+        { id: 'r9_item3', name: '创口护理组合', description: '创可贴与清洁棉片的日常组合', price: 18, image: '/images/products/r9-item3-wound-care-kit.jpg', monthlySales: '月售400+', isRecommended: true, rating: 98 },
       ]},
       { categoryId: 'comfort', categoryName: '舒缓补给', items: [
-        { id: 'r9_item4', name: '温热贴四片装', description: '轻轻暖一会儿，避免直接接触皮肤', price: 20, image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=300&q=80', monthlySales: '月售500+', rating: 97 },
-        { id: 'r9_item5', name: '便携冷敷袋', description: '可重复使用的日常冷敷用品', price: 24, image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&q=80', monthlySales: '月售260+', rating: 96 },
+        { id: 'r9_item4', name: '温热贴四片装', description: '轻轻暖一会儿，避免直接接触皮肤', price: 20, image: '/images/products/r9-item4-warming-patches-four-pack.jpg', monthlySales: '月售500+', rating: 97 },
+        { id: 'r9_item5', name: '便携冷敷袋', description: '可重复使用的日常冷敷用品', price: 24, image: '/images/products/r9-item5-reusable-cold-compress-bag.jpg', monthlySales: '月售260+', rating: 96 },
       ]},
     ],
   },
@@ -69,14 +69,14 @@ export default [
     waitingProfile: { tone: 'efficient', stages: ['跑腿员已接下模拟委托', '正在前往约定取件点', '物品信息已核对，开始送达', '顺路人很快抵达想象中的门口'] },
     menus: [
       { categoryId: 'pickup', categoryName: '代取代送', items: [
-        { id: 'r10_item1', name: '附近帮取一趟', description: '模拟代取快递、文件或已付款物品，基础范围2公里', price: 10, image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f2?w=300&q=80', monthlySales: '月售1600+', isHot: true, rating: 98 },
-        { id: 'r10_item2', name: '同城文件直送', description: '模拟文件袋点对点送达，取送信息由你想象', price: 16, image: 'https://images.unsplash.com/photo-1568234928966-359c35dd8327?w=300&q=80', monthlySales: '月售980+', isRecommended: true, rating: 99 },
-        { id: 'r10_item3', name: '小件物品代送', description: '适合钥匙、雨伞等轻便日用品，不含贵重物品', price: 14, image: 'https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300&q=80', monthlySales: '月售760+', rating: 97 },
+        { id: 'r10_item1', name: '附近帮取一趟', description: '模拟代取快递、文件或已付款物品，基础范围2公里', price: 10, image: '/images/products/r10-item1-nearby-pickup-service.jpg', monthlySales: '月售1600+', isHot: true, rating: 98 },
+        { id: 'r10_item2', name: '同城文件直送', description: '模拟文件袋点对点送达，取送信息由你想象', price: 16, image: '/images/products/r10-item2-city-document-delivery.jpg', monthlySales: '月售980+', isRecommended: true, rating: 99 },
+        { id: 'r10_item3', name: '小件物品代送', description: '适合钥匙、雨伞等轻便日用品，不含贵重物品', price: 14, image: '/images/products/r10-item3-small-item-delivery.jpg', monthlySales: '月售760+', rating: 97 },
       ]},
       { categoryId: 'help', categoryName: '生活帮忙', items: [
-        { id: 'r10_item4', name: '帮忙排队半小时', description: '模拟普通门店排队占位，不涉及医疗及政务事项', price: 18, image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&q=80', monthlySales: '月售620+', isHot: true, rating: 97 },
-        { id: 'r10_item5', name: '忘带物品取回', description: '从熟悉地点模拟取回一件落下的小物品', price: 15, image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=300&q=80', monthlySales: '月售530+', isRecommended: true, rating: 98 },
-        { id: 'r10_item6', name: '鲜花蛋糕轻送', description: '模拟轻拿轻放专送，适合需要保持平稳的物品', price: 22, image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=300&q=80', monthlySales: '月售410+', rating: 98 },
+        { id: 'r10_item4', name: '帮忙排队半小时', description: '模拟普通门店排队占位，不涉及医疗及政务事项', price: 18, image: '/images/products/r10-item4-half-hour-queue-service.jpg', monthlySales: '月售620+', isHot: true, rating: 97 },
+        { id: 'r10_item5', name: '忘带物品取回', description: '从熟悉地点模拟取回一件落下的小物品', price: 15, image: '/images/products/r10-item5-forgotten-item-retrieval.jpg', monthlySales: '月售530+', isRecommended: true, rating: 98 },
+        { id: 'r10_item6', name: '鲜花蛋糕轻送', description: '模拟轻拿轻放专送，适合需要保持平稳的物品', price: 22, image: '/images/products/r10-item6-flower-cake-careful-delivery.jpg', monthlySales: '月售410+', rating: 98 },
       ]},
     ],
   },

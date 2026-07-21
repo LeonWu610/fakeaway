@@ -16,6 +16,11 @@ DEFAULT_MODEL = "doubao-seedream-5-0-lite-260128"
 BULK_MODEL = "doubao-seedream-4-5-251128"
 MODEL_ENV_BY_TIER = {"bulk": "ARK_BULK_IMAGE_MODEL", "premium": "ARK_PREMIUM_IMAGE_MODEL"}
 IMAGE_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp")
+DEFAULT_VISUAL_DIRECTION = (
+    "整体视觉鲜艳明快、色彩饱和但食材颜色仍真实，使用丰富而有秩序的配色层次与高对比商业灯光，"
+    "画面有让人想继续浏览的丰盛内容感；主体商品必须最醒目，规格、数量、食材和造型保持准确，"
+    "辅助道具只用于增强氛围，不得喧宾夺主或加入无关食物。"
+)
 
 
 def existing_output(output: Path) -> Path | None:
@@ -74,18 +79,27 @@ def model_for(job: dict[str, str], args: argparse.Namespace) -> str:
     return os.environ.get("ARK_IMAGE_MODEL", DEFAULT_MODEL)
 
 
+def compose_prompt(job: dict[str, str]) -> str:
+    prompt = job["prompt"].strip()
+    direction = job.get("visualDirection", DEFAULT_VISUAL_DIRECTION)
+    return f"{prompt}；{direction}" if direction else prompt
+
+
 def generate(client: Any, model: str, prompt: str, output: Path, size: str, overwrite: bool) -> bool:
     existing = existing_output(output)
     if existing and not overwrite:
         print(f"skip existing: {existing}")
         return False
 
+    extra_body = {"watermark": False}
+    if model != BULK_MODEL:
+        extra_body["output_format"] = "png"
     response = client.images.generate(
         model=model,
         prompt=prompt,
         size=size,
         response_format="url",
-        extra_body={"output_format": "png", "watermark": False},
+        extra_body=extra_body,
     )
     if not response.data or not response.data[0].url:
         raise RuntimeError("Image API returned no downloadable URL")
@@ -146,9 +160,9 @@ def main() -> int:
 
     from openai import OpenAI
 
-    client = OpenAI(base_url=BASE_URL, api_key=api_key)
+    client = OpenAI(base_url=BASE_URL, api_key=api_key, timeout=180.0, max_retries=2)
     for job in jobs:
-        generate(client, model_for(job, args), job["prompt"], Path(job["output"]), args.size, args.overwrite)
+        generate(client, model_for(job, args), compose_prompt(job), Path(job["output"]), args.size, args.overwrite)
     return 0
 
 

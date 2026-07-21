@@ -1,0 +1,128 @@
+[
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r7-item1-sea-salt-potato-chips.png",
+    "remoteKey": "images/products/r7-item1-sea-salt-potato-chips.png",
+    "prompt": "原创便利店商品海盐脆薯片，一只打开的无字纯色哑光零食袋斜放，袋口露出金黄薄脆的波纹马铃薯片，旁边整齐散放六片完整薯片与少量天然海盐晶粒，真实酥脆纹理，45度近景，明亮米白与浅蓝背景，干净真实的电商商品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、薯条或玉米片等品类错误、包装畸形、薯片焦黑破碎、油渍、数量明显错误、重复纹理、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r7-item2-iced-lemon-sparkling-water.png",
+    "remoteKey": "images/products/r7-item2-iced-lemon-sparkling-water.png",
+    "prompt": "原创便利店商品冰柠气泡水，一瓶330毫升无字透明玻璃瓶装清澈气泡水，瓶内有细密自然气泡，旁边一只盛有冰块和两片新鲜柠檬的透明杯，瓶身与杯壁均有冷凝水，45度近景，清爽浅黄与冰蓝背景，干净真实的电商饮料摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、可乐或茶饮等品类错误、瓶杯畸形、柠檬数量错误、液体溢出、荧光色、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r7-item3-midnight-chocolate-cookies.png",
+    "remoteKey": "images/products/r7-item3-midnight-chocolate-cookies.png",
+    "prompt": "原创便利店商品深夜巧克力曲奇，一只打开的无字深棕纯色纸袋旁清楚摆放六块圆形巧克力曲奇，深可可色饼干中嵌有自然巧克力豆，一块掰开展示松软酥脆内里，45度近景，温暖深棕与米色背景，干净真实的电商食品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、夹心饼干或蛋糕等品类错误、曲奇数量错误、形状畸形、焦黑、碎屑过多、重复纹理、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r7-item4-soft-facial-tissues-three-pack.png",
+    "remoteKey": "images/products/r7-item4-soft-facial-tissues-three-pack.png",
+    "prompt": "原创便利店商品柔软抽纸三包装，三包相同尺寸的长方形白色软抽纸巾整齐叠放，外包装为无字纯白与浅蓝几何色块，一包顶部抽出一张洁白柔软纸巾，明确表现三包装规格，正面偏45度，明亮洁净白色背景，干净真实的日用品电商商品摄影，正方形；不要任何文字、商标、水印、人物、手、品牌包装、卷纸或湿巾等品类错误、包装数量错误、少于或多于三包、纸包畸形、纸巾污损、重复物体、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r7-item5-travel-toiletry-kit.png",
+    "remoteKey": "images/products/r7-item5-travel-toiletry-kit.png",
+    "prompt": "原创便利店商品旅行洗漱补给包，一个透明无字拉链收纳袋内完整装有一支折叠牙刷、一支迷你无字牙膏、一小包无字湿巾和一条卷起的浅灰小毛巾，四项内容清楚可辨且尺寸便携，45度近景，洁净米白与浅绿色背景，干净真实的日用品电商商品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、化妆品或药品等品类错误、套装数量错误、缺项或多项、牙刷畸形、容器泄漏、物品重叠混乱、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r8-item1-sweet-strawberry-box.png",
+    "remoteKey": "images/products/r8-item1-sweet-strawberry-box.png",
+    "prompt": "原创鲜果商品晴甜草莓盒，一只透明无字方形果盒中单层整齐装十二颗成熟新鲜草莓，果实大小自然、鲜红有光泽、绿色果蒂完整，无切块无奶油，盒盖打开置于后方，俯视偏45度，明亮米白与淡粉背景，干净真实的生鲜电商商品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、覆盆子或樱桃等品类错误、草莓数量明显错误、果实畸形粘连、霉斑腐烂、机械重复、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r8-item2-green-grape-basket.png",
+    "remoteKey": "images/products/r8-item2-green-grape-basket.png",
+    "prompt": "原创鲜果商品青提小果篮，一只小号浅色藤篮中盛放两串新鲜青提，每串果粒饱满圆润、浅绿色半透明、枝梗自然翠绿，少量青提叶点缀，明确为完整鲜果而非果汁，45度近景，清新米白与浅绿背景，干净真实的生鲜电商商品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、紫葡萄或其他水果等品类错误、果篮畸形、果粒巨大或粘连、腐烂褐斑、数量明显错误、重复纹理、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r8-item3-four-fresh-oranges.png",
+    "remoteKey": "images/products/r8-item3-four-fresh-oranges.png",
+    "prompt": "原创鲜果商品橙意满满四枚装，一只浅色纸托中准确摆放四枚完整新鲜甜橙，橙皮细腻自然、颜色明亮，果实大小一致但不过度规整，其中一枚带一片绿叶，明确四枚规格，45度近景，明亮暖白与淡橙背景，干净真实的生鲜电商商品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、橘子柠檬或其他水果等品类错误、水果数量错误、少于或多于四枚、果实畸形融合、切开果肉、腐烂斑点、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r8-item4-seven-fruit-cup.png",
+    "remoteKey": "images/products/r8-item4-seven-fruit-cup.png",
+    "prompt": "原创现切鲜果商品七彩鲜果杯，一只透明无字宽口方杯内分区装好准确七种鲜果：红草莓块、橙色芒果块、黄色菠萝块、绿色青提、浅绿猕猴桃块、红色西瓜块与蓝莓，每种清楚可辨、互不混成沙拉，杯盖放在一旁，俯视偏45度，洁净白色背景，干净真实的生鲜电商商品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、酸奶奶油或水果罐头等品类错误、水果数量错误、七种水果缺项或重复、果块畸形、腐烂出水、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r8-item5-seedless-watermelon-cubes.png",
+    "remoteKey": "images/products/r8-item5-seedless-watermelon-cubes.png",
+    "prompt": "原创现切鲜果商品清爽西瓜方盒，一只透明无字方形果盒中整齐但自然装满约二十块去皮去籽的红色西瓜方块，切面新鲜多汁、大小适口，盒内无其他水果，盒盖半开置后，俯视偏45度，明亮白色与浅绿背景，干净真实的生鲜电商商品摄影，正方形；不要文字、商标、水印、人物、手、品牌包装、哈密瓜或其他水果等品类错误、黑籽或瓜皮、方块畸形粘连、数量过少、腐烂出水、荧光红、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r9-item1-steam-warming-eye-mask.png",
+    "remoteKey": "images/products/r9-item1-steam-warming-eye-mask.png",
+    "prompt": "原创日常护理商品蒸汽热敷眼罩，一只洁白柔软的无字一次性热敷眼罩平铺展示，椭圆眼部轮廓与两侧耳挂结构准确，旁边整齐放三袋独立无字浅米色密封袋，突出温和热敷与一次性用品，45度近景，洁净米白与浅紫背景，干净真实的健康用品电商摄影，正方形；不要文字、商标、水印、人物、脸、眼睛、手、品牌包装、睡眠眼罩或护目镜等品类错误、眼罩结构畸形、耳挂数量错误、医疗器械、药片、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r9-item2-medical-masks-ten-pack.png",
+    "remoteKey": "images/products/r9-item2-medical-masks-ten-pack.png",
+    "prompt": "原创日常护理商品柔软医用口罩十片，一只打开的无字纯白纸盒旁准确叠放十片浅蓝色一次性平面医用口罩，每片有三层褶皱、白色耳带和鼻梁条，另有少量无字独立透明包装展示，明确十片装规格，俯视偏45度，洁净白色背景，干净真实的健康用品电商摄影，正方形；不要文字、商标、水印、人物、脸、手、品牌包装、布口罩或防毒面具等品类错误、口罩数量错误、少于或多于十片、耳带畸形缠绕、污渍、医疗场景、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r9-item3-wound-care-kit.png",
+    "remoteKey": "images/products/r9-item3-wound-care-kit.png",
+    "prompt": "原创日常护理商品创口护理组合，一个透明无字便携收纳盒内分区放置十枚肤色创可贴与十片独立无字清洁棉片，盒外额外展示两枚不同尺寸创可贴和两片方形棉片，内容仅为基础日常护理用品，俯视偏45度，洁净白色与浅绿色背景，干净真实的健康用品电商摄影，正方形；不要文字、商标、水印、人物、手、伤口、血液、品牌包装、药片针具或绷带卷等品类错误、组合缺项、数量明显错误、物品畸形、污渍、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r9-item4-warming-patches-four-pack.png",
+    "remoteKey": "images/products/r9-item4-warming-patches-four-pack.png",
+    "prompt": "原创舒缓用品温热贴四片装，桌面准确摆放四片独立无字浅米色密封袋，其中一袋打开并露出一片圆角长方形白色自发热贴，贴片表面平整柔软，明确四片装规格，俯视偏45度，温暖米白与淡橙背景，干净真实的健康用品电商摄影，正方形；不要文字、商标、水印、人物、身体、手、品牌包装、膏药或创可贴等品类错误、贴片数量错误、少于或多于四片、贴片畸形卷曲、火焰、药品、污渍、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r9-item5-reusable-cold-compress-bag.png",
+    "remoteKey": "images/products/r9-item5-reusable-cold-compress-bag.png",
+    "prompt": "原创舒缓用品便携冷敷袋，一只中号可重复使用的柔软浅蓝凝胶冷敷袋平铺，圆角长方形袋体半透明、内部凝胶均匀，表面有自然冷凝水珠，旁边放一个无字白色保护布套，45度近景，冰蓝与洁净白色背景，干净真实的健康用品电商摄影，正方形；不要文字、商标、水印、人物、身体、手、品牌包装、热水袋或药袋等品类错误、袋体破损畸形、凝胶泄漏、冰块尖刺、医疗器械、数量错误、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r10-item1-nearby-pickup-service.png",
+    "remoteKey": "images/products/r10-item1-nearby-pickup-service.png",
+    "prompt": "原创跑腿服务商品附近帮取一趟，用一只完好封口的无字牛皮纸快递小箱、一只透明文件袋和一串普通钥匙整齐放在简洁桌面上，三类可代取物品清楚分开，背景以柔和路线虚化暗示两公里附近取送，无真人出现，俯视偏45度，明亮蓝绿背景，干净真实的电商服务场景摄影，正方形；不要任何文字、商标、水印、人物、手、骑手、品牌包装、外卖食品或贵重珠宝等品类错误、物品缺失或重复、钥匙畸形、箱体破损、地址标签、数量错误、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r10-item2-city-document-delivery.png",
+    "remoteKey": "images/products/r10-item2-city-document-delivery.png",
+    "prompt": "原创跑腿服务商品同城文件直送，一只封口完好的无字牛皮纸文件袋居中平放，旁边是一只无字硬壳文件夹和简洁路线形状的蓝色细绳，从画面一端连接到另一端，突出点对点文件送达且不展示内容，无真人出现，俯视偏45度，洁净白色与深蓝背景，干净真实的电商服务场景摄影，正方形；不要任何文字、商标、水印、人物、手、骑手、品牌包装、快递纸箱或食品等品类错误、文件袋畸形破损、可读地址、印章、机密内容、数量错误、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r10-item3-small-item-delivery.png",
+    "remoteKey": "images/products/r10-item3-small-item-delivery.png",
+    "prompt": "原创跑腿服务商品小件物品代送，一把折叠雨伞、一串普通钥匙和一个小号无字布袋整齐装入打开的无字浅灰便携配送盒中，三件轻便日用品清楚可见且无贵重物品，无真人出现，45度近景，明亮青蓝与米白背景，干净真实的电商服务场景摄影，正方形；不要任何文字、商标、水印、人物、手、骑手、品牌包装、手机珠宝或大件包裹等品类错误、物品缺项或重复、伞和钥匙畸形、盒体破损、数量错误、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r10-item4-half-hour-queue-service.png",
+    "remoteKey": "images/products/r10-item4-half-hour-queue-service.png",
+    "prompt": "原创跑腿服务商品帮忙排队半小时，用六枚相同的无字纯色圆形号码牌沿着地面导向带整齐排成一列，前方是一根简洁隔离栏与一只无字小型计时器，计时器仅以半圈进度色块表达半小时而不显示数字，无真人出现，轻俯视构图，明亮橙蓝背景，干净真实的电商服务概念摄影，正方形；不要任何文字、数字、商标、水印、人物、手、品牌包装、医院政务或医疗场景等品类错误、号码牌数量错误、拥挤人群、栏杆畸形、可读标识、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r10-item5-forgotten-item-retrieval.png",
+    "remoteKey": "images/products/r10-item5-forgotten-item-retrieval.png",
+    "prompt": "原创跑腿服务商品忘带物品取回，一只小号无字浅色收纳托盘中放着一串普通钥匙、一副黑框眼镜和一把折叠雨伞，旁边是一只打开的无字软质便携配送袋，表现从熟悉地点取回一件落下小物的服务选择，无真人出现，俯视偏45度，温暖米白与浅蓝背景，干净真实的电商服务场景摄影，正方形；不要任何文字、商标、水印、人物、手、骑手、品牌包装、手机珠宝或贵重物品等品类错误、物品畸形融合、配送袋破损、重复物体、数量错误、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r10-item6-flower-cake-careful-delivery.png",
+    "remoteKey": "images/products/r10-item6-flower-cake-careful-delivery.png",
+    "prompt": "原创跑腿服务商品鲜花蛋糕轻送，一束小型粉白鲜花用无字素色纸轻柔包裹，旁边一只透明无字方形蛋糕盒内放完整六寸白色奶油水果蛋糕，两件物品各自稳定置于带防滑垫的浅色配送托盘中，突出轻拿轻放与保持平稳，无真人出现，45度近景，柔和粉米色背景，干净真实的电商服务场景摄影，正方形；不要任何文字、商标、水印、人物、手、骑手、品牌包装、其他物品等品类错误、鲜花或蛋糕缺项、蛋糕切片或倾倒、花朵畸形、物品挤压、数量错误、塑料质感"
+  }
+]

@@ -1,3 +1,5 @@
+import AppImage from '../common/AppImage'
+
 function normalizeSales(value) {
   return String(value || '').replace(/^月售/, '')
 }
@@ -16,7 +18,7 @@ export default function MenuItem({ item, quantity, onAdd, onRemove, onChooseSpec
   return (
     <div className="flex min-h-[116px] border-b border-gray-100 bg-white py-3">
       <div className="relative h-[94px] w-[94px] flex-none overflow-hidden rounded-lg bg-gray-100">
-        <img src={imageUrl} alt={name} className="h-full w-full object-cover" />
+        <AppImage src={imageUrl} alt={name} className="h-full w-full object-cover" sizes="94px" width={94} height={94} />
         {(isHot || isRecommended) && <span className={`absolute left-1 top-1 rounded-sm px-1 py-0.5 text-[9px] font-semibold text-white ${isHot ? 'bg-[#ff4d32]' : 'bg-[#4e9b65]'}`}>{isHot ? '热销' : '店长推荐'}</span>}
       </div>
 
@@ -46,7 +48,7 @@ export default function MenuItem({ item, quantity, onAdd, onRemove, onChooseSpec
           {hasSpecs ? (
             <div className="mb-0.5 flex items-center gap-1.5">
               {quantity > 0 && <span className="text-[10px] text-gray-500">已选{quantity}</span>}
-              <button onClick={() => onChooseSpecs(item)} className="h-7 rounded-full bg-[var(--brand-yellow)] px-2.5 text-[11px] font-semibold text-[#222] shadow-sm" aria-label={`选择${name}规格`}>选规格</button>
+              <button onClick={() => onChooseSpecs(item)} className="h-7 rounded-full bg-[var(--brand-primary)] px-2.5 text-[11px] font-semibold text-white shadow-sm" aria-label={`选择${name}规格`}>选规格</button>
             </div>
           ) : quantity > 0 ? (
             <div className="mb-0.5 flex items-center gap-2">

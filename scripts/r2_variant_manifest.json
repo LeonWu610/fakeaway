@@ -1,0 +1,2270 @@
+[
+  {
+    "key": "images/variants-v1/320/merchants/r1-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r1-fruit-tea.webp",
+    "size": 9036,
+    "sha256": "d5483c0768be678e82e5aecb70292245146686166de3984ea907e3d376b060fe"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r11-claypot-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r11-claypot-rice.webp",
+    "size": 19004,
+    "sha256": "bfa394fc4a4b38f4cd767eaa71059e619e796f701da001a80129d058350c36ef"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r12-malatang.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r12-malatang.webp",
+    "size": 12568,
+    "sha256": "6bd40d7c3e3faef369ea04abaed0d05b2cacbf3a6063f8ba9660c5dc43b629f8"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r13-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r13-noodles.webp",
+    "size": 14328,
+    "sha256": "4ad8d71d3de61a989a1ec09a6fc318fb8e01c11d2ab653eef3bd7135326c5204"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r14-bbq.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r14-bbq.webp",
+    "size": 20442,
+    "sha256": "5d2749a24a91648a47d616f80a97494415690afc171569a283d61c40bcb8e0b1"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r15-japanese.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r15-japanese.webp",
+    "size": 12462,
+    "sha256": "8e7a460ad359bd0bb10e432b7579f7fab6a195c1c145460aae7417ef257ce3a3"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r16-light-meal.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r16-light-meal.webp",
+    "size": 13910,
+    "sha256": "99ee197363505dc5c76ff8be3a5c6ac33aab5aae2324778c11a9f63301faa13c"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r17-breakfast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r17-breakfast.webp",
+    "size": 13526,
+    "sha256": "7d17b037a7069f724384030470414e8b117fc396e7c531e99cb5b18899dee345"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r18-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r18-dumplings.webp",
+    "size": 15908,
+    "sha256": "ab6ee5ff3bf3d304f31c94ae682bcf48ef0c7a677c9cb71e01d183e6f38a04ce"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r19-stir-fry.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r19-stir-fry.webp",
+    "size": 21836,
+    "sha256": "03a69362dd333f1c63ef78af95c9052e453e78b0c223da63e64da22a48f6b524"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r2-leaf-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r2-leaf-tea.webp",
+    "size": 4374,
+    "sha256": "4e7976c19b944880c7698efcfd14335b38416f6c51764084adabd9ab6a4d784f"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r20-bakery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r20-bakery.webp",
+    "size": 15032,
+    "sha256": "60d03667f5e54e0a1a246e1c2f924126ea32304152b8a919a7b14e52b6870fc5"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r3-burger.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r3-burger.webp",
+    "size": 8642,
+    "sha256": "c88ba7cb460308501121fae7545cc3a933e2bfc0105c8da5e51f817207791687"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r4-fried-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r4-fried-chicken.webp",
+    "size": 16026,
+    "sha256": "69f73e2a62c6511b20d28de0ce94e50d535439af180b79545d0356751427fbc2"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r5-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r5-coffee.webp",
+    "size": 7446,
+    "sha256": "eeb77bcf44bf03c6b8a04dca3c66d8c7ec80233bf3bbb8b5e7f87af256eacb03"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r6-hotpot.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r6-hotpot.webp",
+    "size": 9306,
+    "sha256": "5a864fe3bbf33baa8544c80f6184c6d36db144fc3ffaba717c4df708fd4dcf83"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item1-strawberry-cheese-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item1-strawberry-cheese-tea.webp",
+    "size": 6544,
+    "sha256": "b8f05b1f88a5b6b609dbbb5cb0872678d31a7ab05290a6e02c64910cb3ebd9c5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item10-warm-smoky-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item10-warm-smoky-tea.webp",
+    "size": 12998,
+    "sha256": "f9dd16a1ace33ef3b9437f190aba217becea6c32d19d47fbcf1fb4feed3196e3"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item11-winter-warm-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item11-winter-warm-fruit-tea.webp",
+    "size": 12100,
+    "sha256": "68d42b1a7b6767fa6739520333a94fb4e17f91095a4c59afb7c4e4ffb773f02c"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item12-fresh-milk.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item12-fresh-milk.webp",
+    "size": 6986,
+    "sha256": "e7b73b5ef97b87049d06326662e3f9dbb289f6d117594d9f4db141c7343aa782"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item2-grape-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item2-grape-fruit-tea.webp",
+    "size": 10008,
+    "sha256": "ec37872cabb27ef828d9c7b131a45fe22841d925163a14981cd9353991534c11"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item3-cheese-strawberry-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item3-cheese-strawberry-tea.webp",
+    "size": 5248,
+    "sha256": "6e92028db9edc70d2a9ac2a9b0710a896e36ed5068226340a86d5e6ce185c54e"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item4-matcha-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item4-matcha-latte.webp",
+    "size": 8180,
+    "sha256": "010b60b81b7d71fa9bc105283924f275eea482c7ebcac69aa51c5fb8e5e48d7f"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item5-red-grapefruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item5-red-grapefruit-tea.webp",
+    "size": 8342,
+    "sha256": "2a4ab0fcc15078fea2c7e522ebdd37e36cd999d1bfaebf47e14703b85c34f06d"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item6-mango-cheese-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item6-mango-cheese-tea.webp",
+    "size": 5740,
+    "sha256": "055b8bba61b78752f58fd6dab8de3e67121a1250a8d17bc008356f8e47f8f4d0"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item7-strawberry-cheesecake-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item7-strawberry-cheesecake-cup.webp",
+    "size": 10628,
+    "sha256": "1f3d0fb6cabb29662fe3f466c039312fe352cb7f66cef9971dbd1548ad2f52ea"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item8-oat-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item8-oat-latte.webp",
+    "size": 7898,
+    "sha256": "7c9be0f30dad80e096fca804fdfccf9481d2c9c994bff3a33c7a9aefeba59d74"
+  },
+  {
+    "key": "images/variants-v1/320/products/r1-item9-signature-special-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r1-item9-signature-special-tea.webp",
+    "size": 10404,
+    "sha256": "4808a38d0ac0c464f0a5fde67bedf821488a2f3dea36447c219252a9163b91b5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r10-item1-nearby-pickup-service.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r10-item1-nearby-pickup-service.webp",
+    "size": 8234,
+    "sha256": "fc403b30d8b12a58cd34f597eaaf625ff5d61ab11a5ccfd4de8710f8c50e00c7"
+  },
+  {
+    "key": "images/variants-v1/320/products/r10-item2-city-document-delivery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r10-item2-city-document-delivery.webp",
+    "size": 8486,
+    "sha256": "7eff42f87bbcdb8e1ea21e1e1ae97e9d32fed01de936b472ac20223c798467b8"
+  },
+  {
+    "key": "images/variants-v1/320/products/r10-item3-small-item-delivery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r10-item3-small-item-delivery.webp",
+    "size": 11910,
+    "sha256": "7a69ae34b071c1694af52c078d762cf1e93b1e6d63967ed8f97ee0f6d382cedb"
+  },
+  {
+    "key": "images/variants-v1/320/products/r10-item4-half-hour-queue-service.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r10-item4-half-hour-queue-service.webp",
+    "size": 10802,
+    "sha256": "fc202bd19756250eee1f084a6622a6601eb522e356a95eba2f0bd8bf8bcb9aac"
+  },
+  {
+    "key": "images/variants-v1/320/products/r10-item5-forgotten-item-retrieval.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r10-item5-forgotten-item-retrieval.webp",
+    "size": 9202,
+    "sha256": "7418330d9b863519b6e5d22da4c32a788040b3f9ceaf917f25c59cd6a9a92d49"
+  },
+  {
+    "key": "images/variants-v1/320/products/r10-item6-flower-cake-careful-delivery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r10-item6-flower-cake-careful-delivery.webp",
+    "size": 11918,
+    "sha256": "074862f4b14b66796bc249684baabc4345fde632443cbe8ce0b32341b27d3ac7"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item1-claypot-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item1-claypot-rice.webp",
+    "size": 16164,
+    "sha256": "3a6cd00a5177f5df597dfef11061e6736e4fdd5289577a9cd6fcb126512a2dd5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item2-black-bean-ribs.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item2-black-bean-ribs.webp",
+    "size": 25890,
+    "sha256": "82fb7ba12264e7b2b21c13c1eb744617b92e9118d10c88c12ff5aa3b670a0f3f"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item3-beef-egg-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item3-beef-egg-rice.webp",
+    "size": 14892,
+    "sha256": "15c79b4182df0877a10283b0c20caea8889be6c59071043e8294ccfa75e1accc"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item4-mushroom-chicken-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item4-mushroom-chicken-rice.webp",
+    "size": 19998,
+    "sha256": "5f44aa1b1b36899c6857ca50e995ce8a67aad9f4c3ee990ca14e000c7dea0dda"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item5-shrimp-scrambled-egg-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item5-shrimp-scrambled-egg-rice.webp",
+    "size": 16316,
+    "sha256": "cd74cabaa87569203e27ea1ae2be9ba93dbb299d96103b037eccd9e9be172c91"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item6-char-siu-double-egg-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item6-char-siu-double-egg-rice.webp",
+    "size": 19636,
+    "sha256": "3f2bf4cb61f28d8962ec3fb9c96ff89391ae605cb7382ec5c88868b0da537a8c"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item7-worker-carb-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item7-worker-carb-combo.webp",
+    "size": 20206,
+    "sha256": "f7bfbcde2d828856460f42b267d347158465151040d980dc8f184caa24996528"
+  },
+  {
+    "key": "images/variants-v1/320/products/r11-item8-uncle-double-claypot-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r11-item8-uncle-double-claypot-feast.webp",
+    "size": 21250,
+    "sha256": "bae1ac15d521b4fcb7cd8fd0644b80fda1314f1e4db8028a2364d1a5209c30ff"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item1-malatang.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item1-malatang.webp",
+    "size": 25054,
+    "sha256": "7c0a21c58145f797d15f9fb67bf167741e2617a4e124dc80f5de3b02bf020ad5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item2-sour-beef-malatang.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item2-sour-beef-malatang.webp",
+    "size": 13842,
+    "sha256": "18c33b756463893eadaa076fa00e42c54962e7a122c33df5d763db4f98a9a325"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item3-tomato-soup-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item3-tomato-soup-bowl.webp",
+    "size": 15484,
+    "sha256": "900df46bb3630782aaa0f2679ac0f2a9f61d25dc73d261cc67598537fc4e5b75"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item4-mushroom-tofu-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item4-mushroom-tofu-bowl.webp",
+    "size": 12110,
+    "sha256": "3f7bc5527c549694196c81d07e55d174248bc414801250d33152ebb6a7e47bfb"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item5-hand-mixed-fresh-beef.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item5-hand-mixed-fresh-beef.webp",
+    "size": 14532,
+    "sha256": "25aebc740a8b0fd07e39fa0680cbd86b0d545d8dde795e70134f10caa148a117"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item6-tripe-luncheon-meat-duo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item6-tripe-luncheon-meat-duo.webp",
+    "size": 17186,
+    "sha256": "b8a959df38f1f07fda35b0a1c901d68f0e76c73a7a990f1b791684988c9912fb"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item7-absorbing-tofu-skin-rolls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item7-absorbing-tofu-skin-rolls.webp",
+    "size": 19190,
+    "sha256": "87e4b2c55ffbc7fb3c799419cd8889dc0856f31684948dc2100c31c49cc7468c"
+  },
+  {
+    "key": "images/variants-v1/320/products/r12-item8-wide-noodle-potato-duo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r12-item8-wide-noodle-potato-duo.webp",
+    "size": 10202,
+    "sha256": "f34656e91d93b0c84eafd12f7b282ddfcefb2bbe096e1ff0a001e3c96b7d6e16"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item1-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item1-noodles.webp",
+    "size": 16276,
+    "sha256": "e29a0192ed1a156f4d6c26d171ee46a708ad20776907fa20e5e7d650280a7c91"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item2-pea-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item2-pea-noodles.webp",
+    "size": 15068,
+    "sha256": "dc7c994fcfe0aae76b81c487fa3b20ba8d22dfe9e44126855a1be39daceba2e0"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item3-tonkotsu-ramen.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item3-tonkotsu-ramen.webp",
+    "size": 16268,
+    "sha256": "5c5bc25c6486b3f31cd99a49af53458b6ad41f89de53504107cbcc087c914f22"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item4-sour-beef-rice-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item4-sour-beef-rice-noodles.webp",
+    "size": 15238,
+    "sha256": "d5e8010aef99ede4a7aca9f7fa5e72935fb516a21809600bd1cc7eb3adb00d3b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item5-yibin-burning-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item5-yibin-burning-noodles.webp",
+    "size": 13074,
+    "sha256": "6826f086244199d35599cf1e5d01e5249710720a035ea3c63561955d7dfc68c0"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item6-spicy-red-oil-wontons.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item6-spicy-red-oil-wontons.webp",
+    "size": 20468,
+    "sha256": "b09db8ee65be0d7b3539816e60f2cc8340271253e3a8bda96f9b884f5ef28a08"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item7-beef-pea-noodle-duo-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item7-beef-pea-noodle-duo-bowl.webp",
+    "size": 25436,
+    "sha256": "1e52141780cd289e86b06ff7f20996cbdf135a3be174666fc0dd8cef7c6c40c2"
+  },
+  {
+    "key": "images/variants-v1/320/products/r13-item8-midnight-healing-large-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r13-item8-midnight-healing-large-bowl.webp",
+    "size": 22416,
+    "sha256": "0ffce5a8e6e8544a7685f1781d923179eed488028c1660aba349abbcb58a3a11"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item1-bbq.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item1-bbq.webp",
+    "size": 22890,
+    "sha256": "51af652c794cb28cd44fb350bbf459abaf912a51e808e43b983fcc30e2988143"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item2-beef-skewers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item2-beef-skewers.webp",
+    "size": 17496,
+    "sha256": "db556e13a5cf64d4be44d2a945e29fbb5f572113500f83b1a255daa1f0be4082"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item3-honey-chicken-wings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item3-honey-chicken-wings.webp",
+    "size": 19218,
+    "sha256": "f15994cfc492bec36001c7149b85cb246dd27fd1356e54eaa8faf5a9ecc0df04"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item4-chicken-cartilage-skewers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item4-chicken-cartilage-skewers.webp",
+    "size": 18094,
+    "sha256": "d65628275b29a59b50478ceb96ff9cc294dff38bf28f5088a1db3083ea544b02"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item5-garlic-eggplant.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item5-garlic-eggplant.webp",
+    "size": 15172,
+    "sha256": "f41882760f48795d2da4b5da83edbfe2e459cb712ffb04943878f2f63c2cc641"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item6-foil-clam-vermicelli.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item6-foil-clam-vermicelli.webp",
+    "size": 32660,
+    "sha256": "bd52a79166256dc88de7a16cc7b61f2941751d37c0d19955905fa9928005e593"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item7-twenty-skewer-double-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item7-twenty-skewer-double-feast.webp",
+    "size": 22962,
+    "sha256": "efcfe360b232d1a326bc337fce9f595c233f75d4a8578a0acf9f0a13dc77ddcf"
+  },
+  {
+    "key": "images/variants-v1/320/products/r14-item8-solo-bbq-freedom-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r14-item8-solo-bbq-freedom-combo.webp",
+    "size": 20640,
+    "sha256": "a245c1693f823e86fd66a55a730f783a35bc1b4713333d41483b074bdd898fec"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item1-seared-salmon-sushi.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item1-seared-salmon-sushi.webp",
+    "size": 11990,
+    "sha256": "af159ae7f935692e2cdda3181abefc71bc6a9e1885a4d5fdafb02c6996b227ed"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item2-sashimi-chirashi.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item2-sashimi-chirashi.webp",
+    "size": 15756,
+    "sha256": "a388a02eb9cda317704ac4d81a3b551cd8948c6d9ce5d55bbc5400ec6a0341d1"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item3-eel-tamago-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item3-eel-tamago-rice.webp",
+    "size": 16940,
+    "sha256": "33fc8a981e1c61276a69ed37510ee2b5b606a1e2a51595440ecf15b4968b5c0e"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item4-teriyaki-chicken-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item4-teriyaki-chicken-rice.webp",
+    "size": 18136,
+    "sha256": "a8191473d4337800ea54315d613f08fd2d333684b789066b093609d32a4e6d51"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item5-sweet-shrimp-avocado-hand-roll.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item5-sweet-shrimp-avocado-hand-roll.webp",
+    "size": 12476,
+    "sha256": "7baef0450c72e11ea7b2c9fec73d4a467c7b144b036fadc8fcf7ed3a5437a2e5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item6-karaage-fried-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item6-karaage-fried-chicken.webp",
+    "size": 19434,
+    "sha256": "ff8b05fdd502273a26631d447d418fde573576193dd2e5315f1929e93a4b3f30"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item7-selected-solo-sushi-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item7-selected-solo-sushi-set.webp",
+    "size": 16122,
+    "sha256": "804a0ccc514d29e376bf47a7eb50e95a091190d408c9f74c6c68a111e0aa886d"
+  },
+  {
+    "key": "images/variants-v1/320/products/r15-item8-double-sushi-share-box.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r15-item8-double-sushi-share-box.webp",
+    "size": 20566,
+    "sha256": "a4edfa50e2dc9e524ef61d07532cece05e023e0e6173a2b3f9579a76435ee5a6"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item1-chicken-grain-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item1-chicken-grain-bowl.webp",
+    "size": 16722,
+    "sha256": "ae601ba5c9410a330037b3ea3138b5ab251eb319805d9ad1ff8cac24500d9c19"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item2-beef-energy-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item2-beef-energy-bowl.webp",
+    "size": 15220,
+    "sha256": "800d59c764457c3493cc20aa9402be0dc04473ff7939c9cc8de6e24c6966f9f6"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item3-avocado-shrimp-salad.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item3-avocado-shrimp-salad.webp",
+    "size": 14498,
+    "sha256": "ac0ddb08e26d2370a0bb5ee9c30236ce7d3e01e6678b72c78173188e37b77931"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item4-teriyaki-tofu-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item4-teriyaki-tofu-bowl.webp",
+    "size": 17708,
+    "sha256": "1200a9bf04149d2a59cb33504f7489590fdc7b0bb4d3f0f3fec0a5213379f4a5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item5-soft-boiled-egg-caesar-salad.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item5-soft-boiled-egg-caesar-salad.webp",
+    "size": 13828,
+    "sha256": "c9e13715ff75ef33e28fb618f97a0a5180774d132fe1c91982844ae17fce9c99"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item6-pumpkin-chickpea-soup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item6-pumpkin-chickpea-soup.webp",
+    "size": 13150,
+    "sha256": "dc786735a5b72160ce1c8a8e94d76684c5e4f1281ef02874fbe2d84aecfbe141"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item7-high-protein-training-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item7-high-protein-training-combo.webp",
+    "size": 19782,
+    "sha256": "61a43b32896b37e3c82b48fddcc1e9949dea114e773a83f3d0857e88a06de60a"
+  },
+  {
+    "key": "images/variants-v1/320/products/r16-item8-double-balanced-meal.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r16-item8-double-balanced-meal.webp",
+    "size": 20378,
+    "sha256": "a2ce5f87ed97f069f965fe606d2947aa47807a8d5154ffc0f96f241a046de000"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item1-century-egg-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item1-century-egg-congee.webp",
+    "size": 8926,
+    "sha256": "5bbf238eabb46e7341f83efd3379541ed0b9bb05c6ef5baaf92e2ed76ae8c889"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item2-shrimp-scallop-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item2-shrimp-scallop-congee.webp",
+    "size": 9266,
+    "sha256": "2f47e66941ad66e4cfeeba40ee86ceac8fbecd55980273b5c8a8d7700bd8ed74"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item3-pumpkin-millet-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item3-pumpkin-millet-congee.webp",
+    "size": 10380,
+    "sha256": "ad65125b0b57c5c0f75e883a50fecce6aa2cd4d4280cd9ec8a5520a81d1f8766"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item4-mushroom-chicken-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item4-mushroom-chicken-congee.webp",
+    "size": 10616,
+    "sha256": "caea6e20684d3cb3ec5c763a23b159483f53f0cc4001f34e67007cdb636011c2"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item5-pork-xiaolongbao.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item5-pork-xiaolongbao.webp",
+    "size": 12208,
+    "sha256": "a962d13f5341224ee41afb132c370a8c31c832e42cf815783568660bdc9b82e9"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item6-dried-shrimp-egg-rice-roll.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item6-dried-shrimp-egg-rice-roll.webp",
+    "size": 11174,
+    "sha256": "d30f7006c13b925a4e01200e8a327506ef2535030208ec7c64778659ffb30a56"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item7-vitality-workday-breakfast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item7-vitality-workday-breakfast.webp",
+    "size": 11652,
+    "sha256": "3682ac3c0f6c62c447397e808fa8e92d0cd01767b2d2559e58a367b11473f1af"
+  },
+  {
+    "key": "images/variants-v1/320/products/r17-item8-slow-double-breakfast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r17-item8-slow-double-breakfast.webp",
+    "size": 19350,
+    "sha256": "5cb71b2e5c23c1c34d6c882c4ffa76faf9c2983d2e51531ed388c492c3e5b8c7"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item1-pork-cabbage-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item1-pork-cabbage-dumplings.webp",
+    "size": 13426,
+    "sha256": "fabda00bef3c765b8060813dc4e9d276d58d54693a34c35a52d74b1686e4fb83"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item2-shrimp-chive-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item2-shrimp-chive-dumplings.webp",
+    "size": 15592,
+    "sha256": "9520a1282b4fd509dc303ab689ddac5926905ca3895911cb400ae750ce62c4b6"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item3-corn-pork-potstickers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item3-corn-pork-potstickers.webp",
+    "size": 13462,
+    "sha256": "f280d08f76cc729b12a1d8e1785d2aa0ed9181ca871f182d54393c9f36921253"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item4-sour-beef-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item4-sour-beef-dumplings.webp",
+    "size": 17224,
+    "sha256": "63dc0d843c08251de277b5e39116f07b2f624778b7dc63289e43d88c86d9b8e5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item5-three-fresh-potstickers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item5-three-fresh-potstickers.webp",
+    "size": 15950,
+    "sha256": "de533a0262853f4ef467b0bf023fad1043ef3a3b5a5dba1e167e167ded1e0f1a"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item6-kelp-salad.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item6-kelp-salad.webp",
+    "size": 16624,
+    "sha256": "0f367c45585dc86374a34a5116788b29284a4ec92ca4fe15d9474d40c83df20c"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item7-single-dumpling-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item7-single-dumpling-combo.webp",
+    "size": 15472,
+    "sha256": "965d3ac1fcbacb3e3cb945504d9717d114819cd85a9c0e76d5d14887a685bc96"
+  },
+  {
+    "key": "images/variants-v1/320/products/r18-item8-double-dumpling-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r18-item8-double-dumpling-feast.webp",
+    "size": 20994,
+    "sha256": "5fdb70ac90563eebda661c7c5f327dcab51df218956d31657763d8af31d073a4"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item1-green-pepper-pork.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item1-green-pepper-pork.webp",
+    "size": 16192,
+    "sha256": "60962c213506b6badf69e0cc34cbca910a199a1d960f7ca58ba8fe9346bc1f15"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item2-tomato-eggs.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item2-tomato-eggs.webp",
+    "size": 19760,
+    "sha256": "8f31d1b95b2820be87eb0e503c8866ee97d8f43d72284c9a5d5142ed1f03d41c"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item3-fish-fragrant-pork.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item3-fish-fragrant-pork.webp",
+    "size": 18336,
+    "sha256": "7c5716e969135b9a9afd4c412ec23b60c33a52cd67c5b3fd74d6d9ac7ad7b26b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item4-kung-pao-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item4-kung-pao-chicken.webp",
+    "size": 20244,
+    "sha256": "67261f6aae163f60b9c2b53d9b587c36e20d588e178597f4ae32d54fcfb9ed42"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item5-mapo-tofu.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item5-mapo-tofu.webp",
+    "size": 20926,
+    "sha256": "75462fa7122bcaa77440ecd0829ba937b860a43d149b7594c8f50affa8f25d10"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item6-garlic-greens.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item6-garlic-greens.webp",
+    "size": 17006,
+    "sha256": "7de4e1645d61357756620bb67eac5c946668c5089895ac783ad449b2f3f1e4c2"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item7-worker-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item7-worker-combo.webp",
+    "size": 13686,
+    "sha256": "8392ca3d797f152f0686a73833fd7d950477a0666ec315d01863d911575fa606"
+  },
+  {
+    "key": "images/variants-v1/320/products/r19-item8-double-home-meal.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r19-item8-double-home-meal.webp",
+    "size": 19316,
+    "sha256": "fe7d99038251929e5dc4ce6381dc107fd9c09625f458ca56e3b587240ce545b5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item1-strawberry-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item1-strawberry-tea.webp",
+    "size": 5086,
+    "sha256": "1a78cd7babcad114af90596c2df7a2cb59fe423ff257dcda5abe5a702c8223fc"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item10-collaboration-special-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item10-collaboration-special-tea.webp",
+    "size": 6754,
+    "sha256": "46e72841d6fde9d9b72cb6901dcd875ab53ad28244fcf5da70f3c6c35c0d288e"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item11-rare-recipe-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item11-rare-recipe-tea.webp",
+    "size": 15608,
+    "sha256": "e704660d6e2729093f86149f8e3ff7fdc6ae772ad5ecaca97126a008a1b9d3b6"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item12-dreamy-gradient-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item12-dreamy-gradient-tea.webp",
+    "size": 7946,
+    "sha256": "cfc9558e84f73cbb23cc4c0dcf6eb0e1c2a4611a9605f4675f525e2fe99867c2"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item2-green-grape-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item2-green-grape-fruit-tea.webp",
+    "size": 8500,
+    "sha256": "6b80eda554b42522c297390c754d59a39fd086e3b7209eaa1757aaed3df4b01f"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item3-full-cup-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item3-full-cup-fruit-tea.webp",
+    "size": 9176,
+    "sha256": "e77575395c9587986f68d103cd02d8ca43b422ed68463d817be89691afdbf813"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item4-pure-leaf-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item4-pure-leaf-tea.webp",
+    "size": 12016,
+    "sha256": "1a7dde06f04fa09de30a3f4eee0b76be0a5c2bc26c097158c7952585a7a73415"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item5-peach-cheese-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item5-peach-cheese-tea.webp",
+    "size": 4728,
+    "sha256": "fdafde420b8932f4664b2676dde0366085112396ce77539ac758ceaa86fbfd4e"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item6-signature-layered-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item6-signature-layered-tea.webp",
+    "size": 7642,
+    "sha256": "32efa9a3bf406f139d91415e1eef4930caa029985a7f5c38ed56b748ba928894"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item7-emblic-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item7-emblic-fruit-tea.webp",
+    "size": 6658,
+    "sha256": "b0510d6156329c3ec066f21516965c56d1443a70b8114dcb4d3299a6d88ad742"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item8-light-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item8-light-milk-tea.webp",
+    "size": 5506,
+    "sha256": "54a9cd0d9b3d48a168617008ef73c2c990031ca4fcb7e82db6c58fbeb1da34be"
+  },
+  {
+    "key": "images/variants-v1/320/products/r2-item9-daily-surprise-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r2-item9-daily-surprise-tea.webp",
+    "size": 7478,
+    "sha256": "fb30fe206c03a54a13edbc0e2116040f15a9372cb8d5ad549dea8e92f76760e5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item1-sea-salt-roll.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item1-sea-salt-roll.webp",
+    "size": 13688,
+    "sha256": "d05ba13a4b26a7cf48278f6b1e3d813596737ca63b5af9620cd6bc63c7fcf52e"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item2-classic-croissant.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item2-classic-croissant.webp",
+    "size": 13866,
+    "sha256": "d028732a5fc509ec17d32dce2fe3ea866bcfc26e29685de37bcf99a77d36b923"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item3-ham-cheese-ciabatta.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item3-ham-cheese-ciabatta.webp",
+    "size": 16970,
+    "sha256": "27839bf67b069cc0e8ba43e7b2b027611c07dd224aff9aa4091f50b24e93a4c5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item4-cinnamon-apple-bagel.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item4-cinnamon-apple-bagel.webp",
+    "size": 20316,
+    "sha256": "c84423ee2914a22f36977a8130ded6b0a08c874ad2557bc014636bc6048d597b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item5-basque-cheesecake.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item5-basque-cheesecake.webp",
+    "size": 10298,
+    "sha256": "b1db8e75bd48ba3fab1c56fe5f0513e153cc66b513711edcb92af0bb7e3f2ffb"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item6-chocolate-cookie.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item6-chocolate-cookie.webp",
+    "size": 20684,
+    "sha256": "e24344c4c961c3baf73d3dda46619a757b4587c9a0e5d37279332aeb63e762ff"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item7-breakfast-bread-bag.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item7-breakfast-bread-bag.webp",
+    "size": 16802,
+    "sha256": "a17d5de996dccf530b98f12308de4bab1ac9c161915a7a0b16096eeb4723efc7"
+  },
+  {
+    "key": "images/variants-v1/320/products/r20-item8-double-afternoon-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r20-item8-double-afternoon-tea.webp",
+    "size": 13220,
+    "sha256": "cfe07587eeecfb58274fe30b45a0241d7fce3590d267200327e4e45ab8376e1b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item1-double-beef-burger.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item1-double-beef-burger.webp",
+    "size": 15888,
+    "sha256": "5aa79dc040e94c1f956f3c35926a3dcbca2ef5403cc25ab04f5cad327f333923"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item10-breakfast-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item10-breakfast-combo.webp",
+    "size": 14166,
+    "sha256": "b52dcc630c2354d0caacf38b7daa95f63194ab0178199e5b4be266c30dd6dfbd"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item11-kids-burger-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item11-kids-burger-combo.webp",
+    "size": 12134,
+    "sha256": "2cd6c91e0cf1c02bf16a432e967e029b676bbb0057fdf4b09ef649a321f80f94"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item12-late-night-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item12-late-night-combo.webp",
+    "size": 21150,
+    "sha256": "52834343e108e74999b7298eac07c1aef8904787c6350f3f6e95f6d50ee5b08d"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item2-spicy-chicken-burger.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item2-spicy-chicken-burger.webp",
+    "size": 15490,
+    "sha256": "ee8bf1bc7ab0818fc636728fe6b478cedd8ed493f6d5a23c879623787f059940"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item3-large-fries.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item3-large-fries.webp",
+    "size": 12408,
+    "sha256": "5b081f36ef2d3a2982d4f01aa42ce7ee70ab3ed920fbbe012e3b33ecaf7efcb5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item4-apple-pie.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item4-apple-pie.webp",
+    "size": 15924,
+    "sha256": "763641d6e8982bd1d2b98e639c08825f30f01c63fefbedb4678b6816ca0dd91a"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item5-classic-burger-combo-a.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item5-classic-burger-combo-a.webp",
+    "size": 17066,
+    "sha256": "59ca1089cbea26677275b4ee1affcd22ac0ec139cdf2aa1312aca1f70f039143"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item6-golden-hash-brown.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item6-golden-hash-brown.webp",
+    "size": 11912,
+    "sha256": "a06700948978bacc22fb8e779e13db7866cb88386c438c29bfa15ddfd1c9602f"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item7-vanilla-soft-serve-cone.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item7-vanilla-soft-serve-cone.webp",
+    "size": 6982,
+    "sha256": "4acf6d3fab331eee6b4dd9069eb5402cc6332f71a589fe05d69ae8ada6c21f04"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item8-cookie-soft-serve-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item8-cookie-soft-serve-cup.webp",
+    "size": 11820,
+    "sha256": "c363a5136e7339dcb89f1f732f72603601702279642cb7b103718d0a433fbd02"
+  },
+  {
+    "key": "images/variants-v1/320/products/r3-item9-double-burger-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r3-item9-double-burger-combo.webp",
+    "size": 16006,
+    "sha256": "dc497e38a0b930a5d94045f710da1efec4088fb40377c43d9b0d498698a4550f"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item1-fried-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item1-fried-chicken.webp",
+    "size": 15032,
+    "sha256": "73d7ee6f0a64f7387b014d5fe8e37e21037b987e8b813d5bb32969d20f04809a"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item10-double-fried-chicken-bucket.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item10-double-fried-chicken-bucket.webp",
+    "size": 18568,
+    "sha256": "d42f446bfe9a6c58f956b058302ca3d27b7e9129786bd0a5f2cdb5db0341d879"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item11-mechanical-feast-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item11-mechanical-feast-combo.webp",
+    "size": 14038,
+    "sha256": "6405fccbcf35545fc9d15e4283fa71ae088eaa2ea0e25d91aa5b341d3fbe43f6"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item12-family-sharing-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item12-family-sharing-feast.webp",
+    "size": 23014,
+    "sha256": "4efa9ec9e3691679430ce4b4eb474323e5d9b910c8df77c1a12f73035642b8a5"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item2-spicy-fried-chicken-leg.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item2-spicy-fried-chicken-leg.webp",
+    "size": 16770,
+    "sha256": "82dd9abdc459084ba68ea8305498006e5b11bc711200a8f2ed496ee16192c6de"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item3-portuguese-egg-tarts.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item3-portuguese-egg-tarts.webp",
+    "size": 13796,
+    "sha256": "2df5c82663d7207b35014e0fb962f8d9e4479e3563006aecf49eceabd2a9f0cd"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item4-crispy-potato-balls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item4-crispy-potato-balls.webp",
+    "size": 13924,
+    "sha256": "2c1897c33317cb005049e6400015a92302911d0c6e5f5aad6c66eb339d97b4d8"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item5-beijing-chicken-wrap.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item5-beijing-chicken-wrap.webp",
+    "size": 15762,
+    "sha256": "d6db08b57965893217b396d019ddddf52208955ed9f7d6b80cc1a3cec5cfd227"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item6-five-sided-beef-wrap.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item6-five-sided-beef-wrap.webp",
+    "size": 14684,
+    "sha256": "ea422fdc1976e53e12980e205d3820981d1ad2aecb2853ff6d471d116fc6a2a0"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item7-thursday-fried-chicken-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item7-thursday-fried-chicken-combo.webp",
+    "size": 18514,
+    "sha256": "8e501d128fdae578c72b0927149e0a10c70d292b6ed375fc1e6ee227c284271a"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item8-hot-spicy-bone-in-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item8-hot-spicy-bone-in-chicken.webp",
+    "size": 22248,
+    "sha256": "4547b5f3aacd5d799758290868a7764ad3a4b7b7f863ab1edbb22de4a763d0d7"
+  },
+  {
+    "key": "images/variants-v1/320/products/r4-item9-family-fried-chicken-bucket.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r4-item9-family-fried-chicken-bucket.webp",
+    "size": 15836,
+    "sha256": "a58edbae8d8dac8b313ad92d84050c56f9af63efb162b2c86a272550a0b5b201"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item1-coconut-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item1-coconut-latte.webp",
+    "size": 4178,
+    "sha256": "de381f326da85cbbc6493cfaa6cf911cfbe1d47c740875679d41d4ae566f9e29"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item10-meeting-survival-large-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item10-meeting-survival-large-coffee.webp",
+    "size": 13696,
+    "sha256": "f18166423addc6cbacf534c60e76e62161ddd36349ed5f55e1a7e6a4c4fd7178"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item11-overtime-coffee-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item11-overtime-coffee-set.webp",
+    "size": 15246,
+    "sha256": "0631b0f735dd8c2bb077fe724579fd57c73672ace6edbda0770f615501210b8b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item12-lucky-day-coffee-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item12-lucky-day-coffee-combo.webp",
+    "size": 10736,
+    "sha256": "56930da863a2194f2578c8760e05c12103bc6511eae7f6bf9ad1e764c2451b29"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item2-rich-milk-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item2-rich-milk-latte.webp",
+    "size": 8736,
+    "sha256": "4dd0b80b738156d2f5b5e4147104aeabf725d71726e7bc4516f13a5ed4935959"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item3-coconut-velvet-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item3-coconut-velvet-latte.webp",
+    "size": 7142,
+    "sha256": "7501fecc198f794a1aea521e1f2f8ca8c50f3c5b0bb1e1556de21f7449c3be11"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item4-americano-black-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item4-americano-black-coffee.webp",
+    "size": 14152,
+    "sha256": "47cfc9e3f2b3cb829d00409ce9058fca6b858b6e2c93458f3d012106d17b0766"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item5-bittersweet-special-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item5-bittersweet-special-coffee.webp",
+    "size": 9856,
+    "sha256": "40d4f783b105006c8258c56e811a7635d23496ec04cd4bd5051d1030bf698577"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item6-misfortune-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item6-misfortune-latte.webp",
+    "size": 9622,
+    "sha256": "cc62ebe4a3d1f9fd5c4765530fd259a7fc59128e95e475e5a228e08b14c1c44f"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item7-office-instant-coffee-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item7-office-instant-coffee-pack.webp",
+    "size": 7830,
+    "sha256": "76d86c1e242f5109e7c2516d54505469fb6dda399a7eb8c8c4882c56a9f67828"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item8-after-work-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item8-after-work-coffee.webp",
+    "size": 8030,
+    "sha256": "dfdacf2dfc58e46ffe414816b03da0419267b26ce8d83ab290518688e3eb8281"
+  },
+  {
+    "key": "images/variants-v1/320/products/r5-item9-monday-special-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r5-item9-monday-special-coffee.webp",
+    "size": 7244,
+    "sha256": "be76dc81794fe519543505135360fe477a170e68722cb168946dea7b98fae785"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item1-hotpot-platter.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item1-hotpot-platter.webp",
+    "size": 16878,
+    "sha256": "eb66f355fc641d0807d66e4a5620471dfdbf956ab2f6232535a1ca425680ae85"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item10-solo-hotpot-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item10-solo-hotpot-set.webp",
+    "size": 16424,
+    "sha256": "b721a7881faccca2c56d121739ef2d47ae2dc917ceba3f22126e25d33279a005"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item11-midnight-comfort-hotpot-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item11-midnight-comfort-hotpot-combo.webp",
+    "size": 19774,
+    "sha256": "ab1ccbbcae6f1f14b7c0727d1300017a90315d6a0fdea7d93926f0b95b50eeee"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item12-spicy-all-meat-hotpot-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item12-spicy-all-meat-hotpot-set.webp",
+    "size": 25010,
+    "sha256": "3bd4ed9ab677a826e7fc5a7177f9ed86cfed8d5ab326815d65ae09c199df0ee1"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item2-beef-rolls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item2-beef-rolls.webp",
+    "size": 16110,
+    "sha256": "1a0a40c4ead75c2dd2d2a03f6e4071d801e8adae2891ee654f77191e2e513b34"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item3-fresh-shrimp-paste.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item3-fresh-shrimp-paste.webp",
+    "size": 12578,
+    "sha256": "5789b5296b10068c76e12a6cc452ce627ed675a1a0a9c0c23c20be909d7b37a0"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item4-yin-yang-hotpot-broth.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item4-yin-yang-hotpot-broth.webp",
+    "size": 14470,
+    "sha256": "2a9c3471a44fcecc9c577becece95b9ffe3b21a8272da45588cc6116cd07d283"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item5-hand-sliced-lamb.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item5-hand-sliced-lamb.webp",
+    "size": 22518,
+    "sha256": "809929dbd5a7bb279d76d18cf6709764a9eb6067a089b6bb8cdfa3b99a91c24d"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item6-midnight-solo-hotpot-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item6-midnight-solo-hotpot-combo.webp",
+    "size": 15956,
+    "sha256": "d2c8f1a18ecc345c7788cb6851f49f30859b9c64bb6d42e64802b19561aea513"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item7-chrysanthemum-tofu.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item7-chrysanthemum-tofu.webp",
+    "size": 13920,
+    "sha256": "3f9bf906b0da8706a87f25a57e748ef860d5e61e7255db74079f26a9a10fc1b9"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item8-signature-hotpot-dipping-sauce.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item8-signature-hotpot-dipping-sauce.webp",
+    "size": 12412,
+    "sha256": "973aa60fe38014622e13862904d2b237544d34a811bdb66c2bd4fa2336ea844d"
+  },
+  {
+    "key": "images/variants-v1/320/products/r6-item9-double-hotpot-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r6-item9-double-hotpot-set.webp",
+    "size": 20146,
+    "sha256": "3abddda8868c606e00922e03f608a068fb69f7b680f8be14e70bcba8ea3df620"
+  },
+  {
+    "key": "images/variants-v1/320/products/r7-item1-sea-salt-potato-chips.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r7-item1-sea-salt-potato-chips.webp",
+    "size": 9238,
+    "sha256": "c97e7023e428b5bf012ddef51fe2692e78e76fe96014aa4fd7f9070db6bf1669"
+  },
+  {
+    "key": "images/variants-v1/320/products/r7-item2-iced-lemon-sparkling-water.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r7-item2-iced-lemon-sparkling-water.webp",
+    "size": 7764,
+    "sha256": "e60ca9d977e88071d6b835a42f10634ea3f18b580332118a8518c22f0faefe95"
+  },
+  {
+    "key": "images/variants-v1/320/products/r7-item3-midnight-chocolate-cookies.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r7-item3-midnight-chocolate-cookies.webp",
+    "size": 12894,
+    "sha256": "d22217cf6e07d19c1f0dbdb0cd696c658b1e604142ea0e919db75697e8c63b58"
+  },
+  {
+    "key": "images/variants-v1/320/products/r7-item4-soft-facial-tissues-three-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r7-item4-soft-facial-tissues-three-pack.webp",
+    "size": 4406,
+    "sha256": "bd1915074daab25f095d495a3e3016896f8f61e550b6a56c78e09376c781c13d"
+  },
+  {
+    "key": "images/variants-v1/320/products/r7-item5-travel-toiletry-kit.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r7-item5-travel-toiletry-kit.webp",
+    "size": 6268,
+    "sha256": "d6f274540e25ee738d7bc9fa9e67a3c89e557fcb5f7053a60aa847907da87d2e"
+  },
+  {
+    "key": "images/variants-v1/320/products/r8-item1-sweet-strawberry-box.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r8-item1-sweet-strawberry-box.webp",
+    "size": 15860,
+    "sha256": "1ca84b91b0f90c88bce1f772d5f77c478ad49c1fef6af362a5b765c72884d36a"
+  },
+  {
+    "key": "images/variants-v1/320/products/r8-item2-green-grape-basket.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r8-item2-green-grape-basket.webp",
+    "size": 10958,
+    "sha256": "124c719458cc4ec45b15e5e4042ef361161bad74037267827e12c9ae1db97f71"
+  },
+  {
+    "key": "images/variants-v1/320/products/r8-item3-four-fresh-oranges.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r8-item3-four-fresh-oranges.webp",
+    "size": 11146,
+    "sha256": "572bbad83189e1645fe5aa73d3001c90d69a5b8d7147af0b027a0fe20d219b99"
+  },
+  {
+    "key": "images/variants-v1/320/products/r8-item4-seven-fruit-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r8-item4-seven-fruit-cup.webp",
+    "size": 13972,
+    "sha256": "0653dd454f777375a9eb1d4e38de14107e93215664375007c81e8379c2cc483b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r8-item5-seedless-watermelon-cubes.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r8-item5-seedless-watermelon-cubes.webp",
+    "size": 11088,
+    "sha256": "cedca391afac435f8e2573ca09519262ad64aacc176da75eedf291b629b388ec"
+  },
+  {
+    "key": "images/variants-v1/320/products/r9-item1-steam-warming-eye-mask.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r9-item1-steam-warming-eye-mask.webp",
+    "size": 6558,
+    "sha256": "fee1d83f87693438bb1fcd153940f6e45ab0334c96bbd98c03287452e0dd3927"
+  },
+  {
+    "key": "images/variants-v1/320/products/r9-item2-medical-masks-ten-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r9-item2-medical-masks-ten-pack.webp",
+    "size": 12720,
+    "sha256": "65271a25bd4af45d4985b0955b740b4b3e78177d6942c659c2a539b336cfb785"
+  },
+  {
+    "key": "images/variants-v1/320/products/r9-item3-wound-care-kit.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r9-item3-wound-care-kit.webp",
+    "size": 7486,
+    "sha256": "894c079512a00256677bf3cb6c688a342ce2cbb969f1f173d5ee123615c0ddd3"
+  },
+  {
+    "key": "images/variants-v1/320/products/r9-item4-warming-patches-four-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r9-item4-warming-patches-four-pack.webp",
+    "size": 6608,
+    "sha256": "69cbc878078320ca0a403168440168555795a1050a88be3e2e5302a0f8cf8c0b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r9-item5-reusable-cold-compress-bag.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r9-item5-reusable-cold-compress-bag.webp",
+    "size": 6436,
+    "sha256": "339bc6fdca03e08428d6a9299923d33f47764151820ebe7fb8455243fd41e487"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r1-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r1-fruit-tea.webp",
+    "size": 25312,
+    "sha256": "3247c2e51f499eb15790178a7bf3df5a0c831dbabe4e2edcf5b0fb4c842fbc8f"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r11-claypot-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r11-claypot-rice.webp",
+    "size": 52954,
+    "sha256": "4fc10ffb7a9fec01c6d96787cb8c290a99595dc5a0f469e73a512ad66f7083d1"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r12-malatang.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r12-malatang.webp",
+    "size": 38178,
+    "sha256": "d27c07588ed4cc43c696a5994270d4105874bc1c4c030c3e8cccd343acd89b5c"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r13-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r13-noodles.webp",
+    "size": 40518,
+    "sha256": "90bf7ec36a8b197289f67439347fb85db9055c372dbf658a87489e5d3f58fb56"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r14-bbq.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r14-bbq.webp",
+    "size": 59934,
+    "sha256": "caa91f7e0fa060cc9d01dc37d382dea88f08512406ad73b9561c7e5d1b575877"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r15-japanese.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r15-japanese.webp",
+    "size": 38796,
+    "sha256": "f1dc15d9b75ae7208ff209a9933ff1e06c8def8ee8d1f3d57d2b4575f0d25351"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r16-light-meal.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r16-light-meal.webp",
+    "size": 41242,
+    "sha256": "3cdfd21f1531f063c79ebb695e2d28329ddb9c48195898494ac1b9e3cb495357"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r17-breakfast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r17-breakfast.webp",
+    "size": 36664,
+    "sha256": "d51d43c03f81236accde21cea362c67c725b275c79ba038171804e61142a8060"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r18-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r18-dumplings.webp",
+    "size": 36616,
+    "sha256": "3edcf2184f1f683d4dd2c15870b1b166414422b7bc04d34feb268d6a4c5e2b8e"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r19-stir-fry.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r19-stir-fry.webp",
+    "size": 59440,
+    "sha256": "934b8b744f98d662e461495bd88adeacada191a82afe6b1ab2be31a3cfc40904"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r2-leaf-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r2-leaf-tea.webp",
+    "size": 10562,
+    "sha256": "34148daeba102c1e65070e3cfdb8f4eb8a34633b32e8120512ccfdb51ef27875"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r20-bakery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r20-bakery.webp",
+    "size": 38382,
+    "sha256": "1d93b2973865e6ed6149dce7d69cca722a2b5e58b7f8f4a9f6973a6f3d447b38"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r3-burger.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r3-burger.webp",
+    "size": 24606,
+    "sha256": "9e6f7b1bcb49aa4d368e3761d26a5152a12c7e2c0c98da3c21bdf57c37d5f46c"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r4-fried-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r4-fried-chicken.webp",
+    "size": 44930,
+    "sha256": "ced54aa3adb6ccc3a41aad0ed9f538d47768ba01addb6fed710d66946158a3ce"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r5-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r5-coffee.webp",
+    "size": 19128,
+    "sha256": "41023db7c3c7467e2913a416e0f3ff85a0b4b8fb6d97ba6848c6d259f2d30b2b"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r6-hotpot.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r6-hotpot.webp",
+    "size": 26270,
+    "sha256": "a6f9732472df6537f0eac92f259df8521878051ee0567b71cd2b8216a378a425"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item1-strawberry-cheese-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item1-strawberry-cheese-tea.webp",
+    "size": 19130,
+    "sha256": "0f9a6f106292c1b4050197c24f5b637739bea3a94392f4691c3c8e6bffcd0c4e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item10-warm-smoky-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item10-warm-smoky-tea.webp",
+    "size": 30898,
+    "sha256": "71a45ab88879832016f8541e4aa42ddaa9f8e09fe78802c8aa14f7ea2b48af31"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item11-winter-warm-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item11-winter-warm-fruit-tea.webp",
+    "size": 29868,
+    "sha256": "49f96b7b7e49bd2a09d8705abb389df175b1abcc741fb60485a758180aae73f1"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item12-fresh-milk.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item12-fresh-milk.webp",
+    "size": 16454,
+    "sha256": "9b3383d8096e689c719d7dd9a8e584f28a2c7df4bb697a4c59959b6f8bfac2b4"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item2-grape-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item2-grape-fruit-tea.webp",
+    "size": 26166,
+    "sha256": "f8aed437837a05e959771dbaddae1fa52948522dbd1e859b3ef6ff755897794e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item3-cheese-strawberry-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item3-cheese-strawberry-tea.webp",
+    "size": 13822,
+    "sha256": "8189cf0aac6c4c3d89318d2d70fa619c87a34c257fdfed78ad80c0a8d3ab5219"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item4-matcha-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item4-matcha-latte.webp",
+    "size": 22448,
+    "sha256": "bfa377e167e117846f2cbceb8e08a45ee42cb206235c3bce5895241b367fdd0b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item5-red-grapefruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item5-red-grapefruit-tea.webp",
+    "size": 21574,
+    "sha256": "4c692f3ffae7fe2fa321c4fb42d8c45d168fb48b7d0854da2126939963b3d4c4"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item6-mango-cheese-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item6-mango-cheese-tea.webp",
+    "size": 14210,
+    "sha256": "42d075e01183d4d8bba7bb6856a775b9cd78d993760a0be465dd3314441473ee"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item7-strawberry-cheesecake-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item7-strawberry-cheesecake-cup.webp",
+    "size": 26958,
+    "sha256": "1200d86c9adbfb2eaa2977664c5db838ae59e33f78f21e0a547253da5bce57a3"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item8-oat-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item8-oat-latte.webp",
+    "size": 22072,
+    "sha256": "09db442d07e35b8289243a2fd26b89a0c66f720fd3f8b2c0a830f942908aac74"
+  },
+  {
+    "key": "images/variants-v1/640/products/r1-item9-signature-special-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r1-item9-signature-special-tea.webp",
+    "size": 28846,
+    "sha256": "7cc9efa4201f041daf75ec9e2877c55e3071015ac74f4c8ff6c449fa7e516b0c"
+  },
+  {
+    "key": "images/variants-v1/640/products/r10-item1-nearby-pickup-service.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r10-item1-nearby-pickup-service.webp",
+    "size": 20824,
+    "sha256": "ec9cfdf07248b812e8cf3dca00ada2ba92942899f2717735f2259959d1463683"
+  },
+  {
+    "key": "images/variants-v1/640/products/r10-item2-city-document-delivery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r10-item2-city-document-delivery.webp",
+    "size": 19304,
+    "sha256": "955454c54238ef47b58b8721850bc63bca7918f4b23c54305620e0389c73e47a"
+  },
+  {
+    "key": "images/variants-v1/640/products/r10-item3-small-item-delivery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r10-item3-small-item-delivery.webp",
+    "size": 31430,
+    "sha256": "28e076567e6a5a97827a83802a648d7d86aaa04467611af58e81d796cf666c02"
+  },
+  {
+    "key": "images/variants-v1/640/products/r10-item4-half-hour-queue-service.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r10-item4-half-hour-queue-service.webp",
+    "size": 24250,
+    "sha256": "fdc94d09e9ecd0d18cb7bb360b4658a13487fababc1e73248aa8394ec0474521"
+  },
+  {
+    "key": "images/variants-v1/640/products/r10-item5-forgotten-item-retrieval.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r10-item5-forgotten-item-retrieval.webp",
+    "size": 23944,
+    "sha256": "bd7ce831fc5f5d96b55ac349805d04dc326ff8e94702270b5e06309685b98c36"
+  },
+  {
+    "key": "images/variants-v1/640/products/r10-item6-flower-cake-careful-delivery.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r10-item6-flower-cake-careful-delivery.webp",
+    "size": 30938,
+    "sha256": "308bc1f2e4d513e73e1e72c60aeb965b28a58e1308e082cc5a0f379dbdc698a4"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item1-claypot-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item1-claypot-rice.webp",
+    "size": 48368,
+    "sha256": "f211cf747dbc5b898c0b31fc7e525dbe26f18ce2b1bf0dfe719084d94ef75404"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item2-black-bean-ribs.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item2-black-bean-ribs.webp",
+    "size": 85752,
+    "sha256": "e0e37d6fc04911a09b83a22fb186d8b5a7917e85b0e6b3b3255c78a38084e777"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item3-beef-egg-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item3-beef-egg-rice.webp",
+    "size": 39644,
+    "sha256": "4b03d27f517a340d84ebf8624fb105db1fc3a750f121d8cad5997c3f249dd1a8"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item4-mushroom-chicken-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item4-mushroom-chicken-rice.webp",
+    "size": 55096,
+    "sha256": "1817375545a132f4a0390e8fdac99b121ef340142dd693844e14ac8a2da728be"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item5-shrimp-scrambled-egg-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item5-shrimp-scrambled-egg-rice.webp",
+    "size": 38986,
+    "sha256": "c1e7cca4efc8c594d13aa58934dcba719b184040e612db2f651a03d8c06133cf"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item6-char-siu-double-egg-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item6-char-siu-double-egg-rice.webp",
+    "size": 48988,
+    "sha256": "7872433f31fd5da77756187ec2c2cb63e00e0ba6caa239f5c731bafa61829864"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item7-worker-carb-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item7-worker-carb-combo.webp",
+    "size": 56070,
+    "sha256": "26bdeef08e65d32799e25f0521e1d16d1b0d4e86bb9da3ce4ce9c97f8d040153"
+  },
+  {
+    "key": "images/variants-v1/640/products/r11-item8-uncle-double-claypot-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r11-item8-uncle-double-claypot-feast.webp",
+    "size": 59974,
+    "sha256": "69d33a12362ba908fe48ea2b3ef1d85559e7474e2119994521691877ec3b75f7"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item1-malatang.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item1-malatang.webp",
+    "size": 82230,
+    "sha256": "55c7f593e4d10c6c0a51e0f4b92b75ff59aaba56b53f603d06956a63b03c4d9e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item2-sour-beef-malatang.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item2-sour-beef-malatang.webp",
+    "size": 39742,
+    "sha256": "749a8aa90fa02b10f826d3a5dcab2395d89d1841274d94e740af161c9012c281"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item3-tomato-soup-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item3-tomato-soup-bowl.webp",
+    "size": 41618,
+    "sha256": "7506d2bd628cec1621b69380fb92c54623b0a2a03457acdcd22f260683d79ec2"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item4-mushroom-tofu-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item4-mushroom-tofu-bowl.webp",
+    "size": 33028,
+    "sha256": "3cdd032179a4e1c8cf962e4f8cb0e2841f957a1f7fd29c4f5ce145f084757dae"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item5-hand-mixed-fresh-beef.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item5-hand-mixed-fresh-beef.webp",
+    "size": 39526,
+    "sha256": "72c7062eeadb8c198db9f1f91560348e72b917e4d666be1fa46bcc8821dd9192"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item6-tripe-luncheon-meat-duo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item6-tripe-luncheon-meat-duo.webp",
+    "size": 54546,
+    "sha256": "9ff535307212e91b628f48979654458f767e1996ffd130e7b579e3da64766d12"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item7-absorbing-tofu-skin-rolls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item7-absorbing-tofu-skin-rolls.webp",
+    "size": 53538,
+    "sha256": "4c87a1889407395c5cfe2d1b24fb790fc1ea13d24678ea84d097b3ed5aeda3ba"
+  },
+  {
+    "key": "images/variants-v1/640/products/r12-item8-wide-noodle-potato-duo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r12-item8-wide-noodle-potato-duo.webp",
+    "size": 27520,
+    "sha256": "9aa4d9a161e9cfb78b650e42d827f0ea060ae0ea9adbe6acb52bb845f811f2be"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item1-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item1-noodles.webp",
+    "size": 45748,
+    "sha256": "6318622c1acead97bf773b6bfb7c5d21d021e62ce7bb98d85032aebf1698b018"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item2-pea-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item2-pea-noodles.webp",
+    "size": 43112,
+    "sha256": "9747dd79e1d341781d2953425d41d079261504467a41a7d62706d832a77bc154"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item3-tonkotsu-ramen.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item3-tonkotsu-ramen.webp",
+    "size": 50486,
+    "sha256": "01e67eb8d6623132936a9e158a9f8112fc930c11b37d47c443811ada48988cc7"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item4-sour-beef-rice-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item4-sour-beef-rice-noodles.webp",
+    "size": 43020,
+    "sha256": "53226b5dcf098c116fc780e4f0a7d79cf176fa81e235ce366bc1851ff183f5fd"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item5-yibin-burning-noodles.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item5-yibin-burning-noodles.webp",
+    "size": 37076,
+    "sha256": "4dfe326398c8ecb0785331fd2063880591e3f0efb86661fc8bf60f044310411d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item6-spicy-red-oil-wontons.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item6-spicy-red-oil-wontons.webp",
+    "size": 49638,
+    "sha256": "457efa638506cafc95ee30082d8802450cbf03eb940d125fcc0c9a7a5412a2c6"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item7-beef-pea-noodle-duo-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item7-beef-pea-noodle-duo-bowl.webp",
+    "size": 75918,
+    "sha256": "3753624825567cfe7e7e637e28374b4604aa591f6d3b70a2b14aa75152c1390c"
+  },
+  {
+    "key": "images/variants-v1/640/products/r13-item8-midnight-healing-large-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r13-item8-midnight-healing-large-bowl.webp",
+    "size": 57574,
+    "sha256": "493c7ae771f669ced26fd0a8b90fef0be029da9444805b096512f7c60ee478c9"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item1-bbq.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item1-bbq.webp",
+    "size": 70240,
+    "sha256": "32c268c7365b5980f403e7a0cd31ccc022d74b67896032666d17a3d156ad55f2"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item2-beef-skewers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item2-beef-skewers.webp",
+    "size": 51760,
+    "sha256": "002ac2c43b98e751d01fbbc063123b2187eb196b9262979c1999bf5c8dc8eb20"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item3-honey-chicken-wings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item3-honey-chicken-wings.webp",
+    "size": 57650,
+    "sha256": "96a1675be6a189d111fce7a77dfbc6027df5e4771d800a36113019326ac8d9f7"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item4-chicken-cartilage-skewers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item4-chicken-cartilage-skewers.webp",
+    "size": 51630,
+    "sha256": "105dc2966eda434d076ab6e45349af7ababe80403523775f0c595d83b797e6aa"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item5-garlic-eggplant.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item5-garlic-eggplant.webp",
+    "size": 39670,
+    "sha256": "3875df188c8ed8d8d20af34b8906e3d8d15788329ff689c796b48fa94746ca1d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item6-foil-clam-vermicelli.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item6-foil-clam-vermicelli.webp",
+    "size": 94200,
+    "sha256": "3ab5e9b80019b9e83d169e273544ff5d302cf2340dd7578ddc08e9fe85f7450d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item7-twenty-skewer-double-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item7-twenty-skewer-double-feast.webp",
+    "size": 61488,
+    "sha256": "1d23cce24a80f7f621237790dd3e2bcd72dd69854906bd5b8adfb5ce32b0042d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r14-item8-solo-bbq-freedom-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r14-item8-solo-bbq-freedom-combo.webp",
+    "size": 53554,
+    "sha256": "e0d072de07f7d5b2ff62ee3ac50c386483fa9001b97b0be817de6d8199d05eab"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item1-seared-salmon-sushi.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item1-seared-salmon-sushi.webp",
+    "size": 33646,
+    "sha256": "d82fdc1a459fb38542f6f728a3cb3982b67aecd8a247b3df97008b42976c3ef2"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item2-sashimi-chirashi.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item2-sashimi-chirashi.webp",
+    "size": 45360,
+    "sha256": "5eb2821e3d99b11adca2c8b142e0d08965fef6ce4bff5ec9fe31b3d4684984dc"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item3-eel-tamago-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item3-eel-tamago-rice.webp",
+    "size": 56938,
+    "sha256": "04afc1d5b5697079711c5690986386eaae43101bbd9a2119c02429f20c067d9b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item4-teriyaki-chicken-rice.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item4-teriyaki-chicken-rice.webp",
+    "size": 54482,
+    "sha256": "450c8a2b44ff9704b65e7ed7e405503bd1826eb9fe1bfe013f33da609145f5e6"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item5-sweet-shrimp-avocado-hand-roll.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item5-sweet-shrimp-avocado-hand-roll.webp",
+    "size": 35716,
+    "sha256": "84139d80ca887a0d9b9e33a957103c8c489b5a5b4d1ccc1e91a45323dad4797a"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item6-karaage-fried-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item6-karaage-fried-chicken.webp",
+    "size": 53310,
+    "sha256": "5f9b99041c56fe6ed751239242e1a98c1d9ad6add80e0d8a6c29091bbc7e7a36"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item7-selected-solo-sushi-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item7-selected-solo-sushi-set.webp",
+    "size": 42936,
+    "sha256": "c2d0dceb59c8e3246fef583cfa7178d12ca8f892ac8a87dcbc31aea83883741d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r15-item8-double-sushi-share-box.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r15-item8-double-sushi-share-box.webp",
+    "size": 49964,
+    "sha256": "185025f901bdc0391b2e0ff91fccde30a4934fcdb274c9252c86c228577fbe5f"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item1-chicken-grain-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item1-chicken-grain-bowl.webp",
+    "size": 50658,
+    "sha256": "f9d89c30df0ce449b0da6c7b89f46ea8f9808e9229f874733c041258d2c3e506"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item2-beef-energy-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item2-beef-energy-bowl.webp",
+    "size": 47716,
+    "sha256": "050335d03686a194131226bcd06e8ef0fd6e819369aacb6a9678516c908fe814"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item3-avocado-shrimp-salad.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item3-avocado-shrimp-salad.webp",
+    "size": 39580,
+    "sha256": "ca2f30abb794d7817651add17282386b483f93b29187ba6a697499d851d2eb3e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item4-teriyaki-tofu-bowl.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item4-teriyaki-tofu-bowl.webp",
+    "size": 54740,
+    "sha256": "bb573a567f1f88dd42ee28e4df1d77317c67be7e0f07c4d603ec342aa8822af8"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item5-soft-boiled-egg-caesar-salad.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item5-soft-boiled-egg-caesar-salad.webp",
+    "size": 33136,
+    "sha256": "f660b893ac61a43fabf32be5343024162dcc8e581950788059e6e163ce3c6604"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item6-pumpkin-chickpea-soup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item6-pumpkin-chickpea-soup.webp",
+    "size": 32144,
+    "sha256": "9ec10845b941a096a7c1943b53e1e9c0288fc0dc658c8b0d16f29c1e579f709c"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item7-high-protein-training-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item7-high-protein-training-combo.webp",
+    "size": 61752,
+    "sha256": "181b17912fd981614836349ef4218fdbe3ccfe67c1c9fbebce760ca7a0926c2b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r16-item8-double-balanced-meal.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r16-item8-double-balanced-meal.webp",
+    "size": 51672,
+    "sha256": "80e270150f9fcf75043f6d56c6a31f00375fef652d3bcd243e1c10d1e2378c55"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item1-century-egg-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item1-century-egg-congee.webp",
+    "size": 22724,
+    "sha256": "b8d03a97d03cf9cbd455421579243f567d53372b5abbb5714730f67c6f387b8a"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item2-shrimp-scallop-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item2-shrimp-scallop-congee.webp",
+    "size": 24312,
+    "sha256": "40b2e4f64a57e32989bb4698487fffa4213db478fb4108d050d423f3a6a00698"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item3-pumpkin-millet-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item3-pumpkin-millet-congee.webp",
+    "size": 27236,
+    "sha256": "3509e0b0509a2fe474d65cf7e73c61e4d907f8c811b4ed1b8d08d1c37501847a"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item4-mushroom-chicken-congee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item4-mushroom-chicken-congee.webp",
+    "size": 27210,
+    "sha256": "3552622e914a8eb0661b43c2ed454d65e2ed8eb0fa19a3abc34bc74f80aaf33f"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item5-pork-xiaolongbao.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item5-pork-xiaolongbao.webp",
+    "size": 29424,
+    "sha256": "8d71fa94ceb3d1d4b720dd6bf419ccd789235b6757695e74a543a7afaa3ddaa3"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item6-dried-shrimp-egg-rice-roll.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item6-dried-shrimp-egg-rice-roll.webp",
+    "size": 26512,
+    "sha256": "29d3cceb41dd9a9868fd91b36a9b9c7608851d9b4860a0e3f313f7347c1a3c73"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item7-vitality-workday-breakfast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item7-vitality-workday-breakfast.webp",
+    "size": 26320,
+    "sha256": "1aba6be5d1c2c0f4db5bae03d1309e5e19fd458495739caa0fcc1cde4b0a8382"
+  },
+  {
+    "key": "images/variants-v1/640/products/r17-item8-slow-double-breakfast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r17-item8-slow-double-breakfast.webp",
+    "size": 47482,
+    "sha256": "096422ec840d81f6df42d77ab983cff94fb203b3ac30914f5b6a82305fae98d1"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item1-pork-cabbage-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item1-pork-cabbage-dumplings.webp",
+    "size": 30856,
+    "sha256": "4957634493bc1b55a58ba679f89e773b6d80a9487ba3b2e83dd4d4ca0ea4e4f3"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item2-shrimp-chive-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item2-shrimp-chive-dumplings.webp",
+    "size": 34930,
+    "sha256": "af9e96537f3fabe42503f529b151b0c7dd1c0ae92bcb2153dccd6e4754a156cf"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item3-corn-pork-potstickers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item3-corn-pork-potstickers.webp",
+    "size": 32836,
+    "sha256": "0f5db782afe0c0f82442a8da231257575f9ef3b52fa019f93284e2cc40218f45"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item4-sour-beef-dumplings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item4-sour-beef-dumplings.webp",
+    "size": 40058,
+    "sha256": "fd47aea0edb36674aae35f48454b285e8f59ef4f085d03730a2bca3be7bd2ea0"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item5-three-fresh-potstickers.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item5-three-fresh-potstickers.webp",
+    "size": 37814,
+    "sha256": "c5e7019fe8c3328f44ee7f42241ec22c9a42b8f12c48f925cc9b28bdddb42fee"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item6-kelp-salad.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item6-kelp-salad.webp",
+    "size": 46110,
+    "sha256": "a150504123a2d8924c1b2cb5e451d0ba30ca0247ddc99e82a697393936facbb0"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item7-single-dumpling-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item7-single-dumpling-combo.webp",
+    "size": 34446,
+    "sha256": "72e105d295c212fdcd66aba0c0d8952d5c0a403aa1eb44e9a355e8777aa90c77"
+  },
+  {
+    "key": "images/variants-v1/640/products/r18-item8-double-dumpling-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r18-item8-double-dumpling-feast.webp",
+    "size": 58960,
+    "sha256": "4212c9311d9a02b919678a7d9ac8e1c05261152516faa55372581aab29be9744"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item1-green-pepper-pork.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item1-green-pepper-pork.webp",
+    "size": 40806,
+    "sha256": "cc9ebb6fab75955d64753d3a7165ac419e676bdbac145c557a706c04b676d59c"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item2-tomato-eggs.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item2-tomato-eggs.webp",
+    "size": 61744,
+    "sha256": "4598d2cb3b38121e1539b2e7e936c375f69e5808ad38312949b9e6ab03c34151"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item3-fish-fragrant-pork.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item3-fish-fragrant-pork.webp",
+    "size": 45510,
+    "sha256": "5330c9fce3061177da1746d9b86408dbfa9ecb43805c68df37cc085d1ed88333"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item4-kung-pao-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item4-kung-pao-chicken.webp",
+    "size": 50754,
+    "sha256": "287a29624340d3d7364eeee368556de46f864096dda620ef6b0f462f587d2b7e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item5-mapo-tofu.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item5-mapo-tofu.webp",
+    "size": 56026,
+    "sha256": "a4913061e3a0d19202dba88e6fa695d3c0b714fb01e08d34e6f195438efda5cf"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item6-garlic-greens.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item6-garlic-greens.webp",
+    "size": 42082,
+    "sha256": "8b598b59b9337aa9abe6712446624c1001082245be7dc4c8fbd2bb125d0bca62"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item7-worker-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item7-worker-combo.webp",
+    "size": 33746,
+    "sha256": "d5ba488f7a33e2a54cefed0c02356ca7d2251880438ed2a9a0aa5133969b15de"
+  },
+  {
+    "key": "images/variants-v1/640/products/r19-item8-double-home-meal.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r19-item8-double-home-meal.webp",
+    "size": 55268,
+    "sha256": "2d3a9d77f46ca89ee41b7d4dba910cd16fd3817fba3bc1d0d1a728d5a5e2e423"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item1-strawberry-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item1-strawberry-tea.webp",
+    "size": 12916,
+    "sha256": "63f7f9af64f4a75222db23998db588dec703347e0358c88973ca80f0e45c1636"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item10-collaboration-special-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item10-collaboration-special-tea.webp",
+    "size": 17286,
+    "sha256": "267ca90f69f9a451fbe0de58b5121f49f917821606b310c11106f006f09db9d9"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item11-rare-recipe-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item11-rare-recipe-tea.webp",
+    "size": 41514,
+    "sha256": "d5d46480697926e8f2fc6c11bfaf1535abeb0f9c7d4dff30b783c58d7467115b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item12-dreamy-gradient-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item12-dreamy-gradient-tea.webp",
+    "size": 19344,
+    "sha256": "262817ec6d6ca6694ffa562a1ea8464f7b398833fad720f58c0ce89cf914b8b0"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item2-green-grape-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item2-green-grape-fruit-tea.webp",
+    "size": 23002,
+    "sha256": "f3531407d6b1cac8b3feb43bd2f63d98b87e1c9dde702aae1279c1e6e85eced7"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item3-full-cup-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item3-full-cup-fruit-tea.webp",
+    "size": 24414,
+    "sha256": "5d6a78e3d99211298f77e55a0f77097c2274f31dfcd946e28171fece19bc4e81"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item4-pure-leaf-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item4-pure-leaf-tea.webp",
+    "size": 29852,
+    "sha256": "c1154d689e438158b86a9d23fb71f7248bb86b3f53957cc11aba22d09e35100b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item5-peach-cheese-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item5-peach-cheese-tea.webp",
+    "size": 11580,
+    "sha256": "d8afd67289e911aa6073335152e5e0be72c3b60865a887eb68f9c6e0284261c5"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item6-signature-layered-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item6-signature-layered-tea.webp",
+    "size": 18178,
+    "sha256": "04792068e030122343c460a035657c97529b68e8952f75b1a6ab20e3f300750f"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item7-emblic-fruit-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item7-emblic-fruit-tea.webp",
+    "size": 16682,
+    "sha256": "24cfe860753d6cc6822ff91c11d2a0e4cb2f0ea28c46cc40028b20ac1a3d8722"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item8-light-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item8-light-milk-tea.webp",
+    "size": 13468,
+    "sha256": "913675ea70979912b17805bfc4d1f830b197306e2cbd329d82c627ece131536e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r2-item9-daily-surprise-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r2-item9-daily-surprise-tea.webp",
+    "size": 20064,
+    "sha256": "4b8a3f9997722f999f0c0acb390b069ee35b6dcdb062f79adcca79baa95efd13"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item1-sea-salt-roll.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item1-sea-salt-roll.webp",
+    "size": 41450,
+    "sha256": "90f4070a1997b788a86cdb0ed26225af5282bafe13c9c8c2779d3de262dd2b63"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item2-classic-croissant.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item2-classic-croissant.webp",
+    "size": 36374,
+    "sha256": "ad203fabfe074f5e4e21f6254432b43c7118548d53a55aa00c768c4cff33937c"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item3-ham-cheese-ciabatta.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item3-ham-cheese-ciabatta.webp",
+    "size": 43752,
+    "sha256": "2db9308eb0e9525274663622a5d649cf6d85206924e05c46de6ee3759f1ef6eb"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item4-cinnamon-apple-bagel.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item4-cinnamon-apple-bagel.webp",
+    "size": 68704,
+    "sha256": "43fdb7ad756bd7365437c9d44800f79fccb4430bebe74ff2bbbe121404089d42"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item5-basque-cheesecake.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item5-basque-cheesecake.webp",
+    "size": 27484,
+    "sha256": "510292ef8836c43dec020d4422e9065dc17c9bc33b68c9715eaf7f380c3eac94"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item6-chocolate-cookie.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item6-chocolate-cookie.webp",
+    "size": 60684,
+    "sha256": "4ce0977f5de25a86e4f80bab57fbf65e630a37fa2ecdee0a7b3aa82d86517dd2"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item7-breakfast-bread-bag.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item7-breakfast-bread-bag.webp",
+    "size": 46624,
+    "sha256": "b31187e4ecba3a65c1e3acf04b6ad812eb447ed5aadebcca8ac8d5b3b799c11d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r20-item8-double-afternoon-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r20-item8-double-afternoon-tea.webp",
+    "size": 38744,
+    "sha256": "e6d5fe18754e7653847392f6cf3578911be61c9ba80b39f42601f8409e7d27d3"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item1-double-beef-burger.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item1-double-beef-burger.webp",
+    "size": 47684,
+    "sha256": "53c0a185c4edd8edd405c55baee4e67f7cd13ccd2707cf7abe938df00cfcdf3b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item10-breakfast-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item10-breakfast-combo.webp",
+    "size": 34232,
+    "sha256": "8567d8e1485b90c02076730d6d369ef9f1647b9012c37ee1fdcc655a99f73b73"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item11-kids-burger-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item11-kids-burger-combo.webp",
+    "size": 30402,
+    "sha256": "5fcba408e745b35ba233b5140b52584bdb97b3d41f0e615c017c53bc76974e05"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item12-late-night-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item12-late-night-combo.webp",
+    "size": 54948,
+    "sha256": "a9b8b6892c0b38efb80ec07b1e3f5dbb486bf353472be067d1eaade8ca8fa86b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item2-spicy-chicken-burger.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item2-spicy-chicken-burger.webp",
+    "size": 44612,
+    "sha256": "0411815e28caa99724eac2c55f40815d9ceec96131714fe1db58da092fffeec0"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item3-large-fries.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item3-large-fries.webp",
+    "size": 31408,
+    "sha256": "bc25e75990352b8f7e3753501c61b865c02dd7b93dc1da0a51b2fce94a834a14"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item4-apple-pie.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item4-apple-pie.webp",
+    "size": 40550,
+    "sha256": "35ebb3557039b2c3e082e6ffe2e1f3dcf890c6775091c17c117b8d47dc442a6f"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item5-classic-burger-combo-a.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item5-classic-burger-combo-a.webp",
+    "size": 48148,
+    "sha256": "fc3c73fcb753867419729d25c2281de442899b80d334f9f5debc3fe52eeecfe4"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item6-golden-hash-brown.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item6-golden-hash-brown.webp",
+    "size": 30188,
+    "sha256": "44529224c1521d19d9ec47ab65bb14025239c884a415f90ca8abfb5b0e531d11"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item7-vanilla-soft-serve-cone.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item7-vanilla-soft-serve-cone.webp",
+    "size": 16954,
+    "sha256": "af66480c4de37ea67d0def380d5f4017e9195de6077f6b5dc20c005ce571fa7c"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item8-cookie-soft-serve-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item8-cookie-soft-serve-cup.webp",
+    "size": 28696,
+    "sha256": "f4df13043f175873a5bd8eb72e54384e07b91bf9329215919d3a41b1cfd0baac"
+  },
+  {
+    "key": "images/variants-v1/640/products/r3-item9-double-burger-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r3-item9-double-burger-combo.webp",
+    "size": 41066,
+    "sha256": "469a731dd01e8db846578ad1bcc68c9ac90ee8ef7c77c5e5a8fbda2131267dbb"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item1-fried-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item1-fried-chicken.webp",
+    "size": 42522,
+    "sha256": "fc0e0726ec2bcd96179dcd53511538091ee009fb03a0ab79912368228a51d7d8"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item10-double-fried-chicken-bucket.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item10-double-fried-chicken-bucket.webp",
+    "size": 50686,
+    "sha256": "2920d5f67eee424c4f91b50b4b25a099a35979a3c8a7fd396a60b61a6fda2b04"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item11-mechanical-feast-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item11-mechanical-feast-combo.webp",
+    "size": 36262,
+    "sha256": "ca3af058aa875fe50693b5320b647c474f5a1d653ac7368b2d65e4547f3828e8"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item12-family-sharing-feast.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item12-family-sharing-feast.webp",
+    "size": 60396,
+    "sha256": "199efe11f70ca3ab75d49ed002fa08a4847aa316f54b40fbe635a1c1c7af280f"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item2-spicy-fried-chicken-leg.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item2-spicy-fried-chicken-leg.webp",
+    "size": 48356,
+    "sha256": "6c9057f1f29cbf159a5b6bf2a7e5b49633a2e01d7eb7bdf5befe4acd62171db5"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item3-portuguese-egg-tarts.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item3-portuguese-egg-tarts.webp",
+    "size": 36434,
+    "sha256": "802f5fac6b8be0a47e03f32b6011e8b4f58f68c5b2d4f6dca8a9ed69237e5d74"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item4-crispy-potato-balls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item4-crispy-potato-balls.webp",
+    "size": 38990,
+    "sha256": "edb69cdead59dff7630acebd68999745ffb380d0445e39748b3d622375ac41a7"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item5-beijing-chicken-wrap.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item5-beijing-chicken-wrap.webp",
+    "size": 40226,
+    "sha256": "6de07dcb767b108a1d25718a05676505628b8a07695ae4b9fe622925485c5952"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item6-five-sided-beef-wrap.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item6-five-sided-beef-wrap.webp",
+    "size": 37450,
+    "sha256": "4fa3de1411512451655ee02478947f154dcf470855b17f1b6356d9dff8c3191b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item7-thursday-fried-chicken-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item7-thursday-fried-chicken-combo.webp",
+    "size": 48858,
+    "sha256": "9fbf07d53481e96cd32dde118e033af52cd1334b6275b590622e1e01134c3519"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item8-hot-spicy-bone-in-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item8-hot-spicy-bone-in-chicken.webp",
+    "size": 63806,
+    "sha256": "00e0ce854dd6505aa57c020262a64be08942cd32a18cc90b3775163a0e69088b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r4-item9-family-fried-chicken-bucket.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r4-item9-family-fried-chicken-bucket.webp",
+    "size": 41294,
+    "sha256": "8723be3d5304c9e65835eec08df2c59a78a08ac3d486d47f3cf239f737f0071e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item1-coconut-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item1-coconut-latte.webp",
+    "size": 11580,
+    "sha256": "66ebc34f489ee18b7a654e2e6dd527d9b839c6297020849170d804790a80ce02"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item10-meeting-survival-large-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item10-meeting-survival-large-coffee.webp",
+    "size": 32900,
+    "sha256": "de37ff85cb13c7687c5179257405d0ce4460c60e7f67bbd5e689c878f081e1c7"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item11-overtime-coffee-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item11-overtime-coffee-set.webp",
+    "size": 36256,
+    "sha256": "bf609d3d827be84d7fbdd73b106e06a1373fe1990b8924a9244750bfc5ef6a2d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item12-lucky-day-coffee-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item12-lucky-day-coffee-combo.webp",
+    "size": 30928,
+    "sha256": "fef6c7b599548ac60b6c50708327741a3770b8ff3be3a933e80f974023c536ba"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item2-rich-milk-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item2-rich-milk-latte.webp",
+    "size": 23358,
+    "sha256": "c941d9c7cf9239fdb784a82d3914fddf6956d486f222d1192c589de1c16ae537"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item3-coconut-velvet-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item3-coconut-velvet-latte.webp",
+    "size": 20492,
+    "sha256": "4548e76a5eecaa8da8e84b05c635897e6b33c0d490f3f8f334acdbe326e9718a"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item4-americano-black-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item4-americano-black-coffee.webp",
+    "size": 39502,
+    "sha256": "b8fa792677d3c3acb2af7d0a94b6bba16c0f6e29a43e65f28ef7fc6dfb21dbfc"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item5-bittersweet-special-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item5-bittersweet-special-coffee.webp",
+    "size": 26974,
+    "sha256": "f52412bac7b2f642fc477deebcc857d0166ea3ffebf2b1a2923c3c9dc6cdcb84"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item6-misfortune-latte.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item6-misfortune-latte.webp",
+    "size": 22748,
+    "sha256": "8c98948f77c3a16379bff20ff85c88408994efc07e66b2c5ac1466921d6dd41d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item7-office-instant-coffee-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item7-office-instant-coffee-pack.webp",
+    "size": 19520,
+    "sha256": "be6372f18fde6429e57dafaf0497790072ae69671aa265f3593ed075e1adb568"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item8-after-work-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item8-after-work-coffee.webp",
+    "size": 20210,
+    "sha256": "ba00a2b311f26c526a3d8cf0e38db6cba1903d835463e777d276cf97d52d1043"
+  },
+  {
+    "key": "images/variants-v1/640/products/r5-item9-monday-special-coffee.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r5-item9-monday-special-coffee.webp",
+    "size": 17280,
+    "sha256": "669c25a198d607f46234472ea27d2d51ff310ca2ae61b00e7e34ec824aa67f54"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item1-hotpot-platter.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item1-hotpot-platter.webp",
+    "size": 51946,
+    "sha256": "f47df788b0631d19fc5b2d89b422c9a7b92fc700ee838acd089765a13bea2b9d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item10-solo-hotpot-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item10-solo-hotpot-set.webp",
+    "size": 40118,
+    "sha256": "ebec610873a7ec4cf53f6db140358d72a70e4d511f5a757e936a1b6c3345094a"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item11-midnight-comfort-hotpot-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item11-midnight-comfort-hotpot-combo.webp",
+    "size": 49272,
+    "sha256": "928e02e85daab2d067da6451f2b7a0289ce61b8277dcbf125f98fe754a8665f2"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item12-spicy-all-meat-hotpot-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item12-spicy-all-meat-hotpot-set.webp",
+    "size": 73380,
+    "sha256": "8b9441e619e7dcf048fbdbcf640c9d20114255252e9d89ec9aaa6976ccf77eb8"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item2-beef-rolls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item2-beef-rolls.webp",
+    "size": 41934,
+    "sha256": "f182ef80d42bf9cc6c91a632c49c1adcc17d78da48623456c4d1ea1ccb4cf176"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item3-fresh-shrimp-paste.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item3-fresh-shrimp-paste.webp",
+    "size": 30246,
+    "sha256": "a6149d5e02327927487774dbfbf2e60aa6f97b464d96c265653bdf01b4ced7cf"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item4-yin-yang-hotpot-broth.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item4-yin-yang-hotpot-broth.webp",
+    "size": 36502,
+    "sha256": "b0aeba45e140c36c14bcee694a774691ee41b62ac3581154f6b600af27491b33"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item5-hand-sliced-lamb.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item5-hand-sliced-lamb.webp",
+    "size": 60552,
+    "sha256": "fd8341cd92c11a2cb9af23300571345380f9970dddeb38668ff796083a5bf564"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item6-midnight-solo-hotpot-combo.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item6-midnight-solo-hotpot-combo.webp",
+    "size": 45550,
+    "sha256": "8a6dc7ce4cf70d8172cab5f9b27d339c9d0fee1e99784b12d937c21bbedaffb6"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item7-chrysanthemum-tofu.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item7-chrysanthemum-tofu.webp",
+    "size": 32942,
+    "sha256": "47602bf84aa387acf2690e19507ddc935c41c495ed6af86b42bed0d4db19eda4"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item8-signature-hotpot-dipping-sauce.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item8-signature-hotpot-dipping-sauce.webp",
+    "size": 31178,
+    "sha256": "2030c7b7e2b686bbef3eb717f2d2c15aa29de6374a5dc5b9ad57676537ff47e6"
+  },
+  {
+    "key": "images/variants-v1/640/products/r6-item9-double-hotpot-set.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r6-item9-double-hotpot-set.webp",
+    "size": 50268,
+    "sha256": "1de464bddf9256e98d337ea4032a4bf3afb316da60f6db7e3b3ac72797697a52"
+  },
+  {
+    "key": "images/variants-v1/640/products/r7-item1-sea-salt-potato-chips.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r7-item1-sea-salt-potato-chips.webp",
+    "size": 22528,
+    "sha256": "d10bc63aac53206b3715eeb3cdb78244c2cce146ecdbe903758d46dd040a979e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r7-item2-iced-lemon-sparkling-water.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r7-item2-iced-lemon-sparkling-water.webp",
+    "size": 22288,
+    "sha256": "c1556435c5bb6a517ec9839b3d46c3ebe70ef16d28750c828b6b520fde0b23ce"
+  },
+  {
+    "key": "images/variants-v1/640/products/r7-item3-midnight-chocolate-cookies.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r7-item3-midnight-chocolate-cookies.webp",
+    "size": 37068,
+    "sha256": "1df81af06ca23899822cf04f490ad438afa1025d96abea808e33d0d2fbe16558"
+  },
+  {
+    "key": "images/variants-v1/640/products/r7-item4-soft-facial-tissues-three-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r7-item4-soft-facial-tissues-three-pack.webp",
+    "size": 10126,
+    "sha256": "846810750e32be9c6827dee97cd85c300303d886643607309cbedde26d092711"
+  },
+  {
+    "key": "images/variants-v1/640/products/r7-item5-travel-toiletry-kit.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r7-item5-travel-toiletry-kit.webp",
+    "size": 16892,
+    "sha256": "8aa5de5cab542e790ecc79e8a13fe9b2289c87b4f4472a606dd3d2df84c1ac26"
+  },
+  {
+    "key": "images/variants-v1/640/products/r8-item1-sweet-strawberry-box.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r8-item1-sweet-strawberry-box.webp",
+    "size": 42822,
+    "sha256": "738b09c3eef4b0c19a2a2bd8f988e2601bd579faa1b44151cf2700f27a4c9f44"
+  },
+  {
+    "key": "images/variants-v1/640/products/r8-item2-green-grape-basket.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r8-item2-green-grape-basket.webp",
+    "size": 27454,
+    "sha256": "4dc6f743ad8b346d423ab8dbd97ffb7bef20fdfc141c415b1dfc2da04799d68e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r8-item3-four-fresh-oranges.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r8-item3-four-fresh-oranges.webp",
+    "size": 28306,
+    "sha256": "176432526213f462000b47011f7f41598e700eb818037f69f2625fa421339b8e"
+  },
+  {
+    "key": "images/variants-v1/640/products/r8-item4-seven-fruit-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r8-item4-seven-fruit-cup.webp",
+    "size": 36448,
+    "sha256": "9ce8a536fe2848b6cc04a818cfca74535060bfd39e772212c46bd843a9bd7645"
+  },
+  {
+    "key": "images/variants-v1/640/products/r8-item5-seedless-watermelon-cubes.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r8-item5-seedless-watermelon-cubes.webp",
+    "size": 30776,
+    "sha256": "ca5b6d36c65c9d9912e350b1741a8ba8a1bec18d2bb3fc392925d987b7d5235f"
+  },
+  {
+    "key": "images/variants-v1/640/products/r9-item1-steam-warming-eye-mask.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r9-item1-steam-warming-eye-mask.webp",
+    "size": 16238,
+    "sha256": "dcca7b03f98b27bc6ad5c3324704640cc84194f6d3369588dc0cfbd8609d3250"
+  },
+  {
+    "key": "images/variants-v1/640/products/r9-item2-medical-masks-ten-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r9-item2-medical-masks-ten-pack.webp",
+    "size": 36688,
+    "sha256": "212e75cfed71cece2605ec5d3ae31bb5542134883bd06f0e78f0be3d2a788aa6"
+  },
+  {
+    "key": "images/variants-v1/640/products/r9-item3-wound-care-kit.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r9-item3-wound-care-kit.webp",
+    "size": 20008,
+    "sha256": "d53f4ae2c8d43c5eccd2ab40d5e13f841848e7300df5359f5651bf8eaf029196"
+  },
+  {
+    "key": "images/variants-v1/640/products/r9-item4-warming-patches-four-pack.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r9-item4-warming-patches-four-pack.webp",
+    "size": 15844,
+    "sha256": "ef7d2d3371a66f48df44f5ba756c7f0c9925485de971e07d6c0412c40b2c673a"
+  },
+  {
+    "key": "images/variants-v1/640/products/r9-item5-reusable-cold-compress-bag.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r9-item5-reusable-cold-compress-bag.webp",
+    "size": 15824,
+    "sha256": "8ad50a49f5f03fce3d9d79f16ff2a47406e60af1c939715ec7a9ebe64fc0beec"
+  }
+]

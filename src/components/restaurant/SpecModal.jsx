@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppImage from '../common/AppImage'
 
 function initialSelections(groups) {
   return Object.fromEntries(groups.map((group) => {
@@ -58,7 +59,7 @@ export default function SpecModal({ item, onClose, onConfirm }) {
       <button aria-label="关闭规格选择" onClick={onClose} className="absolute inset-0 bg-black/50" />
       <section className="relative z-10 flex max-h-[82vh] w-full max-w-[480px] flex-col overflow-hidden rounded-t-2xl bg-white shadow-2xl">
         <div className="flex items-start gap-3 border-b border-gray-100 px-4 py-3">
-          <img src={item.imageUrl} alt={item.name} className="h-[68px] w-[68px] flex-none rounded-lg object-cover" />
+          <AppImage src={item.imageUrl} alt={item.name} className="h-[68px] w-[68px] flex-none rounded-lg object-cover" sizes="68px" width={68} height={68} />
           <div className="min-w-0 flex-1 pt-0.5">
             <h2 className="truncate text-[17px] font-bold text-[#222]">{item.name}</h2>
             <p className="mt-1 line-clamp-2 text-[10px] leading-4 text-gray-400">{item.description}</p>
@@ -68,7 +69,7 @@ export default function SpecModal({ item, onClose, onConfirm }) {
         </div>
 
         <div className="overflow-y-auto px-4 pb-3">
-          <div className="mt-3 rounded-lg bg-[#f8f7f4] px-3 py-2 text-[9px] leading-4 text-gray-500">
+          <div className="mt-3 rounded-lg bg-[var(--surface-muted)] px-3 py-2 text-[9px] leading-4 text-gray-500">
             <p><strong className="text-gray-700">主要配料：</strong>{item.ingredients?.join('、') || '以门店当日供应为准'}</p>
             <p><strong className="text-gray-700">过敏原提示：</strong>{item.allergens?.join('、') || '暂无常见过敏原信息'}</p>
             <p><strong className="text-gray-700">供应时段：</strong>{item.availabilitySchedule?.label} {item.availabilitySchedule?.start}-{item.availabilitySchedule?.end} · 预计制作{item.estimatedPrepMinutes}分钟</p>
@@ -84,10 +85,10 @@ export default function SpecModal({ item, onClose, onConfirm }) {
                 {group.options.map((option) => {
                   const selected = group.multiple ? selections[group.id].includes(option.id) : selections[group.id] === option.id
                   return (
-                    <button key={option.id} onClick={() => selectOption(group, option)} className={`relative min-h-10 rounded-md border px-2 py-1.5 text-[11px] ${selected ? 'border-[#ffcb19] bg-[#fff9df] font-semibold text-[#222]' : 'border-gray-200 bg-[#fafafa] text-gray-600'}`}>
+                    <button key={option.id} onClick={() => selectOption(group, option)} className={`relative min-h-10 rounded-md border px-2 py-1.5 text-[11px] ${selected ? 'border-[var(--brand-primary)] bg-[var(--brand-primary-soft)] font-semibold text-[var(--brand-primary-deep)]' : 'border-[var(--border-soft)] bg-[var(--surface)] text-[var(--text-secondary)]'}`}>
                       {option.name}
                       {option.priceDelta > 0 && <span className="ml-0.5 text-[9px] text-gray-400">+¥{option.priceDelta}</span>}
-                      {selected && <span className="absolute right-0 top-0 rounded-bl bg-[#ffcb19] px-1 text-[8px]">✓</span>}
+                      {selected && <span className="absolute right-0 top-0 rounded-bl bg-[var(--brand-primary)] px-1 text-[8px] text-white">✓</span>}
                     </button>
                   )
                 })}
@@ -106,7 +107,7 @@ export default function SpecModal({ item, onClose, onConfirm }) {
             <span className="min-w-6 text-center text-sm font-semibold">{quantity}</span>
             <button onClick={() => setQuantity((value) => Math.min(99, value + 1))} className="h-8 w-8 text-lg text-gray-700">+</button>
           </div>
-          <button onClick={confirm} className="h-10 flex-none rounded-full bg-[var(--brand-yellow)] px-5 text-[14px] font-bold text-[#222] active:opacity-80">加入购物车</button>
+          <button onClick={confirm} className="h-10 flex-none rounded-full bg-[var(--brand-primary)] px-5 text-[14px] font-bold text-white active:opacity-80">加入购物车</button>
         </div>
       </section>
     </div>

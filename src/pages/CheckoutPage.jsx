@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
+import AppImage from '../components/common/AppImage'
 
 export default function CheckoutPage() {
   const location = useLocation()
@@ -37,7 +38,7 @@ export default function CheckoutPage() {
           onClick={() => navigate(-1)}
           style={{
             padding: '10px 24px',
-            background: '#ff6b35',
+            background: 'var(--brand-primary)',
             color: '#fff',
             border: 'none',
             borderRadius: 8,
@@ -52,7 +53,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div style={{ fontFamily: 'sans-serif', maxWidth: 480, margin: '0 auto', background: '#f5f5f5', minHeight: '100vh' }}>
+    <div style={{ fontFamily: 'sans-serif', maxWidth: 480, margin: '0 auto', background: 'var(--background)', minHeight: '100vh' }}>
       {/* Header */}
       <div style={{ background: '#fff', padding: '14px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid #eee' }}>
         <button
@@ -65,7 +66,7 @@ export default function CheckoutPage() {
       </div>
 
       {/* Simulation notice */}
-      <div style={{ background: '#fff8e7', color: '#7a5a00', padding: '10px 16px', fontSize: 12, lineHeight: 1.55 }}>
+      <div style={{ background: 'var(--brand-primary-soft)', color: 'var(--brand-primary-deep)', padding: '10px 16px', fontSize: 12, lineHeight: 1.55 }}>
         这是一次模拟下单体验，不会产生真实支付、餐食或配送。
       </div>
 
@@ -88,7 +89,8 @@ export default function CheckoutPage() {
               borderBottom: '1px solid #f0f0f0',
             }}
           >
-            <div style={{ flex: 1 }}>
+            <AppImage src={item.imageUrl || item.image} alt={item.name} className="h-12 w-12 flex-none rounded-lg object-cover" sizes="48px" width={48} height={48} />
+            <div style={{ flex: 1, minWidth: 0, marginLeft: 10 }}>
               <div style={{ fontSize: 14, fontWeight: 500 }}>{item.name}</div>
               {specSummary ? (
                 <div style={{ fontSize: 11, color: '#999', marginTop: 3 }}>{specSummary}</div>
@@ -98,7 +100,7 @@ export default function CheckoutPage() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <span style={{ fontSize: 13, color: '#666' }}>x{quantity}</span>
-              <span style={{ fontSize: 14, fontWeight: 500, color: '#ff6b35' }}>
+              <span style={{ fontSize: 14, fontWeight: 500, color: 'var(--price-red)' }}>
                 ¥{((unitPrice ?? item.price) * quantity).toFixed(2)}
               </span>
             </div>
@@ -113,7 +115,7 @@ export default function CheckoutPage() {
           <span>¥{subtotal.toFixed(2)}</span>
         </div>
         {discount > 0 && (
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8, fontSize: 14, color: '#ff6b35' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8, fontSize: 14, color: 'var(--price-red)' }}>
             <span>优惠券</span>
             <span>-¥{discount.toFixed(2)}</span>
           </div>
@@ -133,7 +135,7 @@ export default function CheckoutPage() {
           }}
         >
           <span>实付</span>
-          <span style={{ color: '#ff6b35' }}>¥{total.toFixed(2)}</span>
+          <span style={{ color: 'var(--price-red)' }}>¥{total.toFixed(2)}</span>
         </div>
       </div>
 
@@ -144,7 +146,7 @@ export default function CheckoutPage() {
           style={{
             width: '100%',
             padding: '14px 0',
-            background: '#ff6b35',
+            background: 'var(--brand-primary)',
             color: '#fff',
             border: 'none',
             borderRadius: 10,

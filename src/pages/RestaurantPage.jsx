@@ -173,11 +173,11 @@ export default function RestaurantPage() {
   // --- Not found ---
   if (!restaurant) {
     return (
-      <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center gap-4">
+      <div className="min-h-screen bg-[var(--background)] flex flex-col items-center justify-center gap-4">
         <p className="text-gray-500 text-lg">餐厅不存在</p>
         <button
           onClick={() => navigate(-1)}
-          className="px-6 py-2 bg-orange-400 text-white rounded-full text-sm font-medium"
+          className="px-6 py-2 bg-[var(--brand-primary)] text-white rounded-full text-sm font-medium"
         >
           返回
         </button>
@@ -187,7 +187,7 @@ export default function RestaurantPage() {
 
   // --- Render ---
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-[var(--background)] min-h-screen">
       {/* Fixed top header */}
       <RestaurantHeader
         restaurantName={restaurant.name}
@@ -224,7 +224,7 @@ export default function RestaurantPage() {
             <div ref={menuContainerRef} className="min-w-0 flex-1">
               {restaurant.menus.map((category) => (
                 <div key={category.categoryId} id={'cat-' + category.categoryId} data-category-id={category.categoryId}>
-                  <h3 className="sticky top-[88px] z-10 bg-gray-50 px-3 py-2 text-xs font-semibold text-gray-500">{category.categoryName}</h3>
+                  <h3 className="sticky top-[88px] z-10 bg-[var(--background)] px-3 py-2 text-xs font-semibold text-gray-500">{category.categoryName}</h3>
                   <div className="bg-white px-3">
                     {category.items.map((item) => <MenuItem key={item.id} item={item} quantity={itemQuantity(item.id)} onAdd={handleAdd} onRemove={() => handleRemove(item.id)} onChooseSpecs={setSpecItem} />)}
                   </div>
@@ -233,12 +233,12 @@ export default function RestaurantPage() {
             </div>
           </div>
         ) : activeTab === '评价' ? (
-          <div className="min-h-[360px] bg-[#f6f6f6] p-3">
-            <div className="rounded-xl bg-white p-4"><div className="flex items-end gap-2"><strong className="text-3xl text-[#ff5a2f]">{restaurant.rating}</strong><span className="pb-1 text-xs text-gray-400">商家评分</span></div><div className="mt-3 flex flex-wrap gap-2">{['味道很好', '包装仔细', '配送很快', '会再次光顾'].map((tag) => <span key={tag} className="rounded-full bg-[#fff6e8] px-3 py-1.5 text-xs text-[#8c6124]">{tag}</span>)}</div></div>
+          <div className="min-h-[360px] bg-[var(--background)] p-3">
+            <div className="rounded-xl bg-white p-4"><div className="flex items-end gap-2"><strong className="text-3xl text-[#ff5a2f]">{restaurant.rating}</strong><span className="pb-1 text-xs text-gray-400">商家评分</span></div><div className="mt-3 flex flex-wrap gap-2">{['味道很好', '包装仔细', '配送很快', '会再次光顾'].map((tag) => <span key={tag} className="rounded-full bg-[var(--brand-primary-soft)] px-3 py-1.5 text-xs text-[var(--brand-primary-deep)]">{tag}</span>)}</div></div>
             <div className="mt-2 rounded-xl bg-white p-4 text-sm text-gray-600">“这一单是模拟的，但挑选时真的很快乐。”<p className="mt-2 text-xs text-gray-400">来自虚构街区角色的体验评价</p></div>
           </div>
         ) : (
-          <div className="min-h-[360px] bg-[#f6f6f6] p-3"><div className="rounded-xl bg-white p-4"><h3 className="font-black">商家信息</h3><p className="mt-3 text-sm leading-6 text-gray-600">{restaurant.description}</p><div className="mt-4 border-t border-gray-100 pt-3 text-xs leading-7 text-gray-500"><p>营业时间：{restaurant.businessHours?.open}-{restaurant.businessHours?.close}</p><p>商家类型：原创虚构商家</p><p>价格与销量均为模拟内容，不构成真实交易</p></div></div></div>
+          <div className="min-h-[360px] bg-[var(--background)] p-3"><div className="rounded-xl bg-white p-4"><h3 className="font-black">商家信息</h3><p className="mt-3 text-sm leading-6 text-gray-600">{restaurant.description}</p><div className="mt-4 border-t border-gray-100 pt-3 text-xs leading-7 text-gray-500"><p>营业时间：{restaurant.businessHours?.open}-{restaurant.businessHours?.close}</p><p>商家类型：原创虚构商家</p><p>价格与销量均为模拟内容，不构成真实交易</p></div></div></div>
         )}
       </div>
 
