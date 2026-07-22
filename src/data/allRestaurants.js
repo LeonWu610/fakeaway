@@ -1,6 +1,7 @@
 import restaurants from './restaurants.json'
 import retailRestaurants from './retailRestaurants.js'
 import foodRestaurants from './foodRestaurants.js'
+import expandedFoodRestaurants from './expandedFoodRestaurants.js'
 
 const imageBaseUrl = (import.meta.env.VITE_IMAGE_BASE_URL || '').replace(/\/$/, '')
 
@@ -21,4 +22,4 @@ function withRemoteImages(restaurant) {
   }
 }
 
-export default [...restaurants, ...foodRestaurants, ...retailRestaurants].map(withRemoteImages)
+export default [...restaurants, ...foodRestaurants, ...expandedFoodRestaurants, ...retailRestaurants].map(withRemoteImages)

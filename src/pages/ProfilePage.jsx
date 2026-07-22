@@ -1,6 +1,9 @@
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import BottomNav from '../components/common/BottomNav'
+import AppImage from '../components/common/AppImage'
+import restaurants from '../data/allRestaurants'
+import { describeRelationshipOutcome, getFavoriteItem, getRelationshipStage, readRelationships } from '../utils/relationship'
 
 function readJson(storage, key, fallback) {
   try { return JSON.parse(storage.getItem(key)) || fallback } catch { return fallback }
@@ -11,7 +14,9 @@ export default function ProfilePage() {
   const memories = readJson(localStorage, 'fakeaway.memories', [])
   const activeOrder = readJson(sessionStorage, 'fakeaway.activeOrder', null)
   const coupons = Object.keys(sessionStorage).filter((key) => key.startsWith('fakeaway.coupon.')).length
-  const uniqueRestaurants = useMemo(() => new Set(memories.map((memory) => memory.restaurantId)).size, [memories])
+  const relationships = useMemo(() => Object.values(readRelationships()).filter((relationship) => relationship.completedOrders > 0), [])
+  const familiarRestaurants = useMemo(() => [...relationships].sort((a, b) => b.completedOrders - a.completedOrders || b.lastMetAt - a.lastMetAt).slice(0, 3), [relationships])
+  const totalFocusMinutes = Math.floor(relationships.reduce((sum, relationship) => sum + relationship.totalFocusSeconds, 0) / 60)
   const greeting = new Date().getHours() >= 18 ? '今晚也辛苦了' : '今天也慢慢来'
 
   return (
@@ -20,12 +25,23 @@ export default function ProfilePage() {
         <div className="flex items-center gap-3"><div className="grid h-14 w-14 place-items-center rounded-full border-2 border-white/70 bg-white/15 shadow-sm"><ProfileIcon name="user" className="h-8 w-8" /></div><div className="min-w-0 flex-1"><h1 className="text-[20px] font-black">{greeting}</h1><p className="mt-0.5 text-[11px] text-white/65">模拟食客 · 不用付款，也可以认真期待</p></div><button className="grid h-8 w-8 place-items-center rounded-full bg-white/10" aria-label="设置"><ProfileIcon name="settings" className="h-4 w-4" /></button></div>
         <div className="mt-5 grid grid-cols-3 rounded-xl bg-white/90 py-3 text-[var(--text-primary)] backdrop-blur">
           <Stat value={memories.length} label="记忆订单" />
-          <Stat value={uniqueRestaurants} label="去过的店" />
-          <Stat value={coupons} label="领取的券" />
+          <Stat value={relationships.length} label="熟悉的店" />
+          <Stat value={totalFocusMinutes} label="专注分钟" />
         </div>
       </section>
 
       {activeOrder && <button onClick={() => navigate('/orders')} className="mx-3 mt-3 flex w-[calc(100%_-_1.5rem)] items-center gap-3 rounded-xl bg-[var(--brand-night)] p-3 text-left text-white shadow-sm"><div className="grid h-10 w-10 place-items-center rounded-full bg-white/10"><ProfileIcon name="scooter" className="h-6 w-6" /></div><div className="min-w-0 flex-1"><p className="text-[9px] text-white/50">正在等待</p><p className="mt-0.5 truncate text-[13px] font-bold">{activeOrder.restaurant.name} · 想象骑手正在路上</p></div><span className="text-sm text-white/60">›</span></button>}
+
+      {relationships.length > 0 && <section className="mx-3 mt-3 rounded-xl bg-gradient-to-br from-[var(--brand-night)] to-[#4d3d6b] p-4 text-white shadow-[var(--shadow-soft)]">
+        <div className="flex items-end justify-between"><div><h2 className="text-[14px] font-black">我的熟店</h2><p className="mt-0.5 text-[9px] text-white/45">{relationships.length} 家店记得你来过</p></div><div className="text-right"><strong className="text-[18px]">{totalFocusMinutes}</strong><p className="text-[8px] text-white/40">累计专注分钟</p></div></div>
+        <div className="mt-3 space-y-2">{familiarRestaurants.map((relationship) => {
+          const restaurant = restaurants.find((entry) => entry.id === relationship.restaurantId)
+          const stage = getRelationshipStage(relationship.completedOrders)
+          const favorite = getFavoriteItem(relationship)
+          if (!restaurant) return null
+          return <button key={relationship.restaurantId} onClick={() => navigate(`/restaurant/${relationship.restaurantId}`)} className="flex w-full items-center gap-2 rounded-xl bg-white/10 p-2 text-left ring-1 ring-white/10"><AppImage src={restaurant.image} alt={restaurant.name} className="h-10 w-10 flex-none rounded-lg object-cover" sizes="40px" width={40} height={40} /><div className="min-w-0 flex-1"><div className="flex items-center gap-1.5"><strong className="truncate text-[11px]">{restaurant.name}</strong><span className="flex-none rounded-full bg-[#ff8978]/15 px-1.5 py-0.5 text-[8px] text-[#ffc9c0]">{stage.label}</span></div><p className="mt-0.5 truncate text-[8px] text-white/45">常点 {favorite?.name || '还在慢慢认识'} · {describeRelationshipOutcome(relationship)}</p></div><span className="text-white/35">›</span></button>
+        })}</div>
+      </section>}
 
       <section className="mx-3 mt-3 overflow-hidden rounded-xl bg-[var(--surface)]">
         <MenuRow icon="receipt" title="我的订单" detail={`${memories.length + Number(Boolean(activeOrder))} 个记录`} onClick={() => navigate('/orders')} />

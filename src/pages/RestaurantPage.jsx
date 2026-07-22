@@ -7,9 +7,12 @@ import MenuItem from '../components/restaurant/MenuItem';
 import CategorySidebar from '../components/restaurant/CategorySidebar';
 import CartBar from '../components/restaurant/CartBar';
 import SpecModal from '../components/restaurant/SpecModal';
+import ComboOrderPanel from '../components/restaurant/ComboOrderPanel';
+import RelationshipCard from '../components/restaurant/RelationshipCard';
 
 import restaurantsData from '../data/allRestaurants';
 import { enrichProduct } from '../data/productProfiles';
+import { getFavoriteItem, getRelationship } from '../utils/relationship';
 
 // Normalize a restaurant's menus so that:
 //   - each category has `name` (CategorySidebar reads cat.name)
@@ -28,6 +31,31 @@ function normalizeRestaurant(restaurant) {
   };
 }
 
+function defaultCartEntry(item) {
+  const specs = (item.specGroups || []).map((group) => {
+    if (group.multiple) return { groupId: group.id, groupName: group.name, options: [] }
+    const option = group.options.find((entry) => entry.default) || group.options[0]
+    return {
+      groupId: group.id,
+      groupName: group.name,
+      options: option ? [{ id: option.id, name: option.name, priceDelta: option.priceDelta || 0 }] : [],
+    }
+  }).filter((group) => group.options.length > 0)
+  const options = specs.flatMap((group) => group.options)
+  return {
+    item,
+    specs,
+    specSummary: options.map((option) => option.name).join('、'),
+    unitPrice: item.price + options.reduce((sum, option) => sum + option.priceDelta, 0),
+    quantity: 1,
+  }
+}
+
+function cartEntryKey(entry) {
+  const specKey = entry.specs.flatMap((group) => group.options.map((option) => `${group.groupId}:${option.id}`)).join('|')
+  return specKey ? `${entry.item.id}::${specKey}` : entry.item.id
+}
+
 export default function RestaurantPage() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -44,6 +72,10 @@ export default function RestaurantPage() {
   const [showCartPanel, setShowCartPanel] = useState(false);
   const [showHeaderName, setShowHeaderName] = useState(false);
   const [specItem, setSpecItem] = useState(null);
+  const [relationship] = useState(() => getRelationship(id));
+
+  const favoriteItem = getFavoriteItem(relationship);
+  const favoriteMenuItem = restaurant?.menus.flatMap((category) => category.items).find((item) => item.id === favoriteItem?.id || item.name === favoriteItem?.name);
 
   // --- Derived cart values ---
   const totalCount = Object.values(cartItems).reduce(
@@ -114,8 +146,7 @@ export default function RestaurantPage() {
   }
 
   function addCartEntry(entry) {
-    const specKey = entry.specs.flatMap((group) => group.options.map((option) => `${group.groupId}:${option.id}`)).join('|');
-    const key = specKey ? `${entry.item.id}::${specKey}` : entry.item.id;
+    const key = cartEntryKey(entry);
     setCartItems((prev) => ({
       ...prev,
       [key]: {
@@ -125,6 +156,23 @@ export default function RestaurantPage() {
       },
     }));
     setSpecItem(null);
+  }
+
+  function handleOrderAgain() {
+    if (!favoriteMenuItem) return
+    addCartEntry(defaultCartEntry(favoriteMenuItem))
+  }
+
+  function handleAddCombo(items) {
+    const entries = items.map(defaultCartEntry)
+    setCartItems((current) => {
+      const next = { ...current }
+      entries.forEach((entry) => {
+        const key = cartEntryKey(entry)
+        next[key] = { ...entry, key, quantity: (next[key]?.quantity || 0) + 1 }
+      })
+      return next
+    })
   }
 
   function handleRemove(key) {
@@ -199,6 +247,7 @@ export default function RestaurantPage() {
       <div className="pt-[44px] pb-[60px]">
         {/* Restaurant info + cover images */}
         <RestaurantInfo restaurant={restaurant} />
+        <RelationshipCard relationship={relationship} canOrderAgain={Boolean(favoriteMenuItem)} onOrderAgain={handleOrderAgain} />
 
         {/* Tab row: 点菜 | 评价 | 商家 */}
         <div className="sticky top-[44px] z-30 bg-white border-b border-gray-200 flex">
@@ -219,9 +268,11 @@ export default function RestaurantPage() {
 
         {/* Menu / review / merchant content */}
         {activeTab === '点菜' ? (
-          <div className="flex items-start">
-            <CategorySidebar categories={restaurant.menus} activeCategory={activeCategory} onSelectCategory={handleCategorySelect} />
-            <div ref={menuContainerRef} className="min-w-0 flex-1">
+          <>
+            <ComboOrderPanel menus={restaurant.menus} onAddCombo={handleAddCombo} />
+            <div className="flex items-start">
+              <CategorySidebar categories={restaurant.menus} activeCategory={activeCategory} onSelectCategory={handleCategorySelect} />
+              <div ref={menuContainerRef} className="min-w-0 flex-1">
               {restaurant.menus.map((category) => (
                 <div key={category.categoryId} id={'cat-' + category.categoryId} data-category-id={category.categoryId}>
                   <h3 className="sticky top-[88px] z-10 bg-[var(--background)] px-3 py-2 text-xs font-semibold text-gray-500">{category.categoryName}</h3>
@@ -230,8 +281,9 @@ export default function RestaurantPage() {
                   </div>
                 </div>
               ))}
+              </div>
             </div>
-          </div>
+          </>
         ) : activeTab === '评价' ? (
           <div className="min-h-[360px] bg-[var(--background)] p-3">
             <div className="rounded-xl bg-white p-4"><div className="flex items-end gap-2"><strong className="text-3xl text-[#ff5a2f]">{restaurant.rating}</strong><span className="pb-1 text-xs text-gray-400">商家评分</span></div><div className="mt-3 flex flex-wrap gap-2">{['味道很好', '包装仔细', '配送很快', '会再次光顾'].map((tag) => <span key={tag} className="rounded-full bg-[var(--brand-primary-soft)] px-3 py-1.5 text-xs text-[var(--brand-primary-deep)]">{tag}</span>)}</div></div>

@@ -7,8 +7,10 @@ import PromoCards from '../components/home/PromoCards'
 import CouponBanner from '../components/home/CouponBanner'
 import RestaurantCard from '../components/home/RestaurantCard'
 import BottomNav from '../components/common/BottomNav'
+import AppImage from '../components/common/AppImage'
 import restaurants from '../data/allRestaurants'
 import config from '../data/config.json'
+import { getFavoriteItem, getRelationshipStage, readRelationships } from '../utils/relationship'
 
 const sortOptions = [
   ['smart', '综合排序'],
@@ -30,6 +32,26 @@ const categoryOptions = [
   ['bakery', '烘焙甜点'],
   ['retail', '超市零售'],
 ]
+
+const TIME_SCENES = [
+  { id: 'morning', label: '早餐', hours: [5, 11], title: '早上吃点热乎的', note: '粥点、面包和醒神饮品', categories: ['breakfast', 'bakery'], keywords: /粥|早餐|包点|面包|咖啡|茶/ },
+  { id: 'noon', label: '午餐', hours: [11, 14], title: '午间认真吃顿饭', note: '下饭热菜与饱腹主食优先', categories: ['rice', 'noodles', 'dumplings', 'stirFry', 'malatang'], keywords: /饭|面|粉|饺|小炒|麻辣烫/ },
+  { id: 'afternoon', label: '下午茶', hours: [14, 17], title: '给下午留一点甜', note: '现烤甜点、轻食和饮品', categories: ['bakery', 'lightMeal'], keywords: /甜|茶|咖啡|蛋糕|面包|轻食/ },
+  { id: 'dinner', label: '晚餐', hours: [17, 21], title: '今晚好好吃饭', note: '热锅、家常菜和双人搭配', categories: ['rice', 'stirFry', 'malatang', 'hotpot', 'bbq'], keywords: /饭|小炒|锅|烧烤|套餐/ },
+  { id: 'night', label: '夜宵', hours: [21, 29], title: '夜深了，来点有烟火气的', note: '营业到深夜的热锅、烤串与暖食', categories: ['bbq', 'hotpot', 'noodles'], keywords: /夜宵|深夜|烧烤|火锅|烤串|营业到|不打烊/ },
+]
+
+function currentSceneId(hour = new Date().getHours()) {
+  const normalizedHour = hour < 5 ? hour + 24 : hour
+  return TIME_SCENES.find((scene) => normalizedHour >= scene.hours[0] && normalizedHour < scene.hours[1])?.id || 'dinner'
+}
+
+function isNightRestaurant(restaurant) {
+  const closeHour = Number.parseInt(restaurant.businessHours?.close?.split(':')[0], 10)
+  return ['bbq', 'hotpot'].includes(restaurant.foodCategory)
+    || (Number.isFinite(closeHour) && closeHour <= 5)
+    || /夜宵|深夜|烤串|火锅|不打烊|营业到/.test(restaurantText(restaurant))
+}
 
 function numberFrom(value) {
   return Number.parseFloat(String(value).replace(/[^\d.]/g, '')) || 0
@@ -59,7 +81,7 @@ function inCategory(restaurant, category) {
   if (category === 'bakery') return restaurant.foodCategory === 'bakery'
   if (category === 'retail') return ['market', 'fruits', 'medicine'].includes(restaurant.retailCategory)
   if (category === 'errand') return restaurant.retailCategory === 'errand'
-  return /夜宵|火锅|拼盘|肥牛|锅/.test(text)
+  return isNightRestaurant(restaurant)
 }
 
 export default function HomePage() {
@@ -67,10 +89,19 @@ export default function HomePage() {
   const searchInputRef = useRef(null)
   const restaurantSectionRef = useRef(null)
   const [query, setQuery] = useState('')
+  const [activeSceneId, setActiveSceneId] = useState(() => currentSceneId())
   const [sortBy, setSortBy] = useState('smart')
   const [showSort, setShowSort] = useState(false)
   const [showFilters, setShowFilters] = useState(false)
   const [filters, setFilters] = useState({ freeDelivery: false, coupon: false, category: 'all', maxDeliveryTime: 0 })
+  const [relationships] = useState(() => readRelationships())
+
+  const familiarRestaurants = useMemo(() => Object.values(relationships)
+    .filter((relationship) => relationship.completedOrders > 0)
+    .sort((a, b) => b.lastMetAt - a.lastMetAt)
+    .map((relationship) => ({ relationship, restaurant: restaurants.find((entry) => entry.id === relationship.restaurantId) }))
+    .filter((entry) => entry.restaurant)
+    .slice(0, 4), [relationships])
 
   const filteredRestaurants = useMemo(() => {
     const keyword = query.trim().toLowerCase()
@@ -94,6 +125,7 @@ export default function HomePage() {
 
   const activeFilterCount = Number(filters.freeDelivery) + Number(filters.coupon) + Number(filters.category !== 'all') + Number(filters.maxDeliveryTime > 0)
   const currentSort = sortOptions.find(([key]) => key === sortBy)?.[1]
+  const resultsTitle = query ? '搜索结果' : filters.category === 'night' ? '深夜夜宵' : '附近商家'
 
   function focusResults() {
     restaurantSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -125,6 +157,7 @@ export default function HomePage() {
     })
     setShowSort(false)
     setShowFilters(false)
+    if (category.id === 'night') setActiveSceneId('night')
     setSortBy(category.id === 'new' ? 'rating' : 'smart')
     setQuery(action.query)
     window.setTimeout(focusResults, 0)
@@ -136,7 +169,13 @@ export default function HomePage() {
       <SearchBar inputRef={searchInputRef} value={query} onChange={setQuery} onSubmit={focusResults} onClear={() => setQuery('')} />
 
       <div className="bg-[var(--surface)]"><CategoryGrid categories={config.categories} onCategoryClick={handleCategoryClick} /></div>
-      <MoodGuide onChoose={handleCategoryClick} />
+      <TimeRecommendations
+        activeSceneId={activeSceneId}
+        onSceneChange={setActiveSceneId}
+        onRestaurantClick={(restaurant) => navigate('/restaurant/' + restaurant.id)}
+        onNightExplore={() => handleCategoryClick({ id: 'night', name: '夜宵' })}
+      />
+      {familiarRestaurants.length > 0 && <AlwaysOnRestaurants entries={familiarRestaurants} onRestaurantClick={(restaurant) => navigate('/restaurant/' + restaurant.id)} />}
       <div className="h-2 bg-[var(--background)]" />
       <div className="bg-white">
         <PromoCards promoCards={config.promoCards} restaurants={restaurants} onCardClick={(card) => { const restaurantId = card.items?.[0]?.restaurantId; if (restaurantId) navigate('/restaurant/' + restaurantId) }} />
@@ -146,7 +185,7 @@ export default function HomePage() {
 
       <div ref={restaurantSectionRef} className="scroll-mt-[90px]">
         <div className="sticky top-[91px] z-30 flex items-center gap-2 border-b border-gray-100 bg-white px-3 py-2.5">
-          <span className="text-[16px] font-black text-gray-900">{query ? '搜索结果' : '附近商家'}</span>
+          <span className="text-[16px] font-black text-gray-900">{resultsTitle}</span>
           <span className="rounded-full bg-[var(--brand-coral-soft)] px-1.5 py-0.5 text-[10px] font-semibold text-[var(--price-red)]">{filteredRestaurants.length}家</span>
           <div className="flex-1" />
           <button onClick={() => { setShowSort(true); setShowFilters(false) }} className={`flex items-center gap-1 text-[11px] ${sortBy !== 'smart' ? 'font-semibold text-[#222]' : 'text-gray-500'}`}>{currentSort} <span className="text-[8px]">▼</span></button>
@@ -193,18 +232,68 @@ export default function HomePage() {
   )
 }
 
-function MoodGuide({ onChoose }) {
-  const moods = [
-    { id: 'night', name: '夜宵', note: '热乎到很晚' },
-    { id: 'food', name: '暖食', note: '认真吃顿饭' },
-    { id: 'drinks', name: '甜点', note: '留一点甜' },
-  ]
+function TimeRecommendations({ activeSceneId, onSceneChange, onRestaurantClick, onNightExplore }) {
+  const scene = TIME_SCENES.find((item) => item.id === activeSceneId) || TIME_SCENES[3]
+  const recommended = useMemo(() => restaurants
+    .filter((restaurant) => !restaurant.retailCategory && (scene.id !== 'night' || isNightRestaurant(restaurant)))
+    .map((restaurant) => {
+      const text = restaurantText(restaurant)
+      const categoryMatch = scene.categories.includes(restaurant.foodCategory)
+      const keywordMatch = scene.keywords.test(text)
+      return { restaurant, score: Number(categoryMatch) * 5 + Number(keywordMatch) * 3 + restaurant.rating - restaurant.deliveryTime / 100 }
+    })
+    .filter(({ score }) => score > 4)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(({ restaurant }) => restaurant), [scene])
+  const isNight = scene.id === 'night'
+
   return (
-    <section className="bg-[var(--surface)] px-4 pb-3">
-      <div className="flex items-center rounded-2xl bg-gradient-to-r from-[#2E2949] via-[#433867] to-[#655198] p-2.5 text-white shadow-[var(--shadow-soft)]">
-        <div className="mr-2.5 flex-none"><p className="text-[12px] font-black">今晚想吃什么</p><p className="mt-0.5 text-[9px] text-white/55">跟着此刻的心情选</p></div>
-        <div className="flex min-w-0 flex-1 gap-1.5">
-          {moods.map((mood) => <button key={mood.id} type="button" onClick={() => onChoose(mood)} className="min-w-0 flex-1 rounded-xl bg-white/10 px-1 py-1.5 text-center ring-1 ring-white/10 active:bg-white/20"><strong className="block text-[10px] text-[#FFE0D8]">{mood.name}</strong><span className="mt-0.5 block truncate text-[8px] text-white/55">{mood.note}</span></button>)}
+    <section className="bg-[var(--surface)] px-3 pb-3">
+      <div className={`overflow-hidden rounded-2xl border p-2.5 shadow-[var(--shadow-soft)] ${isNight ? 'border-white/10 bg-gradient-to-br from-[#26213F] via-[#3A315D] to-[#5C4787] text-white' : 'border-[var(--border-soft)] bg-gradient-to-br from-white via-[#FFF8F5] to-[#F2EEFF]'}`}>
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <div className="flex items-center gap-1.5"><h2 className="text-[14px] font-black">{scene.title}</h2><span className={`rounded-full px-1.5 py-0.5 text-[8px] font-bold ${isNight ? 'bg-[#FF8D7D]/20 text-[#FFD7CF]' : 'bg-[var(--brand-coral-soft)] text-[var(--price-red)]'}`}>此刻推荐</span></div>
+            <p className={`mt-0.5 text-[9px] ${isNight ? 'text-white/55' : 'text-[var(--text-muted)]'}`}>{scene.note}</p>
+          </div>
+          {isNight && <button type="button" onClick={onNightExplore} className="flex-none rounded-full bg-white/12 px-2 py-1 text-[9px] font-bold text-[#FFE0D8] ring-1 ring-white/15">全部夜宵 ›</button>}
+        </div>
+
+        <div className="mt-2 flex gap-1 overflow-x-auto pb-0.5 scrollbar-hide">
+          {TIME_SCENES.map((item) => (
+            <button key={item.id} type="button" onClick={() => onSceneChange(item.id)} className={`flex-none rounded-full px-2.5 py-1 text-[9px] font-bold transition ${item.id === scene.id ? 'bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-coral)] text-white shadow-sm' : isNight ? 'bg-white/8 text-white/60 ring-1 ring-white/10' : 'bg-white/80 text-[var(--text-secondary)] ring-1 ring-[var(--border-soft)]'}`}>{item.label}</button>
+          ))}
+        </div>
+
+        <div className="mt-2 grid grid-cols-3 gap-1.5">
+          {recommended.map((restaurant) => (
+            <button key={restaurant.id} type="button" onClick={() => onRestaurantClick(restaurant)} className={`min-w-0 overflow-hidden rounded-xl text-left active:scale-[0.98] ${isNight ? 'bg-white/10 ring-1 ring-white/10' : 'bg-white ring-1 ring-[var(--border-soft)]'}`}>
+              <AppImage src={restaurant.image} alt={restaurant.name} className="h-[58px] w-full object-cover" sizes="110px" width={110} height={58} />
+              <div className="px-1.5 py-1.5">
+                <strong className="block truncate text-[10px] leading-[13px]">{restaurant.name}</strong>
+                <span className={`mt-0.5 block truncate text-[8px] ${isNight ? 'text-white/55' : 'text-[var(--text-muted)]'}`}>{restaurant.listProfile?.imageBadge || restaurant.tags?.[0]} · {restaurant.deliveryTime}分钟</span>
+              </div>
+            </button>
+          ))}
+        </div>
+
+        {isNight && <div className="mt-2 flex items-center gap-1.5 border-t border-white/10 pt-2 text-[8px] text-white/55"><span className="rounded bg-[#FF8D7D]/20 px-1 py-0.5 font-bold text-[#FFD7CF]">夜宵专题</span><span>只看深夜营业、热食与夜间配送商家</span></div>}
+      </div>
+    </section>
+  )
+}
+
+function AlwaysOnRestaurants({ entries, onRestaurantClick }) {
+  return (
+    <section className="bg-[var(--surface)] px-3 pb-3">
+      <div className="rounded-2xl bg-gradient-to-br from-[var(--brand-night)] to-[#46375f] p-3 text-white shadow-[var(--shadow-soft)]">
+        <div className="flex items-end justify-between"><div><h2 className="text-[14px] font-black">常亮的小店</h2><p className="mt-0.5 text-[9px] text-white/45">去过的地方，还记得你的口味</p></div><span className="text-[9px] text-[#ffc9c0]">最近见过</span></div>
+        <div className="mt-2.5 flex gap-2 overflow-x-auto pb-0.5 scrollbar-hide">
+          {entries.map(({ relationship, restaurant }) => {
+            const favorite = getFavoriteItem(relationship)
+            const stage = getRelationshipStage(relationship.completedOrders)
+            return <button key={restaurant.id} type="button" onClick={() => onRestaurantClick(restaurant)} className="w-[145px] flex-none overflow-hidden rounded-xl bg-white/10 text-left ring-1 ring-white/10 active:scale-[0.98]"><div className="flex items-center gap-2 p-2"><AppImage src={restaurant.image} alt={restaurant.name} className="h-10 w-10 flex-none rounded-lg object-cover" sizes="40px" width={40} height={40} /><div className="min-w-0"><strong className="block truncate text-[10px]">{restaurant.name}</strong><span className="mt-0.5 block truncate text-[8px] text-[#ffc9c0]">{stage.label} · {relationship.completedOrders} 次</span></div></div><p className="truncate border-t border-white/10 px-2 py-1.5 text-[8px] text-white/50">常点 {favorite?.name || '还在认识你的口味'}</p></button>
+          })}
         </div>
       </div>
     </section>

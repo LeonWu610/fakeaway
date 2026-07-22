@@ -1,8 +1,10 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import BottomNav from '../components/common/BottomNav'
 import AppImage from '../components/common/AppImage'
 import restaurants from '../data/allRestaurants'
+import { formatClock, getEstimatedArrivalAt } from '../utils/orderTime'
+import { describeRelationshipOutcome, getRelationshipStage, readRelationships } from '../utils/relationship'
 
 function readJson(storage, key, fallback) {
   try { return JSON.parse(storage.getItem(key)) || fallback } catch { return fallback }
@@ -12,7 +14,17 @@ export default function OrdersPage() {
   const navigate = useNavigate()
   const activeOrder = readJson(sessionStorage, 'fakeaway.activeOrder', null)
   const memories = readJson(localStorage, 'fakeaway.memories', [])
-  const activeIsDelivered = activeOrder && Date.now() - activeOrder.createdAt >= 26000
+  const relationships = readRelationships()
+  const [now, setNow] = useState(Date.now())
+  const arrivalAt = getEstimatedArrivalAt(activeOrder)
+  const activeIsDelivered = activeOrder && now >= arrivalAt
+  const remainingMinutes = activeOrder ? Math.max(1, Math.ceil((arrivalAt - now) / 60000)) : 0
+
+  useEffect(() => {
+    if (!activeOrder || activeIsDelivered) return undefined
+    const timer = window.setInterval(() => setNow(Date.now()), 30000)
+    return () => window.clearInterval(timer)
+  }, [activeIsDelivered, activeOrder])
   const history = useMemo(() => memories.filter((memory) => memory.orderId !== activeOrder?.id), [activeOrder?.id, memories])
 
   return (
@@ -31,7 +43,7 @@ export default function OrdersPage() {
               <div className="min-w-0 flex-1"><h3 className="truncate text-[15px] font-bold">{activeOrder.restaurant.name}</h3><p className="mt-1 text-[10px] text-gray-400">{activeOrder.id} · {activeOrder.items.reduce((sum, entry) => sum + entry.quantity, 0)} 件商品</p></div>
               <span className="rounded-full bg-[#fff7dc] px-2 py-1 text-[10px] font-semibold text-[#9a6c00]">{activeIsDelivered ? '已送达' : '配送中'}</span>
             </div>
-            <div className="flex items-center px-3 py-2.5"><p className="min-w-0 flex-1 truncate text-[11px] text-gray-500">{activeOrder.items.map((entry) => `${entry.item.name} ×${entry.quantity}`).join('、')}</p><strong className="ml-3 text-[13px]">¥{activeOrder.total.toFixed(2)}</strong></div>
+            <div className="flex items-center px-3 py-2.5"><div className="min-w-0 flex-1"><p className="truncate text-[11px] text-gray-500">{activeOrder.items.map((entry) => `${entry.item.name} ×${entry.quantity}`).join('、')}</p><p className="mt-1 text-[10px] font-medium text-[var(--brand-primary-deep)]">{activeIsDelivered ? `${formatClock(arrivalAt)} 已到达` : `预计 ${formatClock(arrivalAt)} 到达 · 约剩 ${remainingMinutes} 分钟`}</p></div><strong className="ml-3 text-[13px]">¥{activeOrder.total.toFixed(2)}</strong></div>
             <div className="flex justify-end gap-2 border-t border-gray-100 px-3 py-2.5"><button onClick={() => navigate(`/restaurant/${activeOrder.restaurant.id}`)} className="rounded-full border border-gray-200 px-3 py-1.5 text-[11px]">再来一单</button><button onClick={() => navigate(activeIsDelivered ? '/delivered' : '/tracking')} className="rounded-full bg-[var(--brand-primary)] px-4 py-1.5 text-[11px] font-bold text-white">{activeIsDelivered ? '查看收获' : '查看进度'}</button></div>
           </article>
         ) : <EmptyCard title="暂时没有等待中的订单" detail="去选一家顺眼的店，享受一次不用花钱的等待" action={() => navigate('/')} />}
@@ -41,7 +53,9 @@ export default function OrdersPage() {
         <div className="mb-2 flex items-center justify-between"><h2 className="text-[14px] font-bold">历史订单</h2><span className="text-[9px] text-gray-400">已留下 {memories.length} 份记忆</span></div>
         {history.length > 0 ? <div className="overflow-hidden rounded-xl bg-white">{history.map((memory) => {
           const restaurant = restaurants.find((entry) => entry.id === memory.restaurantId)
-          return <article key={memory.orderId} className="flex gap-3 border-b border-gray-100 p-3 last:border-0"><AppImage src={restaurant?.image} alt={memory.restaurantName} className="h-12 w-12 flex-none rounded-lg object-cover" sizes="48px" width={48} height={48} /><div className="min-w-0 flex-1"><div className="flex items-center"><h3 className="min-w-0 flex-1 truncate text-[14px] font-bold">{memory.restaurantName}</h3><span className="text-[9px] text-gray-400">圆满送达</span></div><p className="mt-1 truncate text-[10px] text-gray-500">记忆菜品：{memory.itemName || '想象中的美味'}</p><p className="mt-1 text-[9px] text-gray-400">{new Date(memory.createdAt).toLocaleDateString('zh-CN')} · {memory.orderId}</p><button onClick={() => navigate(`/restaurant/${memory.restaurantId}`)} className="mt-2 rounded-full border border-[#f2d56f] px-3 py-1 text-[10px] text-[#806000]">再次进店</button></div></article>
+          const relationship = relationships[memory.restaurantId]
+          const stage = getRelationshipStage(relationship?.completedOrders)
+          return <article key={memory.orderId} className="flex gap-3 border-b border-gray-100 p-3 last:border-0"><AppImage src={restaurant?.image} alt={memory.restaurantName} className="h-12 w-12 flex-none rounded-lg object-cover" sizes="48px" width={48} height={48} /><div className="min-w-0 flex-1"><div className="flex items-center"><h3 className="min-w-0 flex-1 truncate text-[14px] font-bold">{memory.restaurantName}</h3><span className="rounded-full bg-[var(--brand-primary-soft)] px-2 py-0.5 text-[8px] font-semibold text-[var(--brand-primary-deep)]">{memory.relationshipStage || stage.label}</span></div><p className="mt-1 truncate text-[10px] text-gray-500">记忆菜品：{memory.itemName || '想象中的美味'}</p>{relationship && <p className="mt-1 truncate text-[9px] text-[var(--brand-coral)]">等待成果：{describeRelationshipOutcome(relationship)}</p>}<p className="mt-1 text-[9px] text-gray-400">{new Date(memory.deliveredAt || memory.createdAt).toLocaleDateString('zh-CN')} · {memory.orderId}</p><button onClick={() => navigate(`/restaurant/${memory.restaurantId}`)} className="mt-2 rounded-full border border-[var(--brand-primary)]/25 px-3 py-1 text-[10px] text-[var(--brand-primary-deep)]">再次进店</button></div></article>
         })}</div> : <EmptyCard title="还没有历史订单" detail="完成一次模拟配送后，记忆会保存在这里" action={() => navigate('/')} />}
       </section>
       <BottomNav activeTab="order" />

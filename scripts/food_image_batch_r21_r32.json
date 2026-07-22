@@ -1,0 +1,650 @@
+[
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r21-pepper-snail-noodles.png",
+    "remoteKey": "public/images/merchants/r21-pepper-snail-noodles.png",
+    "prompt": "一大碗红亮螺蛳粉，米粉、酸笋、腐竹、花生、木耳、酸豆角与青菜七种配料清晰，旁边仅一只鸭脚和一颗卤蛋，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r21-item1-loaded-snail-noodles.png",
+    "remoteKey": "public/images/products/r21-item1-loaded-snail-noodles.png",
+    "prompt": "原创外卖商品「脆响全料螺蛳粉」，一只深碗装300克米粉，准确呈现酸笋、腐竹、花生、木耳、酸豆角、萝卜干、青菜七种配料与红亮螺汤，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r21-item2-duck-feet-egg-noodles.png",
+    "remoteKey": "public/images/products/r21-item2-duck-feet-egg-noodles.png",
+    "prompt": "原创外卖商品「虎皮鸭脚双拼粉」，一碗300克螺蛳粉，准确放两只完整虎皮鸭脚和一颗对半切卤蛋，配酸笋、腐竹与青菜，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r21-item3-tomato-sour-noodles.png",
+    "remoteKey": "public/images/products/r21-item3-tomato-sour-noodles.png",
+    "prompt": "原创外卖商品「番茄酸汤螺蛳粉」，一碗300克米粉浸在橙红番茄螺汤中，番茄块、腐竹、木耳、酸笋和青菜清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r21-item4-dry-fried-egg-noodles.png",
+    "remoteKey": "public/images/products/r21-item4-dry-fried-egg-noodles.png",
+    "prompt": "原创外卖商品「干捞炸蛋螺蛳粉」，一盘300克干捞米粉，顶部准确一只圆形吸汁炸蛋，配酸笋、花生、腐竹和酸豆角，无汤，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r21-item5-two-braised-duck-feet.png",
+    "remoteKey": "public/images/products/r21-item5-two-braised-duck-feet.png",
+    "prompt": "原创外卖商品「虎皮鸭脚两只」，深色小盘准确摆放两只完整虎皮鸭脚，卤色棕红、表皮起皱、熟透脱骨感真实，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r21-item6-single-fried-egg.png",
+    "remoteKey": "public/images/products/r21-item6-single-fried-egg.png",
+    "prompt": "原创外卖商品「吸汁炸蛋一只」，浅碗准确放一只圆形蓬松炸蛋，边缘金黄多孔，浸入少量红亮螺汤但保持完整，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r21-item7-solo-snail-noodle-set.png",
+    "remoteKey": "public/images/products/r21-item7-solo-snail-noodle-set.png",
+    "prompt": "原创外卖商品「深夜独享嗦粉餐」，一碗全料螺蛳粉，旁边准确一只鸭脚、一颗卤蛋和一杯无品牌豆奶，四部分单人套餐分开摆放，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r21-item8-double-snail-noodle-set.png",
+    "remoteKey": "public/images/products/r21-item8-double-snail-noodle-set.png",
+    "prompt": "原创外卖商品「双人酸辣开黑餐」，准确两碗螺蛳粉、四只虎皮鸭脚、两颗卤蛋和两杯无品牌豆奶，双人套餐分区清晰，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r22-pepper-frog-pot.png",
+    "remoteKey": "public/images/merchants/r22-pepper-frog-pot.png",
+    "prompt": "一只黑色浅锅装紫苏泡椒牛蛙，准确约十二块熟牛蛙、泡椒、紫苏叶、莴笋和藕片清楚，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r22-item1-perilla-pickled-pepper-frog.png",
+    "remoteKey": "public/images/products/r22-item1-perilla-pickled-pepper-frog.png",
+    "prompt": "原创外卖商品「紫苏泡椒牛蛙锅」，黑色浅锅内500克熟牛蛙约十二块，泡椒、紫苏叶、莴笋条和藕片清楚，金黄酸辣汤汁适量，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r22-item2-garlic-dry-frog-pot.png",
+    "remoteKey": "public/images/products/r22-item2-garlic-dry-frog-pot.png",
+    "prompt": "原创外卖商品「蒜香干锅牛蛙」，一锅500克牛蛙约十二块，与整瓣蒜、芹菜段、土豆片干炒，无汤，焦香油亮真实，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r22-item3-green-pepper-frog-pot.png",
+    "remoteKey": "public/images/products/r22-item3-green-pepper-frog-pot.png",
+    "prompt": "原创外卖商品「青花椒嫩蛙锅」，浅锅内400克熟牛蛙约十块，鲜绿青花椒、丝瓜条和鲜笋片清晰，清亮青椒汤底，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r22-item4-tomato-mild-frog-pot.png",
+    "remoteKey": "public/images/products/r22-item4-tomato-mild-frog-pot.png",
+    "prompt": "原创外卖商品「番茄不辣蛙锅」，一锅400克熟牛蛙约十块，番茄块、菌菇和娃娃菜浸在自然橙红汤中，无辣椒，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r22-item5-six-pepper-frog-legs.png",
+    "remoteKey": "public/images/products/r22-item5-six-pepper-frog-legs.png",
+    "prompt": "原创外卖商品「椒香蛙腿六只」，长陶盘准确摆放六只完整熟牛蛙腿，青花椒与蒜片爆炒，肉质白嫩、形态自然，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r22-item6-sauce-wide-noodles.png",
+    "remoteKey": "public/images/products/r22-item6-sauce-wide-noodles.png",
+    "prompt": "原创外卖商品「锅汁拌宽粉」，浅碗装200克半透明宽粉，拌少量红亮牛蛙锅汁，点缀蒜末与芹菜，无肉类，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r22-item7-solo-frog-pot-set.png",
+    "remoteKey": "public/images/products/r22-item7-solo-frog-pot-set.png",
+    "prompt": "原创外卖商品「一人半斤蛙满足餐」，一只250克牛蛙小锅，旁边准确一碗白米饭和一碗红糖冰粉，三部分完整分开，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r22-item8-double-kilo-frog-feast.png",
+    "remoteKey": "public/images/products/r22-item8-double-kilo-frog-feast.png",
+    "prompt": "原创外卖商品「双人一公斤牛蛙宴」，一只大锅装1000克熟牛蛙约二十四块，旁边准确两碗米饭、两盘配菜，双人份构图，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r23-oyster-night-grill.png",
+    "remoteKey": "public/images/merchants/r23-oyster-night-grill.png",
+    "prompt": "黑色烤盘准确摆放六只蒜蓉烤生蚝、四只粉丝扇贝和一条切段鱿鱼，贝壳完整、海鲜全熟，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r23-item1-six-garlic-oysters.png",
+    "remoteKey": "public/images/products/r23-item1-six-garlic-oysters.png",
+    "prompt": "原创外卖商品「蒜蓉生蚝六只」，黑色烤盘准确摆放六只带壳熟生蚝，每只铺金银蒜蓉与少量葱花，蚝肉饱满自然，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r23-item2-six-vermicelli-scallops.png",
+    "remoteKey": "public/images/products/r23-item2-six-vermicelli-scallops.png",
+    "prompt": "原创外卖商品「粉丝扇贝六只」，长盘准确摆放六只带壳熟扇贝，每只覆盖一小卷粉丝和金黄蒜蓉，贝肉清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r23-item3-whole-grilled-squid.png",
+    "remoteKey": "public/images/products/r23-item3-whole-grilled-squid.png",
+    "prompt": "原创外卖商品「炭烤鱿鱼整条」，一条约300克完整熟鱿鱼横切成八段但保持原形排列，刷红亮香辣酱，触须自然，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r23-item4-eight-salt-pepper-mantis-shrimp.png",
+    "remoteKey": "public/images/products/r23-item4-eight-salt-pepper-mantis-shrimp.png",
+    "prompt": "原创外卖商品「椒盐皮皮虾八只」，深盘准确摆放八只完整熟皮皮虾，外壳橙红，撒椒盐、蒜酥与少量青红椒粒，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r23-item5-eight-cheese-mussels.png",
+    "remoteKey": "public/images/products/r23-item5-eight-cheese-mussels.png",
+    "prompt": "原创外卖商品「芝士焗青口八只」，烤盘准确摆放八只半壳熟青口，每只铺薄层金黄芝士，贝肉与壳形自然，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r23-item6-garlic-grilled-eggplant.png",
+    "remoteKey": "public/images/products/r23-item6-garlic-grilled-eggplant.png",
+    "prompt": "原创外卖商品「蒜香烤茄子一份」，一整根紫皮茄子纵向对半展开但保持相连，铺金黄蒜蓉、葱花和少量红椒，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r23-item7-solo-seafood-night-platter.png",
+    "remoteKey": "public/images/products/r23-item7-solo-seafood-night-platter.png",
+    "prompt": "原创外卖商品「一个人的海鲜夜盘」，一盘准确三只生蚝、三只扇贝、半条切段鱿鱼，旁边一份烤茄子，单人组合清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r23-item8-double-shellfish-feast.png",
+    "remoteKey": "public/images/products/r23-item8-double-shellfish-feast.png",
+    "prompt": "原创外卖商品「双人贝壳盛宴」，准确六只生蚝、六只扇贝、八只青口和一条切段鱿鱼分区摆满双人海鲜大盘，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r24-spicy-lobster-tail.png",
+    "remoteKey": "public/images/merchants/r24-spicy-lobster-tail.png",
+    "prompt": "一只红色浅锅装500克麻辣净虾尾约二十五只，红壳完整，配蒜瓣、干辣椒、青笋和少量年糕，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r24-item1-spicy-lobster-tail-pound.png",
+    "remoteKey": "public/images/products/r24-item1-spicy-lobster-tail-pound.png",
+    "prompt": "原创外卖商品「麻辣净虾尾一斤」，红色浅锅装500克净虾尾约二十五只，红壳完整，配青笋条、年糕、干辣椒和花椒，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r24-item2-garlic-lobster-tail-pound.png",
+    "remoteKey": "public/images/products/r24-item2-garlic-lobster-tail-pound.png",
+    "prompt": "原创外卖商品「金蒜净虾尾一斤」，浅锅装500克净虾尾约二十五只，铺大量金银蒜蓉与葱花，酱汁金黄不过油，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r24-item3-eighteen-spiced-crayfish.png",
+    "remoteKey": "public/images/products/r24-item3-eighteen-spiced-crayfish.png",
+    "prompt": "原创外卖商品「十三香整虾十八只」，深锅准确摆放十八只完整熟小龙虾，配土豆块、黄瓜条和十三香棕红汤汁，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r24-item4-twelve-chilled-crayfish.png",
+    "remoteKey": "public/images/products/r24-item4-twelve-chilled-crayfish.png",
+    "prompt": "原创外卖商品「冰镇熟醉虾十二只」，碎冰盘准确摆放十二只完整熟小龙虾，橙红外壳，点缀话梅、姜片和少量香草，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r24-item5-lobster-sauce-noodles.png",
+    "remoteKey": "public/images/products/r24-item5-lobster-sauce-noodles.png",
+    "prompt": "原创外卖商品「虾汤拌面一份」，浅碗装200克碱水拌面，准确放两只净虾尾，红亮酱汁均匀、葱花少量，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r24-item6-ten-sauce-rice-cakes.png",
+    "remoteKey": "public/images/products/r24-item6-ten-sauce-rice-cakes.png",
+    "prompt": "原创外卖商品「糯叽叽年糕十条」，小盘准确摆放十条长条年糕，裹薄薄麻辣虾汁，点缀少量芝麻和葱花，无虾，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r24-item7-solo-lobster-tail-set.png",
+    "remoteKey": "public/images/products/r24-item7-solo-lobster-tail-set.png",
+    "prompt": "原创外卖商品「半斤虾尾独享餐」，一锅250克麻辣净虾尾约十二只，旁边一碗拌面和一碗冰粉，三部分分开，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r24-item8-double-flavor-lobster-tail.png",
+    "remoteKey": "public/images/products/r24-item8-double-flavor-lobster-tail.png",
+    "prompt": "原创外卖商品「双味虾尾双人桶」，两只独立锅分别装500克麻辣虾尾和500克蒜蓉虾尾，旁边准确两碗拌面，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r25-night-chaofun.png",
+    "remoteKey": "public/images/merchants/r25-night-chaofun.png",
+    "prompt": "三只浅盘分别装黑椒牛肉炒河粉、叉烧双蛋炒饭和豉油皇炒面，每盘一人份且食材清晰，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r25-item1-black-pepper-beef-chaofun.png",
+    "remoteKey": "public/images/products/r25-item1-black-pepper-beef-chaofun.png",
+    "prompt": "原创外卖商品「黑椒牛肉炒河粉」，椭圆盘装300克炒河粉，100克熟牛肉片、豆芽、韭黄和洋葱清晰，深色豉油均匀，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r25-item2-char-siu-double-egg-rice.png",
+    "remoteKey": "public/images/products/r25-item2-char-siu-double-egg-rice.png",
+    "prompt": "原创外卖商品「叉烧双蛋炒饭」，浅盘装350克粒粒分明炒饭，80克叉烧丁与准确两颗炒蛋的份量，配青豆和葱花，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r25-item3-soy-sauce-three-shreds-noodles.png",
+    "remoteKey": "public/images/products/r25-item3-soy-sauce-three-shreds-noodles.png",
+    "prompt": "原创外卖商品「豉油皇三丝炒面」，长盘装300克干爽炒细面，鸡丝、胡萝卜丝、韭黄三种丝料清楚，无汤，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r25-item4-satay-seafood-udon.png",
+    "remoteKey": "public/images/products/r25-item4-satay-seafood-udon.png",
+    "prompt": "原创外卖商品「沙茶海鲜炒乌冬」，深盘装250克炒乌冬，准确四只熟虾仁、鱿鱼圈和青口肉，沙茶酱薄裹，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r25-item5-luncheon-meat-fried-egg.png",
+    "remoteKey": "public/images/products/r25-item5-luncheon-meat-fried-egg.png",
+    "prompt": "原创外卖商品「午餐肉煎蛋一份」，浅盘准确摆放三片煎香午餐肉和一颗完整太阳蛋，边缘微焦，少量生菜点缀，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r25-item6-salt-pepper-chicken-cartilage.png",
+    "remoteKey": "public/images/products/r25-item6-salt-pepper-chicken-cartilage.png",
+    "prompt": "原创外卖商品「椒盐鸡软骨」，深色小盘装200克金黄鸡软骨，撒椒盐、蒜酥和少量红椒圈，熟透无血色，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r25-item7-solo-wok-hei-set.png",
+    "remoteKey": "public/images/products/r25-item7-solo-wok-hei-set.png",
+    "prompt": "原创外卖商品「夜班一人镬气餐」，一盘牛肉炒河粉、一小盘半份鸡软骨和一杯无品牌柠檬茶，三部分单人套餐，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r25-item8-double-night-stir-fry-set.png",
+    "remoteKey": "public/images/products/r25-item8-double-night-stir-fry-set.png",
+    "prompt": "原创外卖商品「两人月下炒食局」，准确两盘不同炒主食、一盘椒盐鸡软骨和两杯无品牌柠檬茶，双人份摆放清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r26-claypot-midnight-stew.png",
+    "remoteKey": "public/images/merchants/r26-claypot-midnight-stew.png",
+    "prompt": "两只黑色砂锅，一锅酸菜酥肉粉丝、一锅番茄牛腩豆腐，主料、粉丝、蔬菜和汤底清晰，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item1-pickled-cabbage-pork-stew.png",
+    "remoteKey": "public/images/products/r26-item1-pickled-cabbage-pork-stew.png",
+    "prompt": "原创外卖商品「酸菜酥肉粉丝锅」，黑色砂锅内200克金黄酥肉、透明粉丝、酸菜、豆腐块和青菜清楚，浅金酸汤，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item2-tomato-beef-tofu-stew.png",
+    "remoteKey": "public/images/products/r26-item2-tomato-beef-tofu-stew.png",
+    "prompt": "原创外卖商品「番茄牛腩豆腐锅」，砂锅内150克熟牛腩块、番茄块、嫩豆腐和土豆浸在橙红浓汤中，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item3-mushroom-chicken-stew.png",
+    "remoteKey": "public/images/products/r26-item3-mushroom-chicken-stew.png",
+    "prompt": "原创外卖商品「菌菇鸡汤砂锅」，砂锅内一只去骨鸡腿切六块，香菇、蟹味菇、白玉菇、金针菇四种菌与娃娃菜清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item4-spicy-intestine-stew.png",
+    "remoteKey": "public/images/products/r26-item4-spicy-intestine-stew.png",
+    "prompt": "原创外卖商品「麻辣肥肠砂锅」，砂锅内120克熟肥肠段、豆芽、土豆粉和豆腐皮，红汤适量，肥肠形态自然，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item5-six-pork-meatballs.png",
+    "remoteKey": "public/images/products/r26-item5-six-pork-meatballs.png",
+    "prompt": "原创外卖商品「手工肉丸六颗」，浅汤碗准确放六颗圆润熟猪肉荸荠丸，清汤、葱花和少量青菜，无其他肉类，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item6-eight-frozen-tofu.png",
+    "remoteKey": "public/images/products/r26-item6-eight-frozen-tofu.png",
+    "prompt": "原创外卖商品「吸汤冻豆腐八块」，小砂锅准确放八块蜂窝冻豆腐，吸收浅金高汤，点缀少量葱花，无肉，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r26-item7-solo-claypot-stew-set.png",
+    "remoteKey": "public/images/products/r26-item7-solo-claypot-stew-set.png",
+    "prompt": "原创外卖商品「一个人的暖砂锅」，一锅酸菜酥肉粉丝，旁边准确一碗米饭和一小盘凉菜，三部分单人套餐，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r26-item8-double-claypot-stew-set.png",
+    "remoteKey": "public/images/products/r26-item8-double-claypot-stew-set.png",
+    "prompt": "原创外卖商品「双人咕嘟暖胃餐」，准确两口不同砂锅、两碗白米饭和一碗六颗肉丸，双人套餐完整分开，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r27-crispy-chicken-night.png",
+    "remoteKey": "public/images/merchants/r27-crispy-chicken-night.png",
+    "prompt": "一只牛皮纸托盘内准确一整片切条鸡排、250克盐酥鸡、六颗地瓜球和一份四季豆，炸物金黄分区，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item1-seaweed-crispy-chicken-cutlet.png",
+    "remoteKey": "public/images/products/r27-item1-seaweed-crispy-chicken-cutlet.png",
+    "prompt": "原创外卖商品「海苔脆皮大鸡排」，一片约250克完整金黄鸡排切成准确八条但保持原形，撒海苔粉，切面熟透多汁，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item2-basil-popcorn-chicken.png",
+    "remoteKey": "public/images/products/r27-item2-basil-popcorn-chicken.png",
+    "prompt": "原创外卖商品「九层塔盐酥鸡」，纸托盘装250克金黄盐酥鸡约十八块，配炸九层塔叶和椒盐，鸡肉熟透，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item3-plum-sweet-potato-fries.png",
+    "remoteKey": "public/images/products/r27-item3-plum-sweet-potato-fries.png",
+    "prompt": "原创外卖商品「梅粉地瓜条」，纸盒装300克粗切金黄地瓜条，均匀薄撒淡粉梅粉，约十五条且无薯条，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item4-four-cheese-chicken-rolls.png",
+    "remoteKey": "public/images/products/r27-item4-four-cheese-chicken-rolls.png",
+    "prompt": "原创外卖商品「爆浆芝士鸡肉卷四只」，陶盘准确摆放四只金黄鸡肉卷，其中一只切开露出适量融化芝士和熟鸡肉，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item5-twelve-sweet-potato-balls.png",
+    "remoteKey": "public/images/products/r27-item5-twelve-sweet-potato-balls.png",
+    "prompt": "原创外卖商品「夜市地瓜球十二颗」，纸碗准确装十二颗圆形金黄地瓜球，一颗切开展示空心柔糯内部，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item6-salt-pepper-green-beans.png",
+    "remoteKey": "public/images/products/r27-item6-salt-pepper-green-beans.png",
+    "prompt": "原创外卖商品「椒盐四季豆」，长盘装180克完整熟四季豆，表面微皱，撒蒜酥和椒盐，无肉类，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r27-item7-solo-crispy-night-set.png",
+    "remoteKey": "public/images/products/r27-item7-solo-crispy-night-set.png",
+    "prompt": "原创外卖商品「夜行单人咔嚓袋」，一片切条大鸡排、准确六颗地瓜球和一杯无品牌无糖茶，单人套餐三部分，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r27-item8-double-night-market-fried-set.png",
+    "remoteKey": "public/images/products/r27-item8-double-night-market-fried-set.png",
+    "prompt": "原创外卖商品「双人夜市炸物篮」，一篮分区装250克盐酥鸡、准确四只鸡肉卷、一份地瓜条和一份四季豆，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r28-citrus-sparkling-tea.png",
+    "remoteKey": "public/images/merchants/r28-citrus-sparkling-tea.png",
+    "prompt": "准确三杯500毫升透明无品牌气泡茶，分别为黄柠檬绿茶、红西柚乌龙和紫葡萄茉莉，鲜果与气泡清晰，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item1-sea-salt-lime-sparkling-tea.png",
+    "remoteKey": "public/images/products/r28-item1-sea-salt-lime-sparkling-tea.png",
+    "prompt": "原创外卖商品「海盐青柠气泡茶」，一杯500毫升透明杯浅绿色气泡茶，准确两片青柠、碎冰与细密气泡，无奶无其他水果，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item2-grapefruit-sunset-oolong.png",
+    "remoteKey": "public/images/products/r28-item2-grapefruit-sunset-oolong.png",
+    "prompt": "原创外卖商品「红柚落日乌龙」，一杯500毫升橙红乌龙气泡茶，杯中80克红心西柚果肉与薄片、碎冰、细密气泡，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item3-grape-jasmine-sparkling-tea.png",
+    "remoteKey": "public/images/products/r28-item3-grape-jasmine-sparkling-tea.png",
+    "prompt": "原创外卖商品「葡萄云浪茉莉」，一杯500毫升淡紫气泡茶，准确十颗去皮葡萄、透明葡萄冻、碎冰与气泡，无奶盖，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item4-pineapple-jinxuan-sparkling-tea.png",
+    "remoteKey": "public/images/products/r28-item4-pineapple-jinxuan-sparkling-tea.png",
+    "prompt": "原创外卖商品「凤梨金萱气泡茶」，一杯500毫升金黄气泡茶，100克凤梨小块、碎冰、一小枝薄荷与细密气泡，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item5-strawberry-blueberry-soda.png",
+    "remoteKey": "public/images/products/r28-item5-strawberry-blueberry-soda.png",
+    "prompt": "原创外卖商品「莓莓双果苏打」，一杯500毫升粉紫苏打，准确六颗切半草莓与约30克蓝莓，水果形态自然、气泡清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item6-peach-osmanthus-sparkling-tea.png",
+    "remoteKey": "public/images/products/r28-item6-peach-osmanthus-sparkling-tea.png",
+    "prompt": "原创外卖商品「白桃桂花气泡茶」，一杯500毫升淡粉白桃乌龙气泡茶，80克白桃丁、少量桂花和碎冰，清澈通透，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item7-lime-grapefruit-double-set.png",
+    "remoteKey": "public/images/products/r28-item7-lime-grapefruit-double-set.png",
+    "prompt": "原创外卖商品「双杯海风组合」，准确两杯500毫升透明杯饮品，一杯青柠绿、一杯红柚橙，水果与气泡各自清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item8-four-sparkling-tea-set.png",
+    "remoteKey": "public/images/products/r28-item8-four-sparkling-tea-set.png",
+    "prompt": "原创外卖商品「四杯晴浪分享装」，准确四杯500毫升气泡茶，青柠、红柚、葡萄、凤梨四种颜色与对应鲜果清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r29-roasted-milk-tea.png",
+    "remoteKey": "public/images/merchants/r29-roasted-milk-tea.png",
+    "prompt": "准确三杯500毫升透明无品牌轻乳茶，分别为琥珀焙火乌龙、浅褐岩茶鲜乳与黑糖色桂花轻乳，茶色自然，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item1-charcoal-oolong-milk-tea.png",
+    "remoteKey": "public/images/products/r29-item1-charcoal-oolong-milk-tea.png",
+    "prompt": "原创外卖商品「炭焙乌龙轻乳」，一杯500毫升透明杯琥珀浅褐轻乳茶，茶乳均匀、顶部薄奶沫，旁边少量乌龙原叶，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item2-rock-tea-osmanthus-milk.png",
+    "remoteKey": "public/images/products/r29-item2-rock-tea-osmanthus-milk.png",
+    "prompt": "原创外卖商品「岩韵桂花鲜乳」，一杯500毫升浅褐岩茶鲜乳，准确少量约2克桂花点缀，茶色自然，无珍珠，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item3-brown-sugar-roasted-tea-boba.png",
+    "remoteKey": "public/images/products/r29-item3-brown-sugar-roasted-tea-boba.png",
+    "prompt": "原创外卖商品「黑糖焙茶珍珠」，一杯500毫升焙茶鲜乳，杯底60克深棕黑糖珍珠，薄黑糖挂壁，珍珠圆润不粘连，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item4-genmaicha-light-milk.png",
+    "remoteKey": "public/images/products/r29-item4-genmaicha-light-milk.png",
+    "prompt": "原创外卖商品「米香玄米轻乳」，一杯500毫升米白浅金轻乳茶，顶部少量烘香玄米粒，茶汤清爽，无其他加料，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item5-orchid-dancong-milk.png",
+    "remoteKey": "public/images/products/r29-item5-orchid-dancong-milk.png",
+    "prompt": "原创外卖商品「白兰香单丛鲜乳」，一杯500毫升淡琥珀鲜乳茶，茶乳自然渐层，旁边仅少量舒展单丛茶叶，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item6-hot-roasted-thick-milk-tea.png",
+    "remoteKey": "public/images/products/r29-item6-hot-roasted-thick-milk-tea.png",
+    "prompt": "原创外卖商品「热焙茶厚乳」，一杯450毫升耐热透明杯热焙茶厚乳，浅褐茶乳、细腻薄奶沫和自然热气，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item7-double-light-milk-tea-set.png",
+    "remoteKey": "public/images/products/r29-item7-double-light-milk-tea-set.png",
+    "prompt": "原创外卖商品「轻乳双杯试饮组」，准确两杯500毫升轻乳茶，一杯琥珀乌龙、一杯米白玄米，杯型一致无品牌，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item8-office-four-milk-tea-set.png",
+    "remoteKey": "public/images/products/r29-item8-office-four-milk-tea-set.png",
+    "prompt": "原创外卖商品「办公室四杯茶局」，准确四杯500毫升轻乳茶，乌龙、岩茶、玄米、单丛四种自然茶色，整齐分开，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r30-yogurt-fruit-shake.png",
+    "remoteKey": "public/images/merchants/r30-yogurt-fruit-shake.png",
+    "prompt": "准确三杯450毫升透明无品牌酸奶昔，分别为粉红草莓、金黄芒果和紫色蓝莓，旁边一碗坚果谷物酸奶，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item1-strawberry-yogurt-shake.png",
+    "remoteKey": "public/images/products/r30-item1-strawberry-yogurt-shake.png",
+    "prompt": "原创外卖商品「草莓云朵酸奶昔」，一杯450毫升粉红浓稠酸奶昔，120克草莓果肉颗粒清楚，顶部准确半颗草莓，无奶油，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item2-mango-oat-yogurt-shake.png",
+    "remoteKey": "public/images/products/r30-item2-mango-oat-yogurt-shake.png",
+    "prompt": "原创外卖商品「芒果燕麦酸奶昔」，一杯450毫升金黄酸奶昔，120克芒果丁与20克燕麦清楚，浓稠可饮用，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item3-blueberry-purple-rice-yogurt.png",
+    "remoteKey": "public/images/products/r30-item3-blueberry-purple-rice-yogurt.png",
+    "prompt": "原创外卖商品「蓝莓紫米酸奶」，一杯450毫升淡紫酸奶，杯底50克熟紫米、杯中60克蓝莓，层次清楚不混成糊，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item4-avocado-banana-yogurt.png",
+    "remoteKey": "public/images/products/r30-item4-avocado-banana-yogurt.png",
+    "prompt": "原创外卖商品「牛油果香蕉酸奶」，一杯450毫升淡绿色酸奶昔，由准确半颗牛油果和一根香蕉制成，旁边仅对应切片，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item5-peach-popping-yogurt-cup.png",
+    "remoteKey": "public/images/products/r30-item5-peach-popping-yogurt-cup.png",
+    "prompt": "原创外卖商品「黄桃脆波酸奶杯」，一只350克透明酸奶杯，100克黄桃丁和30克透明脆波波分层，顶部无奶油，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item6-nut-granola-yogurt-bowl.png",
+    "remoteKey": "public/images/products/r30-item6-nut-granola-yogurt-bowl.png",
+    "prompt": "原创外卖商品「坚果谷物酸奶碗」，一碗300克白色酸奶，40克燕麦、15克混合坚果、80克香蕉片与草莓块分区清晰，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item7-strawberry-mango-yogurt-duo.png",
+    "remoteKey": "public/images/products/r30-item7-strawberry-mango-yogurt-duo.png",
+    "prompt": "原创外卖商品「双杯酸甜搭档」，准确两杯450毫升酸奶昔，一杯粉红草莓、一杯金黄芒果，果肉与杯型清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item8-four-fruit-yogurt-set.png",
+    "remoteKey": "public/images/products/r30-item8-four-fruit-yogurt-set.png",
+    "prompt": "原创外卖商品「四人果力补给箱」，准确四杯450毫升酸奶饮，草莓粉、芒果黄、蓝莓紫、牛油果绿四色自然真实，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r31-coconut-dessert-drinks.png",
+    "remoteKey": "public/images/merchants/r31-coconut-dessert-drinks.png",
+    "prompt": "准确三杯500毫升透明无品牌椰饮，分别为芒果椰乳、西瓜椰子水和咖啡椰乳，旁边一只小椰奶冻，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item1-mango-coconut-smoothie.png",
+    "remoteKey": "public/images/products/r31-item1-mango-coconut-smoothie.png",
+    "prompt": "原创外卖商品「芒果椰乳冰沙」，一杯500毫升金黄白色芒果椰乳冰沙，120克芒果丁与鲜椰乳自然分层，无奶油，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item2-watermelon-coconut-water.png",
+    "remoteKey": "public/images/products/r31-item2-watermelon-coconut-water.png",
+    "prompt": "原创外卖商品「西瓜椰子水」，一杯500毫升透明椰子水，150克去籽红西瓜方块与少量冰清楚，无奶无其他水果，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item3-osmanthus-coconut-latte.png",
+    "remoteKey": "public/images/products/r31-item3-osmanthus-coconut-latte.png",
+    "prompt": "原创外卖商品「生椰桂花拿铁」，一杯500毫升生椰拿铁，白色椰乳与深棕双份浓缩自然渐层，少量桂花点缀，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item4-pineapple-passion-coconut.png",
+    "remoteKey": "public/images/products/r31-item4-pineapple-passion-coconut.png",
+    "prompt": "原创外卖商品「菠萝百香椰椰」，一杯500毫升金黄椰子水饮，100克菠萝丁与准确一颗百香果果肉，碎冰清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item5-pandan-coconut-jelly-cup.png",
+    "remoteKey": "public/images/products/r31-item5-pandan-coconut-jelly-cup.png",
+    "prompt": "原创外卖商品「斑斓椰乳冻杯」，一只350克透明甜品杯，白色椰乳冻、绿色斑斓冻、透明椰果、红豆各40克分层，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item6-purple-rice-coconut-sago.png",
+    "remoteKey": "public/images/products/r31-item6-purple-rice-coconut-sago.png",
+    "prompt": "原创外卖商品「紫米椰香西米露」，一碗400毫升椰乳西米露，60克紫米、40克透明西米与少量芒果丁清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item7-double-island-coconut-set.png",
+    "remoteKey": "public/images/products/r31-item7-double-island-coconut-set.png",
+    "prompt": "原创外卖商品「双杯海岛午后」，准确两杯500毫升椰饮，一杯芒果椰乳、一杯菠萝百香椰子水，颜色与果肉清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item8-four-coconut-drink-set.png",
+    "remoteKey": "public/images/products/r31-item8-four-coconut-drink-set.png",
+    "prompt": "原创外卖商品「四杯椰影分享装」，准确四杯500毫升椰饮，芒果、西瓜、咖啡、菠萝四款对应果肉与基底清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/merchants/r32-herbal-jelly-tea.png",
+    "remoteKey": "public/images/merchants/r32-herbal-jelly-tea.png",
+    "prompt": "准确三杯500毫升透明无品牌草本饮，分别为黑色仙草奶、琥珀冬瓜茶和淡金甘蔗马蹄水，配料自然，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item1-brown-sugar-grass-jelly-milk.png",
+    "remoteKey": "public/images/products/r32-item1-brown-sugar-grass-jelly-milk.png",
+    "prompt": "原创外卖商品「黑糖仙草鲜奶」，一杯500毫升鲜奶，杯底120克黑色仙草冻与15克薄黑糖浆，奶色洁白，无珍珠，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item2-lemon-winter-melon-tea.png",
+    "remoteKey": "public/images/products/r32-item2-lemon-winter-melon-tea.png",
+    "prompt": "原创外卖商品「柠香冬瓜茶」，一杯500毫升清透琥珀冬瓜茶，准确两片黄柠檬与少量冰，无奶无其他水果，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item3-sugarcane-water-chestnut.png",
+    "remoteKey": "public/images/products/r32-item3-sugarcane-water-chestnut.png",
+    "prompt": "原创外卖商品「甘蔗马蹄水」，一杯500毫升淡金甘蔗水，准确六片白色马蹄薄片与少量冰，清澈自然，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item4-tangerine-red-bean-drink.png",
+    "remoteKey": "public/images/products/r32-item4-tangerine-red-bean-drink.png",
+    "prompt": "原创外卖商品「陈皮红豆沙饮」，一杯450毫升温热红豆沙饮，50克完整软糯红豆与少量约2克陈皮细丝清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item5-osmanthus-sour-plum-drink.png",
+    "remoteKey": "public/images/products/r32-item5-osmanthus-sour-plum-drink.png",
+    "prompt": "原创外卖商品「桂花酸梅汤」，一杯500毫升深红棕酸梅汤，少量约1克桂花与冰块，无果肉无奶，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item6-coconut-grass-jelly-bowl.png",
+    "remoteKey": "public/images/products/r32-item6-coconut-grass-jelly-bowl.png",
+    "prompt": "原创外卖商品「椰乳烧仙草碗」，一碗350克黑色仙草冻与白色椰乳，准确六颗双色芋圆、40克红豆分区清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item7-hot-cold-herbal-drink-duo.png",
+    "remoteKey": "public/images/products/r32-item7-hot-cold-herbal-drink-duo.png",
+    "prompt": "原创外卖商品「冷热双杯清润组」，准确两杯饮品，一杯450毫升热红豆沙有热气，一杯500毫升冰冬瓜茶有两片柠檬，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item8-four-herbal-drink-set.png",
+    "remoteKey": "public/images/products/r32-item8-four-herbal-drink-set.png",
+    "prompt": "原创外卖商品「四杯草木分享装」，准确四杯饮品，仙草鲜奶、冬瓜茶、甘蔗马蹄水、酸梅汤各一杯，颜色配料各异，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  }
+]

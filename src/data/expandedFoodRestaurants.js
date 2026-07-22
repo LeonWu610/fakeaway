@@ -1,0 +1,288 @@
+const common = {
+  status: 'active', deliveryFee: 0, minPrice: 15, couponAmount: 6,
+  coupons: [
+    { id: 'expanded-new', type: '新客券', amount: 6, threshold: 0, detail: '首次模拟下单可用' },
+    { id: 'expanded-full', type: '满减券', amount: 10, threshold: 39, detail: '满39元可用' },
+  ],
+}
+
+const safety = '视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感'
+const premium = 'premium'
+const bulk = 'bulk'
+
+const pendingProductIndexes = {
+  r26: new Set([3, 4, 5, 6]),
+  r27: new Set([1, 2, 3, 4, 5, 6]),
+}
+
+const temporaryCoverProduct = {
+  r27: 7,
+  r28: 1,
+  r29: 1,
+  r30: 1,
+  r31: 1,
+  r32: 1,
+}
+
+function imageExtension(imageTier) {
+  return imageTier === bulk ? 'jpg' : 'png'
+}
+
+function makeItems(restaurantId, items) {
+  return items.map(([name, description, price, sales, slug, subject, imageTier], index) => ({
+    id: `${restaurantId}_item${index + 1}`, name, description, price,
+    image: `/images/products/${restaurantId}-item${index + 1}-${slug}.${imageExtension(imageTier)}`,
+    monthlySales: `月售${sales}+`, rating: index < 3 ? 99 - index : 96,
+    isHot: index === 0 || index === 4, isRecommended: index === 0 || index === 2,
+    originalPrice: index === 0 ? price + 5 : undefined, imageTier,
+    imagePrompt: { purpose: 'product-main', prompt: `原创外卖商品「${name}」，${subject}，45度近景，主体居中且完整，${safety}`, stylePreset: 'realistic-food-editorial', aspectRatio: '1:1', reviewStatus: 'draft', rightsNotes: '原创虚构商品；生成后人工复核数量、食材、文字与畸变' },
+  }))
+}
+
+function makeRestaurant(config) {
+  const { items: itemData, slug, coverSubject, ...restaurant } = config
+  const allItems = makeItems(config.id, itemData)
+  const items = allItems.filter((_, index) => !pendingProductIndexes[config.id]?.has(index + 1))
+  const generatedCover = `/images/merchants/${config.id}-${slug}.png`
+  const fallbackIndex = temporaryCoverProduct[config.id]
+  const image = fallbackIndex ? allItems[fallbackIndex - 1].image : generatedCover
+  return {
+    ...common, ...restaurant, image, coverImages: [image], imageTier: premium,
+    imagePrompt: { purpose: 'merchant-cover', prompt: `${coverSubject}，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，${safety}` },
+    menus: [
+      { categoryId: 'popular', categoryName: '招牌热销', items: items.slice(0, Math.ceil(items.length / 2)) },
+      { categoryId: 'more', categoryName: config.foodCategory === 'drink' ? '风味特调' : '夜宵搭配', items: items.slice(Math.ceil(items.length / 2)) },
+    ],
+  }
+}
+
+export default [
+  makeRestaurant({
+    id: 'r21', slug: 'pepper-snail-noodles', name: '螺夜有声', foodCategory: 'snailNoodles', archetype: 'late-night-story',
+    description: '酸笋现炒、汤底现煮的原创螺蛳粉夜宵铺，脆、酸、辣层次分明。', slogan: '夜越深，嗦粉越有声。', rating: 4.9, monthlySales: '7600+', distance: '1.1km', deliveryTime: 31, avgPrice: 31,
+    categories: ['螺蛳粉', '夜宵'], tags: ['酸笋现炒', '营业到3点'], businessHours: { open: '17:00', close: '03:00' }, promotionText: '满35减8', promotionRules: ['满35减8', '满59减15'],
+    listProfile: { identity: '深夜螺蛳粉', imageBadge: '酸笋现炒', scoreBadge: '汤底够浓', serviceTags: ['汤粉分装', '辣度可选'], benefitLabel: '加料券' },
+    operationCard: { eyebrow: '凌晨嗦粉', title: '酸辣脆香一碗到齐', description: '腐竹、酸笋、花生与木耳按口感分层装', action: '选一碗粉' },
+    waitingProfile: { tone: 'excited', stages: ['螺汤开始翻滚，酸笋正在爆香', '米粉下锅，配菜按脆度依次加入', '汤粉分装封好，想象骑手已经取餐', '这一碗酸辣夜宵马上到达'] },
+    coverSubject: '一大碗红亮螺蛳粉，米粉、酸笋、腐竹、花生、木耳、酸豆角与青菜七种配料清晰，旁边仅一只鸭脚和一颗卤蛋',
+    items: [
+      ['脆响全料螺蛳粉', '300克米粉配酸笋、腐竹、花生、木耳、酸豆角、萝卜干和青菜', 32, 2100, 'loaded-snail-noodles', '一只深碗装300克米粉，准确呈现酸笋、腐竹、花生、木耳、酸豆角、萝卜干、青菜七种配料与红亮螺汤', premium],
+      ['虎皮鸭脚双拼粉', '300克米粉加两只虎皮鸭脚与一颗卤蛋', 38, 1600, 'duck-feet-egg-noodles', '一碗300克螺蛳粉，准确放两只完整虎皮鸭脚和一颗对半切卤蛋，配酸笋、腐竹与青菜', premium],
+      ['番茄酸汤螺蛳粉', '番茄螺汤配300克米粉、腐竹和时蔬，酸香微辣', 30, 1100, 'tomato-sour-noodles', '一碗300克米粉浸在橙红番茄螺汤中，番茄块、腐竹、木耳、酸笋和青菜清楚', premium],
+      ['干捞炸蛋螺蛳粉', '无汤干拌米粉配一只吸汁炸蛋与酸笋脆料', 34, 980, 'dry-fried-egg-noodles', '一盘300克干捞米粉，顶部准确一只圆形吸汁炸蛋，配酸笋、花生、腐竹和酸豆角，无汤', premium],
+      ['虎皮鸭脚两只', '两只慢卤后炸出虎皮的鸭脚', 16, 1300, 'two-braised-duck-feet', '深色小盘准确摆放两只完整虎皮鸭脚，卤色棕红、表皮起皱、熟透脱骨感真实', premium],
+      ['吸汁炸蛋一只', '一只蓬松炸蛋，适合浸入螺汤', 8, 1200, 'single-fried-egg', '浅碗准确放一只圆形蓬松炸蛋，边缘金黄多孔，浸入少量红亮螺汤但保持完整', premium],
+      ['深夜独享嗦粉餐', '全料螺蛳粉一碗、鸭脚一只、卤蛋一颗和豆奶一杯', 46, 860, 'solo-snail-noodle-set', '一碗全料螺蛳粉，旁边准确一只鸭脚、一颗卤蛋和一杯无品牌豆奶，四部分单人套餐分开摆放', bulk],
+      ['双人酸辣开黑餐', '两碗螺蛳粉、四只鸭脚、两颗卤蛋与两杯豆奶', 88, 420, 'double-snail-noodle-set', '准确两碗螺蛳粉、四只虎皮鸭脚、两颗卤蛋和两杯无品牌豆奶，双人套餐分区清晰', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r22', slug: 'pepper-frog-pot', name: '蛙声十里', foodCategory: 'frogPot', archetype: 'late-night-story',
+    description: '现炒牛蛙与泡椒、紫苏、蒜香三种风味锅，夜里也要吃得鲜嫩。', slogan: '不是池塘在叫，是锅里太香。', rating: 4.8, monthlySales: '5200+', distance: '1.6km', deliveryTime: 36, avgPrice: 52,
+    categories: ['牛蛙锅', '夜宵'], tags: ['现炒牛蛙', '配菜入味'], businessHours: { open: '16:30', close: '02:30' }, promotionText: '满59减12', promotionRules: ['满59减12', '满99减25'],
+    listProfile: { identity: '现炒牛蛙锅', imageBadge: '鲜嫩现炒', scoreBadge: '泡椒够香', serviceTags: ['锅菜分装', '辣度可选'], benefitLabel: '加蛙券' },
+    operationCard: { eyebrow: '夜市热锅', title: '三种风味牛蛙现炒', description: '牛蛙按净肉份量称重，配菜吸满锅汁', action: '开一锅蛙' },
+    waitingProfile: { tone: 'excited', stages: ['牛蛙完成切配，炒锅已经烧热', '泡椒与紫苏爆香，蛙肉快速翻炒', '热锅装盒封签，想象骑手准备出发', '鲜辣牛蛙马上到门口'] },
+    coverSubject: '一只黑色浅锅装紫苏泡椒牛蛙，准确约十二块熟牛蛙、泡椒、紫苏叶、莴笋和藕片清楚',
+    items: [
+      ['紫苏泡椒牛蛙锅', '500克净牛蛙配泡椒、紫苏、莴笋与藕片', 58, 1700, 'perilla-pickled-pepper-frog', '黑色浅锅内500克熟牛蛙约十二块，泡椒、紫苏叶、莴笋条和藕片清楚，金黄酸辣汤汁适量', premium],
+      ['蒜香干锅牛蛙', '500克净牛蛙与整瓣蒜、芹菜、土豆片干炒', 60, 1300, 'garlic-dry-frog-pot', '一锅500克牛蛙约十二块，与整瓣蒜、芹菜段、土豆片干炒，无汤，焦香油亮真实', premium],
+      ['青花椒嫩蛙锅', '400克净牛蛙配青花椒、丝瓜与鲜笋', 56, 980, 'green-pepper-frog-pot', '浅锅内400克熟牛蛙约十块，鲜绿青花椒、丝瓜条和鲜笋片清晰，清亮青椒汤底', premium],
+      ['番茄不辣蛙锅', '400克净牛蛙配番茄、菌菇与娃娃菜', 52, 760, 'tomato-mild-frog-pot', '一锅400克熟牛蛙约十块，番茄块、菌菇和娃娃菜浸在自然橙红汤中，无辣椒', premium],
+      ['椒香蛙腿六只', '六只完整牛蛙腿，青花椒爆炒', 36, 1100, 'six-pepper-frog-legs', '长陶盘准确摆放六只完整熟牛蛙腿，青花椒与蒜片爆炒，肉质白嫩、形态自然', premium],
+      ['锅汁拌宽粉', '200克宽粉吸收牛蛙锅汁，弹滑入味', 12, 920, 'sauce-wide-noodles', '浅碗装200克半透明宽粉，拌少量红亮牛蛙锅汁，点缀蒜末与芹菜，无肉类', premium],
+      ['一人半斤蛙满足餐', '250克牛蛙小锅、米饭一碗与冰粉一份', 49, 680, 'solo-frog-pot-set', '一只250克牛蛙小锅，旁边准确一碗白米饭和一碗红糖冰粉，三部分完整分开', bulk],
+      ['双人一公斤牛蛙宴', '1000克牛蛙大锅、两碗米饭与两份配菜', 118, 350, 'double-kilo-frog-feast', '一只大锅装1000克熟牛蛙约二十四块，旁边准确两碗米饭、两盘配菜，双人份构图', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r23', slug: 'oyster-night-grill', name: '蚝门夜宴', foodCategory: 'seafoodGrill', archetype: 'late-night-story',
+    description: '生蚝、扇贝和鱿鱼现烤现装，蒜蓉每日鲜制，海鲜夜宵不含糊。', slogan: '夜色开席，鲜味先到。', rating: 4.9, monthlySales: '4900+', distance: '1.8km', deliveryTime: 34, avgPrice: 49,
+    categories: ['烤海鲜', '夜宵'], tags: ['蒜蓉现熬', '贝类现烤'], businessHours: { open: '17:30', close: '03:00' }, promotionText: '满55减10', promotionRules: ['满55减10', '满96减20'],
+    listProfile: { identity: '夜市烤海鲜', imageBadge: '贝类现烤', scoreBadge: '蒜香鲜甜', serviceTags: ['保温锡盒', '辣度可选'], benefitLabel: '生蚝券' },
+    operationCard: { eyebrow: '今夜鲜烤', title: '生蚝扇贝刚刚开壳', description: '明确只卖熟制海鲜，蒜蓉粉丝分量足', action: '挑一盘海鲜' },
+    waitingProfile: { tone: 'story', stages: ['贝壳完成刷洗，烤炉正在升温', '蒜蓉冒香，粉丝开始吸收鲜汁', '熟制海鲜装入保温盒，想象骑手取餐', '今夜这口鲜马上抵达'] },
+    coverSubject: '黑色烤盘准确摆放六只蒜蓉烤生蚝、四只粉丝扇贝和一条切段鱿鱼，贝壳完整、海鲜全熟',
+    items: [
+      ['蒜蓉生蚝六只', '六只带壳生蚝铺鲜制金银蒜蓉', 42, 1900, 'six-garlic-oysters', '黑色烤盘准确摆放六只带壳熟生蚝，每只铺金银蒜蓉与少量葱花，蚝肉饱满自然', premium],
+      ['粉丝扇贝六只', '六只扇贝配龙口粉丝和蒜蓉汁', 39, 1500, 'six-vermicelli-scallops', '长盘准确摆放六只带壳熟扇贝，每只覆盖一小卷粉丝和金黄蒜蓉，贝肉清楚', premium],
+      ['炭烤鱿鱼整条', '一条约300克鱿鱼切段烤制，刷香辣酱', 36, 1200, 'whole-grilled-squid', '一条约300克完整熟鱿鱼横切成八段但保持原形排列，刷红亮香辣酱，触须自然', premium],
+      ['椒盐皮皮虾八只', '八只皮皮虾炸香后撒椒盐与蒜酥', 48, 860, 'eight-salt-pepper-mantis-shrimp', '深盘准确摆放八只完整熟皮皮虾，外壳橙红，撒椒盐、蒜酥与少量青红椒粒', premium],
+      ['芝士焗青口八只', '八只半壳青口铺薄层芝士焗熟', 46, 970, 'eight-cheese-mussels', '烤盘准确摆放八只半壳熟青口，每只铺薄层金黄芝士，贝肉与壳形自然', premium],
+      ['蒜香烤茄子一份', '一整根茄子对半烤开，铺蒜蓉与葱花', 16, 1300, 'garlic-grilled-eggplant', '一整根紫皮茄子纵向对半展开但保持相连，铺金黄蒜蓉、葱花和少量红椒', premium],
+      ['一个人的海鲜夜盘', '三只生蚝、三只扇贝、半条鱿鱼与烤茄子', 58, 720, 'solo-seafood-night-platter', '一盘准确三只生蚝、三只扇贝、半条切段鱿鱼，旁边一份烤茄子，单人组合清楚', bulk],
+      ['双人贝壳盛宴', '六只生蚝、六只扇贝、八只青口与一条鱿鱼', 128, 310, 'double-shellfish-feast', '准确六只生蚝、六只扇贝、八只青口和一条切段鱿鱼分区摆满双人海鲜大盘', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r24', slug: 'spicy-lobster-tail', name: '尾巴红了', foodCategory: 'crayfish', archetype: 'late-night-story',
+    description: '只做净虾尾和小龙虾的深夜小馆，麻辣、十三香、蒜蓉各有脾气。', slogan: '红的是虾尾，不是今晚的脸。', rating: 4.8, monthlySales: '6100+', distance: '1.4km', deliveryTime: 32, avgPrice: 55,
+    categories: ['小龙虾', '虾尾'], tags: ['净虾尾', '营业到3点'], businessHours: { open: '17:00', close: '03:00' }, promotionText: '满59减12', promotionRules: ['满59减12', '满108减25'],
+    listProfile: { identity: '净虾尾夜宵', imageBadge: '去头净尾', scoreBadge: '虾肉饱满', serviceTags: ['手套纸巾', '辣度可选'], benefitLabel: '虾尾券' },
+    operationCard: { eyebrow: '红壳上桌', title: '三种口味净虾尾', description: '按净重标注，配年糕或拌面更吸汁', action: '挑一锅虾' },
+    waitingProfile: { tone: 'excited', stages: ['虾尾完成清洗，香料正在炒香', '红壳翻滚入味，酱汁慢慢收浓', '虾尾与主食分装，想象骑手出发', '这一锅红亮夜宵马上到达'] },
+    coverSubject: '一只红色浅锅装500克麻辣净虾尾约二十五只，红壳完整，配蒜瓣、干辣椒、青笋和少量年糕',
+    items: [
+      ['麻辣净虾尾一斤', '500克净虾尾约二十五只，配青笋和年糕', 68, 2200, 'spicy-lobster-tail-pound', '红色浅锅装500克净虾尾约二十五只，红壳完整，配青笋条、年糕、干辣椒和花椒', premium],
+      ['金蒜净虾尾一斤', '500克净虾尾铺满现炒金银蒜蓉', 70, 1600, 'garlic-lobster-tail-pound', '浅锅装500克净虾尾约二十五只，铺大量金银蒜蓉与葱花，酱汁金黄不过油', premium],
+      ['十三香整虾十八只', '十八只完整小龙虾配土豆与黄瓜', 78, 1100, 'eighteen-spiced-crayfish', '深锅准确摆放十八只完整熟小龙虾，配土豆块、黄瓜条和十三香棕红汤汁', premium],
+      ['冰镇熟醉虾十二只', '十二只熟制小龙虾冰镇入味，带花雕风味', 76, 720, 'twelve-chilled-crayfish', '碎冰盘准确摆放十二只完整熟小龙虾，橙红外壳，点缀话梅、姜片和少量香草', premium],
+      ['虾汤拌面一份', '200克碱水面拌虾尾汤汁，配两只净虾尾', 14, 1400, 'lobster-sauce-noodles', '浅碗装200克碱水拌面，准确放两只净虾尾，红亮酱汁均匀、葱花少量', premium],
+      ['糯叽叽年糕十条', '十条长年糕吸收麻辣虾汁', 12, 1050, 'ten-sauce-rice-cakes', '小盘准确摆放十条长条年糕，裹薄薄麻辣虾汁，点缀少量芝麻和葱花，无虾', premium],
+      ['半斤虾尾独享餐', '250克麻辣虾尾、拌面一份与冰粉一份', 52, 790, 'solo-lobster-tail-set', '一锅250克麻辣净虾尾约十二只，旁边一碗拌面和一碗冰粉，三部分分开', bulk],
+      ['双味虾尾双人桶', '麻辣虾尾500克、蒜蓉虾尾500克与两份拌面', 138, 360, 'double-flavor-lobster-tail', '两只独立锅分别装500克麻辣虾尾和500克蒜蓉虾尾，旁边准确两碗拌面', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r25', slug: 'night-chaofun', name: '炒到月亮弯', foodCategory: 'nightStirFry', archetype: 'late-night-story',
+    description: '镬气现炒的夜班主食铺，炒粉、炒饭、炒面都按一人份认真颠锅。', slogan: '月亮弯了，锅气还直冲天。', rating: 4.8, monthlySales: '8300+', distance: '0.9km', deliveryTime: 25, avgPrice: 26,
+    categories: ['炒粉炒饭', '夜宵'], tags: ['大火现炒', '营业到4点'], businessHours: { open: '18:00', close: '04:00' }, promotionText: '满30减6', promotionRules: ['满30减6', '满52减11'],
+    listProfile: { identity: '深夜镬气铺', imageBadge: '大火现炒', scoreBadge: '锅气很足', serviceTags: ['现点现炒', '加蛋可选'], benefitLabel: '加蛋券' },
+    operationCard: { eyebrow: '夜班食堂', title: '一锅一份刚好吃饱', description: '河粉、米饭与面条不预炒，接单才下锅', action: '点份镬气' },
+    waitingProfile: { tone: 'warm', stages: ['食材切配完成，铁锅正在烧热', '大火颠锅，酱香和镬气升起来了', '主食装盒封好，想象骑手正在取餐', '热乎夜班饭马上到达'] },
+    coverSubject: '三只浅盘分别装黑椒牛肉炒河粉、叉烧双蛋炒饭和豉油皇炒面，每盘一人份且食材清晰',
+    items: [
+      ['黑椒牛肉炒河粉', '300克河粉配100克牛肉、豆芽、韭黄与洋葱', 30, 2500, 'black-pepper-beef-chaofun', '椭圆盘装300克炒河粉，100克熟牛肉片、豆芽、韭黄和洋葱清晰，深色豉油均匀', premium],
+      ['叉烧双蛋炒饭', '350克炒饭配80克叉烧与两颗鸡蛋', 28, 1900, 'char-siu-double-egg-rice', '浅盘装350克粒粒分明炒饭，80克叉烧丁与准确两颗炒蛋的份量，配青豆和葱花', premium],
+      ['豉油皇三丝炒面', '300克细面配鸡丝、胡萝卜丝与韭黄', 27, 1500, 'soy-sauce-three-shreds-noodles', '长盘装300克干爽炒细面，鸡丝、胡萝卜丝、韭黄三种丝料清楚，无汤', premium],
+      ['沙茶海鲜炒乌冬', '250克乌冬配四只虾仁、鱿鱼圈和青口', 34, 1100, 'satay-seafood-udon', '深盘装250克炒乌冬，准确四只熟虾仁、鱿鱼圈和青口肉，沙茶酱薄裹', premium],
+      ['午餐肉煎蛋一份', '三片厚切午餐肉配一颗太阳蛋', 13, 1700, 'luncheon-meat-fried-egg', '浅盘准确摆放三片煎香午餐肉和一颗完整太阳蛋，边缘微焦，少量生菜点缀', premium],
+      ['椒盐鸡软骨', '200克鸡软骨炸香，撒椒盐和辣椒圈', 24, 980, 'salt-pepper-chicken-cartilage', '深色小盘装200克金黄鸡软骨，撒椒盐、蒜酥和少量红椒圈，熟透无血色', premium],
+      ['夜班一人镬气餐', '牛肉炒河粉、椒盐鸡软骨半份与柠檬茶一杯', 46, 900, 'solo-wok-hei-set', '一盘牛肉炒河粉、一小盘半份鸡软骨和一杯无品牌柠檬茶，三部分单人套餐', bulk],
+      ['两人月下炒食局', '两份主食、椒盐鸡软骨一份与两杯柠檬茶', 78, 440, 'double-night-stir-fry-set', '准确两盘不同炒主食、一盘椒盐鸡软骨和两杯无品牌柠檬茶，双人份摆放清楚', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r26', slug: 'claypot-midnight-stew', name: '砂锅不打烊', foodCategory: 'claypotStew', archetype: 'late-night-story',
+    description: '小火煨到深夜的砂锅铺，粉丝、豆腐、酥肉与菌菇咕嘟入味。', slogan: '夜再凉，砂锅都替你热着。', rating: 4.9, monthlySales: '5700+', distance: '1.2km', deliveryTime: 29, avgPrice: 34,
+    categories: ['砂锅', '夜宵'], tags: ['小火现煨', '暖汤夜宵'], businessHours: { open: '16:00', close: '02:30' }, promotionText: '满38减8', promotionRules: ['满38减8', '满65减14'],
+    listProfile: { identity: '深夜砂锅铺', imageBadge: '现煨出锅', scoreBadge: '汤热料足', serviceTags: ['汤料分装', '保温配送'], benefitLabel: '暖锅券' },
+    operationCard: { eyebrow: '咕嘟热卖', title: '四口砂锅慢慢煨熟', description: '粉丝吸汤、豆腐入味，适合夜里慢慢吃', action: '捧一锅热的' },
+    waitingProfile: { tone: 'warm', stages: ['高汤入砂锅，底料正在咕嘟', '主料与配菜依次煨熟入味', '汤料分装保温，想象骑手准备出发', '这一锅暖意马上到门口'] },
+    coverSubject: '两只黑色砂锅，一锅酸菜酥肉粉丝、一锅番茄牛腩豆腐，主料、粉丝、蔬菜和汤底清晰',
+    items: [
+      ['酸菜酥肉粉丝锅', '200克酥肉、粉丝、酸菜、豆腐与青菜', 36, 1800, 'pickled-cabbage-pork-stew', '黑色砂锅内200克金黄酥肉、透明粉丝、酸菜、豆腐块和青菜清楚，浅金酸汤', premium],
+      ['番茄牛腩豆腐锅', '150克牛腩配番茄、嫩豆腐和土豆', 42, 1400, 'tomato-beef-tofu-stew', '砂锅内150克熟牛腩块、番茄块、嫩豆腐和土豆浸在橙红浓汤中', premium],
+      ['菌菇鸡汤砂锅', '半只去骨鸡腿配四种菌菇与娃娃菜', 38, 1100, 'mushroom-chicken-stew', '砂锅内一只去骨鸡腿切六块，香菇、蟹味菇、白玉菇、金针菇四种菌与娃娃菜清楚', premium],
+      ['麻辣肥肠砂锅', '120克熟肥肠配豆芽、土豆粉和豆腐皮', 40, 920, 'spicy-intestine-stew', '砂锅内120克熟肥肠段、豆芽、土豆粉和豆腐皮，红汤适量，肥肠形态自然', premium],
+      ['手工肉丸六颗', '六颗猪肉荸荠丸，单独清汤煨熟', 18, 1300, 'six-pork-meatballs', '浅汤碗准确放六颗圆润熟猪肉荸荠丸，清汤、葱花和少量青菜，无其他肉类', premium],
+      ['吸汤冻豆腐八块', '八块蜂窝冻豆腐吸满砂锅高汤', 10, 980, 'eight-frozen-tofu', '小砂锅准确放八块蜂窝冻豆腐，吸收浅金高汤，点缀少量葱花，无肉', premium],
+      ['一个人的暖砂锅', '酸菜酥肉粉丝锅、米饭一碗与凉菜一份', 45, 760, 'solo-claypot-stew-set', '一锅酸菜酥肉粉丝，旁边准确一碗米饭和一小盘凉菜，三部分单人套餐', bulk],
+      ['双人咕嘟暖胃餐', '两口不同砂锅、两碗米饭与一份肉丸', 82, 380, 'double-claypot-stew-set', '准确两口不同砂锅、两碗白米饭和一碗六颗肉丸，双人套餐完整分开', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r27', slug: 'crispy-chicken-night', name: '咔嚓夜行', foodCategory: 'friedSnack', archetype: 'late-night-story',
+    description: '现炸鸡排、盐酥鸡与夜市小食，外壳咔嚓、内里多汁，深夜也现点现炸。', slogan: '今晚的安静，交给咔嚓打破。', rating: 4.8, monthlySales: '8800+', distance: '0.8km', deliveryTime: 23, avgPrice: 29,
+    categories: ['炸鸡小食', '夜宵'], tags: ['现点现炸', '营业到3点'], businessHours: { open: '15:30', close: '03:00' }, promotionText: '满32减7', promotionRules: ['满32减7', '满58减13'],
+    listProfile: { identity: '台式夜市炸物', imageBadge: '现点现炸', scoreBadge: '外脆里嫩', serviceTags: ['透气包装', '撒粉可选'], benefitLabel: '炸物券' },
+    operationCard: { eyebrow: '咔嚓出锅', title: '夜市炸物刚离开油锅', description: '鸡排、盐酥鸡和小食分袋保持酥脆', action: '装一袋炸物' },
+    waitingProfile: { tone: 'excited', stages: ['鸡肉完成腌制，炸锅正在升温', '外壳炸至金黄，香料刚刚撒好', '炸物透气分装，想象骑手正在取餐', '今晚这声咔嚓马上抵达'] },
+    coverSubject: '一只牛皮纸托盘内准确一整片切条鸡排、250克盐酥鸡、六颗地瓜球和一份四季豆，炸物金黄分区',
+    items: [
+      ['海苔脆皮大鸡排', '一片约250克去骨鸡排，切八条撒海苔粉', 28, 2600, 'seaweed-crispy-chicken-cutlet', '一片约250克完整金黄鸡排切成准确八条但保持原形，撒海苔粉，切面熟透多汁', premium],
+      ['九层塔盐酥鸡', '250克去骨鸡腿块配炸九层塔与椒盐', 30, 2100, 'basil-popcorn-chicken', '纸托盘装250克金黄盐酥鸡约十八块，配炸九层塔叶和椒盐，鸡肉熟透', premium],
+      ['梅粉地瓜条', '300克黄心地瓜粗条，撒薄薄酸甜梅粉', 18, 1600, 'plum-sweet-potato-fries', '纸盒装300克粗切金黄地瓜条，均匀薄撒淡粉梅粉，约十五条且无薯条', premium],
+      ['爆浆芝士鸡肉卷四只', '四只鸡肉卷包马苏里拉芝士，炸至金黄', 26, 1200, 'four-cheese-chicken-rolls', '陶盘准确摆放四只金黄鸡肉卷，其中一只切开露出适量融化芝士和熟鸡肉', premium],
+      ['夜市地瓜球十二颗', '十二颗空心地瓜球，外脆内糯', 16, 1900, 'twelve-sweet-potato-balls', '纸碗准确装十二颗圆形金黄地瓜球，一颗切开展示空心柔糯内部', premium],
+      ['椒盐四季豆', '180克四季豆炸熟后撒蒜酥与椒盐', 15, 1100, 'salt-pepper-green-beans', '长盘装180克完整熟四季豆，表面微皱，撒蒜酥和椒盐，无肉类', premium],
+      ['夜行单人咔嚓袋', '大鸡排一片、地瓜球六颗与无糖茶一杯', 42, 980, 'solo-crispy-night-set', '一片切条大鸡排、准确六颗地瓜球和一杯无品牌无糖茶，单人套餐三部分', bulk],
+      ['双人夜市炸物篮', '盐酥鸡250克、鸡肉卷四只、地瓜条与四季豆', 72, 470, 'double-night-market-fried-set', '一篮分区装250克盐酥鸡、准确四只鸡肉卷、一份地瓜条和一份四季豆', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r28', slug: 'citrus-sparkling-tea', name: '晴浪气泡社', foodCategory: 'drink', archetype: 'specialty-menu',
+    description: '鲜切柑橘与冷萃茶做成轻盈气泡饮，果肉、气泡和茶香都清楚。', slogan: '把晴天摇进每一口气泡。', rating: 4.9, monthlySales: '9200+', distance: '0.7km', deliveryTime: 20, avgPrice: 20,
+    categories: ['果味气泡茶', '鲜果茶'], tags: ['鲜果现切', '气泡现打'], businessHours: { open: '10:00', close: '23:30' }, promotionText: '满28减6', promotionRules: ['满28减6', '满48减11'],
+    listProfile: { identity: '鲜果气泡茶', imageBadge: '气泡现打', scoreBadge: '清爽不腻', serviceTags: ['糖冰可选', '杯口封膜'], benefitLabel: '气泡券' },
+    operationCard: { eyebrow: '晴日特调', title: '五种鲜果撞进茶气泡', description: '每杯500毫升，果肉与茶底明确标注', action: '开一杯晴浪' },
+    waitingProfile: { tone: 'fresh', stages: ['鲜果完成切配，冷萃茶正在量取', '气泡注入杯中，果肉层次慢慢浮现', '杯口封膜完成，想象骑手准备出发', '清爽气泡马上到达'] },
+    coverSubject: '准确三杯500毫升透明无品牌气泡茶，分别为黄柠檬绿茶、红西柚乌龙和紫葡萄茉莉，鲜果与气泡清晰',
+    items: [
+      ['海盐青柠气泡茶', '500毫升茉莉绿茶、两片青柠、青柠汁与海盐气泡', 18, 2800, 'sea-salt-lime-sparkling-tea', '一杯500毫升透明杯浅绿色气泡茶，准确两片青柠、碎冰与细密气泡，无奶无其他水果', bulk],
+      ['红柚落日乌龙', '500毫升乌龙茶配80克红心西柚果肉和气泡水', 22, 2200, 'grapefruit-sunset-oolong', '一杯500毫升橙红乌龙气泡茶，杯中80克红心西柚果肉与薄片、碎冰、细密气泡', bulk],
+      ['葡萄云浪茉莉', '500毫升茉莉茶配十颗去皮葡萄与葡萄冻', 24, 1900, 'grape-jasmine-sparkling-tea', '一杯500毫升淡紫气泡茶，准确十颗去皮葡萄、透明葡萄冻、碎冰与气泡，无奶盖', bulk],
+      ['凤梨金萱气泡茶', '500毫升金萱茶配100克凤梨果肉和薄荷', 21, 1500, 'pineapple-jinxuan-sparkling-tea', '一杯500毫升金黄气泡茶，100克凤梨小块、碎冰、一小枝薄荷与细密气泡', bulk],
+      ['莓莓双果苏打', '500毫升苏打配六颗草莓和30克蓝莓', 25, 1700, 'strawberry-blueberry-soda', '一杯500毫升粉紫苏打，准确六颗切半草莓与约30克蓝莓，水果形态自然、气泡清楚', bulk],
+      ['白桃桂花气泡茶', '500毫升白桃乌龙配80克白桃丁与少量桂花', 23, 1300, 'peach-osmanthus-sparkling-tea', '一杯500毫升淡粉白桃乌龙气泡茶，80克白桃丁、少量桂花和碎冰，清澈通透', bulk],
+      ['双杯海风组合', '青柠气泡茶与红柚乌龙各一杯，均为500毫升', 36, 880, 'lime-grapefruit-double-set', '准确两杯500毫升透明杯饮品，一杯青柠绿、一杯红柚橙，水果与气泡各自清楚', bulk],
+      ['四杯晴浪分享装', '青柠、红柚、葡萄、凤梨气泡茶各一杯', 78, 420, 'four-sparkling-tea-set', '准确四杯500毫升气泡茶，青柠、红柚、葡萄、凤梨四种颜色与对应鲜果清楚', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r29', slug: 'roasted-milk-tea', name: '焙火茶事局', foodCategory: 'drink', archetype: 'specialty-menu',
+    description: '重茶感轻乳茶，焙火乌龙、岩茶与黑糖配方保持茶香清晰。', slogan: '火候深一点，茶香慢一点。', rating: 4.8, monthlySales: '6900+', distance: '1.0km', deliveryTime: 22, avgPrice: 22,
+    categories: ['轻乳茶', '焙火茶'], tags: ['原叶现萃', '茶味偏浓'], businessHours: { open: '09:30', close: '23:00' }, promotionText: '满30减6', promotionRules: ['满30减6', '满52减12'],
+    listProfile: { identity: '焙火轻乳茶', imageBadge: '原叶现萃', scoreBadge: '茶香清楚', serviceTags: ['糖冰可选', '鲜奶制作'], benefitLabel: '轻乳券' },
+    operationCard: { eyebrow: '今日焙茶', title: '三档焙火香气可选', description: '每杯500毫升，茶汤与鲜奶比例稳定', action: '选一杯茶' },
+    waitingProfile: { tone: 'quiet', stages: ['原叶称量完成，茶汤正在现萃', '鲜奶与茶汤融合，焙火香慢慢出来', '饮品封口装袋，想象骑手正在取餐', '温润茶香马上抵达'] },
+    coverSubject: '准确三杯500毫升透明无品牌轻乳茶，分别为琥珀焙火乌龙、浅褐岩茶鲜乳与黑糖色桂花轻乳，茶色自然',
+    items: [
+      ['炭焙乌龙轻乳', '500毫升炭焙乌龙茶汤与鲜奶，茶乳比3比2', 21, 2300, 'charcoal-oolong-milk-tea', '一杯500毫升透明杯琥珀浅褐轻乳茶，茶乳均匀、顶部薄奶沫，旁边少量乌龙原叶', bulk],
+      ['岩韵桂花鲜乳', '500毫升岩茶、鲜奶与2克干桂花', 24, 1800, 'rock-tea-osmanthus-milk', '一杯500毫升浅褐岩茶鲜乳，准确少量约2克桂花点缀，茶色自然，无珍珠', bulk],
+      ['黑糖焙茶珍珠', '500毫升焙茶鲜乳配60克黑糖珍珠', 25, 1600, 'brown-sugar-roasted-tea-boba', '一杯500毫升焙茶鲜乳，杯底60克深棕黑糖珍珠，薄黑糖挂壁，珍珠圆润不粘连', bulk],
+      ['米香玄米轻乳', '500毫升玄米茶与鲜奶，含少量烘香玄米', 22, 1400, 'genmaicha-light-milk', '一杯500毫升米白浅金轻乳茶，顶部少量烘香玄米粒，茶汤清爽，无其他加料', bulk],
+      ['白兰香单丛鲜乳', '500毫升单丛茶与鲜奶，花香型无额外香精', 24, 1250, 'orchid-dancong-milk', '一杯500毫升淡琥珀鲜乳茶，茶乳自然渐层，旁边仅少量舒展单丛茶叶', bulk],
+      ['热焙茶厚乳', '450毫升热焙茶配厚乳，杯口有细腻奶沫', 23, 1100, 'hot-roasted-thick-milk-tea', '一杯450毫升耐热透明杯热焙茶厚乳，浅褐茶乳、细腻薄奶沫和自然热气', bulk],
+      ['轻乳双杯试饮组', '炭焙乌龙与米香玄米轻乳各一杯', 39, 760, 'double-light-milk-tea-set', '准确两杯500毫升轻乳茶，一杯琥珀乌龙、一杯米白玄米，杯型一致无品牌', bulk],
+      ['办公室四杯茶局', '乌龙、岩茶、玄米、单丛轻乳各一杯', 82, 390, 'office-four-milk-tea-set', '准确四杯500毫升轻乳茶，乌龙、岩茶、玄米、单丛四种自然茶色，整齐分开', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r30', slug: 'yogurt-fruit-shake', name: '酸甜有引力', foodCategory: 'drink', archetype: 'chain-campaign',
+    description: '现打酸奶昔与鲜果酸奶碗，浓稠度、果肉量和谷物配料都明确。', slogan: '酸甜相吸，今天刚好。', rating: 4.9, monthlySales: '7400+', distance: '0.9km', deliveryTime: 21, avgPrice: 24,
+    categories: ['酸奶昔', '鲜果酸奶'], tags: ['现打酸奶', '真果肉'], businessHours: { open: '08:30', close: '22:30' }, promotionText: '满32减7', promotionRules: ['满32减7', '满56减13'],
+    listProfile: { identity: '鲜果酸奶站', imageBadge: '现打浓酸奶', scoreBadge: '果肉很足', serviceTags: ['甜度可选', '冷链配送'], benefitLabel: '酸奶券' },
+    operationCard: { eyebrow: '酸甜补给', title: '五种鲜果现打酸奶', description: '每杯450毫升，不用植脂末与人工奶盖', action: '选一杯酸甜' },
+    waitingProfile: { tone: 'fresh', stages: ['鲜果洗切完成，酸奶正在称量', '果肉与酸奶低速现打，保留真实颗粒', '冷杯封口装袋，想象骑手准备出发', '浓郁酸甜马上到达'] },
+    coverSubject: '准确三杯450毫升透明无品牌酸奶昔，分别为粉红草莓、金黄芒果和紫色蓝莓，旁边一碗坚果谷物酸奶',
+    items: [
+      ['草莓云朵酸奶昔', '450毫升原味酸奶配120克草莓与10克蜂蜜', 25, 2500, 'strawberry-yogurt-shake', '一杯450毫升粉红浓稠酸奶昔，120克草莓果肉颗粒清楚，顶部准确半颗草莓，无奶油', bulk],
+      ['芒果燕麦酸奶昔', '450毫升酸奶配120克芒果和20克燕麦', 26, 2100, 'mango-oat-yogurt-shake', '一杯450毫升金黄酸奶昔，120克芒果丁与20克燕麦清楚，浓稠可饮用', bulk],
+      ['蓝莓紫米酸奶', '450毫升酸奶配60克蓝莓与50克熟紫米', 27, 1700, 'blueberry-purple-rice-yogurt', '一杯450毫升淡紫酸奶，杯底50克熟紫米、杯中60克蓝莓，层次清楚不混成糊', bulk],
+      ['牛油果香蕉酸奶', '450毫升酸奶配半颗牛油果与一根香蕉', 28, 1300, 'avocado-banana-yogurt', '一杯450毫升淡绿色酸奶昔，由准确半颗牛油果和一根香蕉制成，旁边仅对应切片', bulk],
+      ['黄桃脆波酸奶杯', '350克酸奶配100克黄桃和30克脆波波', 24, 1600, 'peach-popping-yogurt-cup', '一只350克透明酸奶杯，100克黄桃丁和30克透明脆波波分层，顶部无奶油', bulk],
+      ['坚果谷物酸奶碗', '300克酸奶配40克燕麦、15克坚果和80克香蕉草莓', 29, 1200, 'nut-granola-yogurt-bowl', '一碗300克白色酸奶，40克燕麦、15克混合坚果、80克香蕉片与草莓块分区清晰', bulk],
+      ['双杯酸甜搭档', '草莓酸奶昔与芒果燕麦酸奶昔各一杯', 46, 850, 'strawberry-mango-yogurt-duo', '准确两杯450毫升酸奶昔，一杯粉红草莓、一杯金黄芒果，果肉与杯型清楚', bulk],
+      ['四人果力补给箱', '草莓、芒果、蓝莓、牛油果酸奶各一杯', 96, 430, 'four-fruit-yogurt-set', '准确四杯450毫升酸奶饮，草莓粉、芒果黄、蓝莓紫、牛油果绿四色自然真实', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r31', slug: 'coconut-dessert-drinks', name: '椰影小岛', foodCategory: 'drink', archetype: 'specialty-menu',
+    description: '鲜椰乳、椰子水和热带水果做成饮品与小甜杯，清甜不厚重。', slogan: '离海很远，也能喝到小岛。', rating: 4.8, monthlySales: '6500+', distance: '1.3km', deliveryTime: 24, avgPrice: 25,
+    categories: ['鲜椰饮', '椰乳甜品'], tags: ['鲜椰乳制作', '热带鲜果'], businessHours: { open: '10:30', close: '23:30' }, promotionText: '满34减7', promotionRules: ['满34减7', '满58减13'],
+    listProfile: { identity: '热带鲜椰铺', imageBadge: '鲜椰现开', scoreBadge: '椰香清甜', serviceTags: ['糖冰可选', '冷饮封膜'], benefitLabel: '椰香券' },
+    operationCard: { eyebrow: '小岛来信', title: '鲜椰与热带水果相遇', description: '每杯标注椰乳或椰子水，不混淆基底', action: '登上小岛' },
+    waitingProfile: { tone: 'fresh', stages: ['鲜椰乳与水果完成称量', '饮品现打，果肉和椰香慢慢融合', '冷杯封口完成，想象骑手正在取餐', '这一口小岛清甜马上抵达'] },
+    coverSubject: '准确三杯500毫升透明无品牌椰饮，分别为芒果椰乳、西瓜椰子水和咖啡椰乳，旁边一只小椰奶冻',
+    items: [
+      ['芒果椰乳冰沙', '500毫升鲜椰乳配120克芒果和碎冰', 26, 2200, 'mango-coconut-smoothie', '一杯500毫升金黄白色芒果椰乳冰沙，120克芒果丁与鲜椰乳自然分层，无奶油', bulk],
+      ['西瓜椰子水', '500毫升椰子水配150克西瓜块和少量冰', 22, 1800, 'watermelon-coconut-water', '一杯500毫升透明椰子水，150克去籽红西瓜方块与少量冰清楚，无奶无其他水果', bulk],
+      ['生椰桂花拿铁', '500毫升椰乳、双份浓缩咖啡与少量桂花', 25, 1500, 'osmanthus-coconut-latte', '一杯500毫升生椰拿铁，白色椰乳与深棕双份浓缩自然渐层，少量桂花点缀', bulk],
+      ['菠萝百香椰椰', '500毫升椰子水配100克菠萝与一颗百香果', 24, 1300, 'pineapple-passion-coconut', '一杯500毫升金黄椰子水饮，100克菠萝丁与准确一颗百香果果肉，碎冰清楚', bulk],
+      ['斑斓椰乳冻杯', '350克椰乳冻配斑斓冻、椰果和红豆各40克', 28, 1600, 'pandan-coconut-jelly-cup', '一只350克透明甜品杯，白色椰乳冻、绿色斑斓冻、透明椰果、红豆各40克分层', bulk],
+      ['紫米椰香西米露', '400毫升椰乳配60克紫米、40克西米和芒果丁', 27, 1200, 'purple-rice-coconut-sago', '一碗400毫升椰乳西米露，60克紫米、40克透明西米与少量芒果丁清楚', bulk],
+      ['双杯海岛午后', '芒果椰乳冰沙与菠萝百香椰椰各一杯', 47, 780, 'double-island-coconut-set', '准确两杯500毫升椰饮，一杯芒果椰乳、一杯菠萝百香椰子水，颜色与果肉清楚', bulk],
+      ['四杯椰影分享装', '芒果、西瓜、咖啡、菠萝四款椰饮各一杯', 92, 360, 'four-coconut-drink-set', '准确四杯500毫升椰饮，芒果、西瓜、咖啡、菠萝四款对应果肉与基底清楚', bulk],
+    ],
+  }),
+  makeRestaurant({
+    id: 'r32', slug: 'herbal-jelly-tea', name: '草木凉方', foodCategory: 'drink', archetype: 'neighborhood-kitchen',
+    description: '仙草、冬瓜、陈皮与甘蔗做成清润饮品，甜度克制、配料看得见。', slogan: '草木有方，清凉有度。', rating: 4.9, monthlySales: '7100+', distance: '0.6km', deliveryTime: 19, avgPrice: 18,
+    categories: ['仙草饮', '草本茶'], tags: ['每日现熬', '低甜清润'], businessHours: { open: '09:00', close: '22:30' }, promotionText: '满25减5', promotionRules: ['满25减5', '满45减10'],
+    listProfile: { identity: '现熬草本饮', imageBadge: '当日现熬', scoreBadge: '清润低甜', serviceTags: ['糖冰可选', '热饮可选'], benefitLabel: '清润券' },
+    operationCard: { eyebrow: '今日凉方', title: '四锅草本茶刚刚放凉', description: '食材为普通饮品原料，不宣称医疗功效', action: '选一杯清润' },
+    waitingProfile: { tone: 'quiet', stages: ['草本茶汤完成过滤，正在自然降温', '仙草与配料按克数加入杯中', '杯口封膜装袋，想象骑手准备出发', '清润茶饮马上到达'] },
+    coverSubject: '准确三杯500毫升透明无品牌草本饮，分别为黑色仙草奶、琥珀冬瓜茶和淡金甘蔗马蹄水，配料自然',
+    items: [
+      ['黑糖仙草鲜奶', '500毫升鲜奶配120克仙草冻与15克黑糖', 20, 2600, 'brown-sugar-grass-jelly-milk', '一杯500毫升鲜奶，杯底120克黑色仙草冻与15克薄黑糖浆，奶色洁白，无珍珠', bulk],
+      ['柠香冬瓜茶', '500毫升现熬冬瓜茶配两片黄柠檬', 16, 2100, 'lemon-winter-melon-tea', '一杯500毫升清透琥珀冬瓜茶，准确两片黄柠檬与少量冰，无奶无其他水果', bulk],
+      ['甘蔗马蹄水', '500毫升鲜榨甘蔗汁配六片马蹄', 18, 1700, 'sugarcane-water-chestnut', '一杯500毫升淡金甘蔗水，准确六片白色马蹄薄片与少量冰，清澈自然', bulk],
+      ['陈皮红豆沙饮', '450毫升红豆沙配50克红豆与2克陈皮丝', 19, 1300, 'tangerine-red-bean-drink', '一杯450毫升温热红豆沙饮，50克完整软糯红豆与少量约2克陈皮细丝清楚', bulk],
+      ['桂花酸梅汤', '500毫升乌梅、山楂、陈皮熬煮，点缀1克桂花', 17, 1800, 'osmanthus-sour-plum-drink', '一杯500毫升深红棕酸梅汤，少量约1克桂花与冰块，无果肉无奶', bulk],
+      ['椰乳烧仙草碗', '350克仙草冻配椰乳、芋圆六颗和红豆40克', 24, 1500, 'coconut-grass-jelly-bowl', '一碗350克黑色仙草冻与白色椰乳，准确六颗双色芋圆、40克红豆分区清楚', bulk],
+      ['冷热双杯清润组', '热陈皮红豆沙与冰柠香冬瓜茶各一杯', 32, 820, 'hot-cold-herbal-drink-duo', '准确两杯饮品，一杯450毫升热红豆沙有热气，一杯500毫升冰冬瓜茶有两片柠檬', bulk],
+      ['四杯草木分享装', '仙草鲜奶、冬瓜茶、甘蔗水、酸梅汤各一杯', 68, 410, 'four-herbal-drink-set', '准确四杯饮品，仙草鲜奶、冬瓜茶、甘蔗马蹄水、酸梅汤各一杯，颜色配料各异', bulk],
+    ],
+  }),
+]

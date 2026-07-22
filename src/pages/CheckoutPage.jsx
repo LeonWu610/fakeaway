@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import AppImage from '../components/common/AppImage'
+import { createEstimatedDelivery, writeActiveOrder } from '../utils/orderTime'
 
 export default function CheckoutPage() {
   const location = useLocation()
@@ -14,6 +15,7 @@ export default function CheckoutPage() {
 
   function handlePlaceOrder() {
     const now = Date.now()
+    const deliveryEstimate = createEstimatedDelivery(restaurant, now)
     const order = {
       id: `FA${String(now).slice(-8)}`,
       restaurant,
@@ -23,10 +25,11 @@ export default function CheckoutPage() {
       deliveryFee,
       total,
       createdAt: now,
-      estimatedMinutes: Math.max(8, Math.min(restaurant.deliveryTime || 18, 45)),
+      ...deliveryEstimate,
+      waitingTask: null,
     }
 
-    sessionStorage.setItem('fakeaway.activeOrder', JSON.stringify(order))
+    writeActiveOrder(order)
     navigate('/tracking', { state: { order } })
   }
 
