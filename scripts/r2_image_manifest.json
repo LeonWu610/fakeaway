@@ -108,10 +108,46 @@
     "sha256": "db0a1c25072f9399764b32252690d5c0622e5d150a01dfb11ae7ec398b161ca0"
   },
   {
+    "key": "images/merchants/r27-crispy-chicken-night.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r27-crispy-chicken-night.png",
+    "size": 6149072,
+    "sha256": "d03483971719ec75b010b84c733ffae8d3d7689ec93e429cdfff6fece2938fa9"
+  },
+  {
+    "key": "images/merchants/r28-citrus-sparkling-tea.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r28-citrus-sparkling-tea.png",
+    "size": 5549254,
+    "sha256": "1fc03c3c9698f02f1a6392460b244c03515d5b9964dec8483390bab70619ff0b"
+  },
+  {
+    "key": "images/merchants/r29-roasted-milk-tea.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r29-roasted-milk-tea.png",
+    "size": 4662163,
+    "sha256": "8a9e2aa8f5f90844538b1aa4b85982b9a35ecef9605515aaf3db5d9426ef20ee"
+  },
+  {
     "key": "images/merchants/r3-burger.png",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r3-burger.png",
     "size": 4287595,
     "sha256": "fdb66b5f824166a8c6ffb1334dc20655d184cece07dca81d26071a6bc993a3c4"
+  },
+  {
+    "key": "images/merchants/r30-yogurt-fruit-shake.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r30-yogurt-fruit-shake.png",
+    "size": 5550813,
+    "sha256": "14823040c9fa36702bf43c16b327cf4fe15df8a27b35441c5edd67fd5bb6c760"
+  },
+  {
+    "key": "images/merchants/r31-coconut-dessert-drinks.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r31-coconut-dessert-drinks.png",
+    "size": 4668606,
+    "sha256": "cc3f332fb1b7f9e1050a2d3437171e576b161a94351b734216431f3cd7a87b03"
+  },
+  {
+    "key": "images/merchants/r32-herbal-jelly-tea.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/r32-herbal-jelly-tea.png",
+    "size": 4347117,
+    "sha256": "e29f4e2f26d08f24e83eb546d93abb68299002965db45bc43bbec7242a3e5c29"
   },
   {
     "key": "images/merchants/r4-fried-chicken.png",
@@ -1038,10 +1074,40 @@
     "sha256": "f527e8173f9b29386d292027939e4b2f67693c1045b666ed501ce914c74ca004"
   },
   {
+    "key": "images/products/r26-item10-cured-meat-radish-stew.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r26-item10-cured-meat-radish-stew.png",
+    "size": 5845722,
+    "sha256": "b79ac5d210f05f8f520f4ef76bc38650ceec54bd9d1627c85a0741c5ccc22171"
+  },
+  {
     "key": "images/products/r26-item2-tomato-beef-tofu-stew.png",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r26-item2-tomato-beef-tofu-stew.png",
     "size": 4832468,
     "sha256": "d8419055c31cfbfaeae507be1878afe95f59317e317b84fb39678ff9e715b6e1"
+  },
+  {
+    "key": "images/products/r26-item3-mushroom-chicken-stew.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r26-item3-mushroom-chicken-stew.png",
+    "size": 5135131,
+    "sha256": "36d0dfd035fd89521e27f79060b7bb07345dc6576ef01223c287960799acf590"
+  },
+  {
+    "key": "images/products/r26-item4-spicy-intestine-stew.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r26-item4-spicy-intestine-stew.png",
+    "size": 6625376,
+    "sha256": "32c27e13bd854b453f007415efb4e3af4741f09dc5f2ec7e688a1c5cc27f7fc8"
+  },
+  {
+    "key": "images/products/r26-item5-six-pork-meatballs.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r26-item5-six-pork-meatballs.png",
+    "size": 5608488,
+    "sha256": "0b00bb0081651bff8386d264e3ea5baea748335c74aced5f42eeb71ded21a5aa"
+  },
+  {
+    "key": "images/products/r26-item6-eight-frozen-tofu.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r26-item6-eight-frozen-tofu.png",
+    "size": 5593598,
+    "sha256": "7a9fd883784ee9660d7dcfb54e1ef91aed0d12dfea0918476062bf463b91411c"
   },
   {
     "key": "images/products/r26-item7-solo-claypot-stew-set.jpg",
@@ -1056,6 +1122,54 @@
     "sha256": "5dee945bda86047c5b40b67c7be806a888c3b331ead1e42758c6de254b018ee8"
   },
   {
+    "key": "images/products/r26-item9-golden-sauerkraut-fish-stew.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r26-item9-golden-sauerkraut-fish-stew.png",
+    "size": 6375007,
+    "sha256": "f0464f87305b070f25b66221eae39428f6c354d872de6a9888081184b0d67e1b"
+  },
+  {
+    "key": "images/products/r27-item1-seaweed-crispy-chicken-cutlet.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item1-seaweed-crispy-chicken-cutlet.png",
+    "size": 7324904,
+    "sha256": "2bd2ba743452c4f13939c78d3df51ba499ef8d9896dcc1f62657f5e8d6236ba7"
+  },
+  {
+    "key": "images/products/r27-item10-garlic-crispy-king-oyster-mushroom.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item10-garlic-crispy-king-oyster-mushroom.png",
+    "size": 6043173,
+    "sha256": "b0fa62a2b72382a3cf1320eb080689f480f92bc1c778ae6b0f4e7d351fbab0bf"
+  },
+  {
+    "key": "images/products/r27-item2-basil-popcorn-chicken.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item2-basil-popcorn-chicken.png",
+    "size": 4336507,
+    "sha256": "3bc6aad8d94307f7abc1b2e7c960375d49114be2a451c41957e2a6324dd46d62"
+  },
+  {
+    "key": "images/products/r27-item3-plum-sweet-potato-fries.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item3-plum-sweet-potato-fries.png",
+    "size": 5317090,
+    "sha256": "9f672a686dae08fc055cb2c686dab4d80995bd2dadab005b681b9586234e4434"
+  },
+  {
+    "key": "images/products/r27-item4-four-cheese-chicken-rolls.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item4-four-cheese-chicken-rolls.png",
+    "size": 5447669,
+    "sha256": "c5f789b2918300eb3943aaef7a73d3f628ec2b7046811a78709342bf86cf9fc6"
+  },
+  {
+    "key": "images/products/r27-item5-twelve-sweet-potato-balls.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item5-twelve-sweet-potato-balls.png",
+    "size": 4998346,
+    "sha256": "69f99281b1b00ae4e015c880dbb5207c0a5944234767e943502806b5c98321c9"
+  },
+  {
+    "key": "images/products/r27-item6-salt-pepper-green-beans.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item6-salt-pepper-green-beans.png",
+    "size": 6152506,
+    "sha256": "bddbb53c8dbe96611a102e25d818de52effbe07f26b38a6e7c9598976cb57b30"
+  },
+  {
     "key": "images/products/r27-item7-solo-crispy-night-set.jpg",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item7-solo-crispy-night-set.jpg",
     "size": 1002470,
@@ -1066,6 +1180,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item8-double-night-market-fried-set.jpg",
     "size": 1143595,
     "sha256": "67cd64c7fb5b2fdd181131f2b646ced9122ae4d4c48cfe26d64b99ce40ea1571"
+  },
+  {
+    "key": "images/products/r27-item9-six-plum-crispy-wings.png",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r27-item9-six-plum-crispy-wings.png",
+    "size": 5588636,
+    "sha256": "2bb0ed2330ae87cb8c45e551510ef5da0e5d4ecf5de900ccb8883c6522010983"
   },
   {
     "key": "images/products/r28-item1-sea-salt-lime-sparkling-tea.jpg",
@@ -1116,10 +1236,22 @@
     "sha256": "fb60872184f86cada29f367d0caa5ed9a309eb12f6024bd7c3f157e07c2fa1b0"
   },
   {
+    "key": "images/products/r28-item9-bayberry-lychee-sparkling-tea.jpg",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r28-item9-bayberry-lychee-sparkling-tea.jpg",
+    "size": 1173269,
+    "sha256": "b7a4d74663fb276eb4ef6446da8fc1bd167f8dd2797eb0d0331531405ef9cb5b"
+  },
+  {
     "key": "images/products/r29-item1-charcoal-oolong-milk-tea.jpg",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r29-item1-charcoal-oolong-milk-tea.jpg",
     "size": 854538,
     "sha256": "79b77886793fe334bf71e7940fc6146d19a22a39bb5c49104dd9481e533df6c8"
+  },
+  {
+    "key": "images/products/r29-item10-rice-mochi-roasted-milk-tea.jpg",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r29-item10-rice-mochi-roasted-milk-tea.jpg",
+    "size": 926000,
+    "sha256": "db256f0a2fe4ae5e0c86061a1bfcd4bcc737eb47c9f8d66085e601aef807cf64"
   },
   {
     "key": "images/products/r29-item2-rock-tea-osmanthus-milk.jpg",
@@ -1162,6 +1294,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r29-item8-office-four-milk-tea-set.jpg",
     "size": 1106667,
     "sha256": "1d2446559d87a2636c42bc5f1b4e354859e897951e3631d0117534f85885050f"
+  },
+  {
+    "key": "images/products/r29-item9-cocoa-roasted-milk-tea.jpg",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r29-item9-cocoa-roasted-milk-tea.jpg",
+    "size": 993655,
+    "sha256": "e685fdda2b582aae4ebca7469272ccddfdb7fb496eda1e9e737969558e922013"
   },
   {
     "key": "images/products/r3-item1-double-beef-burger.png",
@@ -1284,6 +1422,12 @@
     "sha256": "9f5ca2f1c299fe74696a82468fc77c495592b67a7cdf9b315d3427ca54ef3b7a"
   },
   {
+    "key": "images/products/r30-item9-passion-fruit-greek-yogurt-cup.jpg",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r30-item9-passion-fruit-greek-yogurt-cup.jpg",
+    "size": 1049371,
+    "sha256": "4496dc92ed6443715133fa71108c4d89a392c0412a615128a8f7209c7ae69891"
+  },
+  {
     "key": "images/products/r31-item1-mango-coconut-smoothie.jpg",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r31-item1-mango-coconut-smoothie.jpg",
     "size": 1062981,
@@ -1332,6 +1476,12 @@
     "sha256": "4c8ba565984d44645e65d0829563a52138809864c3e5fef1e7cd50b794903a02"
   },
   {
+    "key": "images/products/r31-item9-sea-salt-young-coconut-cold-brew.jpg",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r31-item9-sea-salt-young-coconut-cold-brew.jpg",
+    "size": 907336,
+    "sha256": "fade19629dd5fb104d3d9e0b4cf65ace90d2c1e98727dfd8b97c6c31d6e80a6a"
+  },
+  {
     "key": "images/products/r32-item1-brown-sugar-grass-jelly-milk.jpg",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r32-item1-brown-sugar-grass-jelly-milk.jpg",
     "size": 866319,
@@ -1378,6 +1528,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r32-item8-four-herbal-drink-set.jpg",
     "size": 1071986,
     "sha256": "40c7e3c168db81437beb17d8d247f767cb90888b98065e19bc8bcb4a95800fa1"
+  },
+  {
+    "key": "images/products/r32-item9-jasmine-mung-bean-smoothie.jpg",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/r32-item9-jasmine-mung-bean-smoothie.jpg",
+    "size": 935825,
+    "sha256": "005ce2e6149e89b19f50b58f3a1a8558893c476744a12da2dec93fc08e1583c5"
   },
   {
     "key": "images/products/r4-item1-fried-chicken.png",
@@ -1794,10 +1950,46 @@
     "sha256": "db228b442166fb0cefcb5cf7fccf4f80136578e0a65248108d185e21e999a642"
   },
   {
+    "key": "images/variants-v1/320/merchants/r27-crispy-chicken-night.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r27-crispy-chicken-night.webp",
+    "size": 19278,
+    "sha256": "92d0abadab693297a05d7a4be4f7aa248dc676fb0f8ddcc7835b3b41f5f6bbde"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r28-citrus-sparkling-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r28-citrus-sparkling-tea.webp",
+    "size": 14742,
+    "sha256": "1b7c49326b15ed6587c70c699eb36fee15276be6d1485dc7b20e634dc042bd56"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r29-roasted-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r29-roasted-milk-tea.webp",
+    "size": 9440,
+    "sha256": "209fddce7efe6dd7df0beacf54f0c80c7486a1662d62f3c7bc0e853dbfe0f432"
+  },
+  {
     "key": "images/variants-v1/320/merchants/r3-burger.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r3-burger.webp",
     "size": 8642,
     "sha256": "c88ba7cb460308501121fae7545cc3a933e2bfc0105c8da5e51f817207791687"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r30-yogurt-fruit-shake.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r30-yogurt-fruit-shake.webp",
+    "size": 14502,
+    "sha256": "b542fd9a71c14a19017ed3bf96737768c7c089a290cbb79b8b19407762e78abf"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r31-coconut-dessert-drinks.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r31-coconut-dessert-drinks.webp",
+    "size": 10142,
+    "sha256": "323c88da7e9ec6a9942abf2ba83582043c1c9a07cf56ccb943fc77bd1dcb43a3"
+  },
+  {
+    "key": "images/variants-v1/320/merchants/r32-herbal-jelly-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/merchants/r32-herbal-jelly-tea.webp",
+    "size": 12458,
+    "sha256": "defa943f9243e4dcdfa95832f9957f6e97b14916d9a2401a3542b81472ee3488"
   },
   {
     "key": "images/variants-v1/320/merchants/r4-fried-chicken.webp",
@@ -2724,10 +2916,40 @@
     "sha256": "0967cd6fb4ace8b17ed26638c7924e7d84cc58cc842a31075f7f52904ab29981"
   },
   {
+    "key": "images/variants-v1/320/products/r26-item10-cured-meat-radish-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r26-item10-cured-meat-radish-stew.webp",
+    "size": 20040,
+    "sha256": "c12f5a610d6e4deaf9e3d4fd4c9c6f5b24929bd911f06a4347010193c1a2ec1c"
+  },
+  {
     "key": "images/variants-v1/320/products/r26-item2-tomato-beef-tofu-stew.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r26-item2-tomato-beef-tofu-stew.webp",
     "size": 14768,
     "sha256": "78e7bf0b103e9fe3bed1ac7698eda6da37e4a7be85b2be7de847a389fb41e430"
+  },
+  {
+    "key": "images/variants-v1/320/products/r26-item3-mushroom-chicken-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r26-item3-mushroom-chicken-stew.webp",
+    "size": 14416,
+    "sha256": "89e94635095a48ddfba1cb93abe9403b6d9da8948fbc3cb47b1160afba078cf3"
+  },
+  {
+    "key": "images/variants-v1/320/products/r26-item4-spicy-intestine-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r26-item4-spicy-intestine-stew.webp",
+    "size": 22630,
+    "sha256": "12bb4a001b933b6318a7153de6b62104d6a45f08ba71a0a818402e3c260308e2"
+  },
+  {
+    "key": "images/variants-v1/320/products/r26-item5-six-pork-meatballs.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r26-item5-six-pork-meatballs.webp",
+    "size": 14574,
+    "sha256": "e85d79c1fc51f835a6846762a3638b3bb10b0d6af52cc41e71bd3fac8281c1f1"
+  },
+  {
+    "key": "images/variants-v1/320/products/r26-item6-eight-frozen-tofu.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r26-item6-eight-frozen-tofu.webp",
+    "size": 17702,
+    "sha256": "45871eaee1a4789982e593b75283c6b5c088a57fbaa919e6bd48d1f9ef17e419"
   },
   {
     "key": "images/variants-v1/320/products/r26-item7-solo-claypot-stew-set.webp",
@@ -2742,6 +2964,54 @@
     "sha256": "bfae292171be5030f6f0787f59b8e03dabec8116a0554774e5a0b695c72eeeb2"
   },
   {
+    "key": "images/variants-v1/320/products/r26-item9-golden-sauerkraut-fish-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r26-item9-golden-sauerkraut-fish-stew.webp",
+    "size": 22076,
+    "sha256": "7911e721b19213d3424092be7a4c99ac941a70bf981f764b4556e23700113317"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item1-seaweed-crispy-chicken-cutlet.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item1-seaweed-crispy-chicken-cutlet.webp",
+    "size": 31726,
+    "sha256": "f3288caa3b9cedea0099c72f5ac62788f73d384009452d586c9ff8b4dbd849de"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item10-garlic-crispy-king-oyster-mushroom.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item10-garlic-crispy-king-oyster-mushroom.webp",
+    "size": 21858,
+    "sha256": "fedd24bdd53b15659927233a2a70b0d93f2630cab6f0100fc17d8d33e4964e5b"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item2-basil-popcorn-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item2-basil-popcorn-chicken.webp",
+    "size": 13060,
+    "sha256": "72547c9cfef104e2c70feaf9e7ccb4f151a3c4a1542b376d0c1c5f67708724f9"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item3-plum-sweet-potato-fries.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item3-plum-sweet-potato-fries.webp",
+    "size": 13918,
+    "sha256": "2c29ce53812a0ef7d63aba5930bc73ba51abf293b20d192fb68c7abf4caeb288"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item4-four-cheese-chicken-rolls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item4-four-cheese-chicken-rolls.webp",
+    "size": 12356,
+    "sha256": "abad290066d5e254ee7a6b66d561dc6aac72880ee3069869161431208e18d2ad"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item5-twelve-sweet-potato-balls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item5-twelve-sweet-potato-balls.webp",
+    "size": 11582,
+    "sha256": "0563d0988d263e40470b1e0b4ec946d7ccf33b7b2f39c3b0d58c2fc93047ad9e"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item6-salt-pepper-green-beans.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item6-salt-pepper-green-beans.webp",
+    "size": 20452,
+    "sha256": "1aa4826154dadd06432fd6095722b7526dfa142f031a3fa23b176818d58fe4a2"
+  },
+  {
     "key": "images/variants-v1/320/products/r27-item7-solo-crispy-night-set.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item7-solo-crispy-night-set.webp",
     "size": 16868,
@@ -2752,6 +3022,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item8-double-night-market-fried-set.webp",
     "size": 24120,
     "sha256": "295031a743a939ad990b6b3aec2ea987021c7cb5fce103c5ddacf69492af7e32"
+  },
+  {
+    "key": "images/variants-v1/320/products/r27-item9-six-plum-crispy-wings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r27-item9-six-plum-crispy-wings.webp",
+    "size": 16070,
+    "sha256": "27e7f4229d9ab44fcc5137c906ea7463c4fd169757b5e0678d2db830e6f8e05e"
   },
   {
     "key": "images/variants-v1/320/products/r28-item1-sea-salt-lime-sparkling-tea.webp",
@@ -2802,10 +3078,22 @@
     "sha256": "34f1e3c55aaf916f47f054ba8808885f47ed96bd6204a09f41c2b164ffd8b93a"
   },
   {
+    "key": "images/variants-v1/320/products/r28-item9-bayberry-lychee-sparkling-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r28-item9-bayberry-lychee-sparkling-tea.webp",
+    "size": 20586,
+    "sha256": "3cf5b9a515321135f780e5e7093572e0958d6c8db23be831428c8a53bc2df7bf"
+  },
+  {
     "key": "images/variants-v1/320/products/r29-item1-charcoal-oolong-milk-tea.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r29-item1-charcoal-oolong-milk-tea.webp",
     "size": 13098,
     "sha256": "09736540505a74f71432c1d4cdefb1132521cd0fed8ab92c447e8d65bdad9469"
+  },
+  {
+    "key": "images/variants-v1/320/products/r29-item10-rice-mochi-roasted-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r29-item10-rice-mochi-roasted-milk-tea.webp",
+    "size": 17760,
+    "sha256": "b9f97758cc84bc02a00cfe1823608b254695e277544e7d1586eefe5f9a873f13"
   },
   {
     "key": "images/variants-v1/320/products/r29-item2-rock-tea-osmanthus-milk.webp",
@@ -2848,6 +3136,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r29-item8-office-four-milk-tea-set.webp",
     "size": 21070,
     "sha256": "7f8055a60a18ccb656e4826a861ff71773b61108f49576d1fd9659a450e806a2"
+  },
+  {
+    "key": "images/variants-v1/320/products/r29-item9-cocoa-roasted-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r29-item9-cocoa-roasted-milk-tea.webp",
+    "size": 19702,
+    "sha256": "07c486d51ad6fd3991b922aa8a3aeabdf23cd29d7cdde260d6e53e2e7c318783"
   },
   {
     "key": "images/variants-v1/320/products/r3-item1-double-beef-burger.webp",
@@ -2970,6 +3264,12 @@
     "sha256": "e42f4769110887af7ec06ae9a3558523fe482a4b435e1f06e036278c96d1bc50"
   },
   {
+    "key": "images/variants-v1/320/products/r30-item9-passion-fruit-greek-yogurt-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r30-item9-passion-fruit-greek-yogurt-cup.webp",
+    "size": 18982,
+    "sha256": "5fa1c97dedd525bcfdecf78f493733b54d7dee1ceb26e272683ab5d0a5e0b505"
+  },
+  {
     "key": "images/variants-v1/320/products/r31-item1-mango-coconut-smoothie.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r31-item1-mango-coconut-smoothie.webp",
     "size": 17852,
@@ -3018,6 +3318,12 @@
     "sha256": "6712bf9a57784b327a7a8f6005c84a352479cea946e42fb14e6b1494bd24f0c5"
   },
   {
+    "key": "images/variants-v1/320/products/r31-item9-sea-salt-young-coconut-cold-brew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r31-item9-sea-salt-young-coconut-cold-brew.webp",
+    "size": 16154,
+    "sha256": "800b7ef11642836d88e7a3318800cf0a32a1bb69d6a1ca92a05cfdbf0627062e"
+  },
+  {
     "key": "images/variants-v1/320/products/r32-item1-brown-sugar-grass-jelly-milk.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r32-item1-brown-sugar-grass-jelly-milk.webp",
     "size": 14012,
@@ -3064,6 +3370,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r32-item8-four-herbal-drink-set.webp",
     "size": 21140,
     "sha256": "0406b0d0c6c5225b85a225a2e65e8885134ddfcf88865de05d6a79946e4f6955"
+  },
+  {
+    "key": "images/variants-v1/320/products/r32-item9-jasmine-mung-bean-smoothie.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/320/products/r32-item9-jasmine-mung-bean-smoothie.webp",
+    "size": 14930,
+    "sha256": "a1c0950d839bc03e2f2092fe656a5fa7f820307657ba361f9bf4636dcc17de6d"
   },
   {
     "key": "images/variants-v1/320/products/r4-item1-fried-chicken.webp",
@@ -3480,10 +3792,46 @@
     "sha256": "5ae5fdad06e2766c9fc75a7dd0ea2e12b95c8dd50339dcf139d8f555dcef907f"
   },
   {
+    "key": "images/variants-v1/640/merchants/r27-crispy-chicken-night.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r27-crispy-chicken-night.webp",
+    "size": 61842,
+    "sha256": "b7e8c9180d4f9f059e0d21ffecc6081891da38af42c66a0713fed6af14dfb944"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r28-citrus-sparkling-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r28-citrus-sparkling-tea.webp",
+    "size": 48704,
+    "sha256": "2743a7b512f80fdcb9503fb0aeb2945b171897fcd7154a036132fa29bfe804e3"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r29-roasted-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r29-roasted-milk-tea.webp",
+    "size": 25532,
+    "sha256": "030ffb45aca9206dd42c681b976ea84e859dc4e432cecbd0509a3390d4a69a72"
+  },
+  {
     "key": "images/variants-v1/640/merchants/r3-burger.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r3-burger.webp",
     "size": 24606,
     "sha256": "9e6f7b1bcb49aa4d368e3761d26a5152a12c7e2c0c98da3c21bdf57c37d5f46c"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r30-yogurt-fruit-shake.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r30-yogurt-fruit-shake.webp",
+    "size": 45664,
+    "sha256": "6662d511d04fcabce32af1b157bb236a47298a4f7a539a75c0a9d23bee81b598"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r31-coconut-dessert-drinks.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r31-coconut-dessert-drinks.webp",
+    "size": 28254,
+    "sha256": "1a7bbb9ff23e7d5db689f09f79d47915244fa4afd706cf147c8a4f227e539da1"
+  },
+  {
+    "key": "images/variants-v1/640/merchants/r32-herbal-jelly-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/merchants/r32-herbal-jelly-tea.webp",
+    "size": 31628,
+    "sha256": "f43b8660752a2ded5ace2bde2bd44b04e33ed08e9978023cb43a8f03c7de5c62"
   },
   {
     "key": "images/variants-v1/640/merchants/r4-fried-chicken.webp",
@@ -4410,10 +4758,40 @@
     "sha256": "107acb714120925101fb83c991389b8dd2628225bff719924b2469133ce9de02"
   },
   {
+    "key": "images/variants-v1/640/products/r26-item10-cured-meat-radish-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r26-item10-cured-meat-radish-stew.webp",
+    "size": 61108,
+    "sha256": "0e45ca1dc0d9f137706509c0807f1e5681214c042ea81c02e05ba382bb6eae10"
+  },
+  {
     "key": "images/variants-v1/640/products/r26-item2-tomato-beef-tofu-stew.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r26-item2-tomato-beef-tofu-stew.webp",
     "size": 43632,
     "sha256": "d1097a55768a808a028c6d7228aca75bb41ee0fc1f7e0add568ebea8aa95b022"
+  },
+  {
+    "key": "images/variants-v1/640/products/r26-item3-mushroom-chicken-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r26-item3-mushroom-chicken-stew.webp",
+    "size": 39866,
+    "sha256": "c4d19d24437df087bcda910e93a7a38258c2846f1fca2bb4d8907b471fb16b43"
+  },
+  {
+    "key": "images/variants-v1/640/products/r26-item4-spicy-intestine-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r26-item4-spicy-intestine-stew.webp",
+    "size": 70502,
+    "sha256": "b81fdd94c782d36506b6dc9fac00ce32042a2bd4f6f9515b7ffb58eb793187c0"
+  },
+  {
+    "key": "images/variants-v1/640/products/r26-item5-six-pork-meatballs.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r26-item5-six-pork-meatballs.webp",
+    "size": 45500,
+    "sha256": "74a3540dcfeb5072adde79889ab9ef6f61e291b8762a8f60edea9240213c9407"
+  },
+  {
+    "key": "images/variants-v1/640/products/r26-item6-eight-frozen-tofu.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r26-item6-eight-frozen-tofu.webp",
+    "size": 51432,
+    "sha256": "35e781bc81addb746aa6093feac45f1eebc14bc18e47bb3bd79ee7fd21df731e"
   },
   {
     "key": "images/variants-v1/640/products/r26-item7-solo-claypot-stew-set.webp",
@@ -4428,6 +4806,54 @@
     "sha256": "f23a6fe0e3f958550363b5fd20a4fef8bb71ceba1285fb207facaf586630d15c"
   },
   {
+    "key": "images/variants-v1/640/products/r26-item9-golden-sauerkraut-fish-stew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r26-item9-golden-sauerkraut-fish-stew.webp",
+    "size": 67460,
+    "sha256": "fd3972ab76ad52c809e60d162091e13cbc12d5a6bb680454aded335e61b7a558"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item1-seaweed-crispy-chicken-cutlet.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item1-seaweed-crispy-chicken-cutlet.webp",
+    "size": 111406,
+    "sha256": "43b0e1f3bacce58b6ca4364ce35bd3884c1aca21da4bdad3bb2771601df7b5aa"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item10-garlic-crispy-king-oyster-mushroom.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item10-garlic-crispy-king-oyster-mushroom.webp",
+    "size": 69682,
+    "sha256": "7546ad7ae965c6c98d54ae4cdccf388ee1f58a88103b9feac39d3d2e7d096570"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item2-basil-popcorn-chicken.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item2-basil-popcorn-chicken.webp",
+    "size": 40002,
+    "sha256": "6d1947239c842324c246d916b2f1e3b14b06e2ad406213a0aaa7953fb6f5b838"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item3-plum-sweet-potato-fries.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item3-plum-sweet-potato-fries.webp",
+    "size": 45554,
+    "sha256": "3670a62b96ec87f315462e30a6fcb992de15c142b378b01b4337b5699abf8364"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item4-four-cheese-chicken-rolls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item4-four-cheese-chicken-rolls.webp",
+    "size": 37828,
+    "sha256": "39ab240a9992690b22df8a4b6ed6d57c6abd818879a2e98d7fd3b306b6607b1b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item5-twelve-sweet-potato-balls.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item5-twelve-sweet-potato-balls.webp",
+    "size": 32842,
+    "sha256": "25b0023db49b0154876c17a50956a109d8e968ef6568e68c6845b42036d70026"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item6-salt-pepper-green-beans.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item6-salt-pepper-green-beans.webp",
+    "size": 66208,
+    "sha256": "43fced709a110491d4005ab8efe77df75543d412f71d374a08c59d1fafff99d2"
+  },
+  {
     "key": "images/variants-v1/640/products/r27-item7-solo-crispy-night-set.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item7-solo-crispy-night-set.webp",
     "size": 42566,
@@ -4438,6 +4864,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item8-double-night-market-fried-set.webp",
     "size": 62120,
     "sha256": "c4cf0d0b57a9f0290d2e424dbad26472c057efb054f2e057be3336ee8703dcde"
+  },
+  {
+    "key": "images/variants-v1/640/products/r27-item9-six-plum-crispy-wings.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r27-item9-six-plum-crispy-wings.webp",
+    "size": 55162,
+    "sha256": "ddb666f7cf54dceb67150eb16bb2a9230501359cffbd7d4eece673bb178955be"
   },
   {
     "key": "images/variants-v1/640/products/r28-item1-sea-salt-lime-sparkling-tea.webp",
@@ -4488,10 +4920,22 @@
     "sha256": "90fe9690e2c33cf9e8373c117035bc66fe63e35f7f8b8c4cad3570ea511101b8"
   },
   {
+    "key": "images/variants-v1/640/products/r28-item9-bayberry-lychee-sparkling-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r28-item9-bayberry-lychee-sparkling-tea.webp",
+    "size": 56690,
+    "sha256": "087037cdea078c45ec04884cfeee9c7f02e2c12072e98ba6f57a57518ac38ddc"
+  },
+  {
     "key": "images/variants-v1/640/products/r29-item1-charcoal-oolong-milk-tea.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r29-item1-charcoal-oolong-milk-tea.webp",
     "size": 32424,
     "sha256": "d32f5fc3d4020543ea376e1b34cf6b5a9670f2d8dfde40bb20bbc9991495e19b"
+  },
+  {
+    "key": "images/variants-v1/640/products/r29-item10-rice-mochi-roasted-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r29-item10-rice-mochi-roasted-milk-tea.webp",
+    "size": 41766,
+    "sha256": "9b9141d6720b39ea44dfc09f7fc3ac3a9f47c6791aba7c44b121a2471f512ecc"
   },
   {
     "key": "images/variants-v1/640/products/r29-item2-rock-tea-osmanthus-milk.webp",
@@ -4534,6 +4978,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r29-item8-office-four-milk-tea-set.webp",
     "size": 55118,
     "sha256": "e2c540d701578f53dc0d786efaf3d3a65828a92985b5c9ae517489f64300ce77"
+  },
+  {
+    "key": "images/variants-v1/640/products/r29-item9-cocoa-roasted-milk-tea.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r29-item9-cocoa-roasted-milk-tea.webp",
+    "size": 50138,
+    "sha256": "29dd6604bcb2e9edbdfb5c04c0db25b98662f590cd37321b09b7de28b97529d8"
   },
   {
     "key": "images/variants-v1/640/products/r3-item1-double-beef-burger.webp",
@@ -4656,6 +5106,12 @@
     "sha256": "b0a6eb15daecd5e604a26bdba538a5bbe36706983ab4220757d5f1bfa135ad76"
   },
   {
+    "key": "images/variants-v1/640/products/r30-item9-passion-fruit-greek-yogurt-cup.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r30-item9-passion-fruit-greek-yogurt-cup.webp",
+    "size": 48894,
+    "sha256": "85fa970d82e7e3f7627e3c49e3ac9119d74c9abdef3b1c214c69889ada765021"
+  },
+  {
     "key": "images/variants-v1/640/products/r31-item1-mango-coconut-smoothie.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r31-item1-mango-coconut-smoothie.webp",
     "size": 45034,
@@ -4704,6 +5160,12 @@
     "sha256": "e4ad628fbe9072abd6247a60983644b824cdef000c6ec4af492d5bf9300ae667"
   },
   {
+    "key": "images/variants-v1/640/products/r31-item9-sea-salt-young-coconut-cold-brew.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r31-item9-sea-salt-young-coconut-cold-brew.webp",
+    "size": 37916,
+    "sha256": "66f01f54742f135673028ad5a32dcf7b68c367d26029b9fa14ab3ca8175bb694"
+  },
+  {
     "key": "images/variants-v1/640/products/r32-item1-brown-sugar-grass-jelly-milk.webp",
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r32-item1-brown-sugar-grass-jelly-milk.webp",
     "size": 33568,
@@ -4750,6 +5212,12 @@
     "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r32-item8-four-herbal-drink-set.webp",
     "size": 56078,
     "sha256": "33cbb1f691bf94d218d8d2dd28b5df43d8050284dcdf82db60518425c179a54d"
+  },
+  {
+    "key": "images/variants-v1/640/products/r32-item9-jasmine-mung-bean-smoothie.webp",
+    "url": "https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/variants-v1/640/products/r32-item9-jasmine-mung-bean-smoothie.webp",
+    "size": 37300,
+    "sha256": "1b20c4d6c66785d66b3974a7cef0e6bc37bdf584d67fe37dab605daab3cb4730"
   },
   {
     "key": "images/variants-v1/640/products/r4-item1-fried-chicken.webp",

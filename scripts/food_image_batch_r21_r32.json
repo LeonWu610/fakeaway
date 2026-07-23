@@ -646,5 +646,65 @@
     "output": "public/images/products/r32-item8-four-herbal-drink-set.png",
     "remoteKey": "public/images/products/r32-item8-four-herbal-drink-set.png",
     "prompt": "原创外卖商品「四杯草木分享装」，准确四杯饮品，仙草鲜奶、冬瓜茶、甘蔗马蹄水、酸梅汤各一杯，颜色配料各异，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item9-golden-sauerkraut-fish-stew.png",
+    "remoteKey": "public/images/products/r26-item9-golden-sauerkraut-fish-stew.png",
+    "prompt": "原创外卖商品「金汤酸菜鱼片砂锅」，黑色砂锅内180克熟白色无刺鱼片约十二片，酸菜、金针菇和透明粉丝浸在自然金黄酸汤中，无整鱼无鱼头，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r26-item10-cured-meat-radish-stew.png",
+    "remoteKey": "public/images/products/r26-item10-cured-meat-radish-stew.png",
+    "prompt": "原创外卖商品「腊味萝卜煲」，黑色砂锅内八片广式腊肠、六片熟腊肉、白萝卜块与腐竹段，浅褐汤汁适量，食材数量清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item9-six-plum-crispy-wings.png",
+    "remoteKey": "public/images/products/r27-item9-six-plum-crispy-wings.png",
+    "prompt": "原创外卖商品「甘梅脆鸡翅六只」，牛皮纸托盘准确摆放六只完整金黄二节炸鸡翅，表皮酥脆，均匀薄撒淡粉甘梅粉，鸡肉熟透无血色，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "premium",
+    "output": "public/images/products/r27-item10-garlic-crispy-king-oyster-mushroom.png",
+    "remoteKey": "public/images/products/r27-item10-garlic-crispy-king-oyster-mushroom.png",
+    "prompt": "原创外卖商品「蒜酥炸杏鲍菇」，纸盒装220克粗切金黄杏鲍菇条约十八条，撒蒜酥与椒盐，菌菇纤维切面自然，无肉类，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r28-item9-bayberry-lychee-sparkling-tea.jpg",
+    "remoteKey": "public/images/products/r28-item9-bayberry-lychee-sparkling-tea.jpg",
+    "prompt": "原创外卖商品「杨梅荔枝气泡茶」，一杯500毫升玫红茉莉气泡茶，准确六颗完整杨梅与四颗去壳白色荔枝果肉，碎冰和细密气泡清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item9-cocoa-roasted-milk-tea.jpg",
+    "remoteKey": "public/images/products/r29-item9-cocoa-roasted-milk-tea.jpg",
+    "prompt": "原创外卖商品「可可焙茶轻乳」，一杯500毫升深褐可可焙茶轻乳，茶乳均匀，顶部薄撒准确少量无糖可可粉，无奶油无珍珠，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r29-item10-rice-mochi-roasted-milk-tea.jpg",
+    "remoteKey": "public/images/products/r29-item10-rice-mochi-roasted-milk-tea.jpg",
+    "prompt": "原创外卖商品「冰米麻薯焙茶」，一杯500毫升浅褐冰焙茶鲜乳，杯底80克乳白流心米麻薯，碎冰清楚，无珍珠无奶盖，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r30-item9-passion-fruit-greek-yogurt-cup.jpg",
+    "remoteKey": "public/images/products/r30-item9-passion-fruit-greek-yogurt-cup.jpg",
+    "prompt": "原创外卖商品「百香果希腊酸奶杯」，一只320克透明酸奶杯，浓稠白色希腊酸奶、准确一颗百香果果肉、六片香蕉和20克谷物脆分区清楚，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r31-item9-sea-salt-young-coconut-cold-brew.jpg",
+    "remoteKey": "public/images/products/r31-item9-sea-salt-young-coconut-cold-brew.jpg",
+    "prompt": "原创外卖商品「海盐椰青冰萃」，一杯500毫升清透鲜椰子水，杯中80克白色嫩椰肉条、碎冰，顶部一厘米薄海盐奶沫，无咖啡无水果，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
+  },
+  {
+    "tier": "bulk",
+    "output": "public/images/products/r32-item9-jasmine-mung-bean-smoothie.jpg",
+    "remoteKey": "public/images/products/r32-item9-jasmine-mung-bean-smoothie.jpg",
+    "prompt": "原创外卖商品「茉莉绿豆沙饮」，一杯450毫升淡绿色细腻绿豆沙饮，顶部少量清透茉莉茶渐层与三朵食用茉莉花，无奶油无其他豆类，45度近景，主体居中且完整，视觉鲜艳高饱和、高对比商业灯光，食材颜色和熟度真实，正方形构图；不要文字、商标、水印、人物、手、品牌包装，不要数量错误、规格错误、额外食物、遗漏食材、重复物体、畸形食材、畸形餐具、塑料质感"
   }
 ]
