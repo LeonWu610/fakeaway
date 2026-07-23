@@ -12,6 +12,7 @@ export default function AppImage({
 }) {
   const [useOriginal, setUseOriginal] = useState(false)
   const variants = useOriginal ? null : getImageVariants(src)
+  const priorityAttributes = priority ? { fetchpriority: 'high' } : {}
 
   useEffect(() => {
     setUseOriginal(false)
@@ -28,7 +29,7 @@ export default function AppImage({
       height={height}
       loading={priority ? 'eager' : 'lazy'}
       decoding="async"
-      fetchPriority={priority ? 'high' : undefined}
+      {...priorityAttributes}
       onError={variants ? () => setUseOriginal(true) : undefined}
     />
   )

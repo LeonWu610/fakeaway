@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useLocation, useParams, useNavigate } from 'react-router-dom';
 
 import RestaurantHeader from '../components/restaurant/RestaurantHeader';
 import RestaurantInfo from '../components/restaurant/RestaurantInfo';
@@ -13,6 +13,7 @@ import RelationshipCard from '../components/restaurant/RelationshipCard';
 import restaurantsData from '../data/allRestaurants';
 import { enrichProduct } from '../data/productProfiles';
 import { getFavoriteItem, getRelationship } from '../utils/relationship';
+import { useCart } from '../contexts/CartContext';
 
 // Normalize a restaurant's menus so that:
 //   - each category has `name` (CategorySidebar reads cat.name)
@@ -59,12 +60,19 @@ function cartEntryKey(entry) {
 export default function RestaurantPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const rawRestaurant = restaurantsData.find((r) => r.id === id);
   const restaurant = rawRestaurant ? normalizeRestaurant(rawRestaurant) : null;
 
   // --- State ---
-  const [cartItems, setCartItems] = useState({});
+  const {
+    carts,
+    totalCount: globalCartCount,
+    updateRestaurantCart,
+    clearRestaurantCart,
+  } = useCart();
+  const cartItems = carts[id]?.items || {};
   const [activeCategory, setActiveCategory] = useState(
     restaurant ? restaurant.menus[0]?.categoryId : ''
   );
@@ -147,7 +155,7 @@ export default function RestaurantPage() {
 
   function addCartEntry(entry) {
     const key = cartEntryKey(entry);
-    setCartItems((prev) => ({
+    updateRestaurantCart(restaurant, (prev) => ({
       ...prev,
       [key]: {
         ...entry,
@@ -165,7 +173,7 @@ export default function RestaurantPage() {
 
   function handleAddCombo(items) {
     const entries = items.map(defaultCartEntry)
-    setCartItems((current) => {
+    updateRestaurantCart(restaurant, (current) => {
       const next = { ...current }
       entries.forEach((entry) => {
         const key = cartEntryKey(entry)
@@ -176,7 +184,7 @@ export default function RestaurantPage() {
   }
 
   function handleRemove(key) {
-    setCartItems((prev) => {
+    updateRestaurantCart(restaurant, (prev) => {
       const current = prev[key];
       if (!current) return prev;
       if (current.quantity <= 1) {
@@ -189,7 +197,7 @@ export default function RestaurantPage() {
   }
 
   function handleIncrement(key) {
-    setCartItems((prev) => ({
+    updateRestaurantCart(restaurant, (prev) => ({
       ...prev,
       [key]: { ...prev[key], quantity: prev[key].quantity + 1 },
     }));
@@ -200,7 +208,7 @@ export default function RestaurantPage() {
   }
 
   function handleClearCart() {
-    setCartItems({});
+    clearRestaurantCart(id);
     setShowCartPanel(false);
   }
 
@@ -216,6 +224,14 @@ export default function RestaurantPage() {
     navigate('/checkout', {
       state: { cartItems, restaurant, couponAmount },
     });
+  }
+
+  function handleBack() {
+    if (location.state?.fromDelivered) {
+      navigate('/', { replace: true });
+      return;
+    }
+    navigate(-1);
   }
 
   // --- Not found ---
@@ -239,8 +255,10 @@ export default function RestaurantPage() {
       {/* Fixed top header */}
       <RestaurantHeader
         restaurantName={restaurant.name}
-        onBack={() => navigate(-1)}
+        onBack={handleBack}
         showName={showHeaderName}
+        onCart={() => navigate('/cart')}
+        cartCount={globalCartCount}
       />
 
       {/* Main content: padded for fixed header (44px) and cart bar (60px) */}
@@ -299,7 +317,7 @@ export default function RestaurantPage() {
         totalCount={totalCount}
         totalPrice={totalPrice}
         couponAmount={couponAmount}
-        onToggleCart={() => setShowCartPanel((v) => !v)}
+        onToggleCart={() => totalCount > 0 ? setShowCartPanel((value) => !value) : navigate('/cart')}
         onCheckout={handleCheckout}
       />
 
@@ -315,7 +333,7 @@ export default function RestaurantPage() {
           />
 
           {/* Panel */}
-          <div className="fixed bottom-[60px] left-0 right-0 z-50 bg-white rounded-t-xl max-h-[60vh] flex flex-col overflow-hidden">
+          <div className="fixed bottom-[60px] left-1/2 z-50 flex max-h-[60vh] w-full max-w-[480px] -translate-x-1/2 flex-col overflow-hidden rounded-t-xl bg-white">
             {/* Panel header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100 flex-shrink-0">
               <span className="text-sm font-semibold text-gray-900">已选菜品</span>

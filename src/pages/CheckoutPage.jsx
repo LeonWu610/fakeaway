@@ -1,11 +1,17 @@
+import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
 import AppImage from '../components/common/AppImage'
+import { OrderLaunchOverlay } from '../components/experience/ExperienceOverlays'
 import { createEstimatedDelivery, writeActiveOrder } from '../utils/orderTime'
+import { useCart } from '../contexts/CartContext'
 
 export default function CheckoutPage() {
   const location = useLocation()
   const navigate = useNavigate()
   const { cartItems = {}, restaurant = {}, couponAmount = 0 } = location.state || {}
+  const [pendingOrder, setPendingOrder] = useState(null)
+  const { clearRestaurantCart } = useCart()
 
   const items = Object.values(cartItems)
   const subtotal = items.reduce((sum, { item, unitPrice, quantity }) => sum + (unitPrice ?? item.price) * quantity, 0)
@@ -13,7 +19,16 @@ export default function CheckoutPage() {
   const deliveryFee = restaurant.deliveryFee ?? 0
   const total = Math.max(0, subtotal - discount + deliveryFee)
 
+  useEffect(() => {
+    if (!pendingOrder) return undefined
+    const timer = window.setTimeout(() => {
+      navigate('/tracking', { replace: true, state: { order: pendingOrder } })
+    }, 1900)
+    return () => window.clearTimeout(timer)
+  }, [navigate, pendingOrder])
+
   function handlePlaceOrder() {
+    if (pendingOrder) return
     const now = Date.now()
     const deliveryEstimate = createEstimatedDelivery(restaurant, now)
     const order = {
@@ -30,7 +45,8 @@ export default function CheckoutPage() {
     }
 
     writeActiveOrder(order)
-    navigate('/tracking', { state: { order } })
+    clearRestaurantCart(restaurant.id)
+    setPendingOrder(order)
   }
 
   if (items.length === 0) {
@@ -57,6 +73,9 @@ export default function CheckoutPage() {
 
   return (
     <div style={{ fontFamily: 'sans-serif', maxWidth: 480, margin: '0 auto', background: 'var(--background)', minHeight: '100vh' }}>
+      <AnimatePresence>
+        {pendingOrder && <OrderLaunchOverlay restaurantName={restaurant.name || '今晚的小店'} />}
+      </AnimatePresence>
       {/* Header */}
       <div style={{ background: '#fff', padding: '14px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid #eee' }}>
         <button
@@ -70,7 +89,7 @@ export default function CheckoutPage() {
 
       {/* Simulation notice */}
       <div style={{ background: 'var(--brand-primary-soft)', color: 'var(--brand-primary-deep)', padding: '10px 16px', fontSize: 12, lineHeight: 1.55 }}>
-        这是一次模拟下单体验，不会产生真实支付、餐食或配送。
+        今晚只收期待，不收付款。这里不会产生真实餐食、扣款或配送。
       </div>
 
       {/* Restaurant */}
@@ -146,6 +165,7 @@ export default function CheckoutPage() {
       <div style={{ padding: '20px 16px' }}>
         <button
           onClick={handlePlaceOrder}
+          disabled={Boolean(pendingOrder)}
           style={{
             width: '100%',
             padding: '14px 0',
@@ -155,10 +175,11 @@ export default function CheckoutPage() {
             borderRadius: 10,
             fontSize: 16,
             fontWeight: 600,
-            cursor: 'pointer',
+            cursor: pendingOrder ? 'wait' : 'pointer',
+            opacity: pendingOrder ? 0.75 : 1,
           }}
         >
-          确认模拟下单 · ¥{total.toFixed(2)}
+          {pendingOrder ? '正在把期待送出…' : `让这一单出发 · ¥${total.toFixed(2)}`}
         </button>
       </div>
     </div>

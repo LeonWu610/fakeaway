@@ -1,4 +1,7 @@
+import { useFeatureNotice } from '../../contexts/FeatureNoticeContext'
+
 export default function CouponBanner({ coupons = [] }) {
+  const { showFeatureNotice } = useFeatureNotice()
   if (!coupons.length) return null
 
   return (
@@ -8,7 +11,14 @@ export default function CouponBanner({ coupons = [] }) {
         <TicketSparkIcon />
       </div>
       <div className="scrollbar-hide flex gap-2 overflow-x-auto pb-0.5">
-        {coupons.map((coupon, index) => <CouponCard key={coupon.id} coupon={coupon} index={index} />)}
+        {coupons.map((coupon, index) => (
+          <CouponCard
+            key={coupon.id}
+            coupon={coupon}
+            index={index}
+            onClick={() => showFeatureNotice({ title: '今晚好券还在折角', message: `¥${coupon.amount} 的偏爱已经记下了，等券包开放后再正式收好。` })}
+          />
+        ))}
       </div>
     </section>
   )
@@ -25,12 +35,12 @@ function TicketSparkIcon() {
   )
 }
 
-function CouponCard({ coupon, index }) {
+function CouponCard({ coupon, index, onClick }) {
   const gradient = index % 2 === 0
     ? 'linear-gradient(115deg, #6845FF 0%, #956BFF 43%, #FF4F87 100%)'
     : 'linear-gradient(115deg, #24213D 0%, #5945A7 48%, #FF6957 112%)'
   return (
-    <article className="coupon-ticket relative flex h-[58px] w-[210px] flex-none overflow-hidden rounded-[13px] text-white" style={{ background: gradient }}>
+    <button onClick={onClick} className="coupon-ticket relative flex h-[58px] w-[210px] flex-none overflow-hidden rounded-[13px] text-left text-white active:scale-[0.98]" style={{ background: gradient }}>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,255,255,.32),transparent_38%)]" />
       <div className="pointer-events-none absolute -right-2 -top-4 h-12 w-12 rounded-full border-[10px] border-white/10" />
       <div className="relative flex w-[66px] flex-none items-center justify-center">
@@ -42,7 +52,7 @@ function CouponCard({ coupon, index }) {
         <p className="truncate text-[10px] font-semibold leading-tight text-white">{coupon.desc}</p>
         <span className="mt-1 w-fit rounded-full bg-white/18 px-1.5 py-px text-[7px] text-white/90 ring-1 ring-white/20">领取即用</span>
       </div>
-    </article>
+    </button>
   )
 }
 

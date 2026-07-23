@@ -1,9 +1,30 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
 import config from '../data/config.json'
 import AppImage from '../components/common/AppImage'
+import { DeliveryArrivalOverlay } from '../components/experience/ExperienceOverlays'
 import { ACTIVE_ORDER_KEY, getFocusedSeconds, readActiveOrder } from '../utils/orderTime'
 import { describeRelationshipOutcome, getFavoriteItem, saveMemory, settleRelationship } from '../utils/relationship'
+
+const DELIVERY_ARRIVAL_SEEN_KEY = 'fakeaway.deliveryArrivalSeen'
+const MEMORY_SPARKS = [
+  { x: -54, y: -50, symbol: '♥', color: '#ff806f', delay: 0 },
+  { x: -28, y: -68, symbol: '✦', color: '#ffd064', delay: 0.05 },
+  { x: 0, y: -76, symbol: '♥', color: '#6d4aff', delay: 0.1 },
+  { x: 30, y: -66, symbol: '✦', color: '#ff806f', delay: 0.14 },
+  { x: 56, y: -48, symbol: '♥', color: '#ffd064', delay: 0.18 },
+]
+
+function hasSeenArrival(orderId) {
+  if (!orderId) return true
+  try {
+    return sessionStorage.getItem(`${DELIVERY_ARRIVAL_SEEN_KEY}.${orderId}`) === '1'
+      || sessionStorage.getItem(DELIVERY_ARRIVAL_SEEN_KEY) === String(orderId)
+  } catch {
+    return false
+  }
+}
 
 function DeliveryIcon({ name, className }) {
   const icons = {
@@ -24,7 +45,9 @@ export default function DeliveredPage() {
   const navigate = useNavigate()
   const order = location.state?.order || readActiveOrder()
   const [saved, setSaved] = useState(false)
+  const [showSaveCelebration, setShowSaveCelebration] = useState(false)
   const [relationshipResult, setRelationshipResult] = useState(null)
+  const [showArrival, setShowArrival] = useState(() => Boolean(order) && !hasSeenArrival(order.id))
   const settledOrderRef = useRef(null)
 
   const completionText = useMemo(() => {
@@ -41,6 +64,23 @@ export default function DeliveredPage() {
     : task
       ? { eyebrow: '等待也被好好使用', title: focusSeconds > 0 ? `${formatFocus(focusSeconds)} 的尝试` : '给自己留了一点余地', detail: '没有打卡也没有关系。开始过、停下来过，或只是期待了一会儿，都不是空白。' }
       : { eyebrow: '等待已结算', title: '一段不用赶路的期待', detail: '你没有欠这段时间一项成果。放空、休息和等一份喜欢，也都有自己的价值。' }
+
+  useEffect(() => {
+    if (!showArrival) return undefined
+    try {
+      sessionStorage.setItem(`${DELIVERY_ARRIVAL_SEEN_KEY}.${order.id}`, '1')
+    } catch {
+      // Replaying is preferable to blocking the delivered page when storage is unavailable.
+    }
+    const timer = window.setTimeout(() => setShowArrival(false), 3800)
+    return () => window.clearTimeout(timer)
+  }, [order?.id, showArrival])
+
+  useEffect(() => {
+    if (!showSaveCelebration) return undefined
+    const timer = window.setTimeout(() => setShowSaveCelebration(false), 1500)
+    return () => window.clearTimeout(timer)
+  }, [showSaveCelebration])
 
   useEffect(() => {
     if (!order || settledOrderRef.current === order.id) return
@@ -69,13 +109,15 @@ export default function DeliveredPage() {
     }
   }, [featuredItem?.item.name, focusSeconds, order, task])
 
-  if (!order) return <main className="min-h-screen bg-[var(--background)] flex flex-col items-center justify-center px-8 text-center"><div className="grid h-20 w-20 place-items-center rounded-3xl bg-[var(--brand-primary-soft)] text-[var(--brand-primary)]"><DeliveryIcon name="bag" className="h-11 w-11" /></div><h1 className="mt-4 text-xl font-bold">这份想象中的外卖已经收好</h1><button onClick={() => navigate('/')} className="mt-6 rounded-full bg-[var(--brand-primary)] px-7 py-3 text-sm font-semibold text-white">再逛一会儿</button></main>
+  if (!order) return <main className="min-h-screen bg-[var(--background)] flex flex-col items-center justify-center px-8 text-center"><div className="grid h-20 w-20 place-items-center rounded-3xl bg-[var(--brand-primary-soft)] text-[var(--brand-primary)]"><DeliveryIcon name="bag" className="h-11 w-11" /></div><h1 className="mt-4 text-xl font-bold">这份想象中的外卖已经收好</h1><button onClick={() => navigate('/', { replace: true })} className="mt-6 rounded-full bg-[var(--brand-primary)] px-7 py-3 text-sm font-semibold text-white">再逛一会儿</button></main>
 
   function toggleSaved() {
-    setSaved((value) => !value)
+    const nextSaved = !saved
+    setSaved(nextSaved)
+    setShowSaveCelebration(nextSaved)
     try {
       const memories = JSON.parse(localStorage.getItem('fakeaway.memories') || '[]')
-      localStorage.setItem('fakeaway.memories', JSON.stringify(memories.map((memory) => memory.orderId === order.id ? { ...memory, saved: !saved } : memory)))
+      localStorage.setItem('fakeaway.memories', JSON.stringify(memories.map((memory) => memory.orderId === order.id ? { ...memory, saved: nextSaved } : memory)))
     } catch {
       // Keep the local interaction available even if storage is blocked.
     }
@@ -83,11 +125,17 @@ export default function DeliveredPage() {
 
   function leave(destination) {
     sessionStorage.removeItem(ACTIVE_ORDER_KEY)
-    navigate(destination)
+    navigate(destination, {
+      replace: true,
+      state: destination.startsWith('/restaurant/') ? { fromDelivered: true } : undefined,
+    })
   }
 
   return (
     <main className="delivered-page min-h-screen overflow-hidden bg-[var(--background)] pb-10 text-gray-900">
+      <AnimatePresence>
+        {showArrival && <DeliveryArrivalOverlay restaurantName={order.restaurant.name} onDismiss={() => setShowArrival(false)} />}
+      </AnimatePresence>
       <section className="delivery-celebration relative isolate overflow-hidden bg-[var(--brand-night)] px-5 pb-14 pt-6 text-center text-white">
         <div className="celebration-glow" /><div className="celebration-rays" aria-hidden="true" />
         {[...Array(12)].map((_, index) => <i key={index} className={`confetti confetti-${index + 1}`} aria-hidden="true" />)}
@@ -97,8 +145,8 @@ export default function DeliveredPage() {
       </section>
 
       <section className="delivery-card relative z-10 -mt-7 mx-4 rounded-[28px] bg-white p-5 shadow-[0_18px_55px_rgba(36,33,61,0.16)]">
-        <div className="flex items-center gap-3 border-b border-dashed border-gray-200 pb-4"><AppImage src={order.restaurant.image} alt={order.restaurant.name} className="h-12 w-12 rounded-2xl object-cover" sizes="48px" width={48} height={48} /><div className="min-w-0 flex-1"><h2 className="truncate text-base font-bold">{order.restaurant.name}</h2><p className="mt-1 text-xs text-gray-400">模拟订单 {order.id}</p></div><span className="rounded-full bg-[var(--brand-primary-soft)] px-3 py-1 text-xs font-semibold text-[var(--brand-primary-deep)]">圆满送达</span></div>
-        <div className="py-6 text-center"><p className="text-xs font-semibold tracking-[0.2em] text-gray-400">本次模拟账单</p><div className="mt-2 flex items-baseline justify-center gap-2"><span className="text-sm text-gray-400 line-through">¥{order.total.toFixed(2)}</span><strong className="text-5xl font-black text-[var(--brand-primary)]">¥0</strong></div><p className="mt-2 text-xs text-gray-400">已归零 · 没有发生任何真实扣款</p></div>
+        <div className="flex items-center gap-3 border-b border-dashed border-gray-200 pb-4"><AppImage src={order.restaurant.image} alt={order.restaurant.name} className="h-12 w-12 rounded-2xl object-cover" sizes="48px" width={48} height={48} /><div className="min-w-0 flex-1"><h2 className="truncate text-base font-bold">{order.restaurant.name}</h2><p className="mt-1 text-xs text-gray-400">想象订单 {order.id}</p></div><span className="rounded-full bg-[var(--brand-primary-soft)] px-3 py-1 text-xs font-semibold text-[var(--brand-primary-deep)]">圆满送达</span></div>
+        <div className="py-6 text-center"><p className="text-xs font-semibold tracking-[0.2em] text-gray-400">今晚的想象清单</p><div className="mt-2 flex items-baseline justify-center gap-2"><span className="text-sm text-gray-400 line-through">¥{order.total.toFixed(2)}</span><strong className="text-5xl font-black text-[var(--brand-primary)]">¥0</strong></div><p className="mt-2 text-xs text-gray-400">想象有价，现实扣款为零</p></div>
         <div className="rounded-3xl bg-gradient-to-br from-[var(--brand-primary-soft)] to-[var(--brand-coral-soft)] p-5"><p className="text-xs font-bold text-[var(--brand-coral)]">{outcome.eyebrow}</p><h3 className="mt-2 text-2xl font-black leading-tight">{outcome.title}</h3><p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">{outcome.detail}</p>{taskCompleted && <div className="mt-4 flex gap-2"><span className="rounded-full bg-white/70 px-3 py-1.5 text-xs font-semibold text-[var(--brand-primary-deep)]">完成打卡</span><span className="rounded-full bg-white/70 px-3 py-1.5 text-xs font-semibold text-[var(--brand-primary-deep)]">专注 {formatFocus(focusSeconds)}</span></div>}</div>
       </section>
 
@@ -108,7 +156,53 @@ export default function DeliveredPage() {
 
       <section className="delivery-card mx-4 mt-4 rounded-[28px] bg-[var(--brand-night)] p-5 text-white"><div className="flex items-start gap-3"><div className="flex h-11 w-11 flex-none items-center justify-center rounded-2xl bg-white/10"><DeliveryIcon name="chef" className="h-7 w-7" /></div><div><p className="text-xs text-white/45">店主留言</p><p className="mt-1 text-sm leading-6">“今晚辛苦了。做完了一点事很好，什么都没做也很好。下次想回来逛逛，我们还在这里亮着灯。”</p></div></div></section>
 
-      <div className="mx-4 mt-6 grid grid-cols-2 gap-3"><button onClick={toggleSaved} className={`rounded-2xl border py-3.5 text-sm font-bold ${saved ? 'border-[var(--brand-primary)] bg-[var(--brand-primary-soft)] text-[var(--brand-primary-deep)]' : 'border-orange-200 bg-white text-[var(--brand-coral)]'}`}>{saved ? '已收藏这份记忆' : '收藏这份记忆'}</button><button onClick={() => leave(`/restaurant/${order.restaurant.id}`)} className="rounded-2xl bg-[var(--brand-primary)] py-3.5 text-sm font-bold text-white shadow-lg shadow-[rgba(85,54,219,0.2)]">回店里再看看</button></div>
+      <div className="mx-4 mt-6 grid grid-cols-2 gap-3">
+        <div className="relative">
+          <AnimatePresence>
+            {showSaveCelebration && (
+              <>
+                <motion.div
+                  role="status"
+                  className="pointer-events-none absolute -top-12 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full bg-[var(--brand-night)] px-3 py-2 text-[10px] font-bold text-white shadow-xl"
+                  initial={{ y: 8, scale: 0.75, opacity: 0 }}
+                  animate={{ y: 0, scale: 1, opacity: 1 }}
+                  exit={{ y: -8, scale: 0.9, opacity: 0 }}
+                >
+                  ♥ 已收进今晚的记忆
+                </motion.div>
+                <div className="pointer-events-none absolute inset-0 z-10" aria-hidden="true">
+                  {MEMORY_SPARKS.map((spark, index) => (
+                    <motion.span
+                      key={`${spark.symbol}-${index}`}
+                      className="absolute left-1/2 top-1/2 text-lg font-black"
+                      style={{ color: spark.color }}
+                      initial={{ x: 0, y: 0, scale: 0.35, opacity: 0 }}
+                      animate={{ x: spark.x, y: spark.y, scale: [0.35, 1.2, 0.8], opacity: [0, 1, 0] }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 1, delay: spark.delay, ease: 'easeOut' }}
+                    >
+                      {spark.symbol}
+                    </motion.span>
+                  ))}
+                </div>
+              </>
+            )}
+          </AnimatePresence>
+          <motion.button
+            onClick={toggleSaved}
+            animate={showSaveCelebration ? { scale: [1, 0.94, 1.08, 1], rotate: [0, -2, 2, 0] } : { scale: 1, rotate: 0 }}
+            transition={{ duration: 0.5 }}
+            className={`h-full w-full rounded-2xl border py-3.5 text-sm font-bold ${saved ? 'border-[var(--brand-primary)] bg-[var(--brand-primary-soft)] text-[var(--brand-primary-deep)]' : 'border-orange-200 bg-white text-[var(--brand-coral)]'}`}
+          >
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.span key={saved ? 'saved' : 'unsaved'} className="block" initial={{ y: 5, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -5, opacity: 0 }}>
+                {saved ? '♥ 已收藏这份记忆' : '收藏这份记忆'}
+              </motion.span>
+            </AnimatePresence>
+          </motion.button>
+        </div>
+        <button onClick={() => leave(`/restaurant/${order.restaurant.id}`)} className="rounded-2xl bg-[var(--brand-primary)] py-3.5 text-sm font-bold text-white shadow-lg shadow-[rgba(85,54,219,0.2)]">回店里再看看</button>
+      </div>
       <button onClick={() => leave('/')} className="mx-auto mt-5 block text-sm text-gray-400">先回首页</button>
     </main>
   )

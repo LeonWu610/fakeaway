@@ -21,8 +21,10 @@ export default function CartBar({ totalCount, totalPrice, couponAmount, onToggle
       {/* Left section */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         {/* Bag icon with badge */}
-        <div
+        <button
+          type="button"
           onClick={onToggleCart}
+          aria-label={hasItems ? `查看购物车，已选${totalCount}件商品` : '打开购物车'}
           style={{
             position: 'relative',
             width: '36px',
@@ -60,7 +62,7 @@ export default function CartBar({ totalCount, totalPrice, couponAmount, onToggle
               {totalCount}
             </div>
           )}
-        </div>
+        </button>
 
         {/* Price and savings */}
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>

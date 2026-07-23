@@ -29,7 +29,6 @@ export default function RestaurantCard({ restaurant, onClick, priority = false }
         <div className="flex min-w-0 items-center gap-1">
           {listProfile.identity && <span className={`flex-none rounded-sm px-1 py-0.5 text-[9px] font-semibold ${identityStyles[listProfile.identity] || 'bg-gray-100 text-gray-600'}`}>{listProfile.identity}</span>}
           <h3 className="min-w-0 flex-1 truncate text-[16px] font-extrabold leading-[21px] text-[#222]">{name}</h3>
-          <span className="flex-none text-xs text-gray-300">⋮</span>
         </div>
 
         <div className="flex min-w-0 items-center gap-2 text-[10px] leading-[16px] text-gray-500">

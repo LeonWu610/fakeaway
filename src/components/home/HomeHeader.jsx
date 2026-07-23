@@ -1,13 +1,15 @@
 import { useState } from 'react'
+import { useFeatureNotice } from '../../contexts/FeatureNoticeContext'
 
 export default function HomeHeader({ address = '望京 SOHO' }) {
   const [mode, setMode] = useState('delivery')
+  const { showFeatureNotice } = useFeatureNotice()
 
   return (
     <header className="sticky top-0 z-40 bg-gradient-to-br from-[var(--brand-night)] via-[#342D58] to-[#493675] px-3 pb-2 pt-[max(8px,env(safe-area-inset-top))] text-white shadow-[0_8px_24px_rgba(36,33,61,.18)]">
       <div className="flex h-9 items-center justify-between">
         <div className="flex items-center gap-2">
-          <button className="flex max-w-[190px] items-center gap-1 text-left active:opacity-60" aria-label="切换收货地址">
+          <button onClick={() => showFeatureNotice({ title: '想象地址还在搬家', message: '以后这里可以切换不同街区。现在先把餐送到“想象中的门口”。' })} className="flex max-w-[190px] items-center gap-1 text-left active:opacity-60" aria-label="切换收货地址">
             <svg viewBox="0 0 24 24" className="h-4 w-4 flex-none" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1116 0z" />
               <circle cx="12" cy="10" r="2.5" />
@@ -27,10 +29,10 @@ export default function HomeHeader({ address = '望京 SOHO' }) {
           </div>
         </div>
         <div className="flex items-center gap-1">
-          <button className="grid h-8 w-8 place-items-center rounded-full active:bg-white/10" aria-label="消息">
+          <button onClick={() => showFeatureNotice({ title: '消息盒子还没开灯', message: '骑手和小店的悄悄话正在赶来，暂时不会错过任何重要消息。' })} className="grid h-8 w-8 place-items-center rounded-full active:bg-white/10" aria-label="消息">
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M21 15a4 4 0 01-4 4H8l-5 3V7a4 4 0 014-4h10a4 4 0 014 4z" /></svg>
           </button>
-          <button className="grid h-8 w-8 place-items-center rounded-full active:bg-white/10" aria-label="更多">
+          <button onClick={() => showFeatureNotice({ title: '更多惊喜正在打包', message: '主题、分享和街区玩法还在后厨装盘，先从今晚想吃的开始吧。' })} className="grid h-8 w-8 place-items-center rounded-full active:bg-white/10" aria-label="更多">
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
           </button>
         </div>

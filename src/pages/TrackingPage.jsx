@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
 import config from '../data/config.json'
 import AppImage from '../components/common/AppImage'
+import { TaskCelebrationOverlay } from '../components/experience/ExperienceOverlays'
 import { formatClock, formatRemaining, getEstimatedArrivalAt, getFocusedSeconds, readActiveOrder, writeActiveOrder } from '../utils/orderTime'
 
 const DEFAULT_STAGES = [
@@ -13,14 +15,19 @@ const DEFAULT_STAGES = [
 
 const STAGE_THRESHOLDS = [0, 0.22, 0.62, 0.84]
 const TASK_OPTIONS = [
-  { key: 'focus', label: '专注推进', hint: '把最小的一步往前推一点' },
-  { key: 'tidy', label: '收拾一小块', hint: '只整理目光所及的一小处' },
-  { key: 'read', label: '读几页', hint: '读到哪里都算数' },
-  { key: 'free', label: '自由任务', hint: '给此刻真正想做的事' },
+  { key: 'focus', symbol: '⌁', label: '专注推进', hint: '把最小的一步往前推一点', suggestion: '完成眼前最小的一步' },
+  { key: 'tidy', symbol: '◇', label: '收拾一小块', hint: '只整理目光所及的一小处', suggestion: '收好手边的三件东西' },
+  { key: 'read', symbol: '▤', label: '读几页', hint: '读到哪里都算数', suggestion: '读完眼前的两页' },
+  { key: 'free', symbol: '✦', label: '自由任务', hint: '给此刻真正想做的事', suggestion: '写下此刻想完成的小事' },
 ]
 
 function ScooterIcon({ className = 'h-10 w-10' }) {
   return <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 16h10l2-6h-5l-2-3H7" /><circle cx="6" cy="18" r="2" /><circle cx="17" cy="18" r="2" /><path d="M14 7h3l2 3" /></svg>
+}
+
+function formatTaskFocus(seconds) {
+  if (seconds < 60) return `${seconds} 秒`
+  return `${Math.floor(seconds / 60)} 分 ${seconds % 60} 秒`
 }
 
 export default function TrackingPage() {
@@ -30,17 +37,25 @@ export default function TrackingPage() {
   const [order, setOrder] = useState(initialOrder)
   const [now, setNow] = useState(Date.now())
   const [taskName, setTaskName] = useState(initialOrder?.waitingTask?.name || '')
+  const [taskCelebration, setTaskCelebration] = useState(null)
 
   const arrivalAt = getEstimatedArrivalAt(order)
   const totalDuration = Math.max(1, arrivalAt - (order?.createdAt || arrivalAt))
   const remaining = Math.max(0, arrivalAt - now)
   const progress = Math.min(1, Math.max(0, (now - (order?.createdAt || now)) / totalDuration))
+  const orderId = order?.id
 
   useEffect(() => {
-    if (!order) return undefined
+    if (!orderId) return undefined
     const timer = window.setInterval(() => setNow(Date.now()), 1000)
     return () => window.clearInterval(timer)
-  }, [order])
+  }, [orderId])
+
+  useEffect(() => {
+    if (!taskCelebration) return undefined
+    const timer = window.setTimeout(() => setTaskCelebration(null), 3600)
+    return () => window.clearTimeout(timer)
+  }, [taskCelebration])
 
   useEffect(() => {
     if (order && now >= arrivalAt) navigate('/delivered', { replace: true, state: { order: readActiveOrder() || order } })
@@ -58,19 +73,23 @@ export default function TrackingPage() {
     return config.riderNames[index]
   }, [order])
   const focusSeconds = getFocusedSeconds(order?.waitingTask, now)
+  const activeTaskOption = TASK_OPTIONS.find((option) => option.key === order?.waitingTask?.type)
 
   function updateTask(patch) {
-    const current = order.waitingTask || { type: 'focus', name: '', focusSeconds: 0, isRunning: false, timerStartedAt: null, completedAt: null }
-    const updatedOrder = { ...order, waitingTask: { ...current, ...patch, updatedAt: Date.now() } }
-    writeActiveOrder(updatedOrder)
-    setOrder(updatedOrder)
+    setOrder((currentOrder) => {
+      if (!currentOrder) return currentOrder
+      const currentTask = currentOrder.waitingTask || { type: 'focus', name: '', focusSeconds: 0, isRunning: false, timerStartedAt: null, completedAt: null }
+      const updatedOrder = { ...currentOrder, waitingTask: { ...currentTask, ...patch, updatedAt: Date.now() } }
+      writeActiveOrder(updatedOrder)
+      return updatedOrder
+    })
   }
 
   function chooseTask(type) {
     const option = TASK_OPTIONS.find((item) => item.key === type)
-    const name = taskName || option.label
-    setTaskName(name)
-    updateTask({ type, name, completedAt: null })
+    if (!option || order.waitingTask?.completedAt) return
+    setTaskName(option.suggestion)
+    updateTask({ type, name: option.suggestion, completedAt: null })
   }
 
   function saveTaskName() {
@@ -94,7 +113,13 @@ export default function TrackingPage() {
   function completeTask() {
     const task = order.waitingTask
     if (!task || task.completedAt) return
-    updateTask({ name: taskName.trim() || task.name, focusSeconds: getFocusedSeconds(task), isRunning: false, timerStartedAt: null, completedAt: Date.now() })
+    const completedName = taskName.trim() || task.name
+    const completedSeconds = getFocusedSeconds(task)
+    updateTask({ name: completedName, focusSeconds: completedSeconds, isRunning: false, timerStartedAt: null, completedAt: Date.now() })
+    setTaskCelebration({
+      taskName: completedName,
+      focusLabel: completedSeconds > 0 ? formatTaskFocus(completedSeconds) : '刚刚这一刻',
+    })
   }
 
   if (!order) {
@@ -106,6 +131,15 @@ export default function TrackingPage() {
 
   return (
     <main className="min-h-screen bg-[var(--background)] pb-8 text-gray-900">
+      <AnimatePresence>
+        {taskCelebration && (
+          <TaskCelebrationOverlay
+            taskName={taskCelebration.taskName}
+            focusLabel={taskCelebration.focusLabel}
+            onDismiss={() => setTaskCelebration(null)}
+          />
+        )}
+      </AnimatePresence>
       <section className="relative overflow-hidden bg-gradient-to-br from-[var(--brand-primary)] via-[var(--brand-primary-deep)] to-[var(--brand-night)] px-5 pb-9 pt-5 text-white">
         <div className="absolute -right-12 -top-16 h-48 w-48 rounded-full bg-white/10" />
         <div className="relative flex items-center justify-between"><button onClick={() => navigate('/')} aria-label="返回首页" className="h-9 w-9 rounded-full bg-black/10 text-xl">×</button><span className="rounded-full bg-black/10 px-3 py-1 text-xs">模拟订单 · {order.id}</span></div>
@@ -119,12 +153,59 @@ export default function TrackingPage() {
       </section>
 
       <section className="mx-3 mt-3 overflow-hidden rounded-3xl bg-[var(--brand-night)] p-5 text-white shadow-[var(--shadow-soft)]">
-        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45">等待也可以归你</p><h2 className="mt-2 text-xl font-black">趁餐还在路上，做点正事</h2><p className="mt-1 text-sm leading-6 text-white/60">挑一件够轻的小事。做多少都算，没完成也不会扣分。</p>
-        <div className="mt-4 grid grid-cols-2 gap-2">{TASK_OPTIONS.map((option) => { const selected = order.waitingTask?.type === option.key; return <button key={option.key} onClick={() => chooseTask(option.key)} className={`rounded-2xl border p-3 text-left transition ${selected ? 'border-[var(--brand-coral)] bg-white/15' : 'border-white/10 bg-white/5'}`}><span className="block text-sm font-bold">{option.label}</span><span className="mt-1 block text-[10px] leading-4 text-white/45">{option.hint}</span></button> })}</div>
-        {order.waitingTask && <div className="mt-4 rounded-2xl bg-white/10 p-4"><label htmlFor="waiting-task" className="text-xs text-white/55">这次具体想做什么</label><input id="waiting-task" value={taskName} maxLength={40} disabled={Boolean(order.waitingTask.completedAt)} onChange={(event) => setTaskName(event.target.value)} onBlur={saveTaskName} placeholder="写下一句就够了" className="mt-2 w-full rounded-xl border border-white/10 bg-black/15 px-3 py-2.5 text-sm text-white outline-none placeholder:text-white/25 focus:border-[var(--brand-coral)] disabled:opacity-60" /><div className="mt-4 flex items-center justify-between"><div><p className="font-mono text-3xl font-black tabular-nums">{timerLabel}</p><p className="mt-1 text-[10px] text-white/40">专注计时与配送倒计时互不打扰</p></div>{order.waitingTask.completedAt ? <span className="rounded-full bg-[var(--success)]/20 px-3 py-2 text-xs font-bold text-[#8fe0bd]">本次已打卡</span> : <button onClick={toggleTimer} className="rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[var(--brand-night)]">{order.waitingTask.isRunning ? '暂停一下' : focusSeconds > 0 ? '继续计时' : '开始计时'}</button>}</div>{!order.waitingTask.completedAt && <button onClick={completeTask} className="mt-4 w-full rounded-xl border border-white/15 py-2.5 text-sm font-semibold text-white/80">完成打卡</button>}</div>}
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45">等待也可以归你</p>
+        <h2 className="mt-2 text-xl font-black">趁餐还在路上，做一件小事</h2>
+        <p className="mt-1 text-sm leading-6 text-white/60">每种模式都有不同的小目标。切换模式不会打断已经开始的计时。</p>
+        <div className="mt-4 grid grid-cols-2 gap-2">
+          {TASK_OPTIONS.map((option) => {
+            const selected = order.waitingTask?.type === option.key
+            const completed = Boolean(order.waitingTask?.completedAt)
+            return (
+              <button
+                key={option.key}
+                onClick={() => chooseTask(option.key)}
+                disabled={completed}
+                aria-pressed={selected}
+                className={`relative rounded-2xl border p-3 text-left transition active:scale-[0.98] disabled:cursor-default disabled:opacity-60 ${selected ? 'border-[var(--brand-coral)] bg-white/15 shadow-[inset_0_0_0_1px_rgba(255,107,87,.25)]' : 'border-white/10 bg-white/5'}`}
+              >
+                <span className="flex items-start gap-2">
+                  <span className={`grid h-7 w-7 flex-none place-items-center rounded-lg text-sm font-black ${selected ? 'bg-[var(--brand-coral)] text-white' : 'bg-white/10 text-white/65'}`}>{option.symbol}</span>
+                  <span className="min-w-0">
+                    <span className="block text-sm font-bold">{option.label}</span>
+                    <span className="mt-1 block text-[10px] leading-4 text-white/45">{option.hint}</span>
+                  </span>
+                </span>
+                {selected && <span className="mt-2 block text-[9px] font-bold text-[#ffd1ca]">{order.waitingTask?.isRunning ? '● 正在继续计时' : completed ? '✓ 本次已完成' : '当前模式'}</span>}
+              </button>
+            )
+          })}
+        </div>
+        {order.waitingTask && (
+          <div className="mt-4 rounded-2xl border border-white/10 bg-white/10 p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-[10px] text-white/45">当前模式</p>
+                <p className="mt-0.5 text-sm font-black">{activeTaskOption?.label || '自由任务'}</p>
+              </div>
+              {order.waitingTask.isRunning && <span className="rounded-full bg-[#ff806f]/20 px-2.5 py-1 text-[9px] font-bold text-[#ffd1ca]">计时没有停</span>}
+            </div>
+            <label htmlFor="waiting-task" className="mt-4 block text-xs text-white/55">这次具体想做什么</label>
+            <input id="waiting-task" value={taskName} maxLength={40} disabled={Boolean(order.waitingTask.completedAt)} onChange={(event) => setTaskName(event.target.value)} onBlur={saveTaskName} placeholder="写下一句就够了" className="mt-2 w-full rounded-xl border border-white/10 bg-black/15 px-3 py-2.5 text-sm text-white outline-none placeholder:text-white/25 focus:border-[var(--brand-coral)] disabled:opacity-60" />
+            <div className="mt-4 flex items-center justify-between">
+              <div>
+                <p className="font-mono text-3xl font-black tabular-nums">{timerLabel}</p>
+                <p className="mt-1 text-[10px] text-white/40">切换模式、编辑目标都不会重置时间</p>
+              </div>
+              {order.waitingTask.completedAt
+                ? <span className="rounded-full bg-[var(--success)]/20 px-3 py-2 text-xs font-bold text-[#8fe0bd]">本次已打卡</span>
+                : <button onClick={toggleTimer} className="rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[var(--brand-night)]">{order.waitingTask.isRunning ? '暂停一下' : focusSeconds > 0 ? '继续计时' : '开始计时'}</button>}
+            </div>
+            {!order.waitingTask.completedAt && <button onClick={completeTask} className="mt-4 w-full rounded-xl bg-gradient-to-r from-[var(--brand-coral)] to-[#ff947f] py-3 text-sm font-black text-white shadow-lg shadow-black/10 active:scale-[0.98]">完成这件小事</button>}
+          </div>
+        )}
       </section>
 
-      <button onClick={() => navigate('/delivered', { state: { order: readActiveOrder() || order } })} className="mx-auto mt-5 block text-xs text-gray-400 underline underline-offset-4">立即送达（体验预览）</button>
+      <button onClick={() => navigate('/delivered', { replace: true, state: { order: readActiveOrder() || order } })} className="mx-auto mt-5 block text-xs text-gray-400 underline underline-offset-4">立即送达（体验预览）</button>
     </main>
   )
 }

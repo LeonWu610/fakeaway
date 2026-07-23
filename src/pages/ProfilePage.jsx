@@ -4,6 +4,7 @@ import BottomNav from '../components/common/BottomNav'
 import AppImage from '../components/common/AppImage'
 import restaurants from '../data/allRestaurants'
 import { describeRelationshipOutcome, getFavoriteItem, getRelationshipStage, readRelationships } from '../utils/relationship'
+import { useFeatureNotice } from '../contexts/FeatureNoticeContext'
 
 function readJson(storage, key, fallback) {
   try { return JSON.parse(storage.getItem(key)) || fallback } catch { return fallback }
@@ -11,6 +12,7 @@ function readJson(storage, key, fallback) {
 
 export default function ProfilePage() {
   const navigate = useNavigate()
+  const { showFeatureNotice } = useFeatureNotice()
   const memories = readJson(localStorage, 'fakeaway.memories', [])
   const activeOrder = readJson(sessionStorage, 'fakeaway.activeOrder', null)
   const coupons = Object.keys(sessionStorage).filter((key) => key.startsWith('fakeaway.coupon.')).length
@@ -22,7 +24,7 @@ export default function ProfilePage() {
   return (
     <main className="min-h-screen bg-[var(--background)] pb-20 text-[var(--text-primary)]">
       <section className="bg-gradient-to-br from-[var(--brand-primary)] via-[var(--brand-primary-deep)] to-[var(--brand-night)] px-4 pb-6 pt-[max(18px,env(safe-area-inset-top))] text-white">
-        <div className="flex items-center gap-3"><div className="grid h-14 w-14 place-items-center rounded-full border-2 border-white/70 bg-white/15 shadow-sm"><ProfileIcon name="user" className="h-8 w-8" /></div><div className="min-w-0 flex-1"><h1 className="text-[20px] font-black">{greeting}</h1><p className="mt-0.5 text-[11px] text-white/65">模拟食客 · 不用付款，也可以认真期待</p></div><button className="grid h-8 w-8 place-items-center rounded-full bg-white/10" aria-label="设置"><ProfileIcon name="settings" className="h-4 w-4" /></button></div>
+        <div className="flex items-center gap-3"><div className="grid h-14 w-14 place-items-center rounded-full border-2 border-white/70 bg-white/15 shadow-sm"><ProfileIcon name="user" className="h-8 w-8" /></div><div className="min-w-0 flex-1"><h1 className="text-[20px] font-black">{greeting}</h1><p className="mt-0.5 text-[11px] text-white/65">模拟食客 · 不用付款，也可以认真期待</p></div><button onClick={() => showFeatureNotice({ title: '设置间还在拧螺丝', message: '主题、声音和等待偏好都在规划中，现有记忆仍只安静地留在本机。' })} className="grid h-8 w-8 place-items-center rounded-full bg-white/10" aria-label="设置"><ProfileIcon name="settings" className="h-4 w-4" /></button></div>
         <div className="mt-5 grid grid-cols-3 rounded-xl bg-white/90 py-3 text-[var(--text-primary)] backdrop-blur">
           <Stat value={memories.length} label="记忆订单" />
           <Stat value={relationships.length} label="熟悉的店" />
@@ -46,8 +48,8 @@ export default function ProfilePage() {
       <section className="mx-3 mt-3 overflow-hidden rounded-xl bg-[var(--surface)]">
         <MenuRow icon="receipt" title="我的订单" detail={`${memories.length + Number(Boolean(activeOrder))} 个记录`} onClick={() => navigate('/orders')} />
         <MenuRow icon="heart" title="记忆收藏" detail={`${memories.length} 张卡片`} onClick={() => navigate('/orders')} />
-        <MenuRow icon="ticket" title="我的优惠券" detail={`${coupons} 张模拟券`} />
-        <MenuRow icon="location" title="收货地址" detail="想象中的门口" />
+        <MenuRow icon="ticket" title="我的优惠券" detail={`${coupons} 张模拟券`} onClick={() => showFeatureNotice({ title: '券包正在缝最后一针', message: '已经领到的模拟券都还在，等券包开放后会整整齐齐地出现在这里。' })} />
+        <MenuRow icon="location" title="收货地址" detail="想象中的门口" onClick={() => showFeatureNotice({ title: '地址簿还在画地图', message: '这里不会收集真实住址。以后可以选择不同的虚构街区与门口。' })} />
       </section>
 
       <section className="mx-3 mt-3 rounded-xl bg-[var(--surface)] p-4">

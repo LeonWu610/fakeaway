@@ -11,6 +11,7 @@ import AppImage from '../components/common/AppImage'
 import restaurants from '../data/allRestaurants'
 import config from '../data/config.json'
 import { getFavoriteItem, getRelationshipStage, readRelationships } from '../utils/relationship'
+import { inRestaurantCategory, isNightRestaurant, numberFrom, restaurantText, salesFrom } from '../utils/restaurantDiscovery'
 
 const sortOptions = [
   ['smart', '综合排序'],
@@ -30,7 +31,10 @@ const categoryOptions = [
   ['breakfast', '粥品早餐'],
   ['home', '饺子小炒'],
   ['bakery', '烘焙甜点'],
-  ['retail', '超市零售'],
+  ['retail', '全部零售'],
+  ['market', '超市便利'],
+  ['fruits', '蔬菜水果'],
+  ['medicine', '健康药箱'],
 ]
 
 const TIME_SCENES = [
@@ -44,44 +48,6 @@ const TIME_SCENES = [
 function currentSceneId(hour = new Date().getHours()) {
   const normalizedHour = hour < 5 ? hour + 24 : hour
   return TIME_SCENES.find((scene) => normalizedHour >= scene.hours[0] && normalizedHour < scene.hours[1])?.id || 'dinner'
-}
-
-function isNightRestaurant(restaurant) {
-  const closeHour = Number.parseInt(restaurant.businessHours?.close?.split(':')[0], 10)
-  return ['bbq', 'hotpot'].includes(restaurant.foodCategory)
-    || (Number.isFinite(closeHour) && closeHour <= 5)
-    || /夜宵|深夜|烤串|火锅|不打烊|营业到/.test(restaurantText(restaurant))
-}
-
-function numberFrom(value) {
-  return Number.parseFloat(String(value).replace(/[^\d.]/g, '')) || 0
-}
-
-function salesFrom(value) {
-  const text = String(value || '')
-  const amount = numberFrom(text)
-  return text.includes('万') ? amount * 10000 : amount
-}
-
-function restaurantText(restaurant) {
-  const menuText = restaurant.menus.flatMap((category) => [category.categoryName, ...category.items.flatMap((item) => [item.name, item.description])]).join(' ')
-  return `${restaurant.name} ${restaurant.description} ${restaurant.listProfile?.identity || ''} ${menuText}`.toLowerCase()
-}
-
-function inCategory(restaurant, category) {
-  if (category === 'all') return restaurant.retailCategory !== 'errand'
-  if (category === 'food') return restaurant.retailCategory !== 'errand' && (Boolean(restaurant.foodCategory) || !restaurant.retailCategory)
-  const text = restaurantText(restaurant)
-  if (category === 'drink') return /茶|咖啡|拿铁|果汁|奶盖|饮品/.test(text)
-  if (category === 'fast') return /汉堡|鸡|薯|炸|牛堡/.test(text)
-  if (category === 'rice') return ['rice', 'noodles', 'malatang'].includes(restaurant.foodCategory)
-  if (category === 'fresh') return ['japanese', 'lightMeal'].includes(restaurant.foodCategory)
-  if (category === 'breakfast') return restaurant.foodCategory === 'breakfast'
-  if (category === 'home') return ['dumplings', 'stirFry'].includes(restaurant.foodCategory)
-  if (category === 'bakery') return restaurant.foodCategory === 'bakery'
-  if (category === 'retail') return ['market', 'fruits', 'medicine'].includes(restaurant.retailCategory)
-  if (category === 'errand') return restaurant.retailCategory === 'errand'
-  return isNightRestaurant(restaurant)
 }
 
 export default function HomePage() {
@@ -112,7 +78,7 @@ export default function HomePage() {
       if (filters.freeDelivery && numberFrom(restaurant.deliveryFee) > 0) return false
       if (filters.coupon && !(restaurant.couponAmount > 0 || restaurant.coupons?.length)) return false
       if (filters.maxDeliveryTime && restaurant.deliveryTime > filters.maxDeliveryTime) return false
-      return inCategory(restaurant, filters.category)
+      return inRestaurantCategory(restaurant, filters.category)
     })
     return [...result].sort((a, b) => {
       if (sortBy === 'rating') return b.rating - a.rating
@@ -125,7 +91,8 @@ export default function HomePage() {
 
   const activeFilterCount = Number(filters.freeDelivery) + Number(filters.coupon) + Number(filters.category !== 'all') + Number(filters.maxDeliveryTime > 0)
   const currentSort = sortOptions.find(([key]) => key === sortBy)?.[1]
-  const resultsTitle = query ? '搜索结果' : filters.category === 'night' ? '深夜夜宵' : '附近商家'
+  const selectedCategoryLabel = categoryOptions.find(([key]) => key === filters.category)?.[1]
+  const resultsTitle = query ? '搜索结果' : filters.category === 'night' ? '深夜夜宵' : filters.category !== 'all' ? selectedCategoryLabel : '附近商家'
 
   function focusResults() {
     restaurantSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -139,9 +106,9 @@ export default function HomePage() {
     const categoryActions = {
       food: { category: 'food', query: '' },
       drinks: { category: 'drink', query: '' },
-      market: { category: 'retail', query: '超市便利' },
-      fruits: { category: 'retail', query: '蔬菜水果' },
-      medicine: { category: 'retail', query: '看病买药' },
+      market: { category: 'market', query: '' },
+      fruits: { category: 'fruits', query: '' },
+      medicine: { category: 'medicine', query: '' },
       tea: { category: 'drink', query: '茶' },
       group: { category: 'food', query: '' },
       night: { category: 'night', query: '' },
@@ -207,22 +174,22 @@ export default function HomePage() {
         </div>
       </div>
 
-      {(showSort || showFilters) && <button aria-label="关闭选择面板" onClick={() => { setShowSort(false); setShowFilters(false) }} className="fixed inset-0 z-40 bg-black/35" />}
+      {(showSort || showFilters) && <button aria-label="关闭选择面板" onClick={() => { setShowSort(false); setShowFilters(false) }} className="fixed inset-0 z-[60] bg-black/35" />}
       {showSort && (
-        <div className="fixed bottom-0 left-1/2 z-50 w-full max-w-[480px] -translate-x-1/2 rounded-t-2xl bg-white pb-[max(12px,env(safe-area-inset-bottom))]">
+        <div className="fixed bottom-0 left-1/2 z-[70] w-full max-w-[480px] -translate-x-1/2 rounded-t-2xl bg-white pb-[max(12px,env(safe-area-inset-bottom))] shadow-2xl">
           <div className="flex items-center justify-between border-b border-gray-100 px-4 py-3"><strong className="text-[15px]">排序方式</strong><button onClick={() => setShowSort(false)} className="text-xl text-gray-400">×</button></div>
           {sortOptions.map(([key, label]) => <button key={key} onClick={() => { setSortBy(key); setShowSort(false) }} className="flex w-full items-center justify-between border-b border-gray-50 px-4 py-3 text-left text-[13px]"><span>{label}</span>{sortBy === key && <span className="font-bold text-[var(--brand-primary)]">✓</span>}</button>)}
         </div>
       )}
       {showFilters && (
-        <div className="fixed bottom-0 left-1/2 z-50 w-full max-w-[480px] -translate-x-1/2 rounded-t-2xl bg-white pb-[max(12px,env(safe-area-inset-bottom))]">
+        <div className="fixed bottom-0 left-1/2 z-[70] flex max-h-[calc(100dvh-16px)] w-full max-w-[480px] -translate-x-1/2 flex-col rounded-t-2xl bg-white pb-[max(12px,env(safe-area-inset-bottom))] shadow-2xl">
           <div className="flex items-center justify-between border-b border-gray-100 px-4 py-3"><strong className="text-[15px]">筛选商家</strong><button onClick={() => setShowFilters(false)} className="text-xl text-gray-400">×</button></div>
-          <div className="max-h-[62vh] overflow-y-auto px-4 py-3">
+          <div className="min-h-0 flex-1 overflow-y-auto px-4 py-3">
             <FilterSection title="配送与优惠"><FilterChip active={filters.freeDelivery} onClick={() => setFilters((value) => ({ ...value, freeDelivery: !value.freeDelivery }))}>免配送费</FilterChip><FilterChip active={filters.coupon} onClick={() => setFilters((value) => ({ ...value, coupon: !value.coupon }))}>有优惠券</FilterChip></FilterSection>
             <FilterSection title="商家品类">{categoryOptions.map(([key, label]) => <FilterChip key={key} active={filters.category === key} onClick={() => setFilters((value) => ({ ...value, category: key }))}>{label}</FilterChip>)}</FilterSection>
             <FilterSection title="配送时间">{[[0, '不限'], [20, '20分钟内'], [30, '30分钟内'], [45, '45分钟内']].map(([minutes, label]) => <FilterChip key={minutes} active={filters.maxDeliveryTime === minutes} onClick={() => setFilters((value) => ({ ...value, maxDeliveryTime: minutes }))}>{label}</FilterChip>)}</FilterSection>
           </div>
-          <div className="flex gap-3 border-t border-gray-100 px-4 pt-3"><button onClick={resetFilters} className="h-10 flex-1 rounded-full border border-gray-200 text-[13px]">重置</button><button onClick={() => { setShowFilters(false); focusResults() }} className="h-10 flex-[2] rounded-full bg-[var(--brand-primary)] text-[13px] font-bold text-white shadow-sm">查看 {filteredRestaurants.length} 家商家</button></div>
+          <div className="flex flex-none gap-3 border-t border-gray-100 px-4 pt-3"><button onClick={resetFilters} className="h-10 flex-1 rounded-full border border-gray-200 text-[13px]">重置</button><button onClick={() => { setShowFilters(false); focusResults() }} className="h-10 flex-[2] rounded-full bg-[var(--brand-primary)] text-[13px] font-bold text-white shadow-sm">查看 {filteredRestaurants.length} 家商家</button></div>
         </div>
       )}
 

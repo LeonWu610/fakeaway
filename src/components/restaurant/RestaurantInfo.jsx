@@ -29,7 +29,7 @@ export default function RestaurantInfo({ restaurant }) {
             <div className="flex min-w-0 items-center gap-1.5">
               <span className="flex-none rounded-sm bg-[#eff8e9] px-1.5 py-0.5 text-[10px] font-semibold text-[#4c9a36]">{listProfile.identity || '原创商家'}</span>
               <h1 className="min-w-0 flex-1 truncate text-[19px] font-extrabold leading-6 text-[#222]">{name}</h1>
-              <span className="flex-none text-[10px] text-green-600">营业中 ›</span>
+              <span className="flex-none rounded-full bg-green-50 px-1.5 py-0.5 text-[9px] font-medium text-green-600">营业中</span>
             </div>
             <div className="mt-1 grid grid-cols-4 divide-x divide-gray-100">
               <Metric value={rating} label="评分" strong />
@@ -52,7 +52,7 @@ export default function RestaurantInfo({ restaurant }) {
           <div className="mt-1.5 flex h-8 items-center rounded-md bg-[#fff7f4] px-2">
             <span className="mr-2 flex-none rounded-sm bg-[#ff5a42] px-1 py-0.5 text-[9px] font-semibold text-white">全店立减</span>
             <p className="min-w-0 flex-1 truncate text-[11px] font-medium text-[#f0442f]">{promotionRules.join('　')}</p>
-            <span className="ml-2 flex-none text-[10px] text-gray-400">更多 ›</span>
+            <span className="ml-2 flex-none text-[9px] text-gray-400">更多优惠</span>
           </div>
         )}
 
@@ -70,7 +70,7 @@ export default function RestaurantInfo({ restaurant }) {
           <div className="mt-1.5 flex h-10 items-center gap-2 rounded-md bg-[var(--brand-primary-soft)] px-2">
             <span className="flex-none rounded-sm bg-white/70 px-1.5 py-0.5 text-[9px] font-semibold text-[var(--brand-primary-deep)]">{operationCard.eyebrow}</span>
             <div className="min-w-0 flex-1"><p className="truncate text-[11px] font-bold text-[#333]">{operationCard.title}</p><p className="truncate text-[8px] text-gray-400">{operationCard.description}</p></div>
-            <span className="flex-none text-[10px] font-semibold text-[var(--brand-primary-deep)]">{operationCard.action} ›</span>
+            <span className="flex-none rounded-full bg-white/65 px-2 py-1 text-[9px] font-semibold text-[var(--brand-primary-deep)]">{operationCard.action}</span>
           </div>
         )}
       </div>
