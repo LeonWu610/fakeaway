@@ -17,7 +17,7 @@ function imageExtension(imageTier) {
 function makeItems(restaurantId, items) {
   return items.map(([name, description, price, sales, slug, subject, imageTier], index) => ({
     id: `${restaurantId}_item${index + 1}`, name, description, price,
-    image: `/images/products/${restaurantId}-item${index + 1}-${slug}.${imageExtension(imageTier)}`,
+    image: `https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/products/${restaurantId}-item${index + 1}-${slug}.${imageExtension(imageTier)}`,
     monthlySales: `月售${sales}+`, rating: index < 3 ? 99 - index : 96,
     isHot: index === 0 || index === 4, isRecommended: index === 0 || index === 2,
     originalPrice: index === 0 ? price + 5 : undefined, imageTier,
@@ -28,7 +28,7 @@ function makeItems(restaurantId, items) {
 function makeRestaurant(config) {
   const { items: itemData, slug, coverSubject, ...restaurant } = config
   const items = makeItems(config.id, itemData)
-  const image = `/images/merchants/${config.id}-${slug}.png`
+  const image = `https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev/images/merchants/${config.id}-${slug}.png`
   return {
     ...common, ...restaurant, image, coverImages: [image], imageTier: premium,
     imagePrompt: { purpose: 'merchant-cover', prompt: `${coverSubject}，原创外卖商家封面，主打商品数量、规格与食材清楚，俯视偏45度，主体占画面三分之二，${safety}` },

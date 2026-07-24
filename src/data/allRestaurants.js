@@ -3,7 +3,8 @@ import retailRestaurants from './retailRestaurants.js'
 import foodRestaurants from './foodRestaurants.js'
 import expandedFoodRestaurants from './expandedFoodRestaurants.js'
 
-const imageBaseUrl = (import.meta.env.VITE_IMAGE_BASE_URL || '').replace(/\/$/, '')
+const DEFAULT_IMAGE_BASE_URL = 'https://pub-e72b8e0a3d2b466392dbb9007970e4b7.r2.dev'
+const imageBaseUrl = (import.meta.env.VITE_IMAGE_BASE_URL || DEFAULT_IMAGE_BASE_URL).replace(/\/$/, '')
 
 function remoteImage(image) {
   if (!imageBaseUrl || typeof image !== 'string' || !image.startsWith('/images/')) return image
